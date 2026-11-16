@@ -2,6 +2,8 @@
   position: absolute;
   inset: 0;
   display: block;
+  /* The label renderer gives every label a z-index; keep those from rising above the UI panels. */
+  isolation: isolate;
 }
 
 .map-host {

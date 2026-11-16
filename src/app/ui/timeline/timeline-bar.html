@@ -1,0 +1,47 @@
+@let messages = i18n.messages().timeline;
+@let timeline = store.timeline();
+
+<button
+  type="button"
+  class="play"
+  [attr.aria-label]="timeline.playing ? messages.pause : messages.play"
+  (click)="store.togglePlayback()"
+>
+  @if (timeline.playing) {
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" /></svg>
+  } @else {
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+  }
+</button>
+
+<div class="date">
+  <strong>{{ formattedDate() }}</strong>
+  <span class="day-counter">{{ messages.dayCounter(dayNumber(), totalDays) }}</span>
+</div>
+
+<input
+  type="range"
+  class="scrubber"
+  step="0.01"
+  [min]="timeline.range.startDay"
+  [max]="timeline.range.endDay"
+  [value]="timeline.currentDay"
+  [attr.aria-label]="messages.scrubber"
+  [attr.aria-valuetext]="formattedDate()"
+  (input)="onScrub($event)"
+/>
+
+<label class="speed">
+  <span>{{ messages.speed }}</span>
+  <select (change)="onSpeedChange($event)">
+    @for (option of speedOptions; track option) {
+      <option [value]="option" [selected]="option === timeline.daysPerSecond">
+        {{ messages.speedOption(option) }}
+      </option>
+    }
+  </select>
+</label>
+
+@if (store.scenario.kind === 'demonstration') {
+  <span class="demo-badge">{{ messages.demoBadge }}</span>
+}

@@ -1,52 +1,58 @@
 @let messages = i18n.messages();
 
-<app-map-view [cities]="cities" (citySelected)="selectCity($event)" />
+<app-map-view [cities]="cities" [units]="unitMarkers()" (citySelected)="selectCity($event)" />
 
-<header class="panel title-bar">
-  <p class="brand">{{ messages.brandName }} · Past Forward</p>
-  <h1>{{ messages.chapterTitle }}</h1>
-  <p class="scope">{{ messages.chapterScope }}</p>
-</header>
+<div class="dock top-dock">
+  <header class="panel title-bar">
+    <p class="brand">{{ messages.brandName }} · Past Forward</p>
+    <h1>{{ messages.chapterTitle }}</h1>
+    <p class="scope">{{ messages.chapterScope }}</p>
+  </header>
 
-<details class="panel data-notice" [open]="noticeInitiallyOpen">
-  <summary>
-    <span class="badge">{{ messages.prototypeBadge }}</span>
-    {{ messages.dataNoticeTitle }}
-  </summary>
-  <ul>
-    @for (line of messages.dataNotice; track line) {
-      <li>{{ line }}</li>
-    }
-  </ul>
-</details>
+  <details class="panel data-notice" [open]="noticeInitiallyOpen">
+    <summary>
+      <span class="badge">{{ messages.prototypeBadge }}</span>
+      {{ messages.dataNoticeTitle }}
+    </summary>
+    <ul>
+      @for (line of messages.dataNotice; track line) {
+        <li>{{ line }}</li>
+      }
+    </ul>
+  </details>
+</div>
 
-@if (selectedCity(); as city) {
-  <section class="panel city-panel" aria-live="polite">
-    <button
-      type="button"
-      class="close"
-      [attr.aria-label]="messages.cityPanel.close"
-      (click)="clearSelection()"
-    >
-      ×
+<div class="dock bottom-dock">
+  @if (selectedCity(); as city) {
+    <section class="panel city-panel" aria-live="polite">
+      <button
+        type="button"
+        class="close"
+        [attr.aria-label]="messages.cityPanel.close"
+        (click)="clearSelection()"
+      >
+        ×
+      </button>
+      <h2>{{ i18n.text(city.name) }}</h2>
+      @if (city.name.en; as romanized) {
+        <p class="romanized">{{ romanized }}</p>
+      }
+      <dl>
+        <dt>{{ messages.cityPanel.coordinates }}</dt>
+        <dd>
+          {{ formatCoordinates(city) }}
+          <span class="note">（{{ messages.cityPanel.coordinatesNote }}）</span>
+        </dd>
+      </dl>
+    </section>
+  }
+
+  <div class="dock map-actions">
+    <p class="panel controls-hint">{{ messages.controlsHint }}</p>
+    <button type="button" class="panel reset-view" (click)="resetView()">
+      {{ messages.resetView }}
     </button>
-    <h2>{{ i18n.text(city.name) }}</h2>
-    @if (city.name.en; as romanized) {
-      <p class="romanized">{{ romanized }}</p>
-    }
-    <dl>
-      <dt>{{ messages.cityPanel.coordinates }}</dt>
-      <dd>
-        {{ formatCoordinates(city) }}
-        <span class="note">（{{ messages.cityPanel.coordinatesNote }}）</span>
-      </dd>
-    </dl>
-  </section>
-}
+  </div>
 
-<footer class="map-footer">
-  <p class="panel controls-hint">{{ messages.controlsHint }}</p>
-  <button type="button" class="panel reset-view" (click)="resetView()">
-    {{ messages.resetView }}
-  </button>
-</footer>
+  <app-timeline-bar class="panel" />
+</div>

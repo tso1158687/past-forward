@@ -15,6 +15,16 @@ export interface Messages {
   readonly resetView: string;
   readonly mapLoading: string;
   readonly mapLoadFailed: string;
+  readonly timeline: {
+    readonly play: string;
+    readonly pause: string;
+    /** Accessible name of the date scrubber. */
+    readonly scrubber: string;
+    readonly dayCounter: (day: number, totalDays: number) => string;
+    readonly speed: string;
+    readonly speedOption: (daysPerSecond: number) => string;
+    readonly demoBadge: string;
+  };
   readonly cityPanel: {
     readonly coordinates: string;
     readonly coordinatesNote: string;

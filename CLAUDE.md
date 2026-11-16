@@ -32,13 +32,14 @@ pnpm bake:map       從開放資料重新產生 public/map/（需要網路）
 ```
 
 宣告完成前要跑過 `pnpm build`、`pnpm test`、`pnpm lint`、`pnpm format:check`；
-畫面上看得到的改動要實際開瀏覽器確認。
+畫面上看得到的改動要實際開瀏覽器確認。地圖元件在單元測試裡是替身，
+「資料有沒有真的送到 3D 場景」只有在瀏覽器裡才驗得到（Milestone 2 就有一個測試全過、畫面卻不動的錯）。
 
 ## 架構規則
 
 依賴只能往下：`ui` 可以用 `scene`、`data`、`core`；`scene` 與 `data` 只能用 `core`；`core` 不依賴其他層。
 
-- `src/app/core/`：純 TypeScript，不可 import Angular 或 three.js。時間軸與世界狀態的邏輯放這裡，用純函式並寫單元測試。
+- `src/app/core/`：純 TypeScript，不可 import Angular 或 three.js。時間軸（`core/timeline`）與世界狀態（`core/history`）的邏輯放這裡，用純函式並寫單元測試。
 - `src/app/data/`：靜態資料與資產載入，只依賴 `core`。
 - `src/app/scene/`：three.js 呈現層，不可 import Angular，不可包含歷史邏輯。對外入口只有 `map-scene.ts`。
 - `src/app/ui/`：Angular 元件與介面文字。

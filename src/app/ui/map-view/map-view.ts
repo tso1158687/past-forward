@@ -3,6 +3,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   DestroyRef,
+  effect,
   ElementRef,
   inject,
   input,
@@ -14,6 +15,7 @@ import { GeographicLocation } from '../../core/geo/geo-types';
 import { City } from '../../data/map/cities';
 import { loadMapAssets, MapAssets } from '../../data/map/map-assets';
 import { RIVER_NAMES } from '../../data/map/river-names';
+import type { UnitMarker } from '../../scene/layers/unit-layer';
 import type { MapScene, MapSceneContent } from '../../scene/map-scene';
 import { LocaleService } from '../i18n/locale-service';
 
@@ -31,6 +33,8 @@ type MapStatus = 'loading' | 'ready' | 'failed';
 })
 export class MapView {
   readonly cities = input.required<readonly City[]>();
+  /** Units to show right now; expected to change on every frame while the timeline plays. */
+  readonly units = input<readonly UnitMarker[]>([]);
   readonly citySelected = output<string>();
 
   protected readonly i18n = inject(LocaleService);
@@ -42,6 +46,12 @@ export class MapView {
 
   constructor() {
     afterNextRender(() => void this.createScene());
+    effect(() => {
+      // Read the input before the optional call: while the scene is still loading, `?.` would
+      // skip the read and the effect would never learn that it depends on `units`.
+      const units = this.units();
+      this.scene?.setUnits(units);
+    });
     inject(DestroyRef).onDestroy(() => {
       this.destroyed = true;
       this.scene?.dispose();
@@ -67,6 +77,8 @@ export class MapView {
       this.scene = new MapScene(this.host().nativeElement, this.toSceneContent(assets), {
         onCitySelected: (cityId) => this.citySelected.emit(cityId),
       });
+      // The effect above could not reach the scene while it was still loading.
+      this.scene.setUnits(this.units());
       this.status.set('ready');
     } catch (error) {
       console.error('Map failed to initialise', error);

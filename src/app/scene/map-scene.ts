@@ -6,6 +6,7 @@ import { GeographicLocation } from '../core/geo/geo-types';
 import { createMapControls, moveToInitialView } from './camera/map-controls';
 import { CityMarker, createCityLayer } from './layers/city-layer';
 import { createRiverLayer, SceneRiver } from './layers/river-layer';
+import { UnitLayer, UnitMarker } from './layers/unit-layer';
 import { SCENE_CONFIG } from './scene-config';
 import { createTerrainMesh } from './terrain/terrain-mesh';
 import { createTerrainSurface, TerrainSurface } from './terrain/terrain-surface';
@@ -35,6 +36,7 @@ export class MapScene {
   private readonly camera: PerspectiveCamera;
   private readonly controls: CameraControls;
   private readonly surface: TerrainSurface;
+  private readonly unitLayer: UnitLayer;
   private readonly resizeObserver: ResizeObserver;
 
   private animationFrame = 0;
@@ -52,10 +54,12 @@ export class MapScene {
 
     this.surface = createTerrainSurface(content.elevation, SCENE_CONFIG.verticalExaggeration);
     const mapSize = this.surface.projection.sizeKm;
+    this.unitLayer = new UnitLayer(this.surface);
     this.scene.add(
       this.createTerrain(),
       createRiverLayer(content.rivers, this.surface),
       createCityLayer(content.cities, this.surface, (id) => events.onCitySelected(id)),
+      this.unitLayer.object,
     );
 
     this.camera = new PerspectiveCamera(SCENE_CONFIG.camera.fieldOfViewDegrees, 1, 1, 6000);
@@ -74,6 +78,12 @@ export class MapScene {
     const target = this.surface.positionAt(location);
     void this.controls.moveTo(target.x, 0, target.z, true);
     void this.controls.dollyTo(SCENE_CONFIG.camera.focusDistance, true);
+  }
+
+  /** Shows exactly these units, replacing whatever was shown before. */
+  setUnits(markers: readonly UnitMarker[]): void {
+    this.unitLayer.update(markers);
+    this.needsRender = true;
   }
 
   resetView(): void {

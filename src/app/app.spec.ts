@@ -2,7 +2,9 @@ import { Component, input, output } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
 import { City } from './data/map/cities';
+import type { UnitMarker } from './scene/layers/unit-layer';
 import { MapView } from './ui/map-view/map-view';
+import { TimelineStore } from './ui/timeline/timeline-store';
 
 /**
  * The real map needs WebGL, which the unit-test environment does not provide. The stub registers
@@ -15,6 +17,7 @@ import { MapView } from './ui/map-view/map-view';
 })
 class MapViewStub {
   readonly cities = input.required<readonly City[]>();
+  readonly units = input<readonly UnitMarker[]>([]);
   readonly citySelected = output<string>();
   readonly focusedLocations: unknown[] = [];
   focusOn(location: unknown): void {
@@ -44,7 +47,7 @@ describe('App', () => {
     const { element } = await render();
     expect(element.querySelector('.brand')?.textContent).toContain('歷史進行式');
     expect(element.querySelector('h1')?.textContent).toContain('巴巴羅薩行動');
-    expect(element.querySelector('.data-notice')?.textContent).toContain('尚未包含任何部隊');
+    expect(element.querySelector('.data-notice')?.textContent).toContain('尚未包含任何真實的部隊');
   });
 
   it('shows the selected city and asks the map to focus on it', async () => {
@@ -57,5 +60,17 @@ describe('App', () => {
     expect(element.querySelector('.city-panel h2')?.textContent).toContain('明斯克');
     expect(element.querySelector('.city-panel')?.textContent).toContain('53.90°N, 27.57°E');
     expect(map.focusedLocations).toEqual([{ lon: 27.565, lat: 53.902 }]);
+  });
+
+  it('gives the map the units of the current day and labels them as a demonstration', async () => {
+    const { fixture, element, map } = await render();
+    // Demo unit B only appears on day 3; unit A is there from day 0.
+    expect(map.units().map((unit) => unit.label)).toEqual(['示範單位 A']);
+
+    TestBed.inject(TimelineStore).seek(3);
+    await fixture.whenStable();
+
+    expect(map.units().map((unit) => unit.label)).toEqual(['示範單位 A', '示範單位 B']);
+    expect(element.querySelector('app-timeline-bar')?.textContent).toContain('示範資料');
   });
 });

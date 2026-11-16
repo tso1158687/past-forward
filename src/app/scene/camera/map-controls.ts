@@ -37,13 +37,13 @@ export function createMapControls(
 ): CameraControls {
   const controls = new CameraControls(camera, domElement);
 
-  controls.mouseButtons.left = CameraControls.ACTION.TRUCK;
+  // SCREEN_PAN moves along the ground: a vertical drag pushes the map away or pulls it closer.
+  controls.mouseButtons.left = CameraControls.ACTION.SCREEN_PAN;
   controls.mouseButtons.right = CameraControls.ACTION.ROTATE;
   controls.mouseButtons.middle = CameraControls.ACTION.DOLLY;
   controls.mouseButtons.wheel = CameraControls.ACTION.DOLLY;
-  controls.touches.one = CameraControls.ACTION.TOUCH_TRUCK;
+  controls.touches.one = CameraControls.ACTION.TOUCH_SCREEN_PAN;
   controls.touches.two = CameraControls.ACTION.TOUCH_DOLLY_ROTATE;
-  controls.verticalDragToForward = true;
   controls.dollyToCursor = true;
 
   controls.minDistance = CAMERA.minDistance;
