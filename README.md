@@ -55,7 +55,7 @@ Milestone 1 **不含任何歷史資料**，畫面上的東西都是地理底圖�
 
 ## 專案結構
 
-三個領域分開，依賴方向只有一個：`ui → scene → core`，`data` 只依賴 `core`。
+分成四層，依賴只能往下：`ui` 可以用 `scene`、`data`、`core`；`scene` 與 `data` 只能用 `core`；`core` 不依賴其他層。
 
 ```
 src/app/
@@ -81,11 +81,13 @@ docs/       決策紀錄
 - 河流線與低解析度地形不完全貼合，因此河流不做深度遮蔽，一律畫在地形之上。
 - 尚未畫出 1941 年的國界與分界線（屬於歷史資料，留待 Milestone 3）。
 
-## 後續 Milestone
+## 文件
 
-2. 時間軸：播放、暫停、拖曳日期；世界狀態是日期的純函式。
-3. 部隊與事件資料：依參考影片的關鍵日期整理，逐筆查證並標示可信度。
-4. 動畫與敘事：部隊移動、控制區色塊、事件聚焦、Story／Explore 模式。
-5. 品質驗證：時間軸一致性、效能、不同螢幕尺寸。
+| 想知道 | 看這份 |
+| --- | --- |
+| 專案要做什麼、不做什麼 | [docs/project-brief.md](docs/project-brief.md) |
+| 做到哪裡、下一步是什麼 | [docs/roadmap.md](docs/roadmap.md) |
+| 為什麼這樣選（技術與設計決策） | [docs/decisions.md](docs/decisions.md) |
+| 每次做了什麼、留下什麼沒做完 | [docs/devlog.md](docs/devlog.md) |
 
-決策過程見 [docs/decisions.md](docs/decisions.md)。
+`CLAUDE.md` 是給 AI 協作工具看的專案規則，內容包含「每次工作結束前要更新上面哪些文件」。
