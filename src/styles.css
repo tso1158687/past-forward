@@ -1,0 +1,22 @@
+:root {
+  --font-ui:
+    system-ui, -apple-system, 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  --font-map: var(--font-ui);
+  --background: #0e1318;
+  --text: #f1efe6;
+  --text-muted: #b9b6a8;
+  --accent: #ffd35c;
+  --panel-background: rgb(18 24 30 / 82%);
+  --panel-border: rgb(255 255 255 / 14%);
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-ui);
+}

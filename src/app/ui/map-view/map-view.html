@@ -1,0 +1,6 @@
+<div #host class="map-host"></div>
+@if (status() === 'loading') {
+  <p class="map-status" role="status">{{ i18n.messages().mapLoading }}</p>
+} @else if (status() === 'failed') {
+  <p class="map-status" role="alert">{{ i18n.messages().mapLoadFailed }}</p>
+}
