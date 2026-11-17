@@ -1,5 +1,5 @@
 import { MilitaryUnit, UnitPosition } from '../../../core/history/scenario';
-import { july, june, leading, on, RELAYED, SEEN, through } from './unit-positions';
+import { july, june, leading, on, RELAYED, replacing, SEEN, through } from './unit-positions';
 
 /**
  * The five motorized corps of Panzer Groups 2 and 3, one position per evening, read from the
@@ -14,6 +14,7 @@ const PLACEMENT = {
 
 function motorizedCorps(
   id: string,
+  ordinal: number,
   name: string,
   englishName: string,
   positions: readonly UnitPosition[][],
@@ -22,6 +23,8 @@ function motorizedCorps(
     id,
     name: { 'zh-TW': name, en: englishName },
     faction: 'german',
+    type: 'motorized-corps',
+    ordinal,
     placement: PLACEMENT,
     interpolatesGaps: false,
     positions: positions.flat(),
@@ -29,7 +32,7 @@ function motorizedCorps(
 }
 
 export const GERMAN_MOTORIZED_CORPS: readonly MilitaryUnit[] = [
-  motorizedCorps('xxiv-motorized-corps', '第 24 摩托化軍', 'XXIV Motorized Corps', [
+  motorizedCorps('xxiv-motorized-corps', 24, '第 24 摩托化軍', 'XXIV Motorized Corps', [
     leading(
       on(june(22)),
       24.0,
@@ -106,7 +109,7 @@ export const GERMAN_MOTORIZED_CORPS: readonly MilitaryUnit[] = [
       SEEN,
     ),
   ]),
-  motorizedCorps('xxxxvi-motorized-corps', '第 46 摩托化軍', 'XXXXVI Motorized Corps', [
+  motorizedCorps('xxxxvi-motorized-corps', 46, '第 46 摩托化軍', 'XXXXVI Motorized Corps', [
     leading(
       on(june(25)),
       23.24,
@@ -203,7 +206,7 @@ export const GERMAN_MOTORIZED_CORPS: readonly MilitaryUnit[] = [
     ),
     leading(on(july(9)), 30.27, 54.17, '第 10 裝甲師', 'Schklow，緊貼南側', '什克洛夫', SEEN),
   ]),
-  motorizedCorps('xxxxvii-motorized-corps', '第 47 摩托化軍', 'XXXXVII Motorized Corps', [
+  motorizedCorps('xxxxvii-motorized-corps', 47, '第 47 摩托化軍', 'XXXXVII Motorized Corps', [
     leading(
       on(june(22)),
       24.3,
@@ -317,7 +320,7 @@ export const GERMAN_MOTORIZED_CORPS: readonly MilitaryUnit[] = [
     ),
     leading(on(july(9)), 29.75, 54.42, '第 18 裝甲師', 'Tolotschin，緊貼東側', '托洛欽', SEEN),
   ]),
-  motorizedCorps('xxxix-motorized-corps', '第 39 摩托化軍', 'XXXIX Motorized Corps', [
+  motorizedCorps('xxxix-motorized-corps', 39, '第 39 摩托化軍', 'XXXIX Motorized Corps', [
     leading(
       on(june(22)),
       24.046,
@@ -445,7 +448,7 @@ export const GERMAN_MOTORIZED_CORPS: readonly MilitaryUnit[] = [
       SEEN,
     ),
   ]),
-  motorizedCorps('lvii-motorized-corps', '第 57 摩托化軍', 'LVII Motorized Corps', [
+  motorizedCorps('lvii-motorized-corps', 57, '第 57 摩托化軍', 'LVII Motorized Corps', [
     leading(
       on(june(22)),
       24.19,
@@ -500,14 +503,17 @@ export const GERMAN_MOTORIZED_CORPS: readonly MilitaryUnit[] = [
       '明斯克以西',
       SEEN,
     ),
-    leading(
-      through(june(28), june(29)),
-      26.0,
-      54.14,
-      '第 19 裝甲師',
-      'Wiszniew 以西',
-      '維什涅夫以西',
-      RELAYED,
+    // The 12th Panzer Division, which led until now, is drawn with XXXIX Corps from this evening.
+    replacing(
+      leading(
+        through(june(28), june(29)),
+        26.0,
+        54.14,
+        '第 19 裝甲師',
+        'Wiszniew 以西',
+        '維什涅夫以西',
+        RELAYED,
+      ),
     ),
     leading(
       on(june(30)),

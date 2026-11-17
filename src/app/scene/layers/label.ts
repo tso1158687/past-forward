@@ -24,7 +24,10 @@ const CLICK_TOLERANCE_PIXELS = 5;
  * Panning keeps the label under the pointer, so a plain `click` listener would also fire at the
  * end of a drag that started on a label.
  */
-export function onClickWithoutDrag(element: HTMLElement, handler: () => void): void {
+export function onClickWithoutDrag(
+  element: HTMLElement,
+  handler: (event: MouseEvent) => void,
+): void {
   let pressX = 0;
   let pressY = 0;
   element.addEventListener('pointerdown', (event) => {
@@ -33,7 +36,7 @@ export function onClickWithoutDrag(element: HTMLElement, handler: () => void): v
   });
   element.addEventListener('click', (event) => {
     const moved = Math.hypot(event.clientX - pressX, event.clientY - pressY);
-    if (moved <= CLICK_TOLERANCE_PIXELS) handler();
+    if (moved <= CLICK_TOLERANCE_PIXELS) handler(event);
   });
 }
 

@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { App } from './app';
 import { City } from './data/map/cities';
 import type { PlaceMarker } from './scene/layers/place-layer';
-import type { UnitMarker } from './scene/layers/unit-layer';
+import type { UnitMarker, UnitTrail, UnitTransition } from './scene/layers/unit-layer';
 import { MapView } from './ui/map-view/map-view';
 import { TimelineStore } from './ui/timeline/timeline-store';
 
@@ -20,6 +20,8 @@ import { TimelineStore } from './ui/timeline/timeline-store';
 class MapViewStub {
   readonly cities = input.required<readonly City[]>();
   readonly units = input<readonly UnitMarker[]>([]);
+  readonly unitTrails = input<readonly UnitTrail[]>([]);
+  readonly unitTransition = input<UnitTransition>({ seconds: 0, easing: 'eased' });
   readonly places = input<readonly PlaceMarker[]>([]);
   readonly citySelected = output<string>();
   readonly unitSelected = output<string>();
@@ -88,6 +90,32 @@ describe('App', () => {
     expect(corpsAt()).toEqual({ lon: 29.193, lat: 53.127 });
     expect(unitIds(map)).toContain('soviet-13th-army');
     expect(unitIds(map)).not.toContain('soviet-3rd-army');
+  });
+
+  it('draws a trail behind each unit and breaks it where the marker was re-placed', async () => {
+    const { fixture, map, store } = await render();
+    const linesOf = (unitId: string) =>
+      map.unitTrails().find((trail) => trail.unitId === unitId)?.lines ?? [];
+    expect(linesOf('xxiv-motorized-corps').map((line) => line.length)).toEqual([1]);
+    expect(linesOf('xxxxvi-motorized-corps')).toEqual([]);
+
+    store.seek(6.5);
+    await fixture.whenStable();
+
+    expect(linesOf('xxiv-motorized-corps').map((line) => line.length)).toEqual([7]);
+    // The 12th Panzer Division led LVII Corps until 27 June; on the 28th the marker is re-placed.
+    expect(linesOf('lvii-motorized-corps').map((line) => line.length)).toEqual([6, 1]);
+    // The 3rd Army was last placed on 27 June; its trail stays although it is off the map today.
+    expect(linesOf('soviet-3rd-army').map((line) => line.length)).toEqual([1, 1]);
+  });
+
+  it('slides the pieces at the pace of the playback', async () => {
+    const { fixture, map, store } = await render();
+    expect(map.unitTransition()).toEqual({ seconds: 0.6, easing: 'eased' });
+    store.play();
+    await fixture.whenStable();
+    expect(map.unitTransition()).toEqual({ seconds: 1, easing: 'linear' });
+    store.pause();
   });
 
   it('shows the selected unit with its sources, and keeps it selected when it leaves the map', async () => {

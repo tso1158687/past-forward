@@ -1,5 +1,15 @@
 import type CameraControls from 'camera-controls';
-import { Color, Material, Object3D, PerspectiveCamera, Scene, Texture, WebGLRenderer } from 'three';
+import {
+  Color,
+  Material,
+  Object3D,
+  PerspectiveCamera,
+  Raycaster,
+  Scene,
+  Texture,
+  Vector2,
+  WebGLRenderer,
+} from 'three';
 import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import { ElevationGrid } from '../core/geo/elevation-grid';
 import { GeographicLocation } from '../core/geo/geo-types';
@@ -8,7 +18,8 @@ import { CityMarker, createCityLayer } from './layers/city-layer';
 import { createRiverLayer, SceneRiver } from './layers/river-layer';
 import { KeyedLabelLayer } from './layers/keyed-label-layer';
 import { createPlaceLayer, placeLabels, PlaceMarker } from './layers/place-layer';
-import { createUnitLayer, unitLabels, UnitMarker } from './layers/unit-layer';
+import { onClickWithoutDrag } from './layers/label';
+import { UnitLayer, UnitMarker, UnitTrail, UnitTransition } from './layers/unit-layer';
 import { SCENE_CONFIG } from './scene-config';
 import { createTerrainMesh } from './terrain/terrain-mesh';
 import { createTerrainSurface, TerrainSurface } from './terrain/terrain-surface';
@@ -39,7 +50,8 @@ export class MapScene {
   private readonly camera: PerspectiveCamera;
   private readonly controls: CameraControls;
   private readonly surface: TerrainSurface;
-  private readonly unitLayer: KeyedLabelLayer;
+  private readonly unitLayer: UnitLayer;
+  private readonly raycaster = new Raycaster();
   private readonly placeLayer: KeyedLabelLayer;
   private readonly resizeObserver: ResizeObserver;
 
@@ -58,7 +70,7 @@ export class MapScene {
 
     this.surface = createTerrainSurface(content.elevation, SCENE_CONFIG.verticalExaggeration);
     const mapSize = this.surface.projection.sizeKm;
-    this.unitLayer = createUnitLayer(this.surface, (id) => events.onUnitSelected(id));
+    this.unitLayer = new UnitLayer(this.surface);
     this.placeLayer = createPlaceLayer(this.surface);
     this.scene.add(
       this.createTerrain(),
@@ -73,6 +85,7 @@ export class MapScene {
     this.resize();
     // Controls listen on the host so that drags starting on a label still move the map.
     this.controls = createMapControls(this.camera, host, mapSize);
+    this.listenForUnits(events);
 
     this.resizeObserver = new ResizeObserver(() => this.resize());
     this.resizeObserver.observe(host);
@@ -92,9 +105,16 @@ export class MapScene {
     void this.controls.dollyTo(distanceKm, true);
   }
 
-  /** Shows exactly these units, replacing whatever was shown before. */
-  setUnits(markers: readonly UnitMarker[]): void {
-    this.unitLayer.update(unitLabels(markers));
+  /**
+   * Shows exactly these units and their trails, replacing whatever was shown before. Units that
+   * were already on the map slide to their new place as `transition` says.
+   */
+  setUnits(
+    markers: readonly UnitMarker[],
+    trails: readonly UnitTrail[],
+    transition: UnitTransition,
+  ): void {
+    this.unitLayer.update(markers, trails, transition);
     this.needsRender = true;
   }
 
@@ -112,6 +132,7 @@ export class MapScene {
     cancelAnimationFrame(this.animationFrame);
     this.resizeObserver.disconnect();
     this.controls.dispose();
+    this.unitLayer.dispose();
     this.scene.traverse(disposeObject);
     this.renderer.dispose();
     this.renderer.domElement.remove();
@@ -135,6 +156,32 @@ export class MapScene {
     });
   }
 
+  /** Pieces are meshes, not DOM labels, so hovering and clicking them needs a ray into the scene. */
+  private listenForUnits(events: MapSceneEvents): void {
+    this.host.addEventListener('pointermove', (event) => {
+      const unitId = this.unitUnderPointer(event);
+      this.host.style.cursor = unitId ? 'pointer' : '';
+      if (this.unitLayer.setHovered(unitId)) this.needsRender = true;
+    });
+    this.host.addEventListener('pointerleave', () => {
+      if (this.unitLayer.setHovered(undefined)) this.needsRender = true;
+    });
+    onClickWithoutDrag(this.host, (event) => {
+      const unitId = this.unitUnderPointer(event);
+      if (unitId) events.onUnitSelected(unitId);
+    });
+  }
+
+  private unitUnderPointer(event: MouseEvent): string | undefined {
+    const bounds = this.host.getBoundingClientRect();
+    const pointer = new Vector2(
+      ((event.clientX - bounds.left) / bounds.width) * 2 - 1,
+      1 - ((event.clientY - bounds.top) / bounds.height) * 2,
+    );
+    this.raycaster.setFromCamera(pointer, this.camera);
+    return this.unitLayer.unitAt(this.raycaster);
+  }
+
   private mountDomElements(): void {
     const labels = this.labelRenderer.domElement;
     labels.classList.add('map-labels');
@@ -151,15 +198,24 @@ export class MapScene {
     this.needsRender = true;
   }
 
-  /** Renders only when the camera moved or something was invalidated, to stay idle otherwise. */
+  /**
+   * Renders only when the camera moved, a piece is still sliding or fading, or something was
+   * invalidated, to stay idle otherwise.
+   */
   private readonly renderFrame = (time: number): void => {
     this.animationFrame = requestAnimationFrame(this.renderFrame);
     const deltaSeconds = (time - this.lastFrameTime) / 1000;
     this.lastFrameTime = time;
 
     const cameraMoved = this.controls.update(deltaSeconds);
-    if (!cameraMoved && !this.needsRender) return;
+    const unitsAnimating = this.unitLayer.animate(deltaSeconds);
+    if (!cameraMoved && !unitsAnimating && !this.needsRender) return;
     this.needsRender = false;
+
+    this.unitLayer.setView({
+      cameraDistance: this.controls.distance,
+      azimuthRadians: this.controls.azimuthAngle,
+    });
 
     this.host.dataset['zoom'] =
       this.controls.distance > SCENE_CONFIG.minorLabelMaxDistance ? 'far' : 'near';

@@ -9,6 +9,7 @@ import {
   input,
   output,
   signal,
+  untracked,
   viewChild,
 } from '@angular/core';
 import { GeographicLocation } from '../../core/geo/geo-types';
@@ -16,7 +17,7 @@ import { City } from '../../data/map/cities';
 import { loadMapAssets, MapAssets } from '../../data/map/map-assets';
 import { RIVER_NAMES } from '../../data/map/river-names';
 import type { PlaceMarker } from '../../scene/layers/place-layer';
-import type { UnitMarker } from '../../scene/layers/unit-layer';
+import type { UnitMarker, UnitTrail, UnitTransition } from '../../scene/layers/unit-layer';
 import type { MapScene, MapSceneContent } from '../../scene/map-scene';
 import { LocaleService } from '../i18n/locale-service';
 
@@ -34,8 +35,12 @@ type MapStatus = 'loading' | 'ready' | 'failed';
 })
 export class MapView {
   readonly cities = input.required<readonly City[]>();
-  /** Units to show right now; expected to change on every frame while the timeline plays. */
+  /** Units to show right now. */
   readonly units = input<readonly UnitMarker[]>([]);
+  /** Where the units have been so far. */
+  readonly unitTrails = input<readonly UnitTrail[]>([]);
+  /** How units get to a new location when `units` changes. */
+  readonly unitTransition = input<UnitTransition>({ seconds: 0, easing: 'eased' });
   /** Places to point out, such as where the selected event happened. */
   readonly places = input<readonly PlaceMarker[]>([]);
   readonly citySelected = output<string>();
@@ -54,7 +59,10 @@ export class MapView {
       // Read the input before the optional call: while the scene is still loading, `?.` would
       // skip the read and the effect would never learn that it depends on `units`.
       const units = this.units();
-      this.scene?.setUnits(units);
+      const trails = this.unitTrails();
+      // How to get there is read at the moment of the change; it must not cause one itself.
+      const transition = untracked(this.unitTransition);
+      this.scene?.setUnits(units, trails, transition);
     });
     effect(() => {
       const places = this.places();
@@ -87,7 +95,7 @@ export class MapView {
         onUnitSelected: (unitId) => this.unitSelected.emit(unitId),
       });
       // The effects above could not reach the scene while it was still loading.
-      this.scene.setUnits(this.units());
+      this.scene.setUnits(this.units(), this.unitTrails(), { seconds: 0, easing: 'eased' });
       this.scene.setPlaces(this.places());
       this.status.set('ready');
     } catch (error) {

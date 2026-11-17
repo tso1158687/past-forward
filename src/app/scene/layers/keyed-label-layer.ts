@@ -2,7 +2,7 @@ import { Group } from 'three';
 import { CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { GeographicLocation } from '../../core/geo/geo-types';
 import { TerrainSurface } from '../terrain/terrain-surface';
-import { createLabel, onClickWithoutDrag, setLabelText } from './label';
+import { createLabel, setLabelText } from './label';
 
 /** One label to show right now. */
 export interface KeyedLabel {
@@ -21,8 +21,6 @@ interface KeyedLabelLayerOptions {
    * Defaults to the centre.
    */
   readonly anchor?: readonly [x: number, y: number];
-  /** Called with a label's id when it is clicked; labels are not clickable without it. */
-  readonly onSelect?: (id: string) => void;
 }
 
 /**
@@ -60,8 +58,6 @@ export class KeyedLabelLayer {
   private addLabel(id: string): CSS2DObject {
     const label = createLabel(this.options.className, '');
     if (this.options.anchor) label.center.set(...this.options.anchor);
-    const { onSelect } = this.options;
-    if (onSelect) onClickWithoutDrag(label.element, () => onSelect(id));
     this.labels.set(id, label);
     this.object.add(label);
     return label;

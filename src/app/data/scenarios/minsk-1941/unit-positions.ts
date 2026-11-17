@@ -80,6 +80,16 @@ export function recorded(
   return positions(days, lon, lat, description, check, [sourceId], estimateNote);
 }
 
+/**
+ * Marks the first of `positions` as not reached by movement from the unit's previous position:
+ * the marker now stands for a different part of the unit, so nothing is drawn between the two.
+ */
+export function replacing(positions: readonly UnitPosition[]): UnitPosition[] {
+  return positions.map((position, index) =>
+    index === 0 ? { ...position, breaksMovement: true } : position,
+  );
+}
+
 function positions(
   days: Days,
   lon: number,
@@ -95,6 +105,7 @@ function positions(
     description: { 'zh-TW': description },
     certainty: check === SEEN ? 'confirmed' : 'reported',
     estimated: estimateNote !== undefined,
+    breaksMovement: false,
     ...(estimateNote === undefined ? {} : { note: { 'zh-TW': estimateNote } }),
     sourceIds,
   }));

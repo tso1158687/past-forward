@@ -17,6 +17,7 @@ const ZALCZIN_NOTE =
 
 function army(
   id: string,
+  ordinal: number,
   name: string,
   englishName: string,
   positions: readonly UnitPosition[][],
@@ -25,6 +26,8 @@ function army(
     id,
     name: { 'zh-TW': name, en: englishName },
     faction: 'german',
+    type: 'army',
+    ordinal,
     placement: PLACEMENT,
     interpolatesGaps: false,
     positions: positions.flat(),
@@ -32,7 +35,7 @@ function army(
 }
 
 export const GERMAN_ARMIES: readonly MilitaryUnit[] = [
-  army('german-4th-army', '第 4 集團軍', '4th Army', [
+  army('german-4th-army', 4, '第 4 集團軍', '4th Army', [
     headquarters(through(june(22), june(23)), 22.784, 51.985, 'Międzyrzec', '緬濟熱茨', RELAYED),
     headquarters(on(june(24)), 23.822, 52.402, 'Kam. Litewski', '卡緬涅茨', RELAYED),
     headquarters(
@@ -72,7 +75,7 @@ export const GERMAN_ARMIES: readonly MilitaryUnit[] = [
     ),
     headquarters(on(july(9)), 28.492, 54.226, 'Borissow', '鮑里索夫', RELAYED),
   ]),
-  army('german-9th-army', '第 9 集團軍', '9th Army', [
+  army('german-9th-army', 9, '第 9 集團軍', '9th Army', [
     headquarters(through(june(22), june(30)), 23.352, 54.041, 'Giby', '吉比', RELAYED),
     headquarters(through(july(1), july(5)), 25.0, 54.169, 'Ejszyszki', '埃伊希什凱斯', RELAYED),
     // 6 July: the flag has no legible place name, so the army is not shown that evening.

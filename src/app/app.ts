@@ -12,7 +12,7 @@ import { EventPanel } from './ui/events/event-panel';
 import { LocaleService } from './ui/i18n/locale-service';
 import { MapView } from './ui/map-view/map-view';
 import { toPlaceMarkers } from './ui/map-view/place-markers';
-import { toUnitMarkers } from './ui/map-view/unit-markers';
+import { toUnitMarkers, toUnitTrails, unitTransition } from './ui/map-view/unit-markers';
 import { TimelineBar } from './ui/timeline/timeline-bar';
 import { TimelineStore } from './ui/timeline/timeline-store';
 import { UnitPanel } from './ui/units/unit-panel';
@@ -41,9 +41,17 @@ export class App {
       this.timeline.worldState(),
       this.timeline.scenario.units,
       this.timeline.selectedUnit()?.unit.id,
-      (text) => this.i18n.text(text),
+      {
+        text: (text) => this.i18n.text(text),
+        typeCharacter: this.i18n.messages().units.typeCharacter,
+      },
     ),
   );
+  /** Where the units have been up to the current day; changes only when the date does. */
+  protected readonly unitTrails = computed(() =>
+    toUnitTrails(this.timeline.scenario.units, this.timeline.calendarDay()),
+  );
+  protected readonly unitTransition = computed(() => unitTransition(this.timeline.timeline()));
 
   /** The places of the selected event, pointed out on the map. */
   protected readonly placeMarkers = computed(() =>

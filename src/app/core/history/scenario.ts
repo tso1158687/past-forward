@@ -22,15 +22,27 @@ export interface UnitPosition {
   readonly estimated: boolean;
   /** What is uncertain or estimated about this position. */
   readonly note?: LocalizedText;
+  /**
+   * True when the unit did not move here from its previous position: the marker now stands for
+   * a different part of the unit (another division reassigned to the corps, the main body
+   * instead of the headquarters). No movement is drawn between the two.
+   */
+  readonly breaksMovement: boolean;
   readonly sourceIds: readonly string[];
 }
 
 export type Faction = 'german' | 'soviet';
 
+/** What kind of formation a unit is; decides the symbol on its piece. */
+export type UnitType = 'motorized-corps' | 'army';
+
 export interface MilitaryUnit {
   readonly id: string;
   readonly name: LocalizedText;
   readonly faction: Faction;
+  readonly type: UnitType;
+  /** The number in the unit's designation: 47 for XXXXVII Motorized Corps, 4 for 4th Army. */
+  readonly ordinal: number;
   /**
    * What the marker's location stands for. A corps or an army covers far more ground than one
    * point, so every unit has to say which point of it is being shown.

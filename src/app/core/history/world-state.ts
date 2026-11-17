@@ -2,6 +2,7 @@ import { GeographicLocation } from '../geo/geo-types';
 import { displayedDay } from '../timeline/timeline-state';
 import { eventsOnDay, HistoricalEvent } from './historical-event';
 import { MilitaryUnit, Scenario, UnitPosition } from './scenario';
+import { movementRunOn } from './unit-movement';
 
 /**
  * How a unit's location at a given time was obtained:
@@ -17,6 +18,11 @@ export interface UnitState {
   readonly basis: PositionBasis;
   /** The stated position being shown; absent while the location is interpolated. */
   readonly stated?: UnitPosition;
+  /**
+   * Which run of continuous movement the unit is in (see `movementRuns`). When this changes from
+   * one moment to the next, the unit was re-placed rather than moved.
+   */
+  readonly run: number;
 }
 
 /** The situation on the map at one moment. Derived from a scenario; never stored or mutated. */
@@ -47,13 +53,16 @@ export function deriveWorldState(scenario: Scenario, day: number): WorldState {
  */
 function statedStateOn(unit: MilitaryUnit, calendarDay: number): UnitState | undefined {
   const stated = unit.positions.find((position) => position.day === calendarDay);
-  return stated && { unitId: unit.id, location: stated.location, basis: 'anchor', stated };
+  if (!stated) return undefined;
+  const run = movementRunOn(unit, calendarDay) ?? 0;
+  return { unitId: unit.id, location: stated.location, basis: 'anchor', stated, run };
 }
 
 /**
  * For a unit that interpolates gaps: a stated position holds for its whole day, and between the
  * end of one stated day and the start of the next the unit moves in a straight line. Outside its
- * first and last stated days its whereabouts are unknown, so it is not in the world state.
+ * first and last stated days its whereabouts are unknown, so it is not in the world state. Such
+ * a unit is always on the move, so all of it counts as one run.
  */
 function movingStateAt(unit: MilitaryUnit, day: number): UnitState | undefined {
   const { positions } = unit;
@@ -66,7 +75,13 @@ function movingStateAt(unit: MilitaryUnit, day: number): UnitState | undefined {
   const departure = previous.day + DAY_LENGTH;
   const next = positions[positions.indexOf(previous) + 1];
   if (day <= departure || !next) {
-    return { unitId: unit.id, location: previous.location, basis: 'anchor', stated: previous };
+    return {
+      unitId: unit.id,
+      location: previous.location,
+      basis: 'anchor',
+      stated: previous,
+      run: 0,
+    };
   }
 
   const progress = (day - departure) / (next.day - departure);
@@ -74,6 +89,7 @@ function movingStateAt(unit: MilitaryUnit, day: number): UnitState | undefined {
     unitId: unit.id,
     location: interpolateLocation(previous.location, next.location, progress),
     basis: 'interpolated',
+    run: 0,
   };
 }
 

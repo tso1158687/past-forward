@@ -3,6 +3,8 @@
 <app-map-view
   [cities]="cities"
   [units]="unitMarkers()"
+  [unitTrails]="unitTrails()"
+  [unitTransition]="unitTransition()"
   [places]="placeMarkers()"
   (citySelected)="selectCity($event)"
   (unitSelected)="timeline.selectUnit($event)"

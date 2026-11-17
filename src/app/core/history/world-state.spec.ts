@@ -12,6 +12,7 @@ const stated = (day: number, location: { lon: number; lat: number }): UnitPositi
   description: { 'zh-TW': '測試位置' },
   certainty: 'confirmed',
   estimated: false,
+  breaksMovement: false,
   sourceIds: ['source'],
 });
 
@@ -24,6 +25,8 @@ const MOVER: MilitaryUnit = {
   id: 'mover',
   name: { 'zh-TW': '移動單位' },
   faction: 'german',
+  type: 'motorized-corps',
+  ordinal: 1,
   placement: { 'zh-TW': '測試' },
   interpolatesGaps: true,
   positions: [AT_WEST, AT_EAST, AT_FAR_EAST],
@@ -36,6 +39,8 @@ const STATIONARY: MilitaryUnit = {
   id: 'stationary',
   name: { 'zh-TW': '固定單位' },
   faction: 'soviet',
+  type: 'army',
+  ordinal: 2,
   placement: { 'zh-TW': '測試' },
   interpolatesGaps: true,
   positions: [stated(0, EAST)],
@@ -70,6 +75,7 @@ const anchoredAt = (position: UnitPosition) => ({
   location: position.location,
   basis: 'anchor',
   stated: position,
+  run: 0,
 });
 
 describe('deriveWorldState', () => {
@@ -105,6 +111,12 @@ describe('deriveWorldState', () => {
     expect(unitAt('sighted', 6)?.stated).toBe(AT_EAST);
     expect(unitAt('sighted', 7)?.stated).toBe(AT_FAR_EAST);
     expect(unitAt('sighted', 8)).toBeUndefined();
+  });
+
+  it('tells which run of continuous movement a unit that does not interpolate is in', () => {
+    expect(unitAt('sighted', 2)?.run).toBe(0);
+    expect(unitAt('sighted', 6)?.run).toBe(1);
+    expect(unitAt('sighted', 7)?.run).toBe(1);
   });
 
   it('still shows a position stated for the last day at the very end of the time range', () => {

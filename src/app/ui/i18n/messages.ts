@@ -1,5 +1,5 @@
 import { Certainty, SourceKind } from '../../core/history/historical-event';
-import { Faction } from '../../core/history/scenario';
+import { Faction, UnitType } from '../../core/history/scenario';
 import { PerLocale } from '../../core/i18n/localized-text';
 import { MESSAGES_ZH_TW } from './messages.zh-TW';
 
@@ -42,6 +42,8 @@ export interface Messages {
   };
   readonly units: {
     readonly faction: Readonly<Record<Faction, string>>;
+    /** The single character drawn on the map piece of a unit of each type. */
+    readonly typeCharacter: Readonly<Record<UnitType, string>>;
     /** How the location on screen was obtained. */
     readonly basis: Readonly<Record<'stated' | 'estimated' | 'interpolated', string>>;
     /** How well the reading of the source has been checked. */

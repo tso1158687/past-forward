@@ -79,10 +79,9 @@
 }
 
 /*
- * Unit markers: an emblem for the side (iron cross or red star) and the unit's designation, in a
- * frame of the side's colour. The frame also tells how the location was obtained: solid for a
- * position stated by a source, dashed for an estimate from a source that gives only a rough
- * area, dotted and translucent for a position interpolated between two stated ones.
+ * The name tag of a unit, shown above its piece while the piece is hovered or selected: an
+ * emblem for the side (iron cross or red star) and the unit's designation, in a frame of the
+ * side's colour. The piece itself is a 3D object drawn by the scene, not a label.
  */
 .unit-marker {
   display: flex;
@@ -98,8 +97,8 @@
   line-height: 1.3;
   white-space: nowrap;
   box-shadow: 0 1px 4px rgb(0 0 0 / 50%);
-  cursor: pointer;
-  pointer-events: auto;
+  /* Always above city and river labels, whatever its distance from the camera. */
+  z-index: 100000 !important;
 }
 
 .unit-marker::before {
@@ -128,22 +127,7 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolygon points='12.0%2C1.5 14.5%2C8.5 22.0%2C8.8 16.1%2C13.3 18.2%2C20.5 12.0%2C16.3 5.8%2C20.5 7.9%2C13.3 2.0%2C8.8 9.5%2C8.5' fill='%23d8261c' stroke='%23ffd95a' stroke-width='1.2' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
-.unit-marker[data-basis='estimated'] {
-  border-style: dashed;
-}
-
-.unit-marker[data-basis='interpolated'] {
-  border-style: dotted;
-  opacity: 0.75;
-}
-
-/*
- * Units crowd together at the border on the first days. The renderer stacks labels by distance
- * from the camera, so the one under the pointer and the selected one are lifted above the rest.
- */
-.unit-marker:hover,
 .unit-marker[data-selected='true'] {
-  z-index: 100000 !important;
   outline: 2px solid #ffd95a;
   outline-offset: 1px;
 }

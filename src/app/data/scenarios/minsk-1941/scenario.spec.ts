@@ -157,6 +157,34 @@ describe('Minsk 1941 scenario', () => {
       }
     });
 
+    it('gives every unit a type and the number of its designation', () => {
+      const symbols = units.map((u) => `${u.faction} ${u.type} ${u.ordinal}`);
+      expect(symbols).toEqual([
+        'german motorized-corps 24',
+        'german motorized-corps 46',
+        'german motorized-corps 47',
+        'german motorized-corps 39',
+        'german motorized-corps 57',
+        'german army 4',
+        'german army 9',
+        'soviet army 3',
+        'soviet army 10',
+        'soviet army 4',
+        'soviet army 13',
+      ]);
+    });
+
+    it('breaks the movement only where the marker starts to stand for another part of the unit', () => {
+      const breaks = units.flatMap((u) =>
+        u.positions.filter((p) => p.breaksMovement).map((p) => `${u.id} day ${p.day}`),
+      );
+      expect(breaks).toEqual([
+        'lvii-motorized-corps day 6',
+        'soviet-4th-army day 3',
+        'soviet-4th-army day 4',
+      ]);
+    });
+
     it('moves the LVII Motorized Corps marker back west on 28 June, as the atlas attribution implies', () => {
       const [before, after] = [5, 6].map((day) =>
         unit('lvii-motorized-corps').positions.find((position) => position.day === day)!,

@@ -1,5 +1,5 @@
 import { MilitaryUnit, UnitPosition } from '../../../core/history/scenario';
-import { july, june, on, recorded, RELAYED, SEEN, through } from './unit-positions';
+import { july, june, on, recorded, RELAYED, replacing, SEEN, through } from './unit-positions';
 
 /**
  * The four armies of the Soviet Western Front, shown only on days for which a Soviet-side source
@@ -14,6 +14,7 @@ const PLACEMENT = {
 
 function army(
   id: string,
+  ordinal: number,
   name: string,
   englishName: string,
   positions: readonly UnitPosition[][],
@@ -22,6 +23,8 @@ function army(
     id,
     name: { 'zh-TW': name, en: englishName },
     faction: 'soviet',
+    type: 'army',
+    ordinal,
     placement: PLACEMENT,
     interpolatesGaps: false,
     positions: positions.flat(),
@@ -29,7 +32,7 @@ function army(
 }
 
 export const SOVIET_ARMIES: readonly MilitaryUnit[] = [
-  army('soviet-3rd-army', '第 3 集團軍', '3rd Army', [
+  army('soviet-3rd-army', 3, '第 3 集團軍', '3rd Army', [
     recorded(
       on(june(22)),
       23.834,
@@ -50,7 +53,7 @@ export const SOVIET_ARMIES: readonly MilitaryUnit[] = [
       '來源只說部隊在倫納一帶，標記放在倫納。',
     ),
   ]),
-  army('soviet-10th-army', '第 10 集團軍', '10th Army', [
+  army('soviet-10th-army', 10, '第 10 集團軍', '10th Army', [
     recorded(
       on(june(22)),
       23.02,
@@ -82,7 +85,7 @@ export const SOVIET_ARMIES: readonly MilitaryUnit[] = [
       '來源的主詞是「我軍」，依上下文是第 10 集團軍的部隊，也可能包含第 3 集團軍；標記放在新格魯多克。',
     ),
   ]),
-  army('soviet-4th-army', '第 4 集團軍', '4th Army', [
+  army('soviet-4th-army', 4, '第 4 集團軍', '4th Army', [
     recorded(
       on(june(22)),
       24.573,
@@ -102,25 +105,31 @@ export const SOVIET_ARMIES: readonly MilitaryUnit[] = [
       SEEN,
       'sandalov',
     ),
-    recorded(
-      on(june(25)),
-      27.552,
-      53.028,
-      'main-body',
-      '斯盧茨克。第 28 步兵軍司令部與兩個師的殘部日終時在這裡',
-      SEEN,
-      'sandalov',
-      '這天沒有集團軍司令部的記載，用的是它轄下一個軍的位置。',
+    // The marker switches from the headquarters to the main body: not a movement.
+    replacing(
+      recorded(
+        on(june(25)),
+        27.552,
+        53.028,
+        'main-body',
+        '斯盧茨克。第 28 步兵軍司令部與兩個師的殘部日終時在這裡',
+        SEEN,
+        'sandalov',
+        '這天沒有集團軍司令部的記載，用的是它轄下一個軍的位置。',
+      ),
     ),
-    recorded(
-      on(june(26)),
-      27.076,
-      52.976,
-      'headquarters',
-      '古列維奇，凌晨 2 時展開',
-      SEEN,
-      'sandalov',
-      '同名的村落不只一個，座標取的是斯盧茨克以西的那一個，沒有把握。',
+    // The marker switches back from the main body to the headquarters: not a movement.
+    replacing(
+      recorded(
+        on(june(26)),
+        27.076,
+        52.976,
+        'headquarters',
+        '古列維奇，凌晨 2 時展開',
+        SEEN,
+        'sandalov',
+        '同名的村落不只一個，座標取的是斯盧茨克以西的那一個，沒有把握。',
+      ),
     ),
     recorded(
       on(june(27)),
@@ -142,7 +151,7 @@ export const SOVIET_ARMIES: readonly MilitaryUnit[] = [
       '來源給的是一段河岸線，不是一個地點；座標取這一段的中點。',
     ),
   ]),
-  army('soviet-13th-army', '第 13 集團軍', '13th Army', [
+  army('soviet-13th-army', 13, '第 13 集團軍', '13th Army', [
     recorded(
       on(june(28)),
       27.87,
