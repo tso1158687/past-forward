@@ -17,6 +17,26 @@ export function createLabel(className: string, text: string): CSS2DObject {
   return new CSS2DObject(element);
 }
 
+/** A press that moves further than this is a map drag, not a click on the label. */
+const CLICK_TOLERANCE_PIXELS = 5;
+
+/**
+ * Panning keeps the label under the pointer, so a plain `click` listener would also fire at the
+ * end of a drag that started on a label.
+ */
+export function onClickWithoutDrag(element: HTMLElement, handler: () => void): void {
+  let pressX = 0;
+  let pressY = 0;
+  element.addEventListener('pointerdown', (event) => {
+    pressX = event.clientX;
+    pressY = event.clientY;
+  });
+  element.addEventListener('click', (event) => {
+    const moved = Math.hypot(event.clientX - pressX, event.clientY - pressY);
+    if (moved <= CLICK_TOLERANCE_PIXELS) handler();
+  });
+}
+
 export function setLabelText(label: CSS2DObject, text: string): void {
   const textElement = label.element.querySelector(`.${TEXT_CLASS}`);
   if (textElement && textElement.textContent !== text) textElement.textContent = text;

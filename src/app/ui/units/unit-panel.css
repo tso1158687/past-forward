@@ -1,0 +1,154 @@
+:host {
+  position: relative;
+  display: block;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.close:hover {
+  background: rgb(255 255 255 / 10%);
+  color: var(--text);
+}
+
+.faction {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.faction[data-faction='german'] {
+  color: #8fb4dc;
+}
+
+.faction[data-faction='soviet'] {
+  color: #ef8a7e;
+}
+
+h2 {
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.english-name {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.position {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--panel-border);
+}
+
+.date {
+  font-size: 12.5px;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.description {
+  margin-top: 2px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.badge {
+  padding: 1px 8px;
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  font-size: 11.5px;
+}
+
+.badge[data-basis='estimated'],
+.badge[data-basis='interpolated'] {
+  border-style: dashed;
+  border-color: #e0a84a;
+  color: #f0c477;
+}
+
+.badge[data-certainty='confirmed'] {
+  border-color: #6fbf73;
+  color: #9ad79d;
+}
+
+.badge[data-certainty='reported'] {
+  border-color: #d9b84a;
+  color: #ecd27c;
+}
+
+.badge[data-certainty='disputed'] {
+  border-color: #e08a4a;
+  color: #f0ad7c;
+}
+
+.note,
+.absent {
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+details {
+  margin-top: 8px;
+  font-size: 12.5px;
+}
+
+summary {
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+details p,
+details ul {
+  margin-top: 4px;
+  color: var(--text-muted);
+}
+
+.sources li + li {
+  margin-top: 4px;
+}
+
+.source-kind {
+  margin-right: 6px;
+  padding: 0 6px;
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+a {
+  color: inherit;
+}

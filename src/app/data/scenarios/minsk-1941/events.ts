@@ -103,11 +103,11 @@ export const MINSK_EVENTS: readonly HistoricalEvent[] = [
     certainty: 'confirmed',
     certaintyNote: {
       'zh-TW':
-        '另有資料說 26 日就已進入明斯克；先進城的是哪個師，各種說法不一。這裡採用哈爾德當天的日記。',
+        '另有資料說 26 日就已進入明斯克；先進城的是哪個師，各種說法不一。這裡採用哈爾德當天的日記。德軍 1942 年的態勢圖集在 26 日晚就把第 12 裝甲師畫在明斯克西北，所以 26 日比較可能是先頭到達城邊，28 日是回報佔領。',
     },
     places: [{ name: { 'zh-TW': '明斯克', en: 'Minsk' }, location: { lon: 27.565, lat: 53.902 } }],
     camera: { target: { lon: 27.565, lat: 53.902 }, distanceKm: 260 },
-    sourceIds: ['halder', 'guderian-fms'],
+    sourceIds: ['halder', 'guderian-fms', 'okh-atlas'],
   },
   {
     id: 'inner-ring',
@@ -144,7 +144,7 @@ export const MINSK_EVENTS: readonly HistoricalEvent[] = [
     certainty: 'disputed',
     certaintyNote: {
       'zh-TW':
-        '另一說是 6 月 27 日，兩個裝甲集群在明斯克以南會合（Stolfi）。美國陸軍的官方戰史只說兩者照計畫在明斯克附近會合，沒有給日期。這裡採用當時逐日寫下的哈爾德日記。',
+        '另一說是 6 月 27 日，兩個裝甲集群在明斯克以南會合（Stolfi）。美國陸軍的官方戰史只說兩者照計畫在明斯克附近會合，沒有給日期。這裡採用當時逐日寫下的哈爾德日記；德軍 1942 年的態勢圖集也把從南邊來的第 17 裝甲師在 27 日晚畫在斯托爾布齊，還沒到明斯克。',
     },
     places: [
       { name: { 'zh-TW': '明斯克', en: 'Minsk' }, location: { lon: 27.565, lat: 53.902 } },
@@ -154,7 +154,7 @@ export const MINSK_EVENTS: readonly HistoricalEvent[] = [
       },
     ],
     camera: { target: { lon: 26.8, lat: 53.5 }, distanceKm: 480 },
-    sourceIds: ['halder', 'stolfi', 'dapam'],
+    sourceIds: ['halder', 'stolfi', 'dapam', 'okh-atlas'],
   },
   {
     id: 'berezina-crossings',
@@ -168,14 +168,14 @@ export const MINSK_EVENTS: readonly HistoricalEvent[] = [
     certainty: 'reported',
     certaintyNote: {
       'zh-TW':
-        '各渡口的日期與部隊出自 Glantz 的著作，尚未親自核對原書；同一本書另一處把鮑里索夫寫成 7 月 2 日。哈爾德的日記只記下 7 月 2 日第 2 裝甲集群擊破了別列津納河上的頑強抵抗。',
+        '各渡口的日期與部隊出自 Glantz 的著作，尚未親自核對原書；同一本書另一處把鮑里索夫寫成 7 月 2 日。哈爾德的日記只記下 7 月 2 日第 2 裝甲集群擊破了別列津納河上的頑強抵抗。古德里安戰後的研究則寫第 18 裝甲師在 6 月 30 日就經完好的公路橋過了河，比這裡早一天；德軍 1942 年的態勢圖集支持 7 月 1 日：6 月 30 日晚這個師還畫在明斯克以東，7 月 1 日晚才有一部畫在鮑里索夫。',
     },
     places: [
       { name: { 'zh-TW': '博布魯伊斯克', en: 'Bobruisk' }, location: { lon: 29.193, lat: 53.127 } },
       { name: { 'zh-TW': '鮑里索夫', en: 'Borisov' }, location: { lon: 28.492, lat: 54.226 } },
     ],
     camera: { target: { lon: 28.8, lat: 53.7 }, distanceKm: 480 },
-    sourceIds: ['glantz', 'halder'],
+    sourceIds: ['glantz', 'halder', 'guderian-fms', 'okh-atlas'],
   },
   {
     id: 'advance-resumes',

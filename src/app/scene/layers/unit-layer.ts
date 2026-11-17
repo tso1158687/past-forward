@@ -1,4 +1,5 @@
 import { GeographicLocation } from '../../core/geo/geo-types';
+import { Faction } from '../../core/history/scenario';
 import { TerrainSurface } from '../terrain/terrain-surface';
 import { KeyedLabel, KeyedLabelLayer } from './keyed-label-layer';
 
@@ -7,12 +8,21 @@ export interface UnitMarker {
   readonly id: string;
   readonly label: string;
   readonly location: GeographicLocation;
-  /** True when the location is an in-between estimate rather than a stated position. */
-  readonly interpolated: boolean;
+  /** Decides the emblem and colour of the marker. */
+  readonly faction: Faction;
+  /**
+   * How the location was obtained: `stated` by a source, `estimated` from a source that gives
+   * only a rough area, or `interpolated` between two stated positions.
+   */
+  readonly basis: 'stated' | 'estimated' | 'interpolated';
+  readonly selected: boolean;
 }
 
-export function createUnitLayer(surface: TerrainSurface): KeyedLabelLayer {
-  return new KeyedLabelLayer(surface, { className: 'unit-marker' });
+export function createUnitLayer(
+  surface: TerrainSurface,
+  onSelect: (unitId: string) => void,
+): KeyedLabelLayer {
+  return new KeyedLabelLayer(surface, { className: 'unit-marker', onSelect });
 }
 
 export function unitLabels(markers: readonly UnitMarker[]): KeyedLabel[] {
@@ -20,6 +30,6 @@ export function unitLabels(markers: readonly UnitMarker[]): KeyedLabel[] {
     id: marker.id,
     text: marker.label,
     location: marker.location,
-    data: { basis: marker.interpolated ? 'interpolated' : 'anchor' },
+    data: { faction: marker.faction, basis: marker.basis, selected: String(marker.selected) },
   }));
 }

@@ -1,0 +1,71 @@
+@let messages = i18n.messages();
+
+@if (store.selectedUnit(); as selected) {
+  <button
+    type="button"
+    class="close"
+    [attr.aria-label]="messages.units.close"
+    (click)="store.clearUnitSelection()"
+  >
+    ×
+  </button>
+
+  <p class="faction" [attr.data-faction]="selected.unit.faction">
+    {{ messages.units.faction[selected.unit.faction] }}
+  </p>
+  <h2>{{ i18n.text(selected.unit.name) }}</h2>
+  @if (selected.unit.name.en; as englishName) {
+    <p class="english-name">{{ englishName }}</p>
+  }
+
+  <section class="position" aria-live="polite">
+    <p class="date">{{ dateLabel() }}</p>
+    @if (selected.state; as state) {
+      @if (state.stated; as stated) {
+        <p class="description">{{ i18n.text(stated.description) }}</p>
+        <p class="badges">
+          <span class="badge" [attr.data-basis]="basis()">{{
+            messages.units.basis[basis()!]
+          }}</span>
+          <span class="badge" [attr.data-certainty]="stated.certainty">
+            {{ messages.units.certainty[stated.certainty] }}
+          </span>
+        </p>
+        @if (stated.note; as note) {
+          <p class="note">{{ i18n.text(note) }}</p>
+        }
+        <details class="sources">
+          <summary>{{ messages.events.sources(sources().length) }}</summary>
+          <ul>
+            @for (source of sources(); track source.id) {
+              <li>
+                <span class="source-kind">{{ messages.events.sourceKind[source.kind] }}</span>
+                @if (source.url; as url) {
+                  <a [href]="url" target="_blank" rel="noopener noreferrer">{{
+                    source.citation
+                  }}</a>
+                } @else {
+                  <span>{{ source.citation }}</span>
+                }
+              </li>
+            }
+          </ul>
+        </details>
+      } @else {
+        <p class="badges">
+          <span class="badge" data-basis="interpolated">{{
+            messages.units.basis.interpolated
+          }}</span>
+        </p>
+        <p class="note">{{ messages.units.interpolatedNote }}</p>
+      }
+    } @else {
+      <p class="absent">{{ messages.units.notPlacedToday }}</p>
+    }
+  </section>
+
+  <details class="placement">
+    <summary>{{ messages.units.placement }}</summary>
+    <p>{{ i18n.text(selected.unit.placement) }}</p>
+  </details>
+}

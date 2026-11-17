@@ -23,6 +23,7 @@ export interface MapSceneContent {
 
 export interface MapSceneEvents {
   onCitySelected(cityId: string): void;
+  onUnitSelected(unitId: string): void;
 }
 
 const MAX_PIXEL_RATIO = 2;
@@ -57,7 +58,7 @@ export class MapScene {
 
     this.surface = createTerrainSurface(content.elevation, SCENE_CONFIG.verticalExaggeration);
     const mapSize = this.surface.projection.sizeKm;
-    this.unitLayer = createUnitLayer(this.surface);
+    this.unitLayer = createUnitLayer(this.surface, (id) => events.onUnitSelected(id));
     this.placeLayer = createPlaceLayer(this.surface);
     this.scene.add(
       this.createTerrain(),

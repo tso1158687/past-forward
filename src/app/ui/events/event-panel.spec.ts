@@ -44,9 +44,9 @@ describe('EventPanel', () => {
     expect(element.querySelector('.certainty')?.getAttribute('data-certainty')).toBe('disputed');
     expect(element.querySelector('.certainty-badge')?.textContent).toBe('各來源說法不一');
     expect(element.querySelector('.certainty-note')?.textContent).toContain('6 月 27 日');
-    expect(element.querySelector('.sources summary')?.textContent).toBe('來源（3）');
+    expect(element.querySelector('.sources summary')?.textContent).toBe('來源（4）');
     const kinds = [...element.querySelectorAll('.source-kind')].map((e) => e.textContent);
-    expect(kinds).toEqual(['一手史料', '官方戰史', '學術著作']);
+    expect(kinds).toEqual(['一手史料', '官方戰史', '學術著作', '一手史料']);
     expect(element.querySelector('.heading')?.textContent?.trim()).toBe('事件 8／12');
   });
 

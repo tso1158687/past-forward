@@ -1,6 +1,7 @@
 import { computed, Injectable, signal } from '@angular/core';
 import { HistoricalEvent, neighbouringEvent } from '../../core/history/historical-event';
-import { deriveWorldState } from '../../core/history/world-state';
+import { MilitaryUnit } from '../../core/history/scenario';
+import { deriveWorldState, UnitState } from '../../core/history/world-state';
 import { CalendarDate, calendarDateOfDay } from '../../core/timeline/calendar';
 import {
   advance,
@@ -18,6 +19,12 @@ import { MINSK_SCENARIO } from '../../data/scenarios/minsk-1941/scenario';
  * forward, so the time credited to a single frame is capped.
  */
 const MAX_FRAME_SECONDS = 0.25;
+
+/** A unit the user picked, with where it is right now if any source places it today. */
+export interface SelectedUnit {
+  readonly unit: MilitaryUnit;
+  readonly state: UnitState | undefined;
+}
 
 /**
  * Holds the timeline and drives playback. All rules live in the pure functions of
@@ -46,6 +53,17 @@ export class TimelineStore {
   readonly selectedEvent = computed(() =>
     this.worldState().events.find((event) => event.id === this.selectedEventId()),
   );
+  private readonly selectedUnitId = signal<string | null>(null);
+  /**
+   * The unit the user picked. It stays selected on days when no source places it, so that the
+   * panel can say so instead of silently closing.
+   */
+  readonly selectedUnit = computed<SelectedUnit | undefined>(() => {
+    const unit = this.scenario.units.find((candidate) => candidate.id === this.selectedUnitId());
+    if (!unit) return undefined;
+    return { unit, state: this.worldState().units.find((state) => state.unitId === unit.id) };
+  });
+
   readonly previousEvent = computed(() => this.neighbour(-1));
   readonly nextEvent = computed(() => this.neighbour(1));
 
@@ -82,6 +100,14 @@ export class TimelineStore {
   selectEvent(event: HistoricalEvent): void {
     this.state.update((state) => seek(pause(state), event.startDay));
     this.selectedEventId.set(event.id);
+  }
+
+  selectUnit(unitId: string): void {
+    this.selectedUnitId.set(unitId);
+  }
+
+  clearUnitSelection(): void {
+    this.selectedUnitId.set(null);
   }
 
   private neighbour(direction: 1 | -1): HistoricalEvent | undefined {

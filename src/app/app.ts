@@ -15,11 +15,12 @@ import { toPlaceMarkers } from './ui/map-view/place-markers';
 import { toUnitMarkers } from './ui/map-view/unit-markers';
 import { TimelineBar } from './ui/timeline/timeline-bar';
 import { TimelineStore } from './ui/timeline/timeline-store';
+import { UnitPanel } from './ui/units/unit-panel';
 
 const WIDE_SCREEN_QUERY = '(min-width: 721px)';
 
 @Component({
-  imports: [EventPanel, MapView, TimelineBar],
+  imports: [EventPanel, MapView, TimelineBar, UnitPanel],
   selector: 'app-root',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './app.css',
@@ -27,7 +28,7 @@ const WIDE_SCREEN_QUERY = '(min-width: 721px)';
 })
 export class App {
   protected readonly i18n = inject(LocaleService);
-  private readonly timeline = inject(TimelineStore);
+  protected readonly timeline = inject(TimelineStore);
 
   protected readonly cities = CITIES;
   /** On narrow screens the data notice starts collapsed so that it does not cover the map. */
@@ -36,8 +37,11 @@ export class App {
 
   /** The units on the map at the timeline's current time. */
   protected readonly unitMarkers = computed(() =>
-    toUnitMarkers(this.timeline.worldState(), this.timeline.scenario.units, (text) =>
-      this.i18n.text(text),
+    toUnitMarkers(
+      this.timeline.worldState(),
+      this.timeline.scenario.units,
+      this.timeline.selectedUnit()?.unit.id,
+      (text) => this.i18n.text(text),
     ),
   );
 

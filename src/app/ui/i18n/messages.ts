@@ -1,4 +1,5 @@
 import { Certainty, SourceKind } from '../../core/history/historical-event';
+import { Faction } from '../../core/history/scenario';
 import { PerLocale } from '../../core/i18n/localized-text';
 import { MESSAGES_ZH_TW } from './messages.zh-TW';
 
@@ -38,6 +39,20 @@ export interface Messages {
     readonly certainty: Readonly<Record<Certainty, string>>;
     readonly sources: (count: number) => string;
     readonly sourceKind: Readonly<Record<SourceKind, string>>;
+  };
+  readonly units: {
+    readonly faction: Readonly<Record<Faction, string>>;
+    /** How the location on screen was obtained. */
+    readonly basis: Readonly<Record<'stated' | 'estimated' | 'interpolated', string>>;
+    /** How well the reading of the source has been checked. */
+    readonly certainty: Readonly<Record<Certainty, string>>;
+    /** Shown instead of a position on days when no source places the unit. */
+    readonly notPlacedToday: string;
+    /** Shown while the unit is between two stated positions. */
+    readonly interpolatedNote: string;
+    /** Heading of the explanation of what the marker's location stands for. */
+    readonly placement: string;
+    readonly close: string;
   };
   readonly cityPanel: {
     readonly coordinates: string;

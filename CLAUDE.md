@@ -57,7 +57,7 @@ pnpm bake:map       從開放資料重新產生 public/map/（需要網路）
 - 插值產生的位置要和史料確認的位置區分。
 - 座標、日期、番號等事實要查證，不憑記憶填寫。
 - 不複製參考影片的素材或旁白文字。
-- 事件資料（`src/app/data/scenarios/`）裡的每個事實都要對得上 `docs/research/` 的查證文件。要改事實，先改查證文件，再改資料。
+- 事件與部隊資料（`src/app/data/scenarios/`）裡的每個事實都要對得上 `docs/research/` 的查證文件。要改事實，先改查證文件，再改資料。部隊位置與文件表格的對應規則寫在 `docs/research/minsk-unit-positions-daily.md` 的「寫進資料時的對應」。
 - 查證時不下載、不保留受版權保護的書籍檔案；派助手上網查資料時要明講這一點。可以保留來搜尋的只有公有領域或作者公開的文本。
 - 助手回報的引文要抽查過才算數；自己沒在原文看到的，最多標為 B 級（分級見 `docs/research/minsk-events-verified.md`）。
 

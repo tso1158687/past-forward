@@ -96,6 +96,7 @@
 | 來源 | 哈爾德 6 月 28 日的日記：中午回報明斯克已佔領 |
 | 建議 | **6 月 28 日，第 3 裝甲集群佔領明斯克。** 可信度 A |
 | 來源不一致 | 古德里安戰後的研究與英文維基說 26 日已進入明斯克；我採用哈爾德當天的日記。先進城的是第 12 還是第 20 裝甲師，來源說法不一，所以只寫到裝甲集群 |
+| 圖集 | 讀圖後補充（2026-11-17）：德軍 1942 年的圖集在 6 月 26 日晚就把第 12 裝甲師畫在明斯克西北、Raków 與 Minsk 之間，旁邊帶問號；27 日晚緊貼明斯克以西。這兩晚的圖我親自看過（A）。所以「26 日」與「28 日」並不衝突：26 日是先頭到達城邊，28 日是陸軍總部收到「已佔領」的回報。事件維持 28 日。讀圖結果見 [minsk-unit-positions-daily.md](minsk-unit-positions-daily.md) |
 | 引文 | HALDER 6 月 28 日："Reports at noon: Center: Minsk taken."；GUDERIAN-FMS：霍特的集群 "had arrived from the northwest"（同一句說它前一天已進入明斯克，日期與哈爾德不同） |
 
 ### 7. 外層包圍圈合攏（兩個裝甲集群會合）
@@ -118,6 +119,10 @@
 
 我建議採 29 日，理由是哈爾德的日記是當時逐日寫下的，而且 28 日明確寫了還沒合攏。27 日比較可能是「先頭部隊取得接觸」，29 日是「包圍圈真的封住」。
 這是判斷，不是定論；美國陸軍的官方戰史只說兩個裝甲集群「照計畫在明斯克附近會合」，沒有給日期。
+
+讀圖後補充（2026-11-17）：圖集與哈爾德的日記一致。第 17 裝甲師 6 月 27 日晚畫在 Stołpce（斯托爾布齊），28 日晚在 Stołpce 與 Koidanow 之間，
+29 日晚才到 Koidanow（今捷爾任斯克，明斯克西南約 35 公里）。27 日晚的圖我親自看過（A）；28、29 日是兩位讀圖者一致的讀法，我沒有逐一複核（B）。
+這支持採 29 日，但可信度仍維持 C，因為 Stolfi 的 27 日之說並沒有被推翻，只是圖集不支持。
 
 引文：STOLFI："By their linkup south of Minsk on 27 June 1941"；HALDER 6 月 28 日："between Minsk and Baranovichi it is still not closed"；HALDER 6 月 29 日："The outer ring, formed by the Armd. Divs., is closed, but still fairly thin"；DAPAM："had linked up near Minsk according to plan"
 
@@ -150,8 +155,10 @@
 | 來源 | 最早的橋頭堡在更南邊、也更早：6 月 29 日第 3 裝甲師在博布魯伊斯克，6 月 30 日第 4 裝甲師奪取斯維斯洛奇的鐵路橋；7 月 1 日中午第 18 裝甲師的戰鬥群衝過鮑里索夫的公路橋 |
 | 建議 | **6 月 29 日，第 2 裝甲集群在博布魯伊斯克取得別列津納河橋頭堡；7 月 1 日，在鮑里索夫奪取明斯克—莫斯科公路上的橋。** 可信度 B |
 | 與影片 | 影片的 7 月 1 日應該是指鮑里索夫。最早的渡河要提前到 6 月 29 日 |
+| 另一說 | 研究部隊位置時發現（2026-11-17）：古德里安戰後的研究寫第 18 裝甲師在 6 月 30 日就經完好的公路橋在鮑里索夫渡河，比 Glantz 早一天；他也寫博布魯伊斯克是 6 月 28 日攻下的，與哈爾德 28 日「已到達博布魯伊斯克」相符。兩句我都在原文看到（A） |
+| 圖集 | 讀圖後補充（2026-11-17）：圖集支持 Glantz 的 7 月 1 日。6 月 30 日晚第 18 裝甲師整個畫在明斯克以東約 30 公里，鮑里索夫沒有畫任何德軍的師；7 月 1 日晚才有一段標著「Tle. 18.Pz.」（第 18 裝甲師一部）的弧線畫在鮑里索夫西側，主力仍在原地；7 月 2 日晚主力才畫在鮑里索夫。6 月 30 日與 7 月 1 日的圖我親自看過（A）；7 月 2 日是兩位讀圖者一致的讀法（B）。博布魯伊斯克方面，第 3 裝甲師 6 月 28 日晚就畫在 Bobruisk，與哈爾德、古德里安相符，比 Glantz 的 29 日早一天；Glantz 說的是「取得橋頭堡」，不是到達，兩者不衝突。讀圖結果見 [minsk-unit-positions-daily.md](minsk-unit-positions-daily.md) |
 | 為什麼是 B | 各渡口的日期與部隊出自 Glantz 的專書，是查證助手讀到的，我沒有親自核對。同一章另一處把鮑里索夫寫成 7 月 2 日，前後不一。哈爾德只在 6 月 28 日記古德里安的右翼接近博布魯伊斯克、7 月 2 日記第 2 裝甲集群擊破別列津納河上的頑強抵抗、7 月 3 日記他強渡該河，沒有各渡口的細節 |
-| 引文 | GLANTZ："captured a bridgehead at Bobruisk"、"Rolling across the bridge at noon, Kampfgruppe Teege captured Borisov"；HALDER 6 月 28 日："Guderian's right wing close to Bobruisk"；HALDER 7 月 3 日："Guderian forced the Boresina river this forenoon"（Boresina 是掃描辨識的錯字） |
+| 引文 | GLANTZ："captured a bridgehead at Bobruisk"、"Rolling across the bridge at noon, Kampfgruppe Teege captured Borisov"；GUDERIAN-FMS："crossed the Beresina on 30 June over the Borisov highway bridge"、"After the capture of that city on 28 June"；HALDER 6 月 28 日："Guderian's right wing close to Bobruisk"；HALDER 7 月 3 日："Guderian forced the Boresina river this forenoon"（Boresina 是掃描辨識的錯字） |
 
 ### 11. 兩個裝甲集群恢復東進
 
@@ -273,6 +280,7 @@
 | ANFILOV | В. А. Анфилов,《Начало Великой Отечественной войны》，第 5 章。http://militera.lib.ru/research/anfilov/05.html | 學術著作 | 是 |
 | GUDERIAN-FMS | Heinz Guderian,《Flank Defense in Far-Reaching Operations》，戰後為美軍撰寫的研究。https://allworldwars.com/Flank-Defense-in-Far-Reaching-Operations-by-Heinz-Guderian.html | 回憶性研究（第 2 裝甲集群司令） | 是 |
 | GLANTZ | David M. Glantz,《Barbarossa Derailed》第 1 卷，Helion，2010；《Stumbling Colossus》，University Press of Kansas，1998。頁碼未知 | 學術著作 | 否，需用合法取得的書核對 |
+| ATLAS | Generalstab des Heeres,《Der Feldzug gegen Sowjet-Russland》第 1 卷，1942。逐日態勢圖，圖題「Lage am … abds.」。掃描檔在維基共享資源（美國國會圖書館藏 map51000141），標為公有領域。說明與讀法見 [minsk-unit-positions.md](minsk-unit-positions.md) 與 [minsk-unit-positions-daily.md](minsk-unit-positions-daily.md) | 一手（依陸軍總部每日態勢圖重繪的地圖） | 部分：我親自看過的圖在各項裡個別註明，其餘是兩位讀圖者一致的讀法 |
 | ISAEV | А. В. Исаев,《Неизвестный 1941. Остановленный блицкриг》，2010，〈Контрудар группы Болдина〉一章 | 學術著作（通俗取向） | 否 |
 
 維基百科（英、德、俄文版）只用來找線索，沒有任何一項結論單獨依靠它。

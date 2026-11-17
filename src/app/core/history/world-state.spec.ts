@@ -1,26 +1,44 @@
 import { HistoricalEvent } from './historical-event';
-import { MilitaryUnit, Scenario } from './scenario';
+import { MilitaryUnit, Scenario, UnitPosition } from './scenario';
 import { deriveWorldState } from './world-state';
 
 const WEST = { lon: 20, lat: 52 };
 const EAST = { lon: 26, lat: 54 };
 const FAR_EAST = { lon: 30, lat: 54 };
 
+const stated = (day: number, location: { lon: number; lat: number }): UnitPosition => ({
+  day,
+  location,
+  description: { 'zh-TW': '測試位置' },
+  certainty: 'confirmed',
+  estimated: false,
+  sourceIds: ['source'],
+});
+
+const AT_WEST = stated(2, WEST);
+const AT_EAST = stated(6, EAST);
+const AT_FAR_EAST = stated(7, FAR_EAST);
+
 /** Stated at WEST on day 2, at EAST on day 6 and at FAR_EAST on day 7. */
 const MOVER: MilitaryUnit = {
   id: 'mover',
   name: { 'zh-TW': '移動單位' },
-  positions: [
-    { day: 2, location: WEST },
-    { day: 6, location: EAST },
-    { day: 7, location: FAR_EAST },
-  ],
+  faction: 'german',
+  placement: { 'zh-TW': '測試' },
+  interpolatesGaps: true,
+  positions: [AT_WEST, AT_EAST, AT_FAR_EAST],
 };
+
+/** The same positions, but nothing is known about the days in between. */
+const SIGHTED: MilitaryUnit = { ...MOVER, id: 'sighted', interpolatesGaps: false };
 
 const STATIONARY: MilitaryUnit = {
   id: 'stationary',
   name: { 'zh-TW': '固定單位' },
-  positions: [{ day: 0, location: EAST }],
+  faction: 'soviet',
+  placement: { 'zh-TW': '測試' },
+  interpolatesGaps: true,
+  positions: [stated(0, EAST)],
 };
 
 /** Lasts for calendar days 8 and 9, the last two days of the scenario. */
@@ -39,13 +57,20 @@ const SCENARIO: Scenario = {
   kind: 'demonstration',
   epoch: { year: 1941, month: 6, day: 22 },
   timeRange: { startDay: 0, endDay: 10 },
-  units: [MOVER, STATIONARY],
+  units: [MOVER, STATIONARY, SIGHTED],
   events: [CLOSING_EVENT],
   sources: [{ id: 'source', citation: 'Test source', kind: 'primary' }],
 };
 
-const moverAt = (day: number) =>
-  deriveWorldState(SCENARIO, day).units.find((unit) => unit.unitId === 'mover');
+const unitAt = (unitId: string, day: number) =>
+  deriveWorldState(SCENARIO, day).units.find((unit) => unit.unitId === unitId);
+const moverAt = (day: number) => unitAt('mover', day);
+const anchoredAt = (position: UnitPosition) => ({
+  unitId: 'mover',
+  location: position.location,
+  basis: 'anchor',
+  stated: position,
+});
 
 describe('deriveWorldState', () => {
   it('records the day it was derived for', () => {
@@ -57,9 +82,9 @@ describe('deriveWorldState', () => {
   });
 
   it('keeps a unit at its stated position for that whole day', () => {
-    expect(moverAt(2)).toEqual({ unitId: 'mover', location: WEST, basis: 'anchor' });
-    expect(moverAt(2.7)).toEqual({ unitId: 'mover', location: WEST, basis: 'anchor' });
-    expect(moverAt(3)).toEqual({ unitId: 'mover', location: WEST, basis: 'anchor' });
+    expect(moverAt(2)).toEqual(anchoredAt(AT_WEST));
+    expect(moverAt(2.7)).toEqual(anchoredAt(AT_WEST));
+    expect(moverAt(3)).toEqual(anchoredAt(AT_WEST));
   });
 
   it('interpolates in a straight line between two stated days and marks it as such', () => {
@@ -68,19 +93,37 @@ describe('deriveWorldState', () => {
     expect(midway?.basis).toBe('interpolated');
     expect(midway?.location.lon).toBeCloseTo(23);
     expect(midway?.location.lat).toBeCloseTo(53);
+    expect(midway?.stated).toBeUndefined();
+  });
+
+  it('leaves a unit that does not interpolate off the map between two stated days', () => {
+    expect(unitAt('sighted', 1.99)).toBeUndefined();
+    expect(unitAt('sighted', 2)?.stated).toBe(AT_WEST);
+    expect(unitAt('sighted', 2.99)?.stated).toBe(AT_WEST);
+    expect(unitAt('sighted', 3)).toBeUndefined();
+    expect(unitAt('sighted', 5.99)).toBeUndefined();
+    expect(unitAt('sighted', 6)?.stated).toBe(AT_EAST);
+    expect(unitAt('sighted', 7)?.stated).toBe(AT_FAR_EAST);
+    expect(unitAt('sighted', 8)).toBeUndefined();
+  });
+
+  it('still shows a position stated for the last day at the very end of the time range', () => {
+    const lastDay: MilitaryUnit = { ...SIGHTED, id: 'last-day', positions: [stated(9, EAST)] };
+    const atEnd = deriveWorldState({ ...SCENARIO, units: [lastDay] }, 10);
+    expect(atEnd.units.map((unit) => unit.unitId)).toEqual(['last-day']);
   });
 
   it('arrives exactly at the next stated position when its day starts', () => {
-    expect(moverAt(6)).toEqual({ unitId: 'mover', location: EAST, basis: 'anchor' });
+    expect(moverAt(6)).toEqual(anchoredAt(AT_EAST));
   });
 
   it('switches position at midnight when stated on consecutive days, without interpolating', () => {
-    expect(moverAt(6.99)).toEqual({ unitId: 'mover', location: EAST, basis: 'anchor' });
-    expect(moverAt(7)).toEqual({ unitId: 'mover', location: FAR_EAST, basis: 'anchor' });
+    expect(moverAt(6.99)).toEqual(anchoredAt(AT_EAST));
+    expect(moverAt(7)).toEqual(anchoredAt(AT_FAR_EAST));
   });
 
   it('leaves out a unit once its last stated day is over', () => {
-    expect(moverAt(8)).toEqual({ unitId: 'mover', location: FAR_EAST, basis: 'anchor' });
+    expect(moverAt(8)).toEqual(anchoredAt(AT_FAR_EAST));
     expect(moverAt(8.01)).toBeUndefined();
   });
 

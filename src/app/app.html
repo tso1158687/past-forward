@@ -5,6 +5,7 @@
   [units]="unitMarkers()"
   [places]="placeMarkers()"
   (citySelected)="selectCity($event)"
+  (unitSelected)="timeline.selectUnit($event)"
 />
 
 <div class="dock top-dock">
@@ -30,6 +31,10 @@
 <div class="dock bottom-dock">
   <div class="dock info-row">
     <app-event-panel class="panel" (eventChosen)="chooseEvent($event)" />
+
+    @if (timeline.selectedUnit()) {
+      <app-unit-panel class="panel" />
+    }
 
     @if (selectedCity(); as city) {
       <section class="panel city-panel" aria-live="polite">

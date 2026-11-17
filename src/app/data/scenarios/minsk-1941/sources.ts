@@ -2,7 +2,8 @@ import { HistoricalSource } from '../../../core/history/historical-event';
 
 /**
  * Sources for the Białystok–Minsk chapter. How each one was consulted, and which quotations were
- * checked first-hand, is recorded in docs/research/minsk-events-verified.md.
+ * checked first-hand, is recorded in docs/research/minsk-events-verified.md (events) and
+ * docs/research/minsk-unit-positions.md (unit positions).
  */
 export const MINSK_SOURCES: readonly HistoricalSource[] = [
   {
@@ -62,6 +63,23 @@ export const MINSK_SOURCES: readonly HistoricalSource[] = [
     citation:
       'David M. Glantz, Barbarossa Derailed, vol. 1, Helion, 2010. Page numbers still to be confirmed.',
     kind: 'scholarly',
+  },
+  {
+    id: 'okh-atlas',
+    citation:
+      'Generalstab des Heeres, Der Feldzug gegen Sowjet-Russland, Band I: Operationen Sommer–Herbst 1941, 1942. Daily situation maps ("Lage am … abds."), Library of Congress map51000141.',
+    kind: 'primary',
+  },
+  {
+    id: 'sandalov',
+    citation: 'Л. М. Сандалов, Пережитое (воспоминания начальника штаба 4-й армии).',
+    kind: 'memoir',
+  },
+  {
+    id: 'boldin',
+    citation:
+      'И. В. Болдин, Страницы жизни (воспоминания заместителя командующего Западным фронтом).',
+    kind: 'memoir',
   },
   {
     id: 'isaev',

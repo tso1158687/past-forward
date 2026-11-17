@@ -39,6 +39,7 @@ export class MapView {
   /** Places to point out, such as where the selected event happened. */
   readonly places = input<readonly PlaceMarker[]>([]);
   readonly citySelected = output<string>();
+  readonly unitSelected = output<string>();
 
   protected readonly i18n = inject(LocaleService);
   protected readonly status = signal<MapStatus>('loading');
@@ -83,6 +84,7 @@ export class MapView {
       if (this.destroyed) return;
       this.scene = new MapScene(this.host().nativeElement, this.toSceneContent(assets), {
         onCitySelected: (cityId) => this.citySelected.emit(cityId),
+        onUnitSelected: (unitId) => this.unitSelected.emit(unitId),
       });
       // The effects above could not reach the scene while it was still loading.
       this.scene.setUnits(this.units());

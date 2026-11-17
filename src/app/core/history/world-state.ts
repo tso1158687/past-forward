@@ -15,6 +15,8 @@ export interface UnitState {
   readonly unitId: string;
   readonly location: GeographicLocation;
   readonly basis: PositionBasis;
+  /** The stated position being shown; absent while the location is interpolated. */
+  readonly stated?: UnitPosition;
 }
 
 /** The situation on the map at one moment. Derived from a scenario; never stored or mutated. */
@@ -28,21 +30,32 @@ export interface WorldState {
 const DAY_LENGTH = 1;
 
 export function deriveWorldState(scenario: Scenario, day: number): WorldState {
+  const calendarDay = displayedDay({ range: scenario.timeRange, currentDay: day });
   const units: UnitState[] = [];
   for (const unit of scenario.units) {
-    const state = unitStateAt(unit, day);
+    const state = unit.interpolatesGaps
+      ? movingStateAt(unit, day)
+      : statedStateOn(unit, calendarDay);
     if (state) units.push(state);
   }
-  const calendarDay = displayedDay({ range: scenario.timeRange, currentDay: day });
   return { day, units, events: eventsOnDay(scenario.events, calendarDay) };
 }
 
 /**
- * A stated position holds for its whole day; between the end of one stated day and the start of
- * the next the unit moves in a straight line. Outside its first and last stated days the unit's
- * whereabouts are unknown, so it is not part of the world state at all.
+ * For a unit whose whereabouts between stated positions are not known: it is in the world state
+ * only on a calendar day for which a position is stated.
  */
-function unitStateAt(unit: MilitaryUnit, day: number): UnitState | undefined {
+function statedStateOn(unit: MilitaryUnit, calendarDay: number): UnitState | undefined {
+  const stated = unit.positions.find((position) => position.day === calendarDay);
+  return stated && { unitId: unit.id, location: stated.location, basis: 'anchor', stated };
+}
+
+/**
+ * For a unit that interpolates gaps: a stated position holds for its whole day, and between the
+ * end of one stated day and the start of the next the unit moves in a straight line. Outside its
+ * first and last stated days its whereabouts are unknown, so it is not in the world state.
+ */
+function movingStateAt(unit: MilitaryUnit, day: number): UnitState | undefined {
   const { positions } = unit;
   if (positions.length === 0) return undefined;
   const first = positions[0];
@@ -53,7 +66,7 @@ function unitStateAt(unit: MilitaryUnit, day: number): UnitState | undefined {
   const departure = previous.day + DAY_LENGTH;
   const next = positions[positions.indexOf(previous) + 1];
   if (day <= departure || !next) {
-    return { unitId: unit.id, location: previous.location, basis: 'anchor' };
+    return { unitId: unit.id, location: previous.location, basis: 'anchor', stated: previous };
   }
 
   const progress = (day - departure) / (next.day - departure);

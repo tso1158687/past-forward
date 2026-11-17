@@ -22,6 +22,7 @@ class MapViewStub {
   readonly units = input<readonly UnitMarker[]>([]);
   readonly places = input<readonly PlaceMarker[]>([]);
   readonly citySelected = output<string>();
+  readonly unitSelected = output<string>();
   readonly cameraRequests: unknown[] = [];
   focusOn(location: unknown, distanceKm?: number): void {
     this.cameraRequests.push({ location, distanceKm });
@@ -51,17 +52,67 @@ describe('App', () => {
       button.textContent?.includes(title),
     )!;
 
-  it('shows the brand and chapter, and says that unit positions are not on the map yet', async () => {
+  it('shows the brand and chapter, and says where unit positions come from', async () => {
     const { element } = await render();
     expect(element.querySelector('.brand')?.textContent).toContain('歷史進行式');
     expect(element.querySelector('h1')?.textContent).toContain('巴巴羅薩行動');
-    expect(element.querySelector('.data-notice')?.textContent).toContain('位置尚未查證');
+    expect(element.querySelector('.data-notice')?.textContent).toContain('1942 年德軍參謀本部圖集');
   });
 
-  it('shows no units and no demonstration badge', async () => {
+  const unitIds = (map: MapViewStub) => map.units().map((unit) => unit.id);
+
+  it('puts on the map the units that a source places on the first day, and no demonstration badge', async () => {
     const { element, map } = await render();
-    expect(map.units()).toEqual([]);
+    expect(unitIds(map)).toEqual([
+      'xxiv-motorized-corps',
+      'xxxxvii-motorized-corps',
+      'xxxix-motorized-corps',
+      'lvii-motorized-corps',
+      'german-4th-army',
+      'german-9th-army',
+      'soviet-3rd-army',
+      'soviet-10th-army',
+      'soviet-4th-army',
+    ]);
     expect(element.querySelector('.demo-badge')).toBeNull();
+  });
+
+  it('moves the units with the timeline and drops those without a source for the day', async () => {
+    const { fixture, map, store } = await render();
+    const corpsAt = () => map.units().find((unit) => unit.id === 'xxiv-motorized-corps')?.location;
+    expect(corpsAt()).toEqual({ lon: 24, lat: 52 });
+
+    store.seek(6.5);
+    await fixture.whenStable();
+
+    expect(corpsAt()).toEqual({ lon: 29.193, lat: 53.127 });
+    expect(unitIds(map)).toContain('soviet-13th-army');
+    expect(unitIds(map)).not.toContain('soviet-3rd-army');
+  });
+
+  it('shows the selected unit with its sources, and keeps it selected when it leaves the map', async () => {
+    const { fixture, element, map, store } = await render();
+    expect(element.querySelector('app-unit-panel')).toBeNull();
+
+    map.unitSelected.emit('soviet-3rd-army');
+    await fixture.whenStable();
+
+    expect(element.querySelector('app-unit-panel h2')?.textContent).toBe('第 3 集團軍');
+    expect(element.querySelector('app-unit-panel .description')?.textContent).toContain('格羅德諾');
+    expect(
+      map
+        .units()
+        .filter((unit) => unit.selected)
+        .map((unit) => unit.id),
+    ).toEqual(['soviet-3rd-army']);
+
+    store.seek(2);
+    await fixture.whenStable();
+    expect(element.querySelector('app-unit-panel .absent')?.textContent).toContain('沒有來源');
+
+    element.querySelector<HTMLButtonElement>('app-unit-panel .close')!.click();
+    await fixture.whenStable();
+    expect(element.querySelector('app-unit-panel')).toBeNull();
   });
 
   it('shows the selected city and asks the map to focus on it', async () => {

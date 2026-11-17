@@ -141,6 +141,13 @@ app-event-panel {
   overflow-y: auto;
 }
 
+app-unit-panel {
+  flex: 0 1 340px;
+  min-width: 0;
+  max-height: 44vh;
+  overflow-y: auto;
+}
+
 .city-panel {
   position: relative;
   flex: 0 1 260px;
@@ -236,7 +243,8 @@ app-event-panel {
     display: none;
   }
 
-  app-event-panel {
+  app-event-panel,
+  app-unit-panel {
     flex-basis: 100%;
     max-height: 34vh;
   }
