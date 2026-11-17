@@ -1,4 +1,6 @@
 import { GeographicLocation } from '../geo/geo-types';
+import { displayedDay } from '../timeline/timeline-state';
+import { eventsOnDay, HistoricalEvent } from './historical-event';
 import { MilitaryUnit, Scenario, UnitPosition } from './scenario';
 
 /**
@@ -19,6 +21,8 @@ export interface UnitState {
 export interface WorldState {
   readonly day: number;
   readonly units: readonly UnitState[];
+  /** Events taking place on the calendar day that contains `day`, in chronological order. */
+  readonly events: readonly HistoricalEvent[];
 }
 
 const DAY_LENGTH = 1;
@@ -29,7 +33,8 @@ export function deriveWorldState(scenario: Scenario, day: number): WorldState {
     const state = unitStateAt(unit, day);
     if (state) units.push(state);
   }
-  return { day, units };
+  const calendarDay = displayedDay({ range: scenario.timeRange, currentDay: day });
+  return { day, units, events: eventsOnDay(scenario.events, calendarDay) };
 }
 
 /**

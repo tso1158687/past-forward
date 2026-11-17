@@ -63,7 +63,7 @@ export function advance(state: TimelineState, elapsedSeconds: number): TimelineS
  * The whole calendar day to show for the current time. At the very end of the range this is
  * still the last day covered, not the day after it.
  */
-export function displayedDay(state: TimelineState): number {
+export function displayedDay(state: Pick<TimelineState, 'range' | 'currentDay'>): number {
   const lastDay = Math.ceil(state.range.endDay) - 1;
   return Math.min(Math.floor(state.currentDay), lastDay);
 }

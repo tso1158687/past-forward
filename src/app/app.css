@@ -128,10 +128,22 @@ dd {
   color: var(--text-muted);
 }
 
+.info-row {
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+app-event-panel {
+  flex: 0 1 400px;
+  min-width: 0;
+  /* Long summaries scroll inside the panel instead of covering the map. */
+  max-height: 44vh;
+  overflow-y: auto;
+}
+
 .city-panel {
   position: relative;
-  align-self: flex-start;
-  width: min(280px, 100%);
+  flex: 0 1 260px;
   padding: 14px 16px;
   box-sizing: border-box;
 }
@@ -222,6 +234,11 @@ dd {
 
   .controls-hint {
     display: none;
+  }
+
+  app-event-panel {
+    flex-basis: 100%;
+    max-height: 34vh;
   }
 
   .map-actions {

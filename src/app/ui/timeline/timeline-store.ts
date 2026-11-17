@@ -1,6 +1,7 @@
 import { computed, Injectable, signal } from '@angular/core';
+import { HistoricalEvent, neighbouringEvent } from '../../core/history/historical-event';
 import { deriveWorldState } from '../../core/history/world-state';
-import { calendarDateOfDay } from '../../core/timeline/calendar';
+import { CalendarDate, calendarDateOfDay } from '../../core/timeline/calendar';
 import {
   advance,
   createTimelineState,
@@ -10,7 +11,7 @@ import {
   seek,
   setSpeed,
 } from '../../core/timeline/timeline-state';
-import { DEMO_SCENARIO } from '../../data/scenarios/demo-scenario';
+import { MINSK_SCENARIO } from '../../data/scenarios/minsk-1941/scenario';
 
 /**
  * A long gap between frames (a background tab, a debugger pause) must not make the timeline leap
@@ -20,25 +21,40 @@ const MAX_FRAME_SECONDS = 0.25;
 
 /**
  * Holds the timeline and drives playback. All rules live in the pure functions of
- * `core/timeline` and `core/history`; this class only stores the current state in a signal and
+ * `core/timeline` and `core/history`; this class only stores the current state in signals and
  * feeds real elapsed time into it while playing.
  */
 @Injectable({ providedIn: 'root' })
 export class TimelineStore {
-  /** What is being played. A fixed demonstration scenario until researched data exists. */
-  readonly scenario = DEMO_SCENARIO;
+  /** What is being played. */
+  readonly scenario = MINSK_SCENARIO;
 
   private readonly state = signal(createTimelineState(this.scenario.timeRange));
   readonly timeline = this.state.asReadonly();
 
+  /** The whole calendar day shown for the current time. */
+  readonly calendarDay = computed(() => displayedDay(this.state()));
+  readonly currentDate = computed(() => this.dateOfDay(this.calendarDay()));
   /** The situation on the map at the current time. */
   readonly worldState = computed(() => deriveWorldState(this.scenario, this.state().currentDay));
-  readonly currentDate = computed(() =>
-    calendarDateOfDay(this.scenario.epoch, displayedDay(this.state())),
+
+  private readonly selectedEventId = signal<string | null>(null);
+  /**
+   * The event the user picked, for as long as the timeline stays within its days. Moving the
+   * timeline elsewhere drops the selection without anyone having to clear it.
+   */
+  readonly selectedEvent = computed(() =>
+    this.worldState().events.find((event) => event.id === this.selectedEventId()),
   );
+  readonly previousEvent = computed(() => this.neighbour(-1));
+  readonly nextEvent = computed(() => this.neighbour(1));
 
   private frameRequest = 0;
   private lastFrameTime: number | undefined;
+
+  dateOfDay(campaignDay: number): CalendarDate {
+    return calendarDateOfDay(this.scenario.epoch, campaignDay);
+  }
 
   togglePlayback(): void {
     if (this.state().playing) this.pause();
@@ -60,6 +76,21 @@ export class TimelineStore {
 
   setSpeed(daysPerSecond: number): void {
     this.state.update((state) => setSpeed(state, daysPerSecond));
+  }
+
+  /** Pauses on the first day of the event and makes it the selected one. */
+  selectEvent(event: HistoricalEvent): void {
+    this.state.update((state) => seek(pause(state), event.startDay));
+    this.selectedEventId.set(event.id);
+  }
+
+  private neighbour(direction: 1 | -1): HistoricalEvent | undefined {
+    const selected = this.selectedEvent();
+    return neighbouringEvent(
+      this.scenario.events,
+      direction,
+      selected ? { eventId: selected.id } : { calendarDay: this.calendarDay() },
+    );
   }
 
   private startClock(): void {

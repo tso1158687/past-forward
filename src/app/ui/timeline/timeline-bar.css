@@ -49,12 +49,64 @@
   font-variant-numeric: tabular-nums;
 }
 
-.scrubber {
-  flex: 1 1 200px;
+.track {
+  flex: 1 1 220px;
   min-width: 0;
-  height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.scrubber {
+  width: 100%;
+  height: 20px;
+  margin: 0;
   accent-color: var(--accent);
   cursor: pointer;
+}
+
+/*
+ * Events are drawn above the scrubber on the same time scale. The slider thumb cannot travel into
+ * the last few pixels at either end, so the markers are inset by the same amount to line up.
+ */
+.event-markers {
+  --marker-height: 9px;
+  --marker-gap: 3px;
+  position: relative;
+  height: calc(var(--lanes) * (var(--marker-height) + var(--marker-gap)) - var(--marker-gap));
+  margin: 0 8px;
+}
+
+.event-marker {
+  position: absolute;
+  top: calc(var(--lane) * (var(--marker-height) + var(--marker-gap)));
+  height: var(--marker-height);
+  min-width: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: var(--certainty-confirmed);
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.event-marker[data-certainty='reported'] {
+  background: var(--certainty-reported);
+}
+
+.event-marker[data-certainty='disputed'] {
+  background: var(--certainty-disputed);
+}
+
+.event-marker:hover,
+.event-marker:focus-visible {
+  opacity: 1;
+}
+
+.event-marker.selected {
+  opacity: 1;
+  outline: 2px solid var(--text);
+  outline-offset: 1px;
 }
 
 .speed {
@@ -86,8 +138,8 @@
 }
 
 @media (max-width: 720px) {
-  /* The scrubber gets a row of its own. */
-  .scrubber {
+  /* The scrubber and its event markers get a row of their own. */
+  .track {
     order: 1;
     flex-basis: 100%;
   }

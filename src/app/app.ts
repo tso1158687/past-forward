@@ -6,9 +6,12 @@ import {
   signal,
   viewChild,
 } from '@angular/core';
+import { HistoricalEvent } from './core/history/historical-event';
 import { CITIES, City } from './data/map/cities';
+import { EventPanel } from './ui/events/event-panel';
 import { LocaleService } from './ui/i18n/locale-service';
 import { MapView } from './ui/map-view/map-view';
+import { toPlaceMarkers } from './ui/map-view/place-markers';
 import { toUnitMarkers } from './ui/map-view/unit-markers';
 import { TimelineBar } from './ui/timeline/timeline-bar';
 import { TimelineStore } from './ui/timeline/timeline-store';
@@ -16,7 +19,7 @@ import { TimelineStore } from './ui/timeline/timeline-store';
 const WIDE_SCREEN_QUERY = '(min-width: 721px)';
 
 @Component({
-  imports: [MapView, TimelineBar],
+  imports: [EventPanel, MapView, TimelineBar],
   selector: 'app-root',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './app.css',
@@ -38,6 +41,11 @@ export class App {
     ),
   );
 
+  /** The places of the selected event, pointed out on the map. */
+  protected readonly placeMarkers = computed(() =>
+    toPlaceMarkers(this.timeline.selectedEvent(), (text) => this.i18n.text(text)),
+  );
+
   private readonly selectedCityId = signal<string | null>(null);
   protected readonly selectedCity = computed<City | undefined>(() =>
     this.cities.find((city) => city.id === this.selectedCityId()),
@@ -49,6 +57,13 @@ export class App {
     this.selectedCityId.set(cityId);
     const city = this.selectedCity();
     if (city) this.mapView().focusOn(city.location);
+  }
+
+  /** Jumps the timeline to an event and turns the camera to where it happened. */
+  protected chooseEvent(event: HistoricalEvent): void {
+    this.timeline.selectEvent(event);
+    if (event.camera) this.mapView().focusOn(event.camera.target, event.camera.distanceKm);
+    else this.mapView().resetView();
   }
 
   protected clearSelection(): void {

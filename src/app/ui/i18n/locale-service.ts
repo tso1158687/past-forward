@@ -10,9 +10,19 @@ export class LocaleService {
   readonly messages = computed(() => MESSAGES[this.locale()] ?? MESSAGES[DEFAULT_LOCALE]);
 
   /** A calendar date written out in the active locale, e.g. "1941年6月22日". */
-  formatDate({ year, month, day }: CalendarDate): string {
+  formatDate(date: CalendarDate): string {
+    return this.format(date, { dateStyle: 'long' });
+  }
+
+  /** A span of days in the same year; the year is written only once. */
+  formatDateRange(from: CalendarDate, to: CalendarDate): string {
+    const end = this.format(to, { month: 'long', day: 'numeric' });
+    return this.messages().dateRange(this.formatDate(from), end);
+  }
+
+  private format({ year, month, day }: CalendarDate, options: Intl.DateTimeFormatOptions): string {
     // The date is built and formatted in UTC so the viewer's time zone can never shift it.
-    return new Intl.DateTimeFormat(this.locale(), { dateStyle: 'long', timeZone: 'UTC' }).format(
+    return new Intl.DateTimeFormat(this.locale(), { ...options, timeZone: 'UTC' }).format(
       new Date(Date.UTC(year, month - 1, day)),
     );
   }

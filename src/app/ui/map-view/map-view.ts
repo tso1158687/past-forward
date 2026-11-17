@@ -15,6 +15,7 @@ import { GeographicLocation } from '../../core/geo/geo-types';
 import { City } from '../../data/map/cities';
 import { loadMapAssets, MapAssets } from '../../data/map/map-assets';
 import { RIVER_NAMES } from '../../data/map/river-names';
+import type { PlaceMarker } from '../../scene/layers/place-layer';
 import type { UnitMarker } from '../../scene/layers/unit-layer';
 import type { MapScene, MapSceneContent } from '../../scene/map-scene';
 import { LocaleService } from '../i18n/locale-service';
@@ -35,6 +36,8 @@ export class MapView {
   readonly cities = input.required<readonly City[]>();
   /** Units to show right now; expected to change on every frame while the timeline plays. */
   readonly units = input<readonly UnitMarker[]>([]);
+  /** Places to point out, such as where the selected event happened. */
+  readonly places = input<readonly PlaceMarker[]>([]);
   readonly citySelected = output<string>();
 
   protected readonly i18n = inject(LocaleService);
@@ -52,14 +55,18 @@ export class MapView {
       const units = this.units();
       this.scene?.setUnits(units);
     });
+    effect(() => {
+      const places = this.places();
+      this.scene?.setPlaces(places);
+    });
     inject(DestroyRef).onDestroy(() => {
       this.destroyed = true;
       this.scene?.dispose();
     });
   }
 
-  focusOn(location: GeographicLocation): void {
-    this.scene?.focusOn(location);
+  focusOn(location: GeographicLocation, distanceKm?: number): void {
+    this.scene?.focusOn(location, distanceKm);
   }
 
   resetView(): void {
@@ -77,8 +84,9 @@ export class MapView {
       this.scene = new MapScene(this.host().nativeElement, this.toSceneContent(assets), {
         onCitySelected: (cityId) => this.citySelected.emit(cityId),
       });
-      // The effect above could not reach the scene while it was still loading.
+      // The effects above could not reach the scene while it was still loading.
       this.scene.setUnits(this.units());
+      this.scene.setPlaces(this.places());
       this.status.set('ready');
     } catch (error) {
       console.error('Map failed to initialise', error);

@@ -1,3 +1,4 @@
+import { HistoricalEvent } from './historical-event';
 import { MilitaryUnit, Scenario } from './scenario';
 import { deriveWorldState } from './world-state';
 
@@ -22,11 +23,25 @@ const STATIONARY: MilitaryUnit = {
   positions: [{ day: 0, location: EAST }],
 };
 
+/** Lasts for calendar days 8 and 9, the last two days of the scenario. */
+const CLOSING_EVENT: HistoricalEvent = {
+  id: 'closing',
+  startDay: 8,
+  endDay: 9,
+  title: { 'zh-TW': '結尾事件' },
+  summary: { 'zh-TW': '結尾事件' },
+  certainty: 'confirmed',
+  places: [],
+  sourceIds: ['source'],
+};
+
 const SCENARIO: Scenario = {
   kind: 'demonstration',
   epoch: { year: 1941, month: 6, day: 22 },
   timeRange: { startDay: 0, endDay: 10 },
   units: [MOVER, STATIONARY],
+  events: [CLOSING_EVENT],
+  sources: [{ id: 'source', citation: 'Test source', kind: 'primary' }],
 };
 
 const moverAt = (day: number) =>
@@ -75,6 +90,17 @@ describe('deriveWorldState', () => {
     expect(at(0)).toBe(true);
     expect(at(1)).toBe(true);
     expect(at(1.5)).toBe(false);
+  });
+
+  it('lists the events of the calendar day that contains the current time', () => {
+    const eventIdsAt = (day: number) => deriveWorldState(SCENARIO, day).events.map((e) => e.id);
+    expect(eventIdsAt(7.99)).toEqual([]);
+    expect(eventIdsAt(8)).toEqual(['closing']);
+    expect(eventIdsAt(9.5)).toEqual(['closing']);
+  });
+
+  it('still shows the events of the last day at the very end of the time range', () => {
+    expect(deriveWorldState(SCENARIO, 10).events.map((e) => e.id)).toEqual(['closing']);
   });
 
   it('gives the same result going forwards or backwards in time', () => {

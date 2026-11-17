@@ -2,6 +2,7 @@ import { GeographicLocation } from '../geo/geo-types';
 import { LocalizedText } from '../i18n/localized-text';
 import { CalendarDate } from '../timeline/calendar';
 import { TimeRange } from '../timeline/timeline-state';
+import { HistoricalEvent, HistoricalSource } from './historical-event';
 
 /**
  * "On this calendar day the unit was at this place." Sources rarely say more than the day, so a
@@ -20,7 +21,7 @@ export interface MilitaryUnit {
 }
 
 /**
- * Everything the timeline plays: a time span and the units moving through it. The history and a
+ * Everything the timeline plays: a time span, the events in it and the units moving through it. The history and a
  * future alternative history are both just scenarios, so swapping one for another needs no change
  * to the timeline or the map.
  */
@@ -34,4 +35,8 @@ export interface Scenario {
   readonly epoch: CalendarDate;
   readonly timeRange: TimeRange;
   readonly units: readonly MilitaryUnit[];
+  /** In chronological order of `startDay`. */
+  readonly events: readonly HistoricalEvent[];
+  /** Every source referred to by the events. */
+  readonly sources: readonly HistoricalSource[];
 }

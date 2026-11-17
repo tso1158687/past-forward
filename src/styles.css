@@ -8,6 +8,10 @@
   --accent: #ffd35c;
   --panel-background: rgb(18 24 30 / 82%);
   --panel-border: rgb(255 255 255 / 14%);
+  /* How well an event is supported by its sources; see core/history/historical-event.ts. */
+  --certainty-confirmed: #7fd6a4;
+  --certainty-reported: #ffd35c;
+  --certainty-disputed: #ff9d6c;
   color-scheme: dark;
 }
 

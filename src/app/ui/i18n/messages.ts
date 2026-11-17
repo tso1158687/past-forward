@@ -1,3 +1,4 @@
+import { Certainty, SourceKind } from '../../core/history/historical-event';
 import { PerLocale } from '../../core/i18n/localized-text';
 import { MESSAGES_ZH_TW } from './messages.zh-TW';
 
@@ -24,6 +25,19 @@ export interface Messages {
     readonly speed: string;
     readonly speedOption: (daysPerSecond: number) => string;
     readonly demoBadge: string;
+  };
+  /** Joins the two ends of a date range, e.g. "1941年6月23日至6月25日". */
+  readonly dateRange: (from: string, to: string) => string;
+  readonly events: {
+    /** Shown above the list of the current day's events. */
+    readonly heading: string;
+    readonly position: (index: number, total: number) => string;
+    readonly previous: string;
+    readonly next: string;
+    readonly noneToday: string;
+    readonly certainty: Readonly<Record<Certainty, string>>;
+    readonly sources: (count: number) => string;
+    readonly sourceKind: Readonly<Record<SourceKind, string>>;
   };
   readonly cityPanel: {
     readonly coordinates: string;

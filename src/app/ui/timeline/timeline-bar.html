@@ -19,17 +19,37 @@
   <span class="day-counter">{{ messages.dayCounter(dayNumber(), totalDays) }}</span>
 </div>
 
-<input
-  type="range"
-  class="scrubber"
-  step="0.01"
-  [min]="timeline.range.startDay"
-  [max]="timeline.range.endDay"
-  [value]="timeline.currentDay"
-  [attr.aria-label]="messages.scrubber"
-  [attr.aria-valuetext]="formattedDate()"
-  (input)="onScrub($event)"
-/>
+<div class="track">
+  @if (eventMarkers.length > 0) {
+    <div class="event-markers" [style.--lanes]="markerLanes">
+      @for (marker of eventMarkers; track marker.event.id) {
+        <button
+          type="button"
+          class="event-marker"
+          [class.selected]="store.selectedEvent()?.id === marker.event.id"
+          [attr.data-certainty]="marker.event.certainty"
+          [style.left.%]="marker.leftPercent"
+          [style.width.%]="marker.widthPercent"
+          [style.--lane]="marker.lane"
+          [attr.aria-label]="i18n.text(marker.event.title)"
+          [title]="i18n.text(marker.event.title)"
+          (click)="eventChosen.emit(marker.event)"
+        ></button>
+      }
+    </div>
+  }
+  <input
+    type="range"
+    class="scrubber"
+    step="0.01"
+    [min]="timeline.range.startDay"
+    [max]="timeline.range.endDay"
+    [value]="timeline.currentDay"
+    [attr.aria-label]="messages.scrubber"
+    [attr.aria-valuetext]="formattedDate()"
+    (input)="onScrub($event)"
+  />
+</div>
 
 <label class="speed">
   <span>{{ messages.speed }}</span>

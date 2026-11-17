@@ -1,8 +1,6 @@
-import { Group } from 'three';
-import { CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { GeographicLocation } from '../../core/geo/geo-types';
 import { TerrainSurface } from '../terrain/terrain-surface';
-import { createLabel } from './label';
+import { KeyedLabel, KeyedLabelLayer } from './keyed-label-layer';
 
 /** A unit to draw right now. The scene is told where units are; it never works that out itself. */
 export interface UnitMarker {
@@ -13,37 +11,15 @@ export interface UnitMarker {
   readonly interpolated: boolean;
 }
 
-/**
- * Keeps one label per visible unit and moves it as the markers change. Labels are reused by unit
- * id because this is updated on every frame while the timeline plays.
- */
-export class UnitLayer {
-  readonly object = new Group();
-  private readonly labels = new Map<string, CSS2DObject>();
+export function createUnitLayer(surface: TerrainSurface): KeyedLabelLayer {
+  return new KeyedLabelLayer(surface, { className: 'unit-marker' });
+}
 
-  constructor(private readonly surface: TerrainSurface) {}
-
-  update(markers: readonly UnitMarker[]): void {
-    const visibleIds = new Set<string>();
-    for (const marker of markers) {
-      visibleIds.add(marker.id);
-      const label = this.labels.get(marker.id) ?? this.addLabel(marker.id);
-      label.element.textContent = marker.label;
-      label.element.dataset['basis'] = marker.interpolated ? 'interpolated' : 'anchor';
-      label.position.copy(this.surface.positionAt(marker.location));
-    }
-
-    for (const [id, label] of this.labels) {
-      if (visibleIds.has(id)) continue;
-      this.object.remove(label);
-      this.labels.delete(id);
-    }
-  }
-
-  private addLabel(id: string): CSS2DObject {
-    const label = createLabel('unit-marker', '');
-    this.labels.set(id, label);
-    this.object.add(label);
-    return label;
-  }
+export function unitLabels(markers: readonly UnitMarker[]): KeyedLabel[] {
+  return markers.map((marker) => ({
+    id: marker.id,
+    text: marker.label,
+    location: marker.location,
+    data: { basis: marker.interpolated ? 'interpolated' : 'anchor' },
+  }));
 }

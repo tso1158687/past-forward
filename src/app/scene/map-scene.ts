@@ -6,7 +6,9 @@ import { GeographicLocation } from '../core/geo/geo-types';
 import { createMapControls, moveToInitialView } from './camera/map-controls';
 import { CityMarker, createCityLayer } from './layers/city-layer';
 import { createRiverLayer, SceneRiver } from './layers/river-layer';
-import { UnitLayer, UnitMarker } from './layers/unit-layer';
+import { KeyedLabelLayer } from './layers/keyed-label-layer';
+import { createPlaceLayer, placeLabels, PlaceMarker } from './layers/place-layer';
+import { createUnitLayer, unitLabels, UnitMarker } from './layers/unit-layer';
 import { SCENE_CONFIG } from './scene-config';
 import { createTerrainMesh } from './terrain/terrain-mesh';
 import { createTerrainSurface, TerrainSurface } from './terrain/terrain-surface';
@@ -36,7 +38,8 @@ export class MapScene {
   private readonly camera: PerspectiveCamera;
   private readonly controls: CameraControls;
   private readonly surface: TerrainSurface;
-  private readonly unitLayer: UnitLayer;
+  private readonly unitLayer: KeyedLabelLayer;
+  private readonly placeLayer: KeyedLabelLayer;
   private readonly resizeObserver: ResizeObserver;
 
   private animationFrame = 0;
@@ -54,12 +57,14 @@ export class MapScene {
 
     this.surface = createTerrainSurface(content.elevation, SCENE_CONFIG.verticalExaggeration);
     const mapSize = this.surface.projection.sizeKm;
-    this.unitLayer = new UnitLayer(this.surface);
+    this.unitLayer = createUnitLayer(this.surface);
+    this.placeLayer = createPlaceLayer(this.surface);
     this.scene.add(
       this.createTerrain(),
       createRiverLayer(content.rivers, this.surface),
       createCityLayer(content.cities, this.surface, (id) => events.onCitySelected(id)),
       this.unitLayer.object,
+      this.placeLayer.object,
     );
 
     this.camera = new PerspectiveCamera(SCENE_CONFIG.camera.fieldOfViewDegrees, 1, 1, 6000);
@@ -73,16 +78,28 @@ export class MapScene {
     this.animationFrame = requestAnimationFrame(this.renderFrame);
   }
 
-  /** Smoothly centres the view on a place, keeping the current viewing angle. */
-  focusOn(location: GeographicLocation): void {
+  /**
+   * Smoothly centres the view on a place, keeping the current viewing angle. `distanceKm` is how
+   * far the camera ends up from it; closer shows less of the map.
+   */
+  focusOn(
+    location: GeographicLocation,
+    distanceKm: number = SCENE_CONFIG.camera.focusDistance,
+  ): void {
     const target = this.surface.positionAt(location);
     void this.controls.moveTo(target.x, 0, target.z, true);
-    void this.controls.dollyTo(SCENE_CONFIG.camera.focusDistance, true);
+    void this.controls.dollyTo(distanceKm, true);
   }
 
   /** Shows exactly these units, replacing whatever was shown before. */
   setUnits(markers: readonly UnitMarker[]): void {
-    this.unitLayer.update(markers);
+    this.unitLayer.update(unitLabels(markers));
+    this.needsRender = true;
+  }
+
+  /** Points out exactly these places, replacing whatever was highlighted before. */
+  setPlaces(markers: readonly PlaceMarker[]): void {
+    this.placeLayer.update(placeLabels(markers));
     this.needsRender = true;
   }
 

@@ -1,0 +1,80 @@
+@let messages = i18n.messages().events;
+
+<header class="panel-header">
+  <button
+    type="button"
+    class="step"
+    [disabled]="!store.previousEvent()"
+    [attr.aria-label]="messages.previous"
+    [title]="messages.previous"
+    (click)="choose(store.previousEvent())"
+  >
+    ‹
+  </button>
+  <span class="heading">
+    @if (store.selectedEvent()) {
+      {{ messages.position(selectedPosition(), eventCount) }}
+    } @else {
+      {{ messages.heading }}
+    }
+  </span>
+  <button
+    type="button"
+    class="step"
+    [disabled]="!store.nextEvent()"
+    [attr.aria-label]="messages.next"
+    [title]="messages.next"
+    (click)="choose(store.nextEvent())"
+  >
+    ›
+  </button>
+</header>
+
+@if (store.selectedEvent(); as event) {
+  <article class="event" aria-live="polite">
+    <p class="date">{{ dateLabel(event) }}</p>
+    <h2>{{ i18n.text(event.title) }}</h2>
+    <p class="summary">{{ i18n.text(event.summary) }}</p>
+
+    <div class="certainty" [attr.data-certainty]="event.certainty">
+      <span class="certainty-badge">{{ messages.certainty[event.certainty] }}</span>
+      @if (event.certaintyNote; as note) {
+        <p class="certainty-note">{{ i18n.text(note) }}</p>
+      }
+    </div>
+
+    <details class="sources">
+      <summary>{{ messages.sources(selectedSources().length) }}</summary>
+      <ul>
+        @for (source of selectedSources(); track source.id) {
+          <li>
+            <span class="source-kind">{{ messages.sourceKind[source.kind] }}</span>
+            @if (source.url; as url) {
+              <a [href]="url" target="_blank" rel="noopener noreferrer">{{ source.citation }}</a>
+            } @else {
+              <span>{{ source.citation }}</span>
+            }
+          </li>
+        }
+      </ul>
+    </details>
+  </article>
+} @else {
+  <div class="day-events">
+    <p class="date">{{ currentDateLabel() }}</p>
+    @if (store.worldState().events.length > 0) {
+      <ul>
+        @for (event of store.worldState().events; track event.id) {
+          <li>
+            <button type="button" class="event-link" (click)="choose(event)">
+              <span class="certainty-dot" [attr.data-certainty]="event.certainty"></span>
+              {{ i18n.text(event.title) }}
+            </button>
+          </li>
+        }
+      </ul>
+    } @else {
+      <p class="empty">{{ messages.noneToday }}</p>
+    }
+  </div>
+}
