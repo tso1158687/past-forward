@@ -17,22 +17,33 @@ interface TerrainMeshOptions {
   readonly baseDepth: number;
 }
 
+const rowsFor = (surface: TerrainSurface, columns: number) =>
+  Math.round((columns * surface.grid.height) / surface.grid.width);
+
+/**
+ * The relief surface as a grid of triangles. Its texture coordinates cover the elevation grid, so
+ * anything painted on a texture of the map can be laid over the relief with this geometry.
+ */
+export function createTerrainSurfaceGeometry(
+  surface: TerrainSurface,
+  columns: number,
+): BufferGeometry {
+  return buildSurfaceGeometry(surface, columns, rowsFor(surface, columns));
+}
+
 /** The relief surface plus a dark skirt around its edges, so the map reads as a solid sand table. */
 export function createTerrainMesh(
   surface: TerrainSurface,
+  surfaceGeometry: BufferGeometry,
   colorMap: Texture,
   options: TerrainMeshOptions,
 ): Group {
-  const { grid } = surface;
   const columns = options.columns;
-  const rows = Math.round((columns * grid.height) / grid.width);
+  const rows = rowsFor(surface, columns);
 
   const group = new Group();
   group.add(
-    new Mesh(
-      buildSurfaceGeometry(surface, columns, rows),
-      new MeshBasicMaterial({ map: colorMap }),
-    ),
+    new Mesh(surfaceGeometry, new MeshBasicMaterial({ map: colorMap })),
     new Mesh(
       buildSkirtGeometry(surface, columns, rows, options.baseDepth),
       new MeshBasicMaterial({ color: SKIRT_COLOR, side: DoubleSide }),

@@ -11,6 +11,7 @@
 | 為什麼這樣選（技術與設計決策） | `docs/decisions.md` |
 | 之前每次做了什麼、留下什麼沒做完 | `docs/devlog.md` |
 | 史料研究：影片說了什麼、查證到哪裡 | `docs/research/` |
+| 圖集是怎麼讀的、讀數與裁決在哪裡 | `tools/atlas-reading/README.md` |
 
 ## 文件要跟著更新
 
@@ -58,6 +59,7 @@ pnpm bake:map       從開放資料重新產生 public/map/（需要網路）
 - 座標、日期、番號等事實要查證，不憑記憶填寫。
 - 不複製參考影片的素材或旁白文字。
 - 事件與部隊資料（`src/app/data/scenarios/`）裡的每個事實都要對得上 `docs/research/` 的查證文件。要改事實，先改查證文件，再改資料。部隊位置與文件表格的對應規則寫在 `docs/research/minsk-unit-positions-daily.md` 的「寫進資料時的對應」。
+- 每晚的態勢（`scenarios/minsk-1941/situations.ts`）由 `tools/atlas-reading/gen_situations.py` 產生，不手改。要改就先改 `docs/research/minsk-front-situation.md` 與 `tools/atlas-reading/overrides.json`，再重新產生。
 - 查證時不下載、不保留受版權保護的書籍檔案；派助手上網查資料時要明講這一點。可以保留來搜尋的只有公有領域或作者公開的文本。
 - 助手回報的引文要抽查過才算數；自己沒在原文看到的，最多標為 B 級（分級見 `docs/research/minsk-events-verified.md`）。
 

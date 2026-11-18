@@ -4,6 +4,7 @@ import { App } from './app';
 import { HistoricalBorder } from './core/history/scenario';
 import { City } from './data/map/cities';
 import type { PlaceMarker } from './scene/layers/place-layer';
+import type { SituationView } from './scene/layers/situation-layer';
 import type { UnitMarker, UnitTrail, UnitTransition } from './scene/layers/unit-layer';
 import { MapView } from './ui/map-view/map-view';
 import { TimelineStore } from './ui/timeline/timeline-store';
@@ -24,6 +25,7 @@ class MapViewStub {
   readonly units = input<readonly UnitMarker[]>([]);
   readonly unitTrails = input<readonly UnitTrail[]>([]);
   readonly unitTransition = input<UnitTransition>({ seconds: 0, easing: 'eased' });
+  readonly situation = input<SituationView | undefined>(undefined);
   readonly places = input<readonly PlaceMarker[]>([]);
   readonly citySelected = output<string>();
   readonly unitSelected = output<string>();
@@ -72,6 +74,35 @@ describe('App', () => {
     const notice = element.querySelector('.data-notice')?.textContent;
     expect(notice).toContain('OpenHistoricalMap');
     expect(notice).toContain('1941 年它已經不是國界');
+  });
+
+  it('shades the estimated front of the current evening and names it as an estimate', async () => {
+    const { fixture, element, map, store } = await render();
+    expect(map.situation()?.frontLabel).toContain('估計');
+    expect(map.situation()?.pockets).toEqual([]);
+
+    store.seek(6.5);
+    await fixture.whenStable();
+    const pockets = map.situation()?.pockets ?? [];
+    expect(pockets.length).toBe(2);
+    expect(pockets[0].label).toContain('估計');
+    expect(pockets[0].description).toContain('圖集對這一圈的標註');
+    expect(element.querySelector('.data-notice')?.textContent).toContain('不代表全部被佔領');
+  });
+
+  it('hands the map a new shading only when the date changes, not at every moment of a day', async () => {
+    const { fixture, map, store } = await render();
+    store.seek(6.1);
+    await fixture.whenStable();
+    const morning = map.situation();
+
+    store.seek(6.9);
+    await fixture.whenStable();
+    expect(map.situation()).toBe(morning);
+
+    store.seek(7.1);
+    await fixture.whenStable();
+    expect(map.situation()).not.toBe(morning);
   });
 
   const unitIds = (map: MapViewStub) => map.units().map((unit) => unit.id);

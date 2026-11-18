@@ -1,0 +1,7596 @@
+{
+ "0622": {
+  "front": [
+   [
+    21.41,
+    56.6
+   ],
+   [
+    21.41,
+    56.08
+   ],
+   [
+    21.86,
+    55.78
+   ],
+   [
+    23.53,
+    55.26
+   ],
+   [
+    23.49,
+    55.11
+   ],
+   [
+    24.21,
+    54.39
+   ],
+   [
+    24.54,
+    54.2
+   ],
+   [
+    23.96,
+    53.89
+   ],
+   [
+    23.65,
+    53.61
+   ],
+   [
+    23.09,
+    52.64
+   ],
+   [
+    24.35,
+    52.45
+   ],
+   [
+    24.11,
+    52.2
+   ],
+   [
+    24.17,
+    52.02
+   ],
+   [
+    24.09,
+    51.75
+   ],
+   [
+    24.0,
+    51.11
+   ],
+   [
+    24.23,
+    50.85
+   ],
+   [
+    24.45,
+    50.68
+   ],
+   [
+    24.62,
+    50.38
+   ],
+   [
+    23.11,
+    50.06
+   ],
+   [
+    23.11,
+    49.9
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 21.41,
+    "lat": 56.08,
+    "who": "AB",
+    "units": [
+     "291.",
+     "291."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "NW tile top, near Polangen coast; more than 0.15 deg north of 61./217."
+   },
+   {
+    "lon": 21.865,
+    "lat": 55.78,
+    "who": "AB",
+    "units": [
+     "V.A. (arrow near 217.)",
+     "V.A. (next to 217.)"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arrow-type V.A. symbol east of 217.; tip of arrow"
+   },
+   {
+    "lon": 23.53,
+    "lat": 55.260000000000005,
+    "who": "AB",
+    "units": [
+     "Tle. 8.Pz.",
+     "Tle. 8.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 23.494999999999997,
+    "lat": 55.105000000000004,
+    "who": "AB",
+    "units": [
+     "Tle. 8.Pz.",
+     "Tle. 8.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "second Tle. 8.Pz. arc just south of the first"
+   },
+   {
+    "lon": 24.215,
+    "lat": 54.385000000000005,
+    "who": "AB",
+    "units": [
+     "7.Pz.",
+     "7.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.535,
+    "lat": 54.2,
+    "who": "AB",
+    "units": [
+     "18.m.",
+     "18.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arrow of 12.Pz. also points to it"
+   },
+   {
+    "lon": 23.96,
+    "lat": 53.894999999999996,
+    "who": "AB",
+    "units": [
+     "161.",
+     "161."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 23.65,
+    "lat": 53.61,
+    "who": "B",
+    "units": [
+     "256."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "borderline: 28./8. arcs just north are further east within 0.15 lat"
+   },
+   {
+    "lon": 23.095,
+    "lat": 52.635000000000005,
+    "who": "AB",
+    "units": [
+     "V.A. (west of Bialystok-Narew sector)",
+     "V.A."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "V.A. beside 137."
+   },
+   {
+    "lon": 24.35,
+    "lat": 52.455,
+    "who": "AB",
+    "units": [
+     "18.Pz.",
+     "18.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arrow continues NE toward 1 A.K."
+   },
+   {
+    "lon": 24.11,
+    "lat": 52.2,
+    "who": "A",
+    "units": [
+     "V.A. (XXXXVII.m.)"
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.17,
+    "lat": 52.025,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "lower 3.Pz. arc"
+   },
+   {
+    "lon": 24.085,
+    "lat": 51.75,
+    "who": "AB",
+    "units": [
+     "V.A.",
+     "V.A."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "south of 4.Pz./1.K.D."
+   },
+   {
+    "lon": 24.0,
+    "lat": 51.114999999999995,
+    "who": "AB",
+    "units": [
+     "62.",
+     "62."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.23,
+    "lat": 50.85,
+    "who": "AB",
+    "units": [
+     "298.",
+     "298."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.45,
+    "lat": 50.68,
+    "who": "AB",
+    "units": [
+     "299.",
+     "299."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.625,
+    "lat": 50.375,
+    "who": "AB",
+    "units": [
+     "11.Pz.",
+     "11.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "dashed arrow continues east (movement)"
+   },
+   {
+    "lon": 23.11,
+    "lat": 50.06,
+    "who": "A",
+    "units": [
+     "1.Geb."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "southernmost front on this sheet"
+   }
+  ],
+  "pockets": [],
+  "rings_not_behind_front": [
+   {
+    "outline": [
+     [
+      22.94,
+      53.68
+     ],
+     [
+      23.09,
+      53.67
+     ],
+     [
+      23.15,
+      53.63
+     ],
+     [
+      23.11,
+      53.58
+     ],
+     [
+      22.98,
+      53.55
+     ],
+     [
+      22.86,
+      53.57
+     ],
+     [
+      22.84,
+      53.63
+     ]
+    ],
+    "atlas": "4 K.D.",
+    "who": "A",
+    "centre": [
+     23.0,
+     53.62
+    ]
+   },
+   {
+    "outline": [
+     [
+      23.37,
+      53.65
+     ],
+     [
+      23.55,
+      53.65
+     ],
+     [
+      23.73,
+      53.6
+     ],
+     [
+      23.76,
+      53.53
+     ],
+     [
+      23.57,
+      53.47
+     ],
+     [
+      23.29,
+      53.47
+     ],
+     [
+      23.18,
+      53.53
+     ],
+     [
+      23.19,
+      53.6
+     ]
+    ],
+    "atlas": "56.",
+    "who": "A",
+    "centre": [
+     23.45,
+     53.56
+    ]
+   }
+  ]
+ },
+ "0623": {
+  "front": [
+   [
+    21.51,
+    56.6
+   ],
+   [
+    21.51,
+    56.28
+   ],
+   [
+    21.95,
+    55.8
+   ],
+   [
+    23.14,
+    55.5
+   ],
+   [
+    23.91,
+    55.31
+   ],
+   [
+    23.59,
+    55.04
+   ],
+   [
+    23.99,
+    54.67
+   ],
+   [
+    24.83,
+    54.48
+   ],
+   [
+    25.29,
+    54.21
+   ],
+   [
+    24.1,
+    53.9
+   ],
+   [
+    23.91,
+    53.71
+   ],
+   [
+    23.02,
+    52.73
+   ],
+   [
+    25.01,
+    52.52
+   ],
+   [
+    24.04,
+    51.8
+   ],
+   [
+    23.93,
+    51.14
+   ],
+   [
+    24.8,
+    50.78
+   ],
+   [
+    25.19,
+    50.28
+   ],
+   [
+    22.99,
+    49.83
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 21.509999999999998,
+    "lat": 56.28,
+    "who": "AB",
+    "units": [
+     "291.",
+     "291."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "NW tile top edge"
+   },
+   {
+    "lon": 21.955,
+    "lat": 55.795,
+    "who": "AB",
+    "units": [
+     "217.",
+     "217."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "61. just above, west"
+   },
+   {
+    "lon": 23.145,
+    "lat": 55.495000000000005,
+    "who": "AB",
+    "units": [
+     "6.Pz.",
+     "6.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "1.Pz. is just NW of it"
+   },
+   {
+    "lon": 23.905,
+    "lat": 55.31,
+    "who": "AB",
+    "units": [
+     "8.Pz. (arrow)",
+     "8.Pz."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "8.Pz. symbol with arrow pointing NE; position of arrow tip. 3.m. arrow just south"
+   },
+   {
+    "lon": 23.59,
+    "lat": 55.04,
+    "who": "B",
+    "units": [
+     "126."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "easternmost of the chain 30./126./122./123./121./12."
+   },
+   {
+    "lon": 23.994999999999997,
+    "lat": 54.67,
+    "who": "AB",
+    "units": [
+     "6.",
+     "6."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.83,
+    "lat": 54.485,
+    "who": "AB",
+    "units": [
+     "20.Pz.",
+     "20.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "east of Tle. 22.Pz.Br. (red)"
+   },
+   {
+    "lon": 25.29,
+    "lat": 54.21,
+    "who": "AB",
+    "units": [
+     "12.B (12.Pz.?)",
+     "12.Pz."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "text reads 12.B; probably 12.Pz.; with 7.Pz. arc just NW"
+   },
+   {
+    "lon": 24.1,
+    "lat": 53.9,
+    "who": "AB",
+    "units": [
+     "161.",
+     "161."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 23.91,
+    "lat": 53.71,
+    "who": "A",
+    "units": [
+     "8."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "8. arc south of 28.; 256. is further SW"
+   },
+   {
+    "lon": 23.02,
+    "lat": 52.73,
+    "who": "B",
+    "units": [
+     "263."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "137. east end is about the same longitude 23.0"
+   },
+   {
+    "lon": 25.009999999999998,
+    "lat": 52.515,
+    "who": "AB",
+    "units": [
+     "V.A. (east of 18.Pz.)",
+     "V.A."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "near Kartuska Bereza; 18.Pz. and 3.Pz./4.Pz. arcs west of it"
+   },
+   {
+    "lon": 24.035,
+    "lat": 51.8,
+    "who": "AB",
+    "units": [
+     "1.K.D.",
+     "1.K.D."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "small star-like arrow end beside it; 255. below"
+   },
+   {
+    "lon": 23.925,
+    "lat": 51.135000000000005,
+    "who": "AB",
+    "units": [
+     "62.",
+     "62."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.795,
+    "lat": 50.775000000000006,
+    "who": "AB",
+    "units": [
+     "299.",
+     "299."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "14.Pz. just west; 111. just south"
+   },
+   {
+    "lon": 25.185000000000002,
+    "lat": 50.28,
+    "who": "AB",
+    "units": [
+     "11.Pz.",
+     "11.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 22.99,
+    "lat": 49.83,
+    "who": "A",
+    "units": [
+     "257."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "southern end of sheet"
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      24.14,
+      54.66
+     ],
+     [
+      24.32,
+      54.64
+     ],
+     [
+      24.38,
+      54.6
+     ],
+     [
+      24.31,
+      54.55
+     ],
+     [
+      24.14,
+      54.53
+     ],
+     [
+      24.01,
+      54.55
+     ],
+     [
+      23.95,
+      54.59
+     ],
+     [
+      24.01,
+      54.64
+     ]
+    ],
+    "atlas": "5.Pz.D.",
+    "who": "AB",
+    "centre": [
+     24.16,
+     54.59
+    ]
+   },
+   {
+    "outline": [
+     [
+      24.36,
+      54.52
+     ],
+     [
+      24.52,
+      54.5
+     ],
+     [
+      24.58,
+      54.46
+     ],
+     [
+      24.51,
+      54.41
+     ],
+     [
+      24.36,
+      54.4
+     ],
+     [
+      24.21,
+      54.42
+     ],
+     [
+      24.16,
+      54.46
+     ],
+     [
+      24.23,
+      54.5
+     ]
+    ],
+    "atlas": "Tle. 22.Pz.Br.",
+    "who": "AB",
+    "centre": [
+     24.37,
+     54.46
+    ]
+   }
+  ],
+  "rings_not_behind_front": [
+   {
+    "outline": [
+     [
+      22.19,
+      53.32
+     ],
+     [
+      22.35,
+      53.29
+     ],
+     [
+      22.44,
+      53.22
+     ],
+     [
+      22.38,
+      53.14
+     ],
+     [
+      22.23,
+      53.1
+     ],
+     [
+      22.06,
+      53.13
+     ],
+     [
+      22.0,
+      53.2
+     ],
+     [
+      22.05,
+      53.28
+     ]
+    ],
+    "atlas": "VI.K.K. / 6.K.D. / 24.K.D.",
+    "who": "A",
+    "centre": [
+     22.21,
+     53.21
+    ]
+   },
+   {
+    "outline": [
+     [
+      22.68,
+      53.31
+     ],
+     [
+      22.81,
+      53.27
+     ],
+     [
+      22.96,
+      53.18
+     ],
+     [
+      23.04,
+      53.08
+     ],
+     [
+      22.97,
+      52.99
+     ],
+     [
+      22.82,
+      53.0
+     ],
+     [
+      22.65,
+      53.13
+     ],
+     [
+      22.56,
+      53.23
+     ]
+    ],
+    "atlas": "146.",
+    "who": "A",
+    "centre": [
+     22.81,
+     53.15
+    ]
+   },
+   {
+    "outline": [
+     [
+      23.47,
+      53.29
+     ],
+     [
+      23.73,
+      53.29
+     ],
+     [
+      23.85,
+      53.2
+     ],
+     [
+      23.8,
+      53.09
+     ],
+     [
+      23.62,
+      53.04
+     ],
+     [
+      23.34,
+      53.05
+     ],
+     [
+      23.2,
+      53.11
+     ],
+     [
+      23.23,
+      53.23
+     ]
+    ],
+    "atlas": "VI.Pz.K. / 1 u.2 Pz.B. / 9.Pz.D. / 1.K.D. / 7.K.D.",
+    "who": "A",
+    "centre": [
+     23.53,
+     53.16
+    ]
+   }
+  ]
+ },
+ "0624": {
+  "front": [
+   [
+    22.13,
+    56.6
+   ],
+   [
+    22.13,
+    55.83
+   ],
+   [
+    23.6,
+    55.6
+   ],
+   [
+    25.12,
+    55.43
+   ],
+   [
+    26.16,
+    54.86
+   ],
+   [
+    25.86,
+    54.48
+   ],
+   [
+    26.14,
+    54.22
+   ],
+   [
+    25.2,
+    54.03
+   ],
+   [
+    24.4,
+    53.7
+   ],
+   [
+    26.31,
+    52.94
+   ],
+   [
+    25.36,
+    52.67
+   ],
+   [
+    24.55,
+    52.28
+   ],
+   [
+    24.59,
+    52.03
+   ],
+   [
+    24.06,
+    51.79
+   ],
+   [
+    24.12,
+    51.17
+   ],
+   [
+    25.05,
+    50.8
+   ],
+   [
+    25.09,
+    50.47
+   ],
+   [
+    25.48,
+    50.27
+   ],
+   [
+    25.48,
+    49.9
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 22.13,
+    "lat": 55.83,
+    "who": "AB",
+    "units": [
+     "217.",
+     "217."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 23.6,
+    "lat": 55.6,
+    "who": "AB",
+    "units": [
+     "1.Pz.",
+     "1.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arc at top edge of that zoom"
+   },
+   {
+    "lon": 25.125,
+    "lat": 55.43,
+    "who": "AB",
+    "units": [
+     "8.Pz. (arrow)",
+     "8.Pz."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arrow tip; arrow points NE; 3.m. is west of it"
+   },
+   {
+    "lon": 26.165,
+    "lat": 54.855000000000004,
+    "who": "AB",
+    "units": [
+     "(unlabelled arc)",
+     "unlabelled arc"
+    ],
+    "conf": [
+     "unsure",
+     "unsure"
+    ],
+    "note": "small blue hook-shaped arc with no number, ~0.4 deg east of 7.Pz.; not sure it is a unit"
+   },
+   {
+    "lon": 25.855,
+    "lat": 54.485,
+    "who": "AB",
+    "units": [
+     "20.Pz.",
+     "20.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 26.14,
+    "lat": 54.22,
+    "who": "AB",
+    "units": [
+     "12.Pz.",
+     "12.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.205,
+    "lat": 54.025000000000006,
+    "who": "AB",
+    "units": [
+     "18.m.",
+     "18.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "1/2 18.m. label"
+   },
+   {
+    "lon": 24.4,
+    "lat": 53.7,
+    "who": "AB",
+    "units": [
+     "28.",
+     "V.A. (next to 28.)"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "\"28.\" with small V./Dv? label beside it"
+   },
+   {
+    "lon": 26.314999999999998,
+    "lat": 52.94,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "long arc pointing east; 18.Pz. and 17.Pz. are within 0.15 deg and slightly west"
+   },
+   {
+    "lon": 25.355,
+    "lat": 52.67,
+    "who": "AB",
+    "units": [
+     "4.Pz.",
+     "4.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "long arc pointing NE"
+   },
+   {
+    "lon": 24.55,
+    "lat": 52.275000000000006,
+    "who": "AB",
+    "units": [
+     "10.m.",
+     "10.m."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.595,
+    "lat": 52.035,
+    "who": "AB",
+    "units": [
+     "1.K.D. / ?",
+     "1.K.D."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "arc with ?, text \"1. K. D.\" partly hidden"
+   },
+   {
+    "lon": 24.06,
+    "lat": 51.79,
+    "who": "A",
+    "units": [
+     "267."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc beside star/arrow on the border line"
+   },
+   {
+    "lon": 24.125,
+    "lat": 51.175,
+    "who": "AB",
+    "units": [
+     "62.",
+     "62."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.049999999999997,
+    "lat": 50.795,
+    "who": "AB",
+    "units": [
+     "14.Pz.",
+     "14.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "13.Pz. just below, slightly west"
+   },
+   {
+    "lon": 25.09,
+    "lat": 50.47,
+    "who": "AB",
+    "units": [
+     "75.",
+     "75."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "57. just below"
+   },
+   {
+    "lon": 25.48,
+    "lat": 50.27,
+    "who": "AB",
+    "units": [
+     "11.Pz.",
+     "11.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      24.25,
+      54.7
+     ],
+     [
+      24.46,
+      54.72
+     ],
+     [
+      24.71,
+      54.69
+     ],
+     [
+      24.89,
+      54.61
+     ],
+     [
+      24.95,
+      54.5
+     ],
+     [
+      24.86,
+      54.4
+     ],
+     [
+      24.68,
+      54.34
+     ],
+     [
+      24.48,
+      54.34
+     ],
+     [
+      24.36,
+      54.4
+     ],
+     [
+      24.19,
+      54.5
+     ],
+     [
+      24.15,
+      54.58
+     ]
+    ],
+    "atlas": "Versprengte u. Tle. 23.m. 188. 128.m.",
+    "who": "AB",
+    "centre": [
+     24.54,
+     54.53
+    ]
+   },
+   {
+    "outline": [
+     [
+      24.79,
+      54.88
+     ],
+     [
+      24.98,
+      54.88
+     ],
+     [
+      25.14,
+      54.84
+     ],
+     [
+      25.2,
+      54.78
+     ],
+     [
+      25.1,
+      54.72
+     ],
+     [
+      24.9,
+      54.71
+     ],
+     [
+      24.74,
+      54.74
+     ],
+     [
+      24.69,
+      54.81
+     ]
+    ],
+    "atlas": "28. Pz.Br.",
+    "who": "AB",
+    "centre": [
+     24.94,
+     54.8
+    ]
+   },
+   {
+    "outline": [
+     [
+      23.55,
+      53.51
+     ],
+     [
+      23.87,
+      53.54
+     ],
+     [
+      24.09,
+      53.52
+     ],
+     [
+      24.17,
+      53.43
+     ],
+     [
+      24.14,
+      53.29
+     ],
+     [
+      24.01,
+      53.2
+     ],
+     [
+      23.71,
+      53.15
+     ],
+     [
+      23.44,
+      53.17
+     ],
+     [
+      23.24,
+      53.25
+     ],
+     [
+      23.22,
+      53.34
+     ],
+     [
+      23.32,
+      53.45
+     ]
+    ],
+    "atlas": "IV.Pz. / 1.u.2 Pz.Br. / 9.Pz.Div. / 29.u.86.Pz.Br.",
+    "who": "AB",
+    "centre": [
+     23.71,
+     53.35
+    ]
+   },
+   {
+    "outline": [
+     [
+      23.98,
+      53.08
+     ],
+     [
+      24.23,
+      53.11
+     ],
+     [
+      24.44,
+      53.1
+     ],
+     [
+      24.54,
+      53.05
+     ],
+     [
+      24.48,
+      52.98
+     ],
+     [
+      24.21,
+      52.96
+     ],
+     [
+      23.99,
+      52.97
+     ],
+     [
+      23.92,
+      53.02
+     ]
+    ],
+    "atlas": "55.Pz.Br.",
+    "who": "AB",
+    "centre": [
+     24.22,
+     53.03
+    ]
+   },
+   {
+    "outline": [
+     [
+      22.58,
+      53.2
+     ],
+     [
+      22.82,
+      53.23
+     ],
+     [
+      23.03,
+      53.21
+     ],
+     [
+      23.08,
+      53.15
+     ],
+     [
+      22.99,
+      53.08
+     ],
+     [
+      22.76,
+      53.05
+     ],
+     [
+      22.59,
+      53.07
+     ],
+     [
+      22.55,
+      53.14
+     ]
+    ],
+    "atlas": "23.Pz.Br.",
+    "who": "AB",
+    "centre": [
+     22.8,
+     53.14
+    ]
+   }
+  ],
+  "rings_not_behind_front": [
+   {
+    "outline": [
+     [
+      24.52,
+      53.42
+     ],
+     [
+      24.98,
+      53.45
+     ],
+     [
+      25.01,
+      53.24
+     ],
+     [
+      24.55,
+      53.21
+     ]
+    ],
+    "atlas": "VI.K.K. mit 3-6 K.D.",
+    "who": "B",
+    "centre": [
+     24.77,
+     53.33
+    ]
+   },
+   {
+    "outline": [
+     [
+      23.95,
+      55.67
+     ],
+     [
+      24.05,
+      55.73
+     ],
+     [
+      24.26,
+      55.76
+     ],
+     [
+      24.45,
+      55.74
+     ],
+     [
+      24.56,
+      55.66
+     ],
+     [
+      24.54,
+      55.59
+     ],
+     [
+      24.38,
+      55.55
+     ],
+     [
+      24.18,
+      55.54
+     ],
+     [
+      24.02,
+      55.56
+     ],
+     [
+      23.94,
+      55.61
+     ]
+    ],
+    "atlas": "III.Pz.K. mit 2 Pz.D.",
+    "who": "B",
+    "centre": [
+     24.23,
+     55.64
+    ]
+   }
+  ]
+ },
+ "0625": {
+  "front": [
+   [
+    22.38,
+    56.6
+   ],
+   [
+    22.38,
+    55.94
+   ],
+   [
+    25.46,
+    55.5
+   ],
+   [
+    26.15,
+    54.83
+   ],
+   [
+    26.66,
+    54.45
+   ],
+   [
+    26.57,
+    54.29
+   ],
+   [
+    26.81,
+    54.04
+   ],
+   [
+    24.89,
+    53.86
+   ],
+   [
+    27.35,
+    53.03
+   ],
+   [
+    25.38,
+    52.65
+   ],
+   [
+    25.01,
+    52.16
+   ],
+   [
+    24.24,
+    51.92
+   ],
+   [
+    24.02,
+    51.68
+   ],
+   [
+    24.25,
+    51.17
+   ],
+   [
+    24.39,
+    50.93
+   ],
+   [
+    25.35,
+    50.77
+   ],
+   [
+    25.72,
+    50.42
+   ],
+   [
+    25.72,
+    49.9
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 22.38,
+    "lat": 55.94,
+    "who": "AB",
+    "units": [
+     "61.",
+     "61."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "217. just below, slightly west"
+   },
+   {
+    "lon": 25.465,
+    "lat": 55.5,
+    "who": "AB",
+    "units": [
+     "8.Pz.",
+     "8.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arc with dashed arrow to the east (movement); 3.m. just SW"
+   },
+   {
+    "lon": 26.145000000000003,
+    "lat": 54.83,
+    "who": "AB",
+    "units": [
+     "(unlabelled arc)",
+     "unlabelled arc"
+    ],
+    "conf": [
+     "unsure",
+     "unsure"
+    ],
+    "note": "small hook-shaped blue arc, no number, NE of Wilno (same spot as the one on 0624)"
+   },
+   {
+    "lon": 26.665,
+    "lat": 54.445,
+    "who": "AB",
+    "units": [
+     "7.Pz.",
+     "7.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "long arc pointing SE"
+   },
+   {
+    "lon": 26.57,
+    "lat": 54.29,
+    "who": "A",
+    "units": [
+     "20.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "borderline: within 0.15 deg of 7.Pz."
+   },
+   {
+    "lon": 26.814999999999998,
+    "lat": 54.04,
+    "who": "AB",
+    "units": [
+     "12.Pz.",
+     "12.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "thin blue boundary line passes through it (not a unit)"
+   },
+   {
+    "lon": 24.89,
+    "lat": 53.86,
+    "who": "B",
+    "units": [
+     "161."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "18.m. (25.47/54.03) and 28. (24.54/53.71) are just west/south"
+   },
+   {
+    "lon": 27.35,
+    "lat": 53.025000000000006,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "long arc pointing east"
+   },
+   {
+    "lon": 25.375,
+    "lat": 52.65,
+    "who": "AB",
+    "units": [
+     "10.m.",
+     "10.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.009999999999998,
+    "lat": 52.155,
+    "who": "AB",
+    "units": [
+     "1.K.D.",
+     "1.K.D."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.244999999999997,
+    "lat": 51.92,
+    "who": "AB",
+    "units": [
+     "255.",
+     "255."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.020000000000003,
+    "lat": 51.68,
+    "who": "AB",
+    "units": [
+     "267.",
+     "267."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.25,
+    "lat": 51.175,
+    "who": "AB",
+    "units": [
+     "62.",
+     "62."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.39,
+    "lat": 50.93,
+    "who": "AB",
+    "units": [
+     "298.",
+     "298."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.35,
+    "lat": 50.765,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.72,
+    "lat": 50.42,
+    "who": "AB",
+    "units": [
+     "11.Pz.",
+     "11.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   }
+  ],
+  "pockets": [],
+  "rings_not_behind_front": [
+   {
+    "outline": [
+     [
+      24.54,
+      53.43
+     ],
+     [
+      25.04,
+      53.45
+     ],
+     [
+      25.06,
+      53.28
+     ],
+     [
+      24.56,
+      53.25
+     ]
+    ],
+    "atlas": "VI.K.K. mit 2 K.D.",
+    "who": "B",
+    "centre": [
+     24.8,
+     53.35
+    ]
+   }
+  ]
+ },
+ "0626": {
+  "front": [
+   [
+    26.74,
+    56.6
+   ],
+   [
+    26.74,
+    55.82
+   ],
+   [
+    26.13,
+    54.83
+   ],
+   [
+    27.13,
+    54.26
+   ],
+   [
+    27.64,
+    53.96
+   ],
+   [
+    27.62,
+    53.05
+   ],
+   [
+    25.57,
+    52.84
+   ],
+   [
+    25.23,
+    52.2
+   ],
+   [
+    24.18,
+    51.99
+   ],
+   [
+    24.17,
+    51.76
+   ],
+   [
+    24.35,
+    51.27
+   ],
+   [
+    24.35,
+    51.21
+   ],
+   [
+    25.45,
+    50.62
+   ],
+   [
+    25.86,
+    50.45
+   ],
+   [
+    25.86,
+    49.9
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 26.74,
+    "lat": 55.82,
+    "who": "A",
+    "units": [
+     "3.m. (arrow)"
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arrow tip toward NE; borderline vs 8.Pz."
+   },
+   {
+    "lon": 26.13,
+    "lat": 54.83,
+    "who": "A",
+    "units": [
+     "(unlabelled arc)"
+    ],
+    "conf": [
+     "unsure"
+    ],
+    "note": "small hook-shaped blue arc north-east of Wilno, no number"
+   },
+   {
+    "lon": 27.134999999999998,
+    "lat": 54.26,
+    "who": "AB",
+    "units": [
+     "20.Pz.",
+     "20.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "\"?\" mark beside it"
+   },
+   {
+    "lon": 27.64,
+    "lat": 53.96,
+    "who": "AB",
+    "units": [
+     "12.Pz.",
+     "12.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "at Minsk, \"?\" below"
+   },
+   {
+    "lon": 27.625,
+    "lat": 53.045,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arrow beyond; 4.Pz. just west"
+   },
+   {
+    "lon": 25.57,
+    "lat": 52.84,
+    "who": "B",
+    "units": [
+     "V.A. XII"
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "small V.A. arc near Byten; 10.m. (25.46/52.70) just below"
+   },
+   {
+    "lon": 25.235,
+    "lat": 52.205,
+    "who": "AB",
+    "units": [
+     "1.K.D.",
+     "1.K.D."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arrow with 73.00 time"
+   },
+   {
+    "lon": 24.18,
+    "lat": 51.99,
+    "who": "B",
+    "units": [
+     "255."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.17,
+    "lat": 51.76,
+    "who": "B",
+    "units": [
+     "267."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.35,
+    "lat": 51.265,
+    "who": "AB",
+    "units": [
+     "56.",
+     "56./62."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.35,
+    "lat": 51.21,
+    "who": "A",
+    "units": [
+     "62."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.455,
+    "lat": 50.620000000000005,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "arrow east"
+   },
+   {
+    "lon": 25.855,
+    "lat": 50.455,
+    "who": "AB",
+    "units": [
+     "11.Pz.",
+     "11.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arrow east"
+   }
+  ],
+  "pockets": [],
+  "rings_not_behind_front": [
+   {
+    "outline": [
+     [
+      24.43,
+      53.42
+     ],
+     [
+      24.91,
+      53.45
+     ],
+     [
+      24.94,
+      53.28
+     ],
+     [
+      24.45,
+      53.25
+     ]
+    ],
+    "atlas": "VI.K.K. mit 2 K.D. (with note \"starke Belegung\")",
+    "who": "B",
+    "centre": [
+     24.68,
+     53.35
+    ]
+   }
+  ]
+ },
+ "0627": {
+  "front": [
+   [
+    23.55,
+    56.6
+   ],
+   [
+    23.55,
+    56.16
+   ],
+   [
+    24.61,
+    55.99
+   ],
+   [
+    26.64,
+    55.83
+   ],
+   [
+    25.68,
+    54.66
+   ],
+   [
+    26.86,
+    54.36
+   ],
+   [
+    28.17,
+    54.11
+   ],
+   [
+    26.87,
+    53.45
+   ],
+   [
+    27.88,
+    53.03
+   ],
+   [
+    25.54,
+    52.72
+   ],
+   [
+    25.97,
+    52.29
+   ],
+   [
+    24.36,
+    51.96
+   ],
+   [
+    24.62,
+    51.17
+   ],
+   [
+    26.05,
+    50.65
+   ],
+   [
+    26.51,
+    50.34
+   ],
+   [
+    26.51,
+    49.9
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 23.555,
+    "lat": 56.155,
+    "who": "AB",
+    "units": [
+     "1.",
+     "1."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "north end of front here (61./217. are slightly west); with V.A. I.A.K. label above; 17. and 21. below"
+   },
+   {
+    "lon": 24.61,
+    "lat": 55.99,
+    "who": "B",
+    "units": [
+     "36.m."
+    ],
+    "conf": [
+     "unsure"
+    ],
+    "note": "label only, sits inside a long curved boundary line; no clear arc seen"
+   },
+   {
+    "lon": 26.645,
+    "lat": 55.83,
+    "who": "AB",
+    "units": [
+     "8.Pz.",
+     "8.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arc with 3.m. under it, at Dvinsk"
+   },
+   {
+    "lon": 25.68,
+    "lat": 54.66,
+    "who": "B",
+    "units": [
+     "20.m."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "ellipse with Br.900 circle beside it at Wilna"
+   },
+   {
+    "lon": 26.855,
+    "lat": 54.36,
+    "who": "AB",
+    "units": [
+     "14.m.",
+     "14.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 28.17,
+    "lat": 54.105000000000004,
+    "who": "AB",
+    "units": [
+     "7.Pz.",
+     "7.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "\"7.Pz.\" arc at right edge; east end may lie beyond the crop"
+   },
+   {
+    "lon": 26.865000000000002,
+    "lat": 53.45,
+    "who": "AB",
+    "units": [
+     "17.Pz.",
+     "17.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "\"?\" mark beside it"
+   },
+   {
+    "lon": 27.875,
+    "lat": 53.03,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.54,
+    "lat": 52.715,
+    "who": "AB",
+    "units": [
+     "10.m.",
+     "10.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.97,
+    "lat": 52.29,
+    "who": "B",
+    "units": [
+     "V.A. 5."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "small arc with question mark; 1.K.D. (25.45/52.21) just west"
+   },
+   {
+    "lon": 24.36,
+    "lat": 51.96,
+    "who": "B",
+    "units": [
+     "255."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "oval; Tle.267. just below and 267. further south"
+   },
+   {
+    "lon": 24.62,
+    "lat": 51.17,
+    "who": "B",
+    "units": [
+     "62."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "56. just above at 24.60/51.30"
+   },
+   {
+    "lon": 26.055,
+    "lat": 50.65,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "arrow tip"
+   },
+   {
+    "lon": 26.505000000000003,
+    "lat": 50.34,
+    "who": "AB",
+    "units": [
+     "11.Pz.",
+     "11.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      23.22,
+      53.49
+     ],
+     [
+      24.08,
+      53.49
+     ],
+     [
+      24.62,
+      53.41
+     ],
+     [
+      24.94,
+      53.28
+     ],
+     [
+      24.99,
+      53.25
+     ],
+     [
+      24.61,
+      53.05
+     ],
+     [
+      24.53,
+      52.99
+     ],
+     [
+      23.69,
+      53.2
+     ],
+     [
+      23.27,
+      53.23
+     ],
+     [
+      23.04,
+      53.32
+     ]
+    ],
+    "atlas": "2 Armee-Stäbe / 2-3 Korps-Stäbe / 10 Jnf. Divn. (dabei 1m.) / 1 K.D., 2 Pz.D., 4 Pz.Br.",
+    "who": "AB",
+    "centre": [
+     24.1,
+     53.27
+    ]
+   }
+  ],
+  "rings_not_behind_front": []
+ },
+ "0628": {
+  "front": [
+   [
+    25.98,
+    56.6
+   ],
+   [
+    25.98,
+    56.45
+   ],
+   [
+    25.34,
+    56.16
+   ],
+   [
+    26.56,
+    55.91
+   ],
+   [
+    26.0,
+    55.66
+   ],
+   [
+    25.38,
+    54.72
+   ],
+   [
+    26.94,
+    54.3
+   ],
+   [
+    28.2,
+    54.05
+   ],
+   [
+    29.42,
+    53.12
+   ],
+   [
+    26.14,
+    52.42
+   ],
+   [
+    25.45,
+    52.19
+   ],
+   [
+    24.26,
+    51.88
+   ],
+   [
+    24.79,
+    51.36
+   ],
+   [
+    24.71,
+    51.19
+   ],
+   [
+    25.2,
+    50.97
+   ],
+   [
+    26.3,
+    50.65
+   ],
+   [
+    26.48,
+    50.33
+   ],
+   [
+    25.67,
+    50.1
+   ],
+   [
+    23.65,
+    49.83
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 25.98,
+    "lat": 56.45,
+    "who": "AB",
+    "units": [
+     "1.Pz.",
+     "1.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "arc at north edge of sheet"
+   },
+   {
+    "lon": 25.34,
+    "lat": 56.165,
+    "who": "AB",
+    "units": [
+     "36.m.",
+     "36.m."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc partly cut by tile edge; east end estimated"
+   },
+   {
+    "lon": 26.564999999999998,
+    "lat": 55.91,
+    "who": "AB",
+    "units": [
+     "6.Pz. / 8.Pz. / 3.m. (adjacent symbols)",
+     "8.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "three symbols stacked; east end of the group"
+   },
+   {
+    "lon": 26.0,
+    "lat": 55.655,
+    "who": "AB",
+    "units": [
+     "SS T.? (text hard to read)",
+     "SS T.?"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "designation unsure"
+   },
+   {
+    "lon": 25.384999999999998,
+    "lat": 54.715,
+    "who": "AB",
+    "units": [
+     "Br.900",
+     "Br. 900"
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "circle"
+   },
+   {
+    "lon": 26.94,
+    "lat": 54.305,
+    "who": "AB",
+    "units": [
+     "Tle. 14.m.",
+     "Tle. 14.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 28.205,
+    "lat": 54.055,
+    "who": "AB",
+    "units": [
+     "7.Pz.",
+     "7.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "east of Minsk; blue line east of it is an air-recon route, not a unit"
+   },
+   {
+    "lon": 29.42,
+    "lat": 53.12,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "isolated far to the east of the other symbols at this latitude, near Bobruisk/Beresina on the map"
+   },
+   {
+    "lon": 26.145,
+    "lat": 52.425,
+    "who": "AB",
+    "units": [
+     "V.A. (small arc, number not legible)",
+     "V.A. ?"
+    ],
+    "conf": [
+     "unsure",
+     "rough"
+    ],
+    "note": "tiny arc with question mark"
+   },
+   {
+    "lon": 25.445,
+    "lat": 52.19,
+    "who": "AB",
+    "units": [
+     "1.K.D.",
+     "1.K.D."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "question mark beside it"
+   },
+   {
+    "lon": 24.26,
+    "lat": 51.879999999999995,
+    "who": "AB",
+    "units": [
+     "267.",
+     "267."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.785,
+    "lat": 51.355000000000004,
+    "who": "AB",
+    "units": [
+     "56.",
+     "56."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.71,
+    "lat": 51.19,
+    "who": "A",
+    "units": [
+     "62."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "dashed arrow beside it"
+   },
+   {
+    "lon": 25.2,
+    "lat": 50.965,
+    "who": "AB",
+    "units": [
+     "Tle. (number not legible)",
+     "Tle. ?"
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "arc with the word Tle. beside it"
+   },
+   {
+    "lon": 26.3,
+    "lat": 50.65,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "dashed arrow pointing east"
+   },
+   {
+    "lon": 26.485,
+    "lat": 50.325,
+    "who": "AB",
+    "units": [
+     "11.Pz.",
+     "11.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.67,
+    "lat": 50.1,
+    "who": "AB",
+    "units": [
+     "Tle. 16.Pz.",
+     "Tle. 16.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "southern most symbol of the sheet"
+   },
+   {
+    "lon": 23.65,
+    "lat": 49.83,
+    "who": "B",
+    "units": [
+     "4.Geb."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "southern end of a step-like chain (97.l., 71., 7.Geb., 4.Geb.) near the sheet edge"
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      23.97,
+      53.18
+     ],
+     [
+      24.19,
+      53.27
+     ],
+     [
+      24.36,
+      53.33
+     ],
+     [
+      24.63,
+      53.36
+     ],
+     [
+      24.78,
+      53.33
+     ],
+     [
+      24.87,
+      53.2
+     ],
+     [
+      24.87,
+      53.08
+     ],
+     [
+      24.76,
+      53.01
+     ],
+     [
+      24.55,
+      53.0
+     ],
+     [
+      24.4,
+      53.04
+     ],
+     [
+      24.36,
+      53.15
+     ],
+     [
+      24.25,
+      53.18
+     ]
+    ],
+    "atlas": "2 K.D. / 2 Pz.D. / 4 Pz.Br.",
+    "who": "AB",
+    "centre": [
+     24.5,
+     53.18
+    ]
+   },
+   {
+    "outline": [
+     [
+      23.0,
+      53.28
+     ],
+     [
+      23.06,
+      53.34
+     ],
+     [
+      23.22,
+      53.37
+     ],
+     [
+      23.39,
+      53.37
+     ],
+     [
+      23.48,
+      53.33
+     ],
+     [
+      23.46,
+      53.27
+     ],
+     [
+      23.35,
+      53.23
+     ],
+     [
+      23.16,
+      53.22
+     ],
+     [
+      23.04,
+      53.24
+     ]
+    ],
+    "atlas": "10 (dav. 1m.) Schtz.D",
+    "who": "AB",
+    "centre": [
+     23.24,
+     53.29
+    ]
+   }
+  ],
+  "rings_not_behind_front": []
+ },
+ "0629": {
+  "front": [
+   [
+    26.17,
+    56.6
+   ],
+   [
+    26.17,
+    56.36
+   ],
+   [
+    26.3,
+    56.19
+   ],
+   [
+    26.78,
+    55.98
+   ],
+   [
+    26.39,
+    55.77
+   ],
+   [
+    25.35,
+    55.57
+   ],
+   [
+    25.45,
+    54.71
+   ],
+   [
+    26.95,
+    54.34
+   ],
+   [
+    28.15,
+    54.05
+   ],
+   [
+    27.74,
+    53.84
+   ],
+   [
+    27.89,
+    53.39
+   ],
+   [
+    29.33,
+    53.16
+   ],
+   [
+    25.55,
+    52.75
+   ],
+   [
+    25.14,
+    52.51
+   ],
+   [
+    24.44,
+    52.11
+   ],
+   [
+    24.27,
+    51.91
+   ],
+   [
+    25.12,
+    51.05
+   ],
+   [
+    25.88,
+    50.8
+   ],
+   [
+    26.62,
+    50.64
+   ],
+   [
+    26.5,
+    50.33
+   ],
+   [
+    23.89,
+    49.8
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 26.17,
+    "lat": 56.364999999999995,
+    "who": "AB",
+    "units": [
+     "Tle. 6.Pz. (northern arc)",
+     "6.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "upper of two Tle.6.Pz. arcs along the Dvina; Tle.1.Pz. arc just north-west of it"
+   },
+   {
+    "lon": 26.299999999999997,
+    "lat": 56.185,
+    "who": "AB",
+    "units": [
+     "Tle. 6.Pz. (southern arc)",
+     "Tle. 6.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 26.78,
+    "lat": 55.980000000000004,
+    "who": "AB",
+    "units": [
+     "8.Pz. / 3.m. (with 1.Rgt.14.T. beside)",
+     "8.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arc with question marks; red arrow pointing at it from the NE labelled 4:00"
+   },
+   {
+    "lon": 26.39,
+    "lat": 55.775,
+    "who": "AB",
+    "units": [
+     "SS \"T\" (SS Totenkopf?)",
+     "SS T.?"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc with text SS T and (o.1Rgt.) below; reading of the designation unsure"
+   },
+   {
+    "lon": 25.35,
+    "lat": 55.57,
+    "who": "B",
+    "units": [
+     "290."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc beside the '4' HQ square; nothing blue further east in this band"
+   },
+   {
+    "lon": 25.455,
+    "lat": 54.71,
+    "who": "AB",
+    "units": [
+     "Br.900",
+     "Br. 900"
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "circle at Vilnius"
+   },
+   {
+    "lon": 26.950000000000003,
+    "lat": 54.335,
+    "who": "AB",
+    "units": [
+     "20.m.",
+     "20.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 28.15,
+    "lat": 54.045,
+    "who": "AB",
+    "units": [
+     "7.Pz.",
+     "7.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "red arrows from the east pointing at it; air-recon line east of it is not a unit"
+   },
+   {
+    "lon": 27.740000000000002,
+    "lat": 53.84,
+    "who": "AB",
+    "units": [
+     "20.Pz.",
+     "20.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "at Minsk, south-east of 7.Pz."
+   },
+   {
+    "lon": 27.895,
+    "lat": 53.394999999999996,
+    "who": "AB",
+    "units": [
+     "V.A. XXXXVII.m. (small arc with arrow, 16:00)",
+     "V.A. XXXXVI."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "small arc with arrow; text partly cut"
+   },
+   {
+    "lon": 29.33,
+    "lat": 53.155,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "isolated far east near Bobruisk/Beresina; not connected to other symbols"
+   },
+   {
+    "lon": 25.555,
+    "lat": 52.754999999999995,
+    "who": "AB",
+    "units": [
+     "10.m.",
+     "10.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arc with dashed arrow pointing east"
+   },
+   {
+    "lon": 25.14,
+    "lat": 52.51,
+    "who": "A",
+    "units": [
+     "SS \"R\""
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.44,
+    "lat": 52.11,
+    "who": "A",
+    "units": [
+     "255."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.275,
+    "lat": 51.905,
+    "who": "AB",
+    "units": [
+     "267.",
+     "267."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.12,
+    "lat": 51.05,
+    "who": "A",
+    "units": [
+     "62."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "circle near XVII corps; 56. is just west of it"
+   },
+   {
+    "lon": 25.884999999999998,
+    "lat": 50.8,
+    "who": "AB",
+    "units": [
+     "14.Pz.",
+     "14.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arrow pointing east to III.m."
+   },
+   {
+    "lon": 26.625,
+    "lat": 50.635000000000005,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 26.5,
+    "lat": 50.33,
+    "who": "AB",
+    "units": [
+     "11.Pz.",
+     "11.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 23.89,
+    "lat": 49.8,
+    "who": "B",
+    "units": [
+     "4.Geb."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "southern cluster near Lemberg (125., 24., 97.l., 71., 1.Geb., 4.Geb.) is dense and partly overprinted; only the southernmost arc listed"
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      23.28,
+      53.19
+     ],
+     [
+      23.35,
+      53.25
+     ],
+     [
+      23.46,
+      53.28
+     ],
+     [
+      23.67,
+      53.3
+     ],
+     [
+      23.85,
+      53.29
+     ],
+     [
+      23.88,
+      53.24
+     ],
+     [
+      23.77,
+      53.2
+     ],
+     [
+      23.58,
+      53.16
+     ],
+     [
+      23.37,
+      53.14
+     ],
+     [
+      23.29,
+      53.17
+     ]
+    ],
+    "atlas": "Tle. 3.u.10. Armee",
+    "who": "AB",
+    "centre": [
+     23.55,
+     53.22
+    ]
+   },
+   {
+    "outline": [
+     [
+      24.15,
+      53.3
+     ],
+     [
+      24.52,
+      53.33
+     ],
+     [
+      24.62,
+      53.4
+     ],
+     [
+      24.78,
+      53.42
+     ],
+     [
+      25.02,
+      53.41
+     ],
+     [
+      25.1,
+      53.38
+     ],
+     [
+      25.03,
+      53.34
+     ],
+     [
+      24.78,
+      53.27
+     ],
+     [
+      24.53,
+      53.23
+     ],
+     [
+      24.26,
+      53.2
+     ],
+     [
+      24.16,
+      53.22
+     ]
+    ],
+    "atlas": "3.u.10.Armee / Tle",
+    "who": "AB",
+    "centre": [
+     24.63,
+     53.32
+    ]
+   },
+   {
+    "outline": [
+     [
+      24.48,
+      53.06
+     ],
+     [
+      24.55,
+      53.09
+     ],
+     [
+      24.69,
+      53.1
+     ],
+     [
+      24.82,
+      53.09
+     ],
+     [
+      24.87,
+      53.04
+     ],
+     [
+      24.85,
+      53.0
+     ],
+     [
+      24.75,
+      52.98
+     ],
+     [
+      24.6,
+      53.0
+     ],
+     [
+      24.5,
+      53.03
+     ]
+    ],
+    "atlas": "Teile",
+    "who": "AB",
+    "centre": [
+     24.68,
+     53.04
+    ]
+   }
+  ],
+  "rings_not_behind_front": []
+ },
+ "0630": {
+  "front": [
+   [
+    26.02,
+    56.64
+   ],
+   [
+    26.46,
+    56.42
+   ],
+   [
+    27.14,
+    55.88
+   ],
+   [
+    26.09,
+    55.66
+   ],
+   [
+    25.48,
+    54.72
+   ],
+   [
+    26.44,
+    54.55
+   ],
+   [
+    27.8,
+    54.23
+   ],
+   [
+    28.18,
+    53.91
+   ],
+   [
+    29.01,
+    53.46
+   ],
+   [
+    29.45,
+    53.14
+   ],
+   [
+    24.96,
+    52.18
+   ],
+   [
+    24.23,
+    51.86
+   ],
+   [
+    25.37,
+    50.76
+   ],
+   [
+    27.06,
+    50.53
+   ],
+   [
+    26.51,
+    50.29
+   ],
+   [
+    25.54,
+    49.93
+   ],
+   [
+    25.54,
+    49.9
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 26.02,
+    "lat": 56.64,
+    "who": "B",
+    "units": [
+     "1.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc at/above the 56.5N sheet border; east end uncertain"
+   },
+   {
+    "lon": 26.465,
+    "lat": 56.425,
+    "who": "AB",
+    "units": [
+     "6.Pz.",
+     "6.Pz."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc partly cut by the top of the zoom; east end estimated"
+   },
+   {
+    "lon": 27.14,
+    "lat": 55.875,
+    "who": "AB",
+    "units": [
+     "?.T. (small arc beside 3.m., text like 14.T.? unreadable)",
+     "SS T.?"
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "8.Pz. and 3.m. arcs lie just west of it (3.m. east end about 0.1 deg west)"
+   },
+   {
+    "lon": 26.09,
+    "lat": 55.665,
+    "who": "AB",
+    "units": [
+     "290.",
+     "290."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "arc next to a headquarters box"
+   },
+   {
+    "lon": 25.479999999999997,
+    "lat": 54.72,
+    "who": "AB",
+    "units": [
+     "Br.900",
+     "Br. 900"
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "circle at Vilnius"
+   },
+   {
+    "lon": 26.44,
+    "lat": 54.55,
+    "who": "AB",
+    "units": [
+     "18.m.",
+     "18.m."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "closed blue oval, drawn with a dashed-looking outline in places"
+   },
+   {
+    "lon": 27.795,
+    "lat": 54.230000000000004,
+    "who": "AB",
+    "units": [
+     "20.m.",
+     "20.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 28.175,
+    "lat": 53.905,
+    "who": "AB",
+    "units": [
+     "18.Pz.",
+     "18.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arc south-east of Minsk with red arrow below"
+   },
+   {
+    "lon": 29.01,
+    "lat": 53.46,
+    "who": "AB",
+    "units": [
+     "Tle. 3.Pz.",
+     "Tle. 3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "small arc isolated far east at about 53.5N"
+   },
+   {
+    "lon": 29.445,
+    "lat": 53.144999999999996,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arc at Bobruisk with two red arrows pointing at it from the east"
+   },
+   {
+    "lon": 24.965,
+    "lat": 52.18,
+    "who": "AB",
+    "units": [
+     "Tle. 45.",
+     "Tle. 45."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.235,
+    "lat": 51.86,
+    "who": "AB",
+    "units": [
+     "Tle. 267.",
+     "Tle. 267."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arc sitting on the army boundary line"
+   },
+   {
+    "lon": 25.37,
+    "lat": 50.76,
+    "who": "A",
+    "units": [
+     "298."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "hard to separate from adjacent dashed arcs"
+   },
+   {
+    "lon": 27.06,
+    "lat": 50.525000000000006,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "blue arrow continues east from it (arrow, not a unit)"
+   },
+   {
+    "lon": 26.505000000000003,
+    "lat": 50.29,
+    "who": "AB",
+    "units": [
+     "11.Pz.",
+     "11.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.54,
+    "lat": 49.93,
+    "who": "B",
+    "units": [
+     "75."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "small arc at the sheet's south margin; label '75.' read next to 'LV.'"
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      24.64,
+      53.28
+     ],
+     [
+      24.72,
+      53.3
+     ],
+     [
+      24.89,
+      53.29
+     ],
+     [
+      25.13,
+      53.28
+     ],
+     [
+      25.28,
+      53.24
+     ],
+     [
+      25.31,
+      53.19
+     ],
+     [
+      25.25,
+      53.15
+     ],
+     [
+      25.12,
+      53.13
+     ],
+     [
+      24.99,
+      53.15
+     ],
+     [
+      24.89,
+      53.18
+     ],
+     [
+      24.78,
+      53.22
+     ],
+     [
+      24.67,
+      53.25
+     ]
+    ],
+    "atlas": "Tle. 3.u.10 Armee",
+    "who": "AB",
+    "centre": [
+     24.97,
+     53.22
+    ]
+   },
+   {
+    "outline": [
+     [
+      24.83,
+      53.11
+     ],
+     [
+      24.92,
+      53.11
+     ],
+     [
+      24.94,
+      53.06
+     ],
+     [
+      24.94,
+      53.01
+     ],
+     [
+      24.88,
+      52.97
+     ],
+     [
+      24.8,
+      52.97
+     ],
+     [
+      24.75,
+      53.01
+     ],
+     [
+      24.8,
+      53.04
+     ],
+     [
+      24.81,
+      53.09
+     ]
+    ],
+    "atlas": "Tle. 3.u.10 Arm. (label overprinted across the loop, unsure)",
+    "who": "AB",
+    "centre": [
+     24.85,
+     53.04
+    ]
+   }
+  ],
+  "rings_not_behind_front": []
+ },
+ "0701": {
+  "front": [
+   [
+    26.65,
+    56.6
+   ],
+   [
+    26.65,
+    56.5
+   ],
+   [
+    27.18,
+    55.89
+   ],
+   [
+    25.75,
+    55.48
+   ],
+   [
+    25.43,
+    55.1
+   ],
+   [
+    25.53,
+    54.79
+   ],
+   [
+    27.25,
+    54.59
+   ],
+   [
+    28.51,
+    54.22
+   ],
+   [
+    28.16,
+    53.96
+   ],
+   [
+    27.78,
+    53.8
+   ],
+   [
+    28.98,
+    53.42
+   ],
+   [
+    29.34,
+    53.16
+   ],
+   [
+    27.4,
+    52.96
+   ],
+   [
+    25.1,
+    52.52
+   ],
+   [
+    24.91,
+    52.2
+   ],
+   [
+    24.8,
+    51.22
+   ],
+   [
+    25.34,
+    51.06
+   ],
+   [
+    25.58,
+    50.76
+   ],
+   [
+    26.75,
+    50.53
+   ],
+   [
+    26.53,
+    50.34
+   ],
+   [
+    25.08,
+    50.03
+   ],
+   [
+    25.08,
+    49.9
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 26.65,
+    "lat": 56.5,
+    "who": "AB",
+    "units": [
+     "6.Pz.",
+     "Tle. 6.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "arc at the top edge of the zoom, east end estimated; \"Tle. 6.Pz.\" label beside it"
+   },
+   {
+    "lon": 27.18,
+    "lat": 55.885000000000005,
+    "who": "AB",
+    "units": [
+     "?.T. (arc east of 3.m., text like 14.T.? unreadable)",
+     "SS T.? (H.T.)"
+    ],
+    "conf": [
+     "clear",
+     "unsure"
+    ],
+    "note": "8.Pz. and 3.m. arcs lie just west of it"
+   },
+   {
+    "lon": 25.75,
+    "lat": 55.48,
+    "who": "B",
+    "units": [
+     "121."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.43,
+    "lat": 55.1,
+    "who": "B",
+    "units": [
+     "32."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc partly crossed by boundary line"
+   },
+   {
+    "lon": 25.53,
+    "lat": 54.79,
+    "who": "AB",
+    "units": [
+     "19.Pz.",
+     "19.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "oval overlapping the Br.900 oval at Vilnius"
+   },
+   {
+    "lon": 27.255,
+    "lat": 54.585,
+    "who": "AB",
+    "units": [
+     "1 Btl. 20.m.",
+     "1 Btl. 20.m."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "small arc; 18.m. oval is about 0.7 deg west of it"
+   },
+   {
+    "lon": 28.505000000000003,
+    "lat": 54.224999999999994,
+    "who": "AB",
+    "units": [
+     "Tle. 18.Pz.",
+     "Tle. 18.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "arc at Borisov with dotted air-recon line east of it (not a unit)"
+   },
+   {
+    "lon": 28.16,
+    "lat": 53.96,
+    "who": "A",
+    "units": [
+     "18. (Pz.)"
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "arc south-west of Tle.18.Pz., label reads 18 / Pz."
+   },
+   {
+    "lon": 27.78,
+    "lat": 53.8,
+    "who": "A",
+    "units": [
+     "20.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "at Minsk; borderline, 18. is east of it at about 0.16 deg latitude difference"
+   },
+   {
+    "lon": 28.985,
+    "lat": 53.42,
+    "who": "AB",
+    "units": [
+     "4.Pz.",
+     "4.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.335,
+    "lat": 53.155,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "near Bobruisk"
+   },
+   {
+    "lon": 27.4,
+    "lat": 52.96,
+    "who": "B",
+    "units": [
+     "1.K.D."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "oval with arrow to a DASHED arc with '?' at about (27.71,52.93); the dashed arc not counted"
+   },
+   {
+    "lon": 25.1,
+    "lat": 52.519999999999996,
+    "who": "AB",
+    "units": [
+     "255.",
+     "255."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 24.915,
+    "lat": 52.2,
+    "who": "AB",
+    "units": [
+     "Tle. 45.",
+     "Tle. 45."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "dashed arrow with ? runs east from it"
+   },
+   {
+    "lon": 24.8,
+    "lat": 51.22,
+    "who": "B",
+    "units": [
+     "Tle. 213.S."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "small arc near Kowel"
+   },
+   {
+    "lon": 25.34,
+    "lat": 51.06,
+    "who": "B",
+    "units": [
+     "56."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.58,
+    "lat": 50.760000000000005,
+    "who": "AB",
+    "units": [
+     "62. / 298.",
+     "62. / 298."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "two arcs stacked; red arrow pointing north-east above them"
+   },
+   {
+    "lon": 26.745,
+    "lat": 50.535,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "blue arrow continues east from it"
+   },
+   {
+    "lon": 26.53,
+    "lat": 50.335,
+    "who": "AB",
+    "units": [
+     "11.Pz.",
+     "11.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.08,
+    "lat": 50.03,
+    "who": "B",
+    "units": [
+     "9."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "southern end, dense; may not be the true eastmost there"
+   }
+  ],
+  "pockets": [],
+  "rings_not_behind_front": []
+ },
+ "0702": {
+  "front": [
+   [
+    27.15,
+    56.6
+   ],
+   [
+    27.15,
+    56.37
+   ],
+   [
+    27.34,
+    56.12
+   ],
+   [
+    27.24,
+    55.91
+   ],
+   [
+    26.73,
+    55.59
+   ],
+   [
+    27.88,
+    55.14
+   ],
+   [
+    27.47,
+    54.64
+   ],
+   [
+    27.8,
+    54.43
+   ],
+   [
+    28.62,
+    54.23
+   ],
+   [
+    28.9,
+    53.77
+   ],
+   [
+    29.89,
+    53.45
+   ],
+   [
+    29.43,
+    53.14
+   ],
+   [
+    30.02,
+    52.91
+   ],
+   [
+    25.3,
+    52.65
+   ],
+   [
+    24.94,
+    52.2
+   ],
+   [
+    25.24,
+    51.09
+   ],
+   [
+    26.68,
+    50.5
+   ],
+   [
+    26.09,
+    50.04
+   ],
+   [
+    26.09,
+    49.9
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 27.15,
+    "lat": 56.37,
+    "who": "B",
+    "units": [
+     "Tle. 8.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc east end near 'Tle. 46.Pz.D.' red text"
+   },
+   {
+    "lon": 27.345,
+    "lat": 56.12,
+    "who": "AB",
+    "units": [
+     "3.m.",
+     "3.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "long arc; SS \"T.\" arc and 1.Rgt.121 arc just south of it"
+   },
+   {
+    "lon": 27.244999999999997,
+    "lat": 55.905,
+    "who": "AB",
+    "units": [
+     "1.Rgt. 121.",
+     "1.Rgt. 121."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "arc with 121. label"
+   },
+   {
+    "lon": 26.725,
+    "lat": 55.595,
+    "who": "AB",
+    "units": [
+     "V.A. II. (small arc east of Dunaburg)",
+     "V.A. II."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc at the blue army boundary line"
+   },
+   {
+    "lon": 27.88,
+    "lat": 55.14,
+    "who": "AB",
+    "units": [
+     "18.m.",
+     "18.m."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "arc just east of 19.Pz.; question whether it is east-most at 55N"
+   },
+   {
+    "lon": 27.47,
+    "lat": 54.64,
+    "who": "AB",
+    "units": [
+     "20.Pz. (arc with 3 / Krewo HQ)",
+     "20.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "arc beside the HQ at Wileika"
+   },
+   {
+    "lon": 27.8,
+    "lat": 54.43,
+    "who": "A",
+    "units": [
+     "20.m."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "open arc (label 20. m.)"
+   },
+   {
+    "lon": 28.615000000000002,
+    "lat": 54.230000000000004,
+    "who": "AB",
+    "units": [
+     "18.Pz.",
+     "18.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "arc at Borisov; red 50.Pz.Br. and red 18.Pz. labels beside it"
+   },
+   {
+    "lon": 28.9,
+    "lat": 53.77,
+    "who": "A",
+    "units": [
+     "Tle. 44.R. (SS \"R\")"
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.89,
+    "lat": 53.45,
+    "who": "B",
+    "units": [
+     "3.Pz. A.A."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "small arc at Starije Bychow area labelled '3.Pz. A.A.', east end estimated from the zoom"
+   },
+   {
+    "lon": 29.43,
+    "lat": 53.144999999999996,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "dashed blue arrow and red arrow continue east of it"
+   },
+   {
+    "lon": 30.020000000000003,
+    "lat": 52.915,
+    "who": "AB",
+    "units": [
+     "V.A. (before 8.Pz./3.Pz., label hard to read \"V.A. 8.Pz.?\")",
+     "V.A. Pz."
+    ],
+    "conf": [
+     "unsure",
+     "clear"
+    ],
+    "note": "arc at the far east of the south-east tile (about 53.0N 30.0E); next to red \"29.Pz.B\""
+   },
+   {
+    "lon": 25.3,
+    "lat": 52.65,
+    "who": "B",
+    "units": [
+     "255."
+    ],
+    "conf": [
+     "unsure"
+    ],
+    "note": "52. and 255. arcs are stacked; east end converted from tile coordinates, may be 0.1 deg off"
+   },
+   {
+    "lon": 24.94,
+    "lat": 52.205,
+    "who": "AB",
+    "units": [
+     "Tle. 45. / 45.",
+     "Tle. 45."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "oval east of Brest, east end estimated"
+   },
+   {
+    "lon": 25.240000000000002,
+    "lat": 51.095,
+    "who": "AB",
+    "units": [
+     "56.",
+     "56."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 26.68,
+    "lat": 50.5,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "blue arrow east of it"
+   },
+   {
+    "lon": 26.09,
+    "lat": 50.04,
+    "who": "B",
+    "units": [
+     "111."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "southernmost arc at the sheet's lower part; east end converted from a point on the arrow tip, may be off 0.1 deg"
+   }
+  ],
+  "pockets": [],
+  "rings_not_behind_front": []
+ },
+ "0703": {
+  "front": [
+   [
+    27.38,
+    56.6
+   ],
+   [
+    27.38,
+    56.47
+   ],
+   [
+    27.68,
+    56.27
+   ],
+   [
+    27.49,
+    56.05
+   ],
+   [
+    28.27,
+    55.54
+   ],
+   [
+    28.53,
+    55.38
+   ],
+   [
+    28.83,
+    54.88
+   ],
+   [
+    28.96,
+    54.3
+   ],
+   [
+    29.02,
+    53.85
+   ],
+   [
+    29.92,
+    53.46
+   ],
+   [
+    30.14,
+    53.09
+   ],
+   [
+    26.16,
+    52.19
+   ],
+   [
+    25.75,
+    51.08
+   ],
+   [
+    26.62,
+    50.66
+   ],
+   [
+    27.12,
+    50.5
+   ],
+   [
+    26.62,
+    50.14
+   ],
+   [
+    26.62,
+    49.9
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 27.380000000000003,
+    "lat": 56.465,
+    "who": "AB",
+    "units": [
+     "8.Pz.",
+     "8.Pz."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc at the top of the tile, north of the Dvina; Tle.46.Pz. in red beside it"
+   },
+   {
+    "lon": 27.68,
+    "lat": 56.265,
+    "who": "AB",
+    "units": [
+     "3.m.",
+     "3.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "long arc"
+   },
+   {
+    "lon": 27.49,
+    "lat": 56.05,
+    "who": "A",
+    "units": [
+     "SS \"T\" arc (with Tle.185.m.? / Tle.152.? in red just east)"
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "SS T arc; its east end is a long vertical arc; red labels sit directly east"
+   },
+   {
+    "lon": 28.265,
+    "lat": 55.540000000000006,
+    "who": "AB",
+    "units": [
+     "19.Pz.",
+     "19.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "arc with Reste 33 u. III.Pz.Kps red arc/arrow immediately west of it"
+   },
+   {
+    "lon": 28.53,
+    "lat": 55.379999999999995,
+    "who": "AB",
+    "units": [
+     "18.m.",
+     "18.m."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "arc south-east of 19.Pz."
+   },
+   {
+    "lon": 28.83,
+    "lat": 54.885,
+    "who": "AB",
+    "units": [
+     "20.Pz. / 7.Pz.",
+     "20.Pz. / 7.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "one arc carrying both labels"
+   },
+   {
+    "lon": 28.96,
+    "lat": 54.3,
+    "who": "AB",
+    "units": [
+     "18.Pz.",
+     "18.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "arc at Borisov; red 18.Pz. and Tle.4.Pz. labels below it (red = Soviet remnants as the map labels them)"
+   },
+   {
+    "lon": 29.015,
+    "lat": 53.85,
+    "who": "AB",
+    "units": [
+     "10.Pz.",
+     "10.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "red arrow with Reste 85 / Tle.141 points at it from the east"
+   },
+   {
+    "lon": 29.92,
+    "lat": 53.46,
+    "who": "B",
+    "units": [
+     "Tle. 3.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "arc near Starye Bychow; 4.Pz. (29.22,53.50) is west of it"
+   },
+   {
+    "lon": 30.145,
+    "lat": 53.09,
+    "who": "AB",
+    "units": [
+     "Tle. 3.Pz.",
+     "Tle. 3.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "small arc north of Rogatschew with red tick beside it"
+   },
+   {
+    "lon": 26.16,
+    "lat": 52.19,
+    "who": "AB",
+    "units": [
+     "V.A. 46 (arc at Pinsk)",
+     "V.A. 46"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "isolated arc with text V.A.46; reading of the number unsure"
+   },
+   {
+    "lon": 25.75,
+    "lat": 51.075,
+    "who": "AB",
+    "units": [
+     "62.",
+     "62."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "just below 56."
+   },
+   {
+    "lon": 26.615000000000002,
+    "lat": 50.665,
+    "who": "AB",
+    "units": [
+     "14.Pz.",
+     "14.R."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "arrow east of it"
+   },
+   {
+    "lon": 27.115000000000002,
+    "lat": 50.504999999999995,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "right edge of the zoom, partly cut"
+   },
+   {
+    "lon": 26.615000000000002,
+    "lat": 50.135000000000005,
+    "who": "AB",
+    "units": [
+     "16.m.",
+     "16.m."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arrow beside it"
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      25.86,
+      53.95
+     ],
+     [
+      26.21,
+      54.05
+     ],
+     [
+      26.73,
+      53.96
+     ],
+     [
+      27.15,
+      53.87
+     ],
+     [
+      27.15,
+      53.77
+     ],
+     [
+      26.85,
+      53.63
+     ],
+     [
+      26.38,
+      53.46
+     ],
+     [
+      25.9,
+      53.31
+     ],
+     [
+      25.75,
+      53.46
+     ],
+     [
+      25.91,
+      53.66
+     ],
+     [
+      25.92,
+      53.81
+     ]
+    ],
+    "atlas": "Versprengte / Reste von 10-12 Divn.",
+    "who": "AB",
+    "centre": [
+     26.35,
+     53.72
+    ]
+   }
+  ],
+  "rings_not_behind_front": []
+ },
+ "0704": {
+  "front": [
+   [
+    28.18,
+    57.25
+   ],
+   [
+    28.12,
+    56.94
+   ],
+   [
+    27.87,
+    56.72
+   ],
+   [
+    27.98,
+    56.53
+   ],
+   [
+    28.13,
+    56.31
+   ],
+   [
+    27.55,
+    56.07
+   ],
+   [
+    27.36,
+    55.91
+   ],
+   [
+    28.27,
+    55.57
+   ],
+   [
+    28.61,
+    55.4
+   ],
+   [
+    29.26,
+    55.21
+   ],
+   [
+    29.1,
+    54.86
+   ],
+   [
+    29.11,
+    54.33
+   ],
+   [
+    28.96,
+    53.84
+   ],
+   [
+    30.29,
+    53.48
+   ],
+   [
+    30.16,
+    53.06
+   ],
+   [
+    28.05,
+    52.9
+   ],
+   [
+    25.57,
+    52.7
+   ],
+   [
+    26.15,
+    52.16
+   ],
+   [
+    25.92,
+    51.04
+   ],
+   [
+    27.3,
+    50.48
+   ],
+   [
+    27.0,
+    50.18
+   ],
+   [
+    26.37,
+    49.81
+   ],
+   [
+    26.04,
+    49.5
+   ],
+   [
+    25.24,
+    49.34
+   ],
+   [
+    25.04,
+    49.08
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 28.18,
+    "lat": 57.25,
+    "who": "A",
+    "units": [
+     "1.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of the tile range (tile top is 56.5N); read from zoom"
+   },
+   {
+    "lon": 28.12,
+    "lat": 56.94,
+    "who": "A",
+    "units": [
+     "6.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "lon": 27.87,
+    "lat": 56.72,
+    "who": "A",
+    "units": [
+     "8.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "lon": 27.98,
+    "lat": 56.53,
+    "who": "A",
+    "units": [
+     "3.m."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "at top edge of tile"
+   },
+   {
+    "lon": 28.13,
+    "lat": 56.31,
+    "who": "A",
+    "units": [
+     "SS \"T\""
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "SS Totenkopf-style label"
+   },
+   {
+    "lon": 27.55,
+    "lat": 56.07,
+    "who": "AB",
+    "units": [
+     "290.",
+     "290."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "two adjacent blue arcs near the label; east tip of the lower one taken"
+   },
+   {
+    "lon": 27.36,
+    "lat": 55.91,
+    "who": "AB",
+    "units": [
+     "121.",
+     "121."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 28.27,
+    "lat": 55.57,
+    "who": "AB",
+    "units": [
+     "19.Pz.",
+     "19.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 28.61,
+    "lat": 55.4,
+    "who": "AB",
+    "units": [
+     "18.m.",
+     "18.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.26,
+    "lat": 55.21,
+    "who": "AB",
+    "units": [
+     "20.Pz.",
+     "20.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.1,
+    "lat": 54.86,
+    "who": "AB",
+    "units": [
+     "7.Pz.",
+     "7.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "a separate unlabelled small arc stands just north of it at about 29.10E 54.99N"
+   },
+   {
+    "lon": 29.11,
+    "lat": 54.33,
+    "who": "AB",
+    "units": [
+     "18.Pz.",
+     "18.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 28.96,
+    "lat": 53.84,
+    "who": "AB",
+    "units": [
+     "10.Pz.",
+     "10.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 30.29,
+    "lat": 53.48,
+    "who": "AB",
+    "units": [
+     "4.Pz.",
+     "4.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 30.16,
+    "lat": 53.06,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 28.05,
+    "lat": 52.9,
+    "who": "B",
+    "units": [
+     "1.K.D."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "oval; within 0.15 of 3.Pz but 2 deg further west, kept as isolated sign"
+   },
+   {
+    "lon": 25.57,
+    "lat": 52.7,
+    "who": "A",
+    "units": [
+     "267."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc beside label; unit label partly overlapped"
+   },
+   {
+    "lon": 26.15,
+    "lat": 52.16,
+    "who": "AB",
+    "units": [
+     "V.A.",
+     "V.A."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc west of Pinsk labelled only V.A., no number"
+   },
+   {
+    "lon": 25.92,
+    "lat": 51.04,
+    "who": "AB",
+    "units": [
+     "62.",
+     "62."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.3,
+    "lat": 50.48,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.0,
+    "lat": 50.18,
+    "who": "A",
+    "units": [
+     "Tle."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc labelled only Tle. (next to a 11.Pz. label); number not clear"
+   },
+   {
+    "lon": 26.37,
+    "lat": 49.81,
+    "who": "A",
+    "units": [
+     "V.A."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "small arc, no number"
+   },
+   {
+    "lon": 26.04,
+    "lat": 49.5,
+    "who": "A",
+    "units": [
+     "Tle. 9.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "south of tile range (tile bottom is about 50.2N); read from zoom"
+   },
+   {
+    "lon": 25.24,
+    "lat": 49.34,
+    "who": "A",
+    "units": [
+     "4.Geb."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "south of tile range; read from zoom"
+   },
+   {
+    "lon": 25.04,
+    "lat": 49.08,
+    "who": "A",
+    "units": [
+     "V.A. 101."
+    ],
+    "conf": [
+     "unsure"
+    ],
+    "note": "south of tile range; read from zoom, stopped reading here"
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      26.1,
+      54.1
+     ],
+     [
+      26.52,
+      54.06
+     ],
+     [
+      26.85,
+      53.95
+     ],
+     [
+      26.95,
+      53.83
+     ],
+     [
+      26.83,
+      53.71
+     ],
+     [
+      26.75,
+      53.6
+     ],
+     [
+      26.46,
+      53.52
+     ],
+     [
+      26.2,
+      53.61
+     ],
+     [
+      25.91,
+      53.77
+     ],
+     [
+      25.84,
+      53.94
+     ],
+     [
+      25.94,
+      54.05
+     ]
+    ],
+    "atlas": "Versprengte Reste von 10-12 Divn.",
+    "who": "AB",
+    "centre": [
+     26.4,
+     53.83
+    ]
+   }
+  ],
+  "rings_not_behind_front": []
+ },
+ "0705": {
+  "front": [
+   [
+    28.49,
+    57.3
+   ],
+   [
+    28.05,
+    57.11
+   ],
+   [
+    28.29,
+    56.83
+   ],
+   [
+    28.1,
+    56.58
+   ],
+   [
+    28.12,
+    56.4
+   ],
+   [
+    27.52,
+    56.08
+   ],
+   [
+    27.4,
+    55.81
+   ],
+   [
+    28.64,
+    55.43
+   ],
+   [
+    29.54,
+    55.09
+   ],
+   [
+    29.77,
+    54.81
+   ],
+   [
+    29.31,
+    54.65
+   ],
+   [
+    29.5,
+    54.38
+   ],
+   [
+    29.98,
+    53.96
+   ],
+   [
+    29.56,
+    53.65
+   ],
+   [
+    30.41,
+    53.32
+   ],
+   [
+    30.22,
+    53.08
+   ],
+   [
+    28.0,
+    52.9
+   ],
+   [
+    26.17,
+    52.15
+   ],
+   [
+    26.3,
+    51.17
+   ],
+   [
+    26.31,
+    50.98
+   ],
+   [
+    27.69,
+    50.49
+   ],
+   [
+    27.62,
+    50.12
+   ],
+   [
+    26.51,
+    49.96
+   ],
+   [
+    26.46,
+    49.73
+   ],
+   [
+    26.04,
+    49.48
+   ],
+   [
+    25.19,
+    49.02
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 28.49,
+    "lat": 57.3,
+    "who": "A",
+    "units": [
+     "1.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of the tile range (tile top is 56.5N); read from zoom"
+   },
+   {
+    "lon": 28.05,
+    "lat": 57.11,
+    "who": "A",
+    "units": [
+     "6.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "lon": 28.29,
+    "lat": 56.83,
+    "who": "A",
+    "units": [
+     "8.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "lon": 28.1,
+    "lat": 56.58,
+    "who": "AB",
+    "units": [
+     "3.m.",
+     "3.m."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "long arc, at the top edge of tile"
+   },
+   {
+    "lon": 28.12,
+    "lat": 56.4,
+    "who": "A",
+    "units": [
+     "SS \"T\""
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.52,
+    "lat": 56.08,
+    "who": "AB",
+    "units": [
+     "290.",
+     "290."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "two adjacent blue arcs; east tip of the lower one"
+   },
+   {
+    "lon": 27.4,
+    "lat": 55.81,
+    "who": "AB",
+    "units": [
+     "V.A. 32.",
+     "121."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "small arc labelled V.A. 32.; 121. arc is just north"
+   },
+   {
+    "lon": 28.64,
+    "lat": 55.43,
+    "who": "AB",
+    "units": [
+     "18.m.",
+     "18.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.54,
+    "lat": 55.09,
+    "who": "A",
+    "units": [
+     "V.A."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc labelled V.A. with no number, north of Potschetkowo"
+   },
+   {
+    "lon": 29.77,
+    "lat": 54.81,
+    "who": "AB",
+    "units": [
+     "V.A. 17.",
+     "V.A. 17.?"
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "arc labelled V.A. next to a 17.P(z). label"
+   },
+   {
+    "lon": 29.31,
+    "lat": 54.65,
+    "who": "A",
+    "units": [
+     "Tle. 17.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.5,
+    "lat": 54.38,
+    "who": "AB",
+    "units": [
+     "18.Pz.",
+     "18.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.98,
+    "lat": 53.96,
+    "who": "AB",
+    "units": [
+     "10.Pz.",
+     "10.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.56,
+    "lat": 53.65,
+    "who": "A",
+    "units": [
+     "SS \"R\""
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 30.41,
+    "lat": 53.32,
+    "who": "AB",
+    "units": [
+     "Tle. 3.Pz.",
+     "Tle. 3.Pz."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc labelled Tle. 3.Pz."
+   },
+   {
+    "lon": 30.22,
+    "lat": 53.08,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "double arc"
+   },
+   {
+    "lon": 28.0,
+    "lat": 52.9,
+    "who": "B",
+    "units": [
+     "1.K.D."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "oval; isolated far to the west of the 3.Pz. signs"
+   },
+   {
+    "lon": 26.17,
+    "lat": 52.15,
+    "who": "AB",
+    "units": [
+     "V.A.",
+     "V.A."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc west of Pinsk, no number"
+   },
+   {
+    "lon": 26.3,
+    "lat": 51.17,
+    "who": "AB",
+    "units": [
+     "62.",
+     "56."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 26.31,
+    "lat": 50.98,
+    "who": "AB",
+    "units": [
+     "99.1",
+     "99.1"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.69,
+    "lat": 50.49,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.62,
+    "lat": 50.12,
+    "who": "A",
+    "units": [
+     "11.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "south of tile range (tile bottom is about 50.2N); read from zoom"
+   },
+   {
+    "lon": 26.51,
+    "lat": 49.96,
+    "who": "A",
+    "units": [
+     "16.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "column of overlapping arcs (Tle.16.Pz., 111., 16.Pz., 75., 57., 9.); ties within reading error with 75."
+   },
+   {
+    "lon": 26.46,
+    "lat": 49.73,
+    "who": "A",
+    "units": [
+     "57."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "same column of arcs; ties with 75."
+   },
+   {
+    "lon": 26.04,
+    "lat": 49.48,
+    "who": "A",
+    "units": [
+     "Tle. 9.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 25.19,
+    "lat": 49.02,
+    "who": "A",
+    "units": [
+     "101."
+    ],
+    "conf": [
+     "unsure"
+    ],
+    "note": "arc beside label 101.1; stopped reading here"
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      26.02,
+      54.09
+     ],
+     [
+      26.41,
+      54.07
+     ],
+     [
+      26.78,
+      53.98
+     ],
+     [
+      27.01,
+      53.89
+     ],
+     [
+      26.93,
+      53.77
+     ],
+     [
+      26.69,
+      53.62
+     ],
+     [
+      26.34,
+      53.66
+     ],
+     [
+      26.04,
+      53.74
+     ],
+     [
+      26.01,
+      53.86
+     ],
+     [
+      25.92,
+      54.01
+     ]
+    ],
+    "atlas": "Versprengte Reste von 10-12 Divn.",
+    "who": "AB",
+    "centre": [
+     26.41,
+     53.87
+    ]
+   }
+  ],
+  "rings_not_behind_front": []
+ },
+ "0706": {
+  "front": [
+   [
+    28.36,
+    57.28
+   ],
+   [
+    28.29,
+    56.82
+   ],
+   [
+    28.16,
+    56.59
+   ],
+   [
+    28.34,
+    56.31
+   ],
+   [
+    27.65,
+    56.1
+   ],
+   [
+    27.42,
+    55.82
+   ],
+   [
+    28.38,
+    55.6
+   ],
+   [
+    28.62,
+    55.43
+   ],
+   [
+    29.76,
+    55.08
+   ],
+   [
+    29.76,
+    54.81
+   ],
+   [
+    29.77,
+    54.43
+   ],
+   [
+    29.72,
+    53.93
+   ],
+   [
+    30.29,
+    53.51
+   ],
+   [
+    30.38,
+    53.32
+   ],
+   [
+    30.17,
+    53.13
+   ],
+   [
+    26.15,
+    52.09
+   ],
+   [
+    27.62,
+    50.62
+   ],
+   [
+    27.67,
+    50.14
+   ],
+   [
+    26.36,
+    49.42
+   ],
+   [
+    26.23,
+    49.08
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 28.36,
+    "lat": 57.28,
+    "who": "A",
+    "units": [
+     "1./6.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "north of the tile range (tile top is 56.5N); one big arc labelled 1. and 6.Pz. near Ostrow; read from zoom"
+   },
+   {
+    "lon": 28.29,
+    "lat": 56.82,
+    "who": "A",
+    "units": [
+     "8.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of tile range; long arc; read from zoom"
+   },
+   {
+    "lon": 28.16,
+    "lat": 56.59,
+    "who": "AB",
+    "units": [
+     "Tle. 3.m.",
+     "Tle. 3.m."
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "arc labelled Tle. 3.m.; the larger 3.m. oval is about 0.4 degree further west on the same latitude"
+   },
+   {
+    "lon": 28.34,
+    "lat": 56.31,
+    "who": "AB",
+    "units": [
+     "SS \"T\"",
+     "SS \"T\""
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.65,
+    "lat": 56.1,
+    "who": "B",
+    "units": [
+     "290."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.42,
+    "lat": 55.82,
+    "who": "AB",
+    "units": [
+     "Tle. 32.",
+     "Tle. 32."
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "arc labelled 32. Tle. just south of 121./12. on the Dvina"
+   },
+   {
+    "lon": 28.38,
+    "lat": 55.6,
+    "who": "AB",
+    "units": [
+     "19.Pz.",
+     "19.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "shares one arc with a Tle. 18.m. label"
+   },
+   {
+    "lon": 28.62,
+    "lat": 55.43,
+    "who": "AB",
+    "units": [
+     "Tle. 18.m.",
+     "Tle. 18.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.76,
+    "lat": 55.08,
+    "who": "AB",
+    "units": [
+     "7.Pz.",
+     "7.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.76,
+    "lat": 54.81,
+    "who": "AB",
+    "units": [
+     "17.Pz.",
+     "17.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "label printed 'Pz 17'; a red/blue '?' sits beside it"
+   },
+   {
+    "lon": 29.77,
+    "lat": 54.43,
+    "who": "AB",
+    "units": [
+     "18.Pz.",
+     "18.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.72,
+    "lat": 53.93,
+    "who": "AB",
+    "units": [
+     "10.Pz.",
+     "10.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 30.29,
+    "lat": 53.51,
+    "who": "AB",
+    "units": [
+     "4.Pz.",
+     "4.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 30.38,
+    "lat": 53.32,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "Tle. 3.Pz."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "upper of two arcs belonging to the 3.Pz. label"
+   },
+   {
+    "lon": 30.17,
+    "lat": 53.13,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "lower of the two arcs; red line (Soviet) runs right beside it"
+   },
+   {
+    "lon": 26.15,
+    "lat": 52.09,
+    "who": "B",
+    "units": [
+     "45."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "solid arc left of Pinsk, 'H.Kdo. XXV.' above"
+   },
+   {
+    "lon": 27.62,
+    "lat": 50.62,
+    "who": "B",
+    "units": [
+     "14.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.67,
+    "lat": 50.14,
+    "who": "A",
+    "units": [
+     "11.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "south of tile range (tile bottom is about 50.2N); read from zoom"
+   },
+   {
+    "lon": 26.36,
+    "lat": 49.42,
+    "who": "A",
+    "units": [
+     "9.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "south of tile range; read from zoom"
+   },
+   {
+    "lon": 26.23,
+    "lat": 49.08,
+    "who": "A",
+    "units": [
+     "Tle. SS \"W\""
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "south of tile range; label reads Tle. 44.W. (SS W); stopped reading here"
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      26.51,
+      54.07
+     ],
+     [
+      26.72,
+      54.05
+     ],
+     [
+      26.97,
+      53.96
+     ],
+     [
+      27.08,
+      53.86
+     ],
+     [
+      26.96,
+      53.76
+     ],
+     [
+      26.78,
+      53.67
+     ],
+     [
+      26.65,
+      53.69
+     ],
+     [
+      26.64,
+      53.8
+     ],
+     [
+      26.57,
+      53.92
+     ],
+     [
+      26.46,
+      54.03
+     ]
+    ],
+    "atlas": "Versprengte Reste v. 10-12 Div.",
+    "who": "AB",
+    "centre": [
+     26.73,
+     53.88
+    ]
+   }
+  ],
+  "rings_not_behind_front": []
+ },
+ "0707": {
+  "front": [
+   [
+    28.88,
+    57.27
+   ],
+   [
+    28.59,
+    56.95
+   ],
+   [
+    28.03,
+    56.66
+   ],
+   [
+    28.34,
+    56.34
+   ],
+   [
+    27.97,
+    56.12
+   ],
+   [
+    27.7,
+    55.84
+   ],
+   [
+    28.44,
+    55.6
+   ],
+   [
+    28.64,
+    55.4
+   ],
+   [
+    29.78,
+    55.0
+   ],
+   [
+    29.78,
+    54.81
+   ],
+   [
+    29.73,
+    54.43
+   ],
+   [
+    29.74,
+    53.91
+   ],
+   [
+    30.3,
+    53.52
+   ],
+   [
+    30.37,
+    53.29
+   ],
+   [
+    30.16,
+    53.01
+   ],
+   [
+    27.26,
+    52.08
+   ],
+   [
+    26.3,
+    51.25
+   ],
+   [
+    26.76,
+    51.05
+   ],
+   [
+    27.6,
+    50.65
+   ],
+   [
+    27.6,
+    50.39
+   ],
+   [
+    28.47,
+    49.95
+   ],
+   [
+    26.72,
+    49.45
+   ],
+   [
+    26.41,
+    49.16
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 28.88,
+    "lat": 57.27,
+    "who": "A",
+    "units": [
+     "3.m."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of the tile range (tile top is 56.5N); read from zoom; arc labelled 3.m., red 1A.K.? line just east"
+   },
+   {
+    "lon": 28.59,
+    "lat": 56.95,
+    "who": "A",
+    "units": [
+     "8.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "lon": 28.03,
+    "lat": 56.66,
+    "who": "A",
+    "units": [
+     "V.A. 290."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "small arc labelled V.A. 290. on the Korsowka line"
+   },
+   {
+    "lon": 28.34,
+    "lat": 56.34,
+    "who": "AB",
+    "units": [
+     "SS \"T\"",
+     "SS \"T\""
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "290. arc is about 0.2 degree further west on the same latitude"
+   },
+   {
+    "lon": 27.97,
+    "lat": 56.12,
+    "who": "AB",
+    "units": [
+     "V.A. 123.",
+     "V.A. 123"
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "small arc"
+   },
+   {
+    "lon": 27.7,
+    "lat": 55.84,
+    "who": "AB",
+    "units": [
+     "32.",
+     "32."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc labelled 32. right on the Dvina/Dryssa line"
+   },
+   {
+    "lon": 28.44,
+    "lat": 55.6,
+    "who": "AB",
+    "units": [
+     "19.Pz.",
+     "19.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "one arc with Tle.18.m. and 3/3 14.m. labels"
+   },
+   {
+    "lon": 28.64,
+    "lat": 55.4,
+    "who": "AB",
+    "units": [
+     "Tle. 18.m.",
+     "Tle. 18.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.78,
+    "lat": 55.0,
+    "who": "AB",
+    "units": [
+     "7.Pz.",
+     "7.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.78,
+    "lat": 54.81,
+    "who": "AB",
+    "units": [
+     "17.Pz.",
+     "17.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.73,
+    "lat": 54.43,
+    "who": "AB",
+    "units": [
+     "18.Pz.",
+     "18.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.74,
+    "lat": 53.91,
+    "who": "AB",
+    "units": [
+     "10.Pz.",
+     "10.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 30.3,
+    "lat": 53.52,
+    "who": "AB",
+    "units": [
+     "4.Pz.",
+     "4.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 30.37,
+    "lat": 53.29,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "Tle. 3.Pz. ?"
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "arc beside '3.Pz.' label; red Soviet line touches it"
+   },
+   {
+    "lon": 30.16,
+    "lat": 53.01,
+    "who": "B",
+    "units": [
+     "3.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "red '61.' '167.' just east"
+   },
+   {
+    "lon": 27.26,
+    "lat": 52.08,
+    "who": "AB",
+    "units": [
+     "V.A. 45.",
+     "V.A. 45"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc sitting on the blue boundary line near Dawid-grodek"
+   },
+   {
+    "lon": 26.3,
+    "lat": 51.25,
+    "who": "B",
+    "units": [
+     "56."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 26.76,
+    "lat": 51.05,
+    "who": "AB",
+    "units": [
+     "V.A.",
+     "V.A. (no number)"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "small arc, label V.A. only, near Wolschtja"
+   },
+   {
+    "lon": 27.6,
+    "lat": 50.65,
+    "who": "AB",
+    "units": [
+     "14.Pz.",
+     "14."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.6,
+    "lat": 50.39,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 28.47,
+    "lat": 49.95,
+    "who": "A",
+    "units": [
+     "11.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "south of tile range (tile bottom about 50.2N); read from zoom"
+   },
+   {
+    "lon": 26.72,
+    "lat": 49.45,
+    "who": "A",
+    "units": [
+     "9.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "south of tile range; read from zoom"
+   },
+   {
+    "lon": 26.41,
+    "lat": 49.16,
+    "who": "A",
+    "units": [
+     "SS \"W\""
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "south of tile range; arc with an arrow; stopped reading here"
+   }
+  ],
+  "pockets": [
+   {
+    "outline": [
+     [
+      26.61,
+      54.12
+     ],
+     [
+      26.85,
+      54.03
+     ],
+     [
+      27.05,
+      53.95
+     ],
+     [
+      27.19,
+      53.84
+     ],
+     [
+      27.17,
+      53.77
+     ],
+     [
+      27.07,
+      53.73
+     ],
+     [
+      26.96,
+      53.79
+     ],
+     [
+      26.88,
+      53.87
+     ],
+     [
+      26.84,
+      53.95
+     ],
+     [
+      26.72,
+      54.05
+     ]
+    ],
+    "atlas": "Versprengte Reste von 10-12 Divn.",
+    "who": "AB",
+    "centre": [
+     26.93,
+     53.91
+    ]
+   }
+  ],
+  "rings_not_behind_front": []
+ },
+ "0708": {
+  "front": [
+   [
+    29.19,
+    57.3
+   ],
+   [
+    28.84,
+    57.01
+   ],
+   [
+    28.67,
+    56.55
+   ],
+   [
+    28.45,
+    56.27
+   ],
+   [
+    27.97,
+    55.98
+   ],
+   [
+    28.51,
+    55.63
+   ],
+   [
+    29.8,
+    55.21
+   ],
+   [
+    29.73,
+    54.99
+   ],
+   [
+    29.73,
+    54.83
+   ],
+   [
+    29.98,
+    54.53
+   ],
+   [
+    30.29,
+    54.08
+   ],
+   [
+    30.27,
+    53.63
+   ],
+   [
+    30.34,
+    53.32
+   ],
+   [
+    30.18,
+    53.13
+   ],
+   [
+    27.37,
+    52.12
+   ],
+   [
+    26.66,
+    51.28
+   ],
+   [
+    26.79,
+    51.0
+   ],
+   [
+    27.0,
+    50.84
+   ],
+   [
+    28.0,
+    50.42
+   ],
+   [
+    27.9,
+    50.17
+   ],
+   [
+    28.51,
+    49.93
+   ],
+   [
+    27.2,
+    49.68
+   ],
+   [
+    26.78,
+    49.15
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 29.19,
+    "lat": 57.3,
+    "who": "A",
+    "units": [
+     "3.m."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "north of tile range (tile top is 56.5N); read from zoom; arc labelled 3. m. with a hook below it; the red 1.Pz./I.Pz. text is just east"
+   },
+   {
+    "lon": 28.84,
+    "lat": 57.01,
+    "who": "A",
+    "units": [
+     "8.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "lon": 28.67,
+    "lat": 56.55,
+    "who": "AB",
+    "units": [
+     "SS \"T\"",
+     "SS \"T\""
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "arc labelled 44 .T. (SS T); red line 85/170 passes through it"
+   },
+   {
+    "lon": 28.45,
+    "lat": 56.27,
+    "who": "AB",
+    "units": [
+     "290.",
+     "290."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "red line labelled 170 crosses the arc"
+   },
+   {
+    "lon": 27.97,
+    "lat": 55.98,
+    "who": "B",
+    "units": [
+     "V.A. (no number)"
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "small arc beside '12.' and '123.'; 121./32. lie just south-west"
+   },
+   {
+    "lon": 28.51,
+    "lat": 55.63,
+    "who": "AB",
+    "units": [
+     "18.m.",
+     "19.Pz. (stacked group)"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "cluster of overlapping labels at the Dvina near Polozk: 1/3 18.m., 2/3 14.m.Pz., 19., V.A. XXIII; east tip of the top arc taken"
+   },
+   {
+    "lon": 29.8,
+    "lat": 55.21,
+    "who": "AB",
+    "units": [
+     "20.m.",
+     "20."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "long arc; V.A. 20.Pz. small arc at 29.77E 55.34N is about 0.1 degree north and equally far east"
+   },
+   {
+    "lon": 29.73,
+    "lat": 54.99,
+    "who": "AB",
+    "units": [
+     "7.Pz.",
+     "7.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.73,
+    "lat": 54.83,
+    "who": "AB",
+    "units": [
+     "17.Pz. Tle.",
+     "17.Pz. Tle."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "label '17.Pz. Tle.'"
+   },
+   {
+    "lon": 29.98,
+    "lat": 54.53,
+    "who": "A",
+    "units": [
+     "V.A."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "small arc labelled V.A. south of Barsuki, no number readable"
+   },
+   {
+    "lon": 30.29,
+    "lat": 54.08,
+    "who": "AB",
+    "units": [
+     "10.Pz.",
+     "10.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "arc just west of Mogilew"
+   },
+   {
+    "lon": 30.27,
+    "lat": 53.63,
+    "who": "B",
+    "units": [
+     "10.m."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "dashed arc east of the label"
+   },
+   {
+    "lon": 30.34,
+    "lat": 53.32,
+    "who": "AB",
+    "units": [
+     "3.Pz.",
+     "3.Pz."
+    ],
+    "conf": [
+     "rough",
+     "clear"
+    ],
+    "note": "upper arc of the 3.Pz. label"
+   },
+   {
+    "lon": 30.18,
+    "lat": 53.13,
+    "who": "A",
+    "units": [
+     "3.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "lower arc, near Rogatschew; red 117. line touches it"
+   },
+   {
+    "lon": 27.37,
+    "lat": 52.12,
+    "who": "AB",
+    "units": [
+     "V.A. 45.",
+     "V.A. 45"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "small arc on the blue boundary line near Dawid-grodek; V.A. 293 at 27.08E 52.25N"
+   },
+   {
+    "lon": 26.66,
+    "lat": 51.28,
+    "who": "B",
+    "units": [
+     "56."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "blue arrow pointing east from just west of it"
+   },
+   {
+    "lon": 26.79,
+    "lat": 51.0,
+    "who": "AB",
+    "units": [
+     "62.",
+     "62."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.0,
+    "lat": 50.84,
+    "who": "B",
+    "units": [
+     "99.1"
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 28.0,
+    "lat": 50.42,
+    "who": "AB",
+    "units": [
+     "13.Pz.",
+     "13.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "south of tile range edge area; also read from zoom"
+   },
+   {
+    "lon": 27.9,
+    "lat": 50.17,
+    "who": "A",
+    "units": [
+     "SS \"A.H.\""
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc"
+   },
+   {
+    "lon": 28.51,
+    "lat": 49.93,
+    "who": "A",
+    "units": [
+     "11.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "south of tile range; read from zoom"
+   },
+   {
+    "lon": 27.2,
+    "lat": 49.68,
+    "who": "A",
+    "units": [
+     "9.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc labelled 9. with the 9.Pz. arrow arc 0.15 degree south at 27.11E 49.55N; both near Konstantinow"
+   },
+   {
+    "lon": 26.78,
+    "lat": 49.15,
+    "who": "A",
+    "units": [
+     "V.A. 100."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "small arc labelled V.A. 100.1; south of tile range; stopped reading here"
+   }
+  ],
+  "pockets": [],
+  "rings_not_behind_front": []
+ },
+ "0709": {
+  "front": [
+   [
+    29.22,
+    57.4
+   ],
+   [
+    28.91,
+    57.06
+   ],
+   [
+    28.1,
+    56.9
+   ],
+   [
+    28.64,
+    56.62
+   ],
+   [
+    28.5,
+    56.31
+   ],
+   [
+    28.18,
+    55.99
+   ],
+   [
+    27.97,
+    55.77
+   ],
+   [
+    28.57,
+    55.61
+   ],
+   [
+    29.93,
+    55.42
+   ],
+   [
+    30.31,
+    55.24
+   ],
+   [
+    29.79,
+    54.83
+   ],
+   [
+    29.99,
+    54.44
+   ],
+   [
+    30.37,
+    54.1
+   ],
+   [
+    29.78,
+    53.93
+   ],
+   [
+    30.26,
+    53.68
+   ],
+   [
+    30.33,
+    53.47
+   ],
+   [
+    30.35,
+    53.3
+   ],
+   [
+    29.73,
+    53.08
+   ],
+   [
+    29.56,
+    52.75
+   ],
+   [
+    27.4,
+    52.1
+   ],
+   [
+    26.67,
+    51.59
+   ],
+   [
+    26.76,
+    51.32
+   ],
+   [
+    26.8,
+    51.0
+   ],
+   [
+    27.44,
+    50.74
+   ],
+   [
+    28.0,
+    50.44
+   ],
+   [
+    28.6,
+    50.24
+   ],
+   [
+    28.55,
+    49.92
+   ],
+   [
+    27.22,
+    49.63
+   ],
+   [
+    26.91,
+    49.4
+   ],
+   [
+    26.96,
+    49.08
+   ]
+  ],
+  "symbols": [
+   {
+    "lon": 29.22,
+    "lat": 57.4,
+    "who": "A",
+    "units": [
+     "3.m."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "north of tile range (tile top is 56.5N); read from zoom; next to a '1 Rgt' label; red 185 label just east"
+   },
+   {
+    "lon": 28.91,
+    "lat": 57.06,
+    "who": "A",
+    "units": [
+     "8.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "lon": 28.1,
+    "lat": 56.9,
+    "who": "A",
+    "units": [
+     "126."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "north of tile range; oval/arc beside the 'Nord' headquarters label; 0.15 degree from the 8.Pz. latitude so left in"
+   },
+   {
+    "lon": 28.64,
+    "lat": 56.62,
+    "who": "AB",
+    "units": [
+     "SS \"T\"",
+     "SS \"T\""
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "arc labelled 44 .T. (SS T)"
+   },
+   {
+    "lon": 28.5,
+    "lat": 56.31,
+    "who": "AB",
+    "units": [
+     "290.",
+     "290."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "red line 170 passes beside it"
+   },
+   {
+    "lon": 28.18,
+    "lat": 55.99,
+    "who": "AB",
+    "units": [
+     "12.",
+     "12."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.97,
+    "lat": 55.77,
+    "who": "AB",
+    "units": [
+     "V.A. 253.",
+     "V.A. 253."
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "small arc on the Dvina below 121./32."
+   },
+   {
+    "lon": 28.57,
+    "lat": 55.61,
+    "who": "AB",
+    "units": [
+     "18.m.",
+     "19.Pz. (stacked group)"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "cluster at Polozk: 1/3 18.m., V.A. XXIII, 19.Pz., 2/3 14.m.; east tip of the biggest arc"
+   },
+   {
+    "lon": 29.93,
+    "lat": 55.42,
+    "who": "AB",
+    "units": [
+     "A.A. 20.Pz.",
+     "A.A. 20.Pz."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "small arc labelled A.A. 20.Pz. north of Sirotino"
+   },
+   {
+    "lon": 30.31,
+    "lat": 55.24,
+    "who": "AB",
+    "units": [
+     "20.Pz. / 20.m.",
+     "20.Pz. / 20.m."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "one arc with two labels, at Witebsk (red 'Wilebsk', 2700, 37. just east)"
+   },
+   {
+    "lon": 29.79,
+    "lat": 54.83,
+    "who": "AB",
+    "units": [
+     "12.Pz.",
+     "12.Pz."
+    ],
+    "conf": [
+     "clear",
+     "clear"
+    ],
+    "note": "label 'Pz. 12.'; blue boundary line crosses it"
+   },
+   {
+    "lon": 29.99,
+    "lat": 54.44,
+    "who": "AB",
+    "units": [
+     "18.Pz.",
+     "18.Pz."
+    ],
+    "conf": [
+     "clear",
+     "unsure"
+    ],
+    "note": "arc beside the corps HQ symbol (2.) near Tolotschin"
+   },
+   {
+    "lon": 30.37,
+    "lat": 54.1,
+    "who": "AB",
+    "units": [
+     "10.Pz.",
+     "10.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "west of the Dnjepr near Schklow"
+   },
+   {
+    "lon": 29.78,
+    "lat": 53.93,
+    "who": "A",
+    "units": [
+     "J.R. Gr.D."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc labelled J.R. 'Gr.D.' near Mogilew; 0.15 degree below 10.Pz. and further west, kept for the 0.15 rule"
+   },
+   {
+    "lon": 30.26,
+    "lat": 53.68,
+    "who": "B",
+    "units": [
+     "SS \"R\" (4.R)"
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "borderline: 10.m. is 0.12 south and 0.04 east"
+   },
+   {
+    "lon": 30.33,
+    "lat": 53.47,
+    "who": "AB",
+    "units": [
+     "4.Pz.",
+     "4.Pz."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": "stacked arcs: 1R./SS R, 10.m., 4.Pz., 3.Pz.; 4.Pz. east tip taken"
+   },
+   {
+    "lon": 30.35,
+    "lat": 53.3,
+    "who": "B",
+    "units": [
+     "Tle. 3.Pz."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "long wavy blue arc along the Dnieper side, running south to 53.0N; 3.Pz. arc just north of it"
+   },
+   {
+    "lon": 29.73,
+    "lat": 53.08,
+    "who": "AB",
+    "units": [
+     "1.K.D.",
+     "1.K.D."
+    ],
+    "conf": [
+     "clear",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 29.56,
+    "lat": 52.75,
+    "who": "AB",
+    "units": [
+     "V.A. 255.",
+     "V.A. 255."
+    ],
+    "conf": [
+     "rough",
+     "unsure"
+    ],
+    "note": "small arc at the Beresina south of Shlobin"
+   },
+   {
+    "lon": 27.4,
+    "lat": 52.1,
+    "who": "AB",
+    "units": [
+     "V.A. 45.",
+     "V.A. 45"
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "small arc on the blue boundary line; short red '(' beside it just east"
+   },
+   {
+    "lon": 26.67,
+    "lat": 51.59,
+    "who": "B",
+    "units": [
+     "V.A. 56."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 26.76,
+    "lat": 51.32,
+    "who": "B",
+    "units": [
+     "56."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "a second '56.' sign, separate from the V.A. one 0.27 deg north"
+   },
+   {
+    "lon": 26.8,
+    "lat": 51.0,
+    "who": "AB",
+    "units": [
+     "62.",
+     "62."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": ""
+   },
+   {
+    "lon": 27.44,
+    "lat": 50.74,
+    "who": "B",
+    "units": [
+     "V.A. 298."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "blue arrow pointing east from it; 99.1 and 298. just west"
+   },
+   {
+    "lon": 28.0,
+    "lat": 50.44,
+    "who": "AB",
+    "units": [
+     "14.Pz.",
+     "14.Pz."
+    ],
+    "conf": [
+     "rough",
+     "rough"
+    ],
+    "note": "arc beside the red 'V.K.K.' text; shares a label stack with 25.m., 14.Pz., III.m."
+   },
+   {
+    "lon": 28.6,
+    "lat": 50.24,
+    "who": "A",
+    "units": [
+     "13.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "big arc at Schitomir; just north of tile bottom edge, read from zoom"
+   },
+   {
+    "lon": 28.55,
+    "lat": 49.92,
+    "who": "A",
+    "units": [
+     "11.Pz."
+    ],
+    "conf": [
+     "clear"
+    ],
+    "note": "south of tile range (tile bottom is about 50.2N); read from zoom"
+   },
+   {
+    "lon": 27.22,
+    "lat": 49.63,
+    "who": "A",
+    "units": [
+     "9."
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "arc beside Konstantinow; south of tile range; read from zoom"
+   },
+   {
+    "lon": 26.91,
+    "lat": 49.4,
+    "who": "A",
+    "units": [
+     "Tle. 44. W (SS W)"
+    ],
+    "conf": [
+     "rough"
+    ],
+    "note": "south of tile range; read from zoom"
+   },
+   {
+    "lon": 26.96,
+    "lat": 49.08,
+    "who": "A",
+    "units": [
+     "V.A."
+    ],
+    "conf": [
+     "unsure"
+    ],
+    "note": "small blue arc 'V.A.' among red text near 37.Pz.; south of tile range; stopped reading here"
+   }
+  ],
+  "pockets": [],
+  "rings_not_behind_front": []
+ }
+}

@@ -1,5 +1,6 @@
 import { GeographicLocation } from '../geo/geo-types';
 import { displayedDay } from '../timeline/timeline-state';
+import { FrontSituation, situationOn } from './front-situation';
 import { eventsOnDay, HistoricalEvent } from './historical-event';
 import { MilitaryUnit, Scenario, UnitPosition } from './scenario';
 import { movementRunOn } from './unit-movement';
@@ -29,6 +30,8 @@ export interface UnitState {
 export interface WorldState {
   readonly day: number;
   readonly units: readonly UnitState[];
+  /** The front as estimated for the evening of the calendar day that contains `day`, if stated. */
+  readonly situation?: FrontSituation;
   /** Events taking place on the calendar day that contains `day`, in chronological order. */
   readonly events: readonly HistoricalEvent[];
 }
@@ -44,7 +47,12 @@ export function deriveWorldState(scenario: Scenario, day: number): WorldState {
       : statedStateOn(unit, calendarDay);
     if (state) units.push(state);
   }
-  return { day, units, events: eventsOnDay(scenario.events, calendarDay) };
+  return {
+    day,
+    units,
+    situation: situationOn(scenario.situations, calendarDay),
+    events: eventsOnDay(scenario.events, calendarDay),
+  };
 }
 
 /**

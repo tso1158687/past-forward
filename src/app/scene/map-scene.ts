@@ -1,5 +1,6 @@
 import type CameraControls from 'camera-controls';
 import {
+  BufferGeometry,
   Color,
   Material,
   Object3D,
@@ -19,10 +20,11 @@ import { CityMarker, createCityLayer } from './layers/city-layer';
 import { createRiverLayer, SceneRiver } from './layers/river-layer';
 import { KeyedLabelLayer } from './layers/keyed-label-layer';
 import { createPlaceLayer, placeLabels, PlaceMarker } from './layers/place-layer';
+import { SituationLayer, SituationView } from './layers/situation-layer';
 import { onClickWithoutDrag } from './layers/label';
 import { UnitLayer, UnitMarker, UnitTrail, UnitTransition } from './layers/unit-layer';
 import { SCENE_CONFIG } from './scene-config';
-import { createTerrainMesh } from './terrain/terrain-mesh';
+import { createTerrainMesh, createTerrainSurfaceGeometry } from './terrain/terrain-mesh';
 import { createTerrainSurface, TerrainSurface } from './terrain/terrain-surface';
 import { createTerrainTexture } from './terrain/terrain-texture';
 
@@ -53,6 +55,7 @@ export class MapScene {
   private readonly controls: CameraControls;
   private readonly surface: TerrainSurface;
   private readonly unitLayer: UnitLayer;
+  private readonly situationLayer: SituationLayer;
   private readonly raycaster = new Raycaster();
   private readonly placeLayer: KeyedLabelLayer;
   private readonly resizeObserver: ResizeObserver;
@@ -72,10 +75,16 @@ export class MapScene {
 
     this.surface = createTerrainSurface(content.elevation, SCENE_CONFIG.verticalExaggeration);
     const mapSize = this.surface.projection.sizeKm;
+    const surfaceGeometry = createTerrainSurfaceGeometry(
+      this.surface,
+      SCENE_CONFIG.terrainMeshColumns,
+    );
     this.unitLayer = new UnitLayer(this.surface);
+    this.situationLayer = new SituationLayer(this.surface, surfaceGeometry);
     this.placeLayer = createPlaceLayer(this.surface);
     this.scene.add(
-      this.createTerrain(),
+      this.createTerrain(surfaceGeometry),
+      this.situationLayer.object,
       createRiverLayer(content.rivers, this.surface),
       createBorderLayer(content.borders, this.surface),
       createCityLayer(content.cities, this.surface, (id) => events.onCitySelected(id)),
@@ -121,6 +130,15 @@ export class MapScene {
     this.needsRender = true;
   }
 
+  /**
+   * Shades exactly this estimate of the front, or none, fading over from the previous one in
+   * `fadeSeconds`.
+   */
+  setSituation(view: SituationView | undefined, fadeSeconds: number): void {
+    this.situationLayer.update(view, fadeSeconds);
+    this.needsRender = true;
+  }
+
   /** Points out exactly these places, replacing whatever was highlighted before. */
   setPlaces(markers: readonly PlaceMarker[]): void {
     this.placeLayer.update(placeLabels(markers));
@@ -136,6 +154,7 @@ export class MapScene {
     this.resizeObserver.disconnect();
     this.controls.dispose();
     this.unitLayer.dispose();
+    this.situationLayer.dispose();
     this.scene.traverse(disposeObject);
     this.renderer.dispose();
     this.renderer.domElement.remove();
@@ -143,7 +162,7 @@ export class MapScene {
     delete this.host.dataset['zoom'];
   }
 
-  private createTerrain(): Object3D {
+  private createTerrain(surfaceGeometry: BufferGeometry): Object3D {
     const { grid, projection } = this.surface;
     const colorMap = createTerrainTexture(grid, {
       cellSizeMeters: {
@@ -153,7 +172,7 @@ export class MapScene {
       reliefStrength: SCENE_CONFIG.hillshadeStrength,
     });
     colorMap.anisotropy = this.renderer.capabilities.getMaxAnisotropy();
-    return createTerrainMesh(this.surface, colorMap, {
+    return createTerrainMesh(this.surface, surfaceGeometry, colorMap, {
       columns: SCENE_CONFIG.terrainMeshColumns,
       baseDepth: SCENE_CONFIG.baseDepth,
     });
@@ -202,7 +221,7 @@ export class MapScene {
   }
 
   /**
-   * Renders only when the camera moved, a piece is still sliding or fading, or something was
+   * Renders only when the camera moved, a piece or the shading is still changing, or something was
    * invalidated, to stay idle otherwise.
    */
   private readonly renderFrame = (time: number): void => {
@@ -212,7 +231,8 @@ export class MapScene {
 
     const cameraMoved = this.controls.update(deltaSeconds);
     const unitsAnimating = this.unitLayer.animate(deltaSeconds);
-    if (!cameraMoved && !unitsAnimating && !this.needsRender) return;
+    const situationFading = this.situationLayer.animate(deltaSeconds);
+    if (!cameraMoved && !unitsAnimating && !situationFading && !this.needsRender) return;
     this.needsRender = false;
 
     this.unitLayer.setView({

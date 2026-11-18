@@ -44,3 +44,15 @@ __screenshots__/
 Thumbs.db
 
 tools/.cache/
+
+# Atlas reading: downloaded scans and rendered images are not kept
+/tools/atlas-reading/half/
+/tools/atlas-reading/orig/
+/tools/atlas-reading/tiles/
+/tools/atlas-reading/zoom/
+/tools/atlas-reading/cmp/
+/tools/atlas-reading/arb/
+/tools/atlas-reading/final/
+/tools/atlas-reading/review/
+/tools/atlas-reading/work/
+/tools/atlas-reading/__pycache__/

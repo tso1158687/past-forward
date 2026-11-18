@@ -18,6 +18,7 @@ import { City } from '../../data/map/cities';
 import { loadMapAssets, MapAssets } from '../../data/map/map-assets';
 import { RIVER_NAMES } from '../../data/map/river-names';
 import type { PlaceMarker } from '../../scene/layers/place-layer';
+import type { SituationView } from '../../scene/layers/situation-layer';
 import type { UnitMarker, UnitTrail, UnitTransition } from '../../scene/layers/unit-layer';
 import type { MapScene, MapSceneContent } from '../../scene/map-scene';
 import { LocaleService } from '../i18n/locale-service';
@@ -42,7 +43,9 @@ export class MapView {
   readonly units = input<readonly UnitMarker[]>([]);
   /** Where the units have been so far. */
   readonly unitTrails = input<readonly UnitTrail[]>([]);
-  /** How units get to a new location when `units` changes. */
+  /** The estimated front to shade right now, if one is stated for the day. */
+  readonly situation = input<SituationView | undefined>(undefined);
+  /** How units get to a new location when `units` changes; the shading fades over the same time. */
   readonly unitTransition = input<UnitTransition>({ seconds: 0, easing: 'eased' });
   /** Places to point out, such as where the selected event happened. */
   readonly places = input<readonly PlaceMarker[]>([]);
@@ -66,6 +69,11 @@ export class MapView {
       // How to get there is read at the moment of the change; it must not cause one itself.
       const transition = untracked(this.unitTransition);
       this.scene?.setUnits(units, trails, transition);
+    });
+    effect(() => {
+      const situation = this.situation();
+      const transition = untracked(this.unitTransition);
+      this.scene?.setSituation(situation, transition.seconds);
     });
     effect(() => {
       const places = this.places();
@@ -99,6 +107,7 @@ export class MapView {
       });
       // The effects above could not reach the scene while it was still loading.
       this.scene.setUnits(this.units(), this.unitTrails(), { seconds: 0, easing: 'eased' });
+      this.scene.setSituation(this.situation(), 0);
       this.scene.setPlaces(this.places());
       this.status.set('ready');
     } catch (error) {

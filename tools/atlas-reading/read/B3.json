@@ -1,0 +1,1216 @@
+{
+ "0704": {
+  "front": [
+   {
+    "unit": "269.",
+    "lon": 26.5,
+    "lat": 56.45,
+    "conf": "rough",
+    "note": "top edge of sheet"
+   },
+   {
+    "unit": "30.",
+    "lon": 26.5,
+    "lat": 56.25,
+    "conf": "rough",
+    "note": "number partly cut by place name"
+   },
+   {
+    "unit": "290.",
+    "lon": 27.3,
+    "lat": 56.0,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "121.",
+    "lon": 27.25,
+    "lat": 55.85,
+    "conf": "rough",
+    "note": "arc right next to red bracket 'Tle.185.m.?'; within 0.15 of 290 but kept"
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 28.05,
+    "lat": 55.5,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "18.m.",
+    "lon": 28.5,
+    "lat": 55.3,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "20.Pz.",
+    "lon": 29.05,
+    "lat": 55.1,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 28.95,
+    "lat": 54.8,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "20.m.",
+    "lon": 27.9,
+    "lat": 54.6,
+    "conf": "rough",
+    "note": "only 0.27 deg south of 7.Pz, so counted as front"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 28.95,
+    "lat": 54.25,
+    "conf": "clear",
+    "note": "red bracket '(1.Prol.' just east of it"
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 28.85,
+    "lat": 53.75,
+    "conf": "clear",
+    "note": "red arrow pointing at it from the east"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.25,
+    "lat": 53.4,
+    "conf": "clear",
+    "note": "red bracket 'Tle.55.121.' just east"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.1,
+    "lat": 53.0,
+    "conf": "clear",
+    "note": "red bracket '(187.' just east"
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 28.05,
+    "lat": 52.9,
+    "conf": "rough",
+    "note": "oval; within 0.15 of 3.Pz but 2 deg further west, kept as isolated sign"
+   },
+   {
+    "unit": "V.A.",
+    "lon": 26.15,
+    "lat": 52.1,
+    "conf": "rough",
+    "note": "at Pinsk, no number"
+   },
+   {
+    "unit": "62.",
+    "lon": 25.8,
+    "lat": 51.0,
+    "conf": "rough",
+    "note": "arc at 'Wolhynien' side, red arrows and text east of it"
+   },
+   {
+    "unit": "299.",
+    "lon": 26.6,
+    "lat": 50.6,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 27.0,
+    "lat": 50.55,
+    "conf": "rough",
+    "note": "no clear arc, only the label"
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 27.3,
+    "lat": 50.4,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "?.Pz. (cut off)",
+    "lon": 26.95,
+    "lat": 50.25,
+    "conf": "unsure",
+    "note": "cut by the tile bottom, number not readable"
+   }
+  ],
+  "red": [
+   {
+    "text": "Versprengte Reste von 10-12 Divn.",
+    "outline": [
+     [
+      26.0,
+      54.05
+     ],
+     [
+      26.2,
+      54.1
+     ],
+     [
+      26.6,
+      54.0
+     ],
+     [
+      26.95,
+      53.82
+     ],
+     [
+      26.85,
+      53.62
+     ],
+     [
+      26.45,
+      53.48
+     ],
+     [
+      26.25,
+      53.5
+     ],
+     [
+      26.05,
+      53.7
+     ],
+     [
+      25.85,
+      53.85
+     ],
+     [
+      25.9,
+      54.0
+     ]
+    ],
+    "north": "35. (~8 km)",
+    "east": "161. (~3 km)",
+    "south": "J.R. Gr.D. / M.G.B.5 (~8 km)",
+    "west": "28. (~12 km)",
+    "conf": "clear",
+    "note": "closed loop; thick blue boundary line and a red 'bracket-arrow' mark cross its SE corner"
+   }
+  ],
+  "notes": "Large closed red loop SW of Minsk. Other red text (Reste 33.98, III.Pz.Kps., Reste 64, Tle.100.101.108.141, Reste 24.56.143.155 etc.) is east of the front units and has no loop. Red clusters near 25.9-26.6E, 50.9-51.3N (Reste 42, 131.m., 45.m., XXII.Pz.Kps.) are text only, not closed."
+ },
+ "0705": {
+  "front": [
+   {
+    "unit": "269.",
+    "lon": 26.8,
+    "lat": 56.48,
+    "conf": "rough",
+    "note": "top edge of sheet"
+   },
+   {
+    "unit": "3.m.",
+    "lon": 28.05,
+    "lat": 56.48,
+    "conf": "rough",
+    "note": "oval in the Dvina area, next to LVI.m."
+   },
+   {
+    "unit": "30.",
+    "lon": 26.7,
+    "lat": 56.25,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "290.",
+    "lon": 27.5,
+    "lat": 56.0,
+    "conf": "rough",
+    "note": "arc east of the label"
+   },
+   {
+    "unit": "121.",
+    "lon": 27.3,
+    "lat": 55.85,
+    "conf": "rough",
+    "note": "0.15 deg south of 290; red bracket 'Tle.185.m.?' just east"
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 28.1,
+    "lat": 55.5,
+    "conf": "clear",
+    "note": "red bracket just east"
+   },
+   {
+    "unit": "18.m.",
+    "lon": 28.5,
+    "lat": 55.35,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "20.Pz.",
+    "lon": 29.05,
+    "lat": 55.1,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "V.A. (no number)",
+    "lon": 29.35,
+    "lat": 55.0,
+    "conf": "rough",
+    "note": "small arc labelled V.A. east of 3 HQ"
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 29.05,
+    "lat": 54.85,
+    "conf": "clear",
+    "note": "label sits sideways ('7. Pz.')"
+   },
+   {
+    "unit": "V.A. 17.?",
+    "lon": 29.6,
+    "lat": 54.7,
+    "conf": "unsure",
+    "note": "arc with 'V.A.' and a number that looks like 17; also 'Tle. 17.Pz.' arc a bit west"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 29.35,
+    "lat": 54.3,
+    "conf": "clear",
+    "note": "red bracket and 'XXXXIV.' just east"
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 29.85,
+    "lat": 53.87,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.2,
+    "lat": 53.45,
+    "conf": "clear",
+    "note": "red bracket 'Tle.55.121.' just east"
+   },
+   {
+    "unit": "Tle. 3.Pz.",
+    "lon": 30.4,
+    "lat": 53.28,
+    "conf": "rough",
+    "note": "label 'Tle / 3.Pz.' with arc"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.2,
+    "lat": 53.05,
+    "conf": "rough",
+    "note": "second '3.Pz.' sign with red '(187.' east"
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 28.0,
+    "lat": 52.9,
+    "conf": "rough",
+    "note": "oval; isolated far to the west of the 3.Pz. signs"
+   },
+   {
+    "unit": "V.A.",
+    "lon": 26.1,
+    "lat": 52.1,
+    "conf": "rough",
+    "note": "at Pinsk"
+   },
+   {
+    "unit": "56.",
+    "lon": 26.25,
+    "lat": 51.2,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "62.",
+    "lon": 26.15,
+    "lat": 51.07,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "99.1",
+    "lon": 26.26,
+    "lat": 50.93,
+    "conf": "rough",
+    "note": "number may be 99. or 99.1"
+   },
+   {
+    "unit": "298.",
+    "lon": 26.34,
+    "lat": 50.79,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "299.",
+    "lon": 26.82,
+    "lat": 50.66,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 27.45,
+    "lat": 50.56,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 27.8,
+    "lat": 50.4,
+    "conf": "rough",
+    "note": "red arrows and text pile up just east and south"
+   }
+  ],
+  "red": [
+   {
+    "text": "Versprengte Reste von 10-12 Divn.",
+    "outline": [
+     [
+      25.92,
+      54.03
+     ],
+     [
+      26.17,
+      54.11
+     ],
+     [
+      26.51,
+      54.04
+     ],
+     [
+      26.93,
+      53.93
+     ],
+     [
+      27.06,
+      53.88
+     ],
+     [
+      26.86,
+      53.71
+     ],
+     [
+      26.68,
+      53.6
+     ],
+     [
+      26.51,
+      53.59
+     ],
+     [
+      26.16,
+      53.69
+     ],
+     [
+      26.0,
+      53.77
+     ],
+     [
+      26.04,
+      53.89
+     ]
+    ],
+    "north": "5. / 161. (~5 km)",
+    "east": "Tle.14.m. / 12.Pz. (~3 km)",
+    "south": "Tle.8. / V.A. (~5 km)",
+    "west": "Tle.28. / 28. (~8 km)",
+    "conf": "clear",
+    "note": "closed loop, noticeably smaller than 4 July (east side moved out slightly at Minsk, west side shrank in); the blue army boundary line touches its SE edge"
+   }
+  ],
+  "notes": "Only one closed red loop. 'Versprengte Feindteile' (red text, no outline) sits in the Pripyat marshes at about 26.9-28.2E, 52.3N: not a closed circle. Many red texts and arrows east of the front (Reste 64, XXXXIV., Tle.32.u.44.Pz.Br.?, Reste 24.56.143.155, 11.Armee 915 etc.) have no loop."
+ },
+ "0706": {
+  "front": [
+   {
+    "unit": "269.",
+    "lon": 26.95,
+    "lat": 56.5,
+    "conf": "rough",
+    "note": "top edge of sheet"
+   },
+   {
+    "unit": "Tle. 3.m.",
+    "lon": 28.1,
+    "lat": 56.5,
+    "conf": "unsure",
+    "note": "cut by the top edge, text 'T / 3.m.' beside LVI.m."
+   },
+   {
+    "unit": "V.A. (no number)",
+    "lon": 27.05,
+    "lat": 56.4,
+    "conf": "rough",
+    "note": "small arc just SE of 126."
+   },
+   {
+    "unit": "30.",
+    "lon": 27.1,
+    "lat": 56.3,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "SS \"T\"",
+    "lon": 28.25,
+    "lat": 56.25,
+    "conf": "rough",
+    "note": "label looks like '44.T.' (SS-style double-S sign plus T)"
+   },
+   {
+    "unit": "290.",
+    "lon": 27.65,
+    "lat": 56.1,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "121.",
+    "lon": 27.3,
+    "lat": 55.85,
+    "conf": "rough",
+    "note": "small regiment signs '1 Rgt. 12' next to it; red brackets just east"
+   },
+   {
+    "unit": "Tle. 32.",
+    "lon": 27.35,
+    "lat": 55.65,
+    "conf": "unsure",
+    "note": "'32.' with 'Tle.' beside it, an adjacent sign reads 'Mas.'"
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 28.2,
+    "lat": 55.55,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "Tle. 18.m.",
+    "lon": 28.5,
+    "lat": 55.37,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "20.Pz.",
+    "lon": 29.05,
+    "lat": 55.15,
+    "conf": "clear",
+    "note": "blue arrow pointing east from it"
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 29.6,
+    "lat": 55.02,
+    "conf": "clear",
+    "note": "red arrows pointing at it from the east"
+   },
+   {
+    "unit": "17.Pz.",
+    "lon": 29.6,
+    "lat": 54.72,
+    "conf": "clear",
+    "note": "label sideways 'Pz.17.'; blue arrows and a '?' just SE"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 29.6,
+    "lat": 54.37,
+    "conf": "clear",
+    "note": "red text 'VII.m. 13 u.14.Pz.' just east"
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 29.65,
+    "lat": 53.85,
+    "conf": "clear",
+    "note": "seems to be further west than on 5 July"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.17,
+    "lat": 53.44,
+    "conf": "clear",
+    "note": "SS 'R' sign sits 0.1 deg south, west of it"
+   },
+   {
+    "unit": "Tle. 3.Pz.",
+    "lon": 30.32,
+    "lat": 53.23,
+    "conf": "rough",
+    "note": "arc just east of 'XXIV.m.'"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.16,
+    "lat": 53.05,
+    "conf": "rough",
+    "note": "label '3.Pz.' with arc; red text '167.' and '143.155.' just east"
+   },
+   {
+    "unit": "45.",
+    "lon": 26.15,
+    "lat": 52.09,
+    "conf": "rough",
+    "note": "solid arc left of Pinsk, 'H.Kdo. XXV.' above"
+   },
+   {
+    "unit": "V.A. 45.",
+    "lon": 26.45,
+    "lat": 51.75,
+    "conf": "rough",
+    "note": "dashed oval"
+   },
+   {
+    "unit": "56.",
+    "lon": 26.3,
+    "lat": 51.24,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "62.",
+    "lon": 26.3,
+    "lat": 51.08,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "99.1",
+    "lon": 26.35,
+    "lat": 50.95,
+    "conf": "unsure",
+    "note": "no clear arc, number only"
+   },
+   {
+    "unit": "298.",
+    "lon": 26.75,
+    "lat": 50.85,
+    "conf": "rough",
+    "note": "blue arrow east of it"
+   },
+   {
+    "unit": "299.",
+    "lon": 27.2,
+    "lat": 50.73,
+    "conf": "rough",
+    "note": "arrow from '44.' leads to it"
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 27.62,
+    "lat": 50.62,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 27.6,
+    "lat": 50.47,
+    "conf": "rough",
+    "note": "red arrows crowd the area just east and south"
+   }
+  ],
+  "red": [
+   {
+    "text": "Versprengte Reste v. 10-12 Div.",
+    "outline": [
+     [
+      26.43,
+      54.05
+     ],
+     [
+      26.54,
+      54.07
+     ],
+     [
+      26.7,
+      54.0
+     ],
+     [
+      27.06,
+      53.9
+     ],
+     [
+      27.05,
+      53.83
+     ],
+     [
+      26.9,
+      53.75
+     ],
+     [
+      26.8,
+      53.66
+     ],
+     [
+      26.67,
+      53.66
+     ],
+     [
+      26.6,
+      53.76
+     ],
+     [
+      26.64,
+      53.86
+     ],
+     [
+      26.55,
+      53.97
+     ]
+    ],
+    "north": "161. / V. (~3 km)",
+    "east": "12.Pz. (~5 km)",
+    "south": "29.m. / V.A. 2.Arm. (~6 km)",
+    "west": "1/3 8. (~5 km)",
+    "conf": "clear",
+    "note": "closed, narrow N-S loop, much smaller than 5 July; a thick blue boundary line crosses its middle"
+   }
+  ],
+  "notes": "One closed red loop (SW of Minsk). 'Versprengte Feindteile' (red text, no outline, ~26.5-28.3E, 52.4N) and a rotated red text 'Versprengte...' at about 25.3E, 50.4N are words only, no loop. Long open red curves and arrows near Gomel (30.3-30.8E, 52.5-53.5N, 'starker Verkehr') are not closed. 1.K.D. is now at about 29.1E, 52.97N and 10.m. near 29.6E, 53.07N, both within 0.15 deg of 3.Pz. so not listed in front. Dashed blue ovals (7./23./258. near 26E, 53.1N and V.A.45) are drawn dashed, probably marching/uncertain."
+ },
+ "0707": {
+  "front": [
+   {
+    "unit": "SS \"T\"",
+    "lon": 28.2,
+    "lat": 56.26,
+    "conf": "rough",
+    "note": "label reads like '44.T.' (SS sign plus T), red bracket 'Tle.174.?' just east; 290. oval is just west of it"
+   },
+   {
+    "unit": "V.A. 123",
+    "lon": 27.87,
+    "lat": 56.05,
+    "conf": "unsure",
+    "note": "tiny arc with 'V.A.' above '123'"
+   },
+   {
+    "unit": "121.",
+    "lon": 27.57,
+    "lat": 55.85,
+    "conf": "rough",
+    "note": "small number; red bracket '(Tle.185.m.?' right behind it"
+   },
+   {
+    "unit": "32.",
+    "lon": 27.6,
+    "lat": 55.78,
+    "conf": "rough",
+    "note": "0.07 deg south of 121., slightly further east"
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 28.3,
+    "lat": 55.52,
+    "conf": "clear",
+    "note": "stacked label 'Tle.18.m. / 19.Pz. / 3/14.m.' in one arc; red arrows on its east side"
+   },
+   {
+    "unit": "Tle. 18.m.",
+    "lon": 28.5,
+    "lat": 55.34,
+    "conf": "clear",
+    "note": "second 'Tle. 18.m.' arc south of the stack"
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 29.6,
+    "lat": 54.92,
+    "conf": "clear",
+    "note": "label sideways; 20.m. and 20.Pz. arcs lie 0.1 deg north/west of it and are not listed separately"
+   },
+   {
+    "unit": "17.Pz.",
+    "lon": 29.55,
+    "lat": 54.71,
+    "conf": "clear",
+    "note": "red bracket just east; blue dashed line with arrow goes south from it"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 29.58,
+    "lat": 54.33,
+    "conf": "clear",
+    "note": "red 'VII.m. 13 u.14.Pz.' just east"
+   },
+   {
+    "unit": "29.m.",
+    "lon": 28.3,
+    "lat": 54.06,
+    "conf": "rough",
+    "note": "arc ')' on the Minsk-Borisov road, nothing east within 0.15 deg"
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 29.6,
+    "lat": 53.83,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.22,
+    "lat": 53.46,
+    "conf": "clear",
+    "note": "'Tle. 44.R.' sign just west of it"
+   },
+   {
+    "unit": "Tle. 3.Pz. ?",
+    "lon": 30.37,
+    "lat": 53.24,
+    "conf": "unsure",
+    "note": "unlabelled arc east of 'XXIV.m.'; red text 143.155 just east"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.16,
+    "lat": 53.01,
+    "conf": "rough",
+    "note": "red '61.' '167.' just east"
+   },
+   {
+    "unit": "10.m.",
+    "lon": 30.1,
+    "lat": 52.88,
+    "conf": "rough",
+    "note": "within 0.15 of 3.Pz. and slightly west; kept as southern end of the east group"
+   },
+   {
+    "unit": "V.A. 45",
+    "lon": 27.2,
+    "lat": 52.0,
+    "conf": "rough",
+    "note": "small loop sitting on the blue army boundary line at Pinsk side"
+   },
+   {
+    "unit": "56.",
+    "lon": 26.3,
+    "lat": 51.25,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "V.A. (no number)",
+    "lon": 26.7,
+    "lat": 51.03,
+    "conf": "rough",
+    "note": "62. oval lies west of it"
+   },
+   {
+    "unit": "298.",
+    "lon": 27.31,
+    "lat": 50.79,
+    "conf": "rough",
+    "note": "also 'V.A.' sign at 26.95E 50.83N just west"
+   },
+   {
+    "unit": "14.",
+    "lon": 27.65,
+    "lat": 50.65,
+    "conf": "rough",
+    "note": "label '14.' with arc, number may belong to 14.Pz.; 299 and 44. just west"
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 27.65,
+    "lat": 50.4,
+    "conf": "rough",
+    "note": "red arrow and red text '177. 19.m. 43.Rst.' just east"
+   }
+  ],
+  "red": [
+   {
+    "text": "Versprengte Reste von 10-12 Divn.",
+    "outline": [
+     [
+      26.55,
+      54.11
+     ],
+     [
+      26.83,
+      53.98
+     ],
+     [
+      27.05,
+      53.94
+     ],
+     [
+      27.17,
+      53.85
+     ],
+     [
+      27.2,
+      53.79
+     ],
+     [
+      27.14,
+      53.73
+     ],
+     [
+      27.04,
+      53.74
+     ],
+     [
+      26.93,
+      53.81
+     ],
+     [
+      26.86,
+      53.9
+     ]
+    ],
+    "north": "161. (~5 km)",
+    "east": "14.m. / Br.900 (~4 km)",
+    "south": "137. / V.A. 2.Arm. (~6 km)",
+    "west": "Tle.8. (~5 km)",
+    "conf": "rough",
+    "note": "now only a narrow teardrop (about 0.35 deg tall, 0.3 wide) with a long straight tail running NW from its top; the words are written outside it, to its west, with a red arrow pointing at it; a thick blue army boundary line crosses it. I think the loop is closed but the tail lines make the NW corner uncertain"
+   }
+  ],
+  "notes": "The only closed red loop is the 10-12 Div. teardrop near Minsk. Red curves and arrows around Polotsk/Sirotino (28.3-29.8E, 55.1-55.5N) are open and sit east of the front signs there, so not counted. Red open arc 'Nachhuten' (rotated, ~26.2-26.5E, 50.8-51.6N) is open, no outline. 'Versprengte Feindteile' (red text, no outline) in the Pripyat marshes at ~27.0-28.7E, 52.5N. 1.K.D. now at about 29.6E 52.98N and 'Tle.1.K.D.' near 29.0E, both west of 3.Pz.; not listed. 29.m. appears here on the Minsk-Borisov road as a front sign."
+ },
+ "0708": {
+  "front": [
+   {
+    "unit": "V.A. 30.",
+    "lon": 28.27,
+    "lat": 56.5,
+    "conf": "unsure",
+    "note": "cut by the top edge of the sheet; text 'V.A. 30.'"
+   },
+   {
+    "unit": "SS \"T\"",
+    "lon": 28.5,
+    "lat": 56.48,
+    "conf": "unsure",
+    "note": "label like '44. T.' near the top edge, red '85.' just east"
+   },
+   {
+    "unit": "290.",
+    "lon": 28.3,
+    "lat": 56.19,
+    "conf": "rough",
+    "note": "blue 290 overlapped by red arcs '170.'; V.A. 122 oval 0.1 deg north-west"
+   },
+   {
+    "unit": "V.A. (no number)",
+    "lon": 27.97,
+    "lat": 55.98,
+    "conf": "rough",
+    "note": "small arc beside '12.' and '123.'; 121./32. lie just south-west"
+   },
+   {
+    "unit": "V.A. (no number)",
+    "lon": 27.88,
+    "lat": 55.74,
+    "conf": "rough",
+    "note": "arc just north of the Dvina boundary line, near Drissa"
+   },
+   {
+    "unit": "19.Pz. (stacked group)",
+    "lon": 28.5,
+    "lat": 55.6,
+    "conf": "rough",
+    "note": "one arc with stacked text '1/3 18.m. / 2/3 14.m. / 19.Pz. / V.A. XXIII. / 1/3 ...'; red dotted x-line runs along its east edge"
+   },
+   {
+    "unit": "V.A. 20.Pz.",
+    "lon": 29.74,
+    "lat": 55.33,
+    "conf": "rough",
+    "note": "small arc; borderline, '20.' oval is 0.14 south and a bit further east"
+   },
+   {
+    "unit": "20.",
+    "lon": 29.8,
+    "lat": 55.19,
+    "conf": "rough",
+    "note": "oval with 'm.' underneath (20.m.), 20.Pz. oval is west of it"
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 29.73,
+    "lat": 54.98,
+    "conf": "clear",
+    "note": "label sideways"
+   },
+   {
+    "unit": "17.Pz. Tle.",
+    "lon": 29.4,
+    "lat": 54.78,
+    "conf": "rough",
+    "note": "text '17.Pz.Tle.' with a 'Masse' oval just south-west; red circle '17.Pz.' lies east of it"
+   },
+   {
+    "unit": "V.A. (no number)",
+    "lon": 29.85,
+    "lat": 54.47,
+    "conf": "rough",
+    "note": "tiny arc next to red '1.Prol.'; '18.Pz.' Masse oval 0.3 deg west"
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 30.1,
+    "lat": 54.0,
+    "conf": "rough",
+    "note": "label '10.Pz.' with arc near red text 'II. 55 141.'; further east than on earlier days"
+   },
+   {
+    "unit": "SS \"R\"",
+    "lon": 30.26,
+    "lat": 53.72,
+    "conf": "rough",
+    "note": "label like '1R. R.' with SS sign; borderline against 10.m. which is 0.09 deg south and 0.01 east"
+   },
+   {
+    "unit": "10.m.",
+    "lon": 30.27,
+    "lat": 53.63,
+    "conf": "rough",
+    "note": "dashed arc east of the label"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.23,
+    "lat": 53.52,
+    "conf": "rough",
+    "note": "covered by 10.m. within 0.15 deg; blue arrow pointing NNE from XXIV.m. area"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.34,
+    "lat": 53.3,
+    "conf": "clear",
+    "note": "red '143. 61. 167. 11.' line just east of it"
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 29.73,
+    "lat": 53.02,
+    "conf": "rough",
+    "note": "arc east of the label; nothing further east within 0.15 deg"
+   },
+   {
+    "unit": "V.A. 45",
+    "lon": 27.38,
+    "lat": 52.02,
+    "conf": "rough",
+    "note": "on the army boundary; 'V.A. 293.' arc at 27.0E 52.17N just north-west"
+   },
+   {
+    "unit": "56.",
+    "lon": 26.66,
+    "lat": 51.28,
+    "conf": "rough",
+    "note": "blue arrow pointing east from just west of it"
+   },
+   {
+    "unit": "62.",
+    "lon": 26.76,
+    "lat": 51.0,
+    "conf": "rough",
+    "note": "'XVII.' with arrow towards it"
+   },
+   {
+    "unit": "99.1",
+    "lon": 27.0,
+    "lat": 50.84,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 28.1,
+    "lat": 50.49,
+    "conf": "rough",
+    "note": "299., 44. (arrow), 14.Pz., 25.m. all lie 0.1-0.5 deg west within the same band"
+   }
+  ],
+  "red": [],
+  "notes": "No closed red loop in the rear any more. At Minsk the words 'Versprengte Reste von 10-12 Divn.' are still printed (about 26.2-27.1E, 53.55-53.75N) but there is no red outline around them. I zoomed in (zoom/B3-0708-b.jpg) to check. 'Versprengte Feindteile' (red text, no outline) in the Pripyat marshes; red arc lines near Polotsk (12.112, 174, 58, Kav., 98, 186) are open and lie east of the German signs there; large red circle '17.Pz.' near Orsha/Babinowitschi is east of 17.Pz. Tle. so not behind the front."
+ },
+ "0709": {
+  "front": [
+   {
+    "unit": "SS \"T\"",
+    "lon": 28.5,
+    "lat": 56.5,
+    "conf": "unsure",
+    "note": "cut by the top edge, only a few characters visible next to a '10.' label"
+   },
+   {
+    "unit": "290.",
+    "lon": 28.4,
+    "lat": 56.23,
+    "conf": "rough",
+    "note": "red line '170.' just east"
+   },
+   {
+    "unit": "12.",
+    "lon": 28.07,
+    "lat": 55.92,
+    "conf": "rough",
+    "note": "'12.' arc just north of the Dvina; 121./32. are west of it"
+   },
+   {
+    "unit": "V.A. 253.",
+    "lon": 27.9,
+    "lat": 55.74,
+    "conf": "unsure",
+    "note": "small 'V.A. 253.' text with arc near Drissa"
+   },
+   {
+    "unit": "19.Pz. (stacked group)",
+    "lon": 28.5,
+    "lat": 55.56,
+    "conf": "rough",
+    "note": "one arc, text '1/3 18.m. / V.A. XXIII. / 19.Pz. / 1/3 14.m.'"
+   },
+   {
+    "unit": "A.A. 20.Pz.",
+    "lon": 29.95,
+    "lat": 55.4,
+    "conf": "rough",
+    "note": "arc labelled 'A.A. 20.Pz.' near Gorodok/Sirotino; borderline in lat against 20.Pz./20.m."
+   },
+   {
+    "unit": "20.Pz. / 20.m.",
+    "lon": 30.31,
+    "lat": 55.22,
+    "conf": "clear",
+    "note": "one oval with two lines of text, just west of Vitebsk; red arrow pointing at it from the east; 7.Pz. arc 0.1 deg south-west of it"
+   },
+   {
+    "unit": "12.Pz.",
+    "lon": 29.79,
+    "lat": 54.79,
+    "conf": "clear",
+    "note": "label sideways 'Pz. 12.'"
+   },
+   {
+    "unit": "17.Pz.",
+    "lon": 29.66,
+    "lat": 54.57,
+    "conf": "clear",
+    "note": "'?' next to it; covered by 18.Pz. within 0.15 deg so borderline"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 29.8,
+    "lat": 54.43,
+    "conf": "unsure",
+    "note": "only 'Pz.' and '18' read, partly hidden by the HQ box '2'"
+   },
+   {
+    "unit": "SS \"R\"",
+    "lon": 29.8,
+    "lat": 54.21,
+    "conf": "rough",
+    "note": "arc east of the label '44. R.'"
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 30.12,
+    "lat": 54.03,
+    "conf": "rough",
+    "note": "J.R. 'Gr.D.' arc 0.09 deg south at 29.8E, not listed"
+   },
+   {
+    "unit": "SS \"R\" (4.R)",
+    "lon": 30.26,
+    "lat": 53.68,
+    "conf": "rough",
+    "note": "borderline: 10.m. is 0.12 south and 0.04 east"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.34,
+    "lat": 53.47,
+    "conf": "rough",
+    "note": "stack of arcs '1R / 4.R / 10.m. / 4.Pz. / 3.Pz.' running north-south; 10.m. east edge 30.30"
+   },
+   {
+    "unit": "Tle. 3.Pz.",
+    "lon": 30.35,
+    "lat": 53.3,
+    "conf": "rough",
+    "note": "long wavy blue arc along the Dnieper side, running south to 53.0N; 3.Pz. arc just north of it"
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 29.74,
+    "lat": 53.06,
+    "conf": "rough",
+    "note": "nothing further east within 0.15 deg; red '2 Panzerzuege' text beside it"
+   },
+   {
+    "unit": "V.A. 255.",
+    "lon": 29.6,
+    "lat": 52.68,
+    "conf": "unsure",
+    "note": "small arc near Paritschi, number partly read"
+   },
+   {
+    "unit": "V.A. 45",
+    "lon": 27.35,
+    "lat": 52.0,
+    "conf": "rough",
+    "note": "on the army boundary line; a red bracket sits just east of it; V.A. 293 arc 0.15 north-west"
+   },
+   {
+    "unit": "V.A. 56.",
+    "lon": 26.67,
+    "lat": 51.59,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "56.",
+    "lon": 26.76,
+    "lat": 51.32,
+    "conf": "rough",
+    "note": "a second '56.' sign, separate from the V.A. one 0.27 deg north"
+   },
+   {
+    "unit": "62.",
+    "lon": 26.86,
+    "lat": 50.99,
+    "conf": "rough",
+    "note": "blue arrow east of it; XVII. label west"
+   },
+   {
+    "unit": "V.A. 298.",
+    "lon": 27.44,
+    "lat": 50.74,
+    "conf": "rough",
+    "note": "blue arrow pointing east from it; 99.1 and 298. just west"
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 28.05,
+    "lat": 50.44,
+    "conf": "rough",
+    "note": "299., 25.m. arcs lie 0.1-0.4 deg west within 0.15 deg; red text '23.m.?' and 'V.K.K.?' east of them"
+   }
+  ],
+  "red": [],
+  "notes": "No closed red loop. At Minsk only the single word 'Versprengte' is still printed at about 26.4E, 53.9N and nothing else of the 10-12 Div. text or outline remains. 'Versprengte Feindteile' (red text, no outline) in the Pripyat marshes. Red items near Polotsk (186., Kav. 98), around Vitebsk (Reste 23, 20., 2700, 37.), around Mogilev/Dnieper (1A.K.?, 141, Reste 5.u., 187, 143, 61, 167, 117) and south (XXIV.Pz.K., XXVII, XXXI, XXII.Pz.K.) are texts or open arcs east of or in front of the German signs. 'Tle.240.50 / 17.u.214.Luftl.Br.' red text lies between 12.Pz. and 20.Pz./20.m., ahead of 12.Pz. rather than behind it."
+ }
+}

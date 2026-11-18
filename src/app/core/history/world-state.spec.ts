@@ -63,6 +63,7 @@ const SCENARIO: Scenario = {
   epoch: { year: 1941, month: 6, day: 22 },
   timeRange: { startDay: 0, endDay: 10 },
   units: [MOVER, STATIONARY, SIGHTED],
+  situations: [],
   borders: [],
   events: [CLOSING_EVENT],
   sources: [{ id: 'source', citation: 'Test source', kind: 'primary' }],
@@ -157,6 +158,23 @@ describe('deriveWorldState', () => {
 
   it('still shows the events of the last day at the very end of the time range', () => {
     expect(deriveWorldState(SCENARIO, 10).events.map((e) => e.id)).toEqual(['closing']);
+  });
+
+  it('shows the front situation of the calendar day, and none on a day without one', () => {
+    const evening = {
+      day: 9,
+      germanFront: [
+        { lon: 27, lat: 56 },
+        { lon: 28, lat: 50 },
+      ],
+      pockets: [],
+      sourceIds: ['source'],
+    };
+    const scenario: Scenario = { ...SCENARIO, situations: [evening] };
+    expect(deriveWorldState(scenario, 8.9).situation).toBeUndefined();
+    expect(deriveWorldState(scenario, 9.4).situation).toBe(evening);
+    // The very end of the range still belongs to the last calendar day.
+    expect(deriveWorldState(scenario, 10).situation).toBe(evening);
   });
 
   it('gives the same result going forwards or backwards in time', () => {

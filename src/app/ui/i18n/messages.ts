@@ -40,6 +40,11 @@ export interface Messages {
     readonly sources: (count: number) => string;
     readonly sourceKind: Readonly<Record<SourceKind, string>>;
   };
+  /** Names of the shaded estimates on the map; each must say that it is an estimate. */
+  readonly situation: {
+    readonly front: string;
+    readonly pocket: string;
+  };
   readonly units: {
     readonly faction: Readonly<Record<Faction, string>>;
     /** The single character drawn on the map piece of a unit of each type. */

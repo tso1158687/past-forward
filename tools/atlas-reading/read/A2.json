@@ -1,0 +1,1496 @@
+{
+ "0628": {
+  "front": [
+   {
+    "unit": "1.Pz.",
+    "lon": 26.04,
+    "lat": 56.45,
+    "conf": "rough",
+    "note": "arc at north edge of sheet"
+   },
+   {
+    "unit": "36.m.",
+    "lon": 25.27,
+    "lat": 56.17,
+    "conf": "rough",
+    "note": "arc partly cut by tile edge; east end estimated"
+   },
+   {
+    "unit": "6.Pz. / 8.Pz. / 3.m. (adjacent symbols)",
+    "lon": 26.57,
+    "lat": 55.93,
+    "conf": "rough",
+    "note": "three symbols stacked; east end of the group"
+   },
+   {
+    "unit": "SS T.? (text hard to read)",
+    "lon": 26.02,
+    "lat": 55.66,
+    "conf": "rough",
+    "note": "designation unsure"
+   },
+   {
+    "unit": "Br.900",
+    "lon": 25.43,
+    "lat": 54.73,
+    "conf": "clear",
+    "note": "circle"
+   },
+   {
+    "unit": "20.m.",
+    "lon": 26.54,
+    "lat": 54.44,
+    "conf": "clear",
+    "note": "within about 0.15 deg of Tle.14.m., borderline"
+   },
+   {
+    "unit": "Tle. 14.m.",
+    "lon": 26.94,
+    "lat": 54.31,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 28.21,
+    "lat": 54.04,
+    "conf": "clear",
+    "note": "east of Minsk; blue line east of it is an air-recon route, not a unit"
+   },
+   {
+    "unit": "12.Pz.",
+    "lon": 27.59,
+    "lat": 53.81,
+    "conf": "clear",
+    "note": "at Minsk"
+   },
+   {
+    "unit": "17.Pz.",
+    "lon": 27.25,
+    "lat": 53.63,
+    "conf": "clear",
+    "note": "south-east of Minsk; arrow-like arc"
+   },
+   {
+    "unit": "V.A. 10.Pz.",
+    "lon": 27.29,
+    "lat": 53.17,
+    "conf": "clear",
+    "note": "small arrow beside it labelled 7:30; not strictly front by rule since 3.Pz. is east at same latitude"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 29.41,
+    "lat": 53.12,
+    "conf": "rough",
+    "note": "isolated far to the east of the other symbols at this latitude, near Bobruisk/Beresina on the map"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 27.7,
+    "lat": 53.04,
+    "conf": "clear",
+    "note": "question mark beside it; not strictly front by rule since 3.Pz. is east at same latitude"
+   },
+   {
+    "unit": "V.A. (small arc, number not legible)",
+    "lon": 26.13,
+    "lat": 52.42,
+    "conf": "unsure",
+    "note": "tiny arc with question mark"
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 25.47,
+    "lat": 52.21,
+    "conf": "rough",
+    "note": "question mark beside it"
+   },
+   {
+    "unit": "267.",
+    "lon": 24.26,
+    "lat": 51.87,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "56.",
+    "lon": 24.77,
+    "lat": 51.36,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "62.",
+    "lon": 24.71,
+    "lat": 51.19,
+    "conf": "rough",
+    "note": "dashed arrow beside it"
+   },
+   {
+    "unit": "Tle. (number not legible)",
+    "lon": 25.2,
+    "lat": 50.97,
+    "conf": "rough",
+    "note": "arc with the word Tle. beside it"
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 25.73,
+    "lat": 50.81,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 26.3,
+    "lat": 50.64,
+    "conf": "clear",
+    "note": "dashed arrow pointing east"
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 26.49,
+    "lat": 50.33,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "Tle. 16.Pz.",
+    "lon": 25.68,
+    "lat": 50.09,
+    "conf": "clear",
+    "note": "southern most symbol of the sheet"
+   }
+  ],
+  "red": [
+   {
+    "text": "2 K.D. / 2 Pz.D. / 4 Pz.Br.",
+    "outline": [
+     [
+      23.97,
+      53.18
+     ],
+     [
+      24.19,
+      53.27
+     ],
+     [
+      24.36,
+      53.33
+     ],
+     [
+      24.63,
+      53.36
+     ],
+     [
+      24.78,
+      53.33
+     ],
+     [
+      24.87,
+      53.2
+     ],
+     [
+      24.87,
+      53.08
+     ],
+     [
+      24.76,
+      53.01
+     ],
+     [
+      24.55,
+      53.0
+     ],
+     [
+      24.4,
+      53.04
+     ],
+     [
+      24.36,
+      53.15
+     ],
+     [
+      24.25,
+      53.18
+     ]
+    ],
+    "north": "28. (~9 km)",
+    "east": "29. (~5 km)",
+    "south": "134. (~5 km)",
+    "west": "256. (~5 km)",
+    "conf": "clear",
+    "note": "closed circle; an army boundary line (blue) crosses its north part; red outline closed all round"
+   },
+   {
+    "text": "10 (dav. 1m.) Schtz.D",
+    "outline": [
+     [
+      23.0,
+      53.28
+     ],
+     [
+      23.06,
+      53.34
+     ],
+     [
+      23.22,
+      53.37
+     ],
+     [
+      23.39,
+      53.37
+     ],
+     [
+      23.48,
+      53.33
+     ],
+     [
+      23.46,
+      53.27
+     ],
+     [
+      23.35,
+      53.23
+     ],
+     [
+      23.16,
+      53.22
+     ],
+     [
+      23.04,
+      53.24
+     ]
+    ],
+    "north": "162. (~6 km)",
+    "east": "129. (~12 km)",
+    "south": "Mas.221.S. (~9 km)",
+    "west": "87. (~8 km)",
+    "conf": "clear",
+    "note": "closed circle, text partly hard to read (\"10 (dav. 1m.)\")"
+   }
+  ],
+  "notes": "Red rectangle (not a circle) at about 23.5E 53.3N reads \"2 Armeestaebe 2-3 Korpsstaebe\". \"Versprengte\" (red text, no closed outline) at about 23.8E 52.8N and \"Versprengte 128.m. 188.\" near 24.1E 54.8N. Red \"Nachschublager mit rund 2350 Panzern\" far east near Orsha. Many corps names and army boundary lines in blue were ignored. In the south, sheet ends near 49.5N."
+ },
+ "0629": {
+  "front": [
+   {
+    "unit": "Tle. 6.Pz. (northern arc)",
+    "lon": 26.17,
+    "lat": 56.37,
+    "conf": "clear",
+    "note": "upper of two Tle.6.Pz. arcs along the Dvina; Tle.1.Pz. arc just north-west of it"
+   },
+   {
+    "unit": "Tle. 6.Pz. (southern arc)",
+    "lon": 26.31,
+    "lat": 56.18,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "8.Pz. / 3.m. (with 1.Rgt.14.T. beside)",
+    "lon": 26.75,
+    "lat": 55.99,
+    "conf": "clear",
+    "note": "arc with question marks; red arrow pointing at it from the NE labelled 4:00"
+   },
+   {
+    "unit": "SS \"T\" (SS Totenkopf?)",
+    "lon": 26.4,
+    "lat": 55.76,
+    "conf": "rough",
+    "note": "arc with text SS T and (o.1Rgt.) below; reading of the designation unsure"
+   },
+   {
+    "unit": "Br.900",
+    "lon": 25.46,
+    "lat": 54.71,
+    "conf": "clear",
+    "note": "circle at Vilnius"
+   },
+   {
+    "unit": "18.m. (ab 30.6) - dashed arc",
+    "lon": 26.48,
+    "lat": 54.67,
+    "conf": "unsure",
+    "note": "dashed blue arc, probably a planned or future position, text says \"ab 30.6\"; may not be a normal unit symbol"
+   },
+   {
+    "unit": "20.m.",
+    "lon": 26.96,
+    "lat": 54.33,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 28.15,
+    "lat": 54.04,
+    "conf": "clear",
+    "note": "red arrows from the east pointing at it; air-recon line east of it is not a unit"
+   },
+   {
+    "unit": "20.Pz.",
+    "lon": 27.75,
+    "lat": 53.84,
+    "conf": "clear",
+    "note": "at Minsk, south-east of 7.Pz."
+   },
+   {
+    "unit": "18.Pz. (label \"Ma / 18 Pz\")",
+    "lon": 27.63,
+    "lat": 53.7,
+    "conf": "rough",
+    "note": "arc south-east of Minsk; label partly unclear"
+   },
+   {
+    "unit": "V.A. XXXXVII.m. (small arc with arrow, 16:00)",
+    "lon": 27.9,
+    "lat": 53.39,
+    "conf": "rough",
+    "note": "small arc with arrow; text partly cut"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 29.32,
+    "lat": 53.13,
+    "conf": "rough",
+    "note": "isolated far east near Bobruisk/Beresina; not connected to other symbols"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 27.97,
+    "lat": 53.06,
+    "conf": "clear",
+    "note": "not strictly front by rule since 3.Pz. is east at same latitude; question mark beside it"
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 26.84,
+    "lat": 52.97,
+    "conf": "clear",
+    "note": "closed blue oval; not strictly front because 3.Pz. is east at same latitude"
+   },
+   {
+    "unit": "10.m.",
+    "lon": 25.56,
+    "lat": 52.76,
+    "conf": "clear",
+    "note": "arc with dashed arrow pointing east"
+   },
+   {
+    "unit": "SS \"R\"",
+    "lon": 25.14,
+    "lat": 52.51,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "255.",
+    "lon": 24.44,
+    "lat": 52.11,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "267.",
+    "lon": 24.27,
+    "lat": 51.89,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "62.",
+    "lon": 25.12,
+    "lat": 51.05,
+    "conf": "rough",
+    "note": "circle near XVII corps; 56. is just west of it"
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 25.89,
+    "lat": 50.81,
+    "conf": "clear",
+    "note": "arrow pointing east to III.m."
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 26.58,
+    "lat": 50.63,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 26.5,
+    "lat": 50.33,
+    "conf": "clear",
+    "note": ""
+   }
+  ],
+  "red": [
+   {
+    "text": "30.K.D. / Tle.48. / 175. / 125. / XI",
+    "outline": [
+     [
+      24.28,
+      56.34
+     ],
+     [
+      24.34,
+      56.43
+     ],
+     [
+      24.47,
+      56.52
+     ],
+     [
+      24.66,
+      56.58
+     ],
+     [
+      24.86,
+      56.6
+     ],
+     [
+      24.99,
+      56.57
+     ],
+     [
+      25.01,
+      56.5
+     ],
+     [
+      24.93,
+      56.4
+     ],
+     [
+      24.74,
+      56.31
+     ],
+     [
+      24.52,
+      56.25
+     ],
+     [
+      24.4,
+      56.26
+     ],
+     [
+      24.3,
+      56.31
+     ]
+    ],
+    "north": "none within 60 km",
+    "east": "Tle.1.Pz. (~43 km)",
+    "south": "36.m. (~23 km)",
+    "west": "1. (~5 km)",
+    "conf": "clear",
+    "note": "large closed red oval in Latvia/Lithuania border area, text 30.K.D. Tle.48. 175. 125. and XI; red arrow with ? leaves its NE corner"
+   },
+   {
+    "text": "Tle. 3.u.10. Armee",
+    "outline": [
+     [
+      23.28,
+      53.19
+     ],
+     [
+      23.35,
+      53.25
+     ],
+     [
+      23.46,
+      53.28
+     ],
+     [
+      23.67,
+      53.3
+     ],
+     [
+      23.85,
+      53.29
+     ],
+     [
+      23.88,
+      53.24
+     ],
+     [
+      23.77,
+      53.2
+     ],
+     [
+      23.58,
+      53.16
+     ],
+     [
+      23.37,
+      53.14
+     ],
+     [
+      23.29,
+      53.17
+     ]
+    ],
+    "north": "129. (~7 km)",
+    "east": "23./7. (~5 km)",
+    "south": "268. (~6 km)",
+    "west": "221.Sich. (~8 km)",
+    "conf": "rough",
+    "note": "closed red loop west of Bialystok; neighbours estimated from the zoom, distances approximate"
+   },
+   {
+    "text": "3.u.10.Armee / Tle",
+    "outline": [
+     [
+      24.15,
+      53.3
+     ],
+     [
+      24.52,
+      53.33
+     ],
+     [
+      24.62,
+      53.4
+     ],
+     [
+      24.78,
+      53.42
+     ],
+     [
+      25.02,
+      53.41
+     ],
+     [
+      25.1,
+      53.38
+     ],
+     [
+      25.03,
+      53.34
+     ],
+     [
+      24.78,
+      53.27
+     ],
+     [
+      24.53,
+      53.23
+     ],
+     [
+      24.26,
+      53.2
+     ],
+     [
+      24.16,
+      53.22
+     ]
+    ],
+    "north": "8. (~3 km)",
+    "east": "Tle.34. / 10.Pz. / 29.m. (~10 km)",
+    "south": "137. (~7 km)",
+    "west": "268. (~12 km)",
+    "conf": "rough",
+    "note": "closed red loop east of Bialystok, blue army boundary line runs along its north side"
+   },
+   {
+    "text": "Teile",
+    "outline": [
+     [
+      24.48,
+      53.06
+     ],
+     [
+      24.55,
+      53.09
+     ],
+     [
+      24.69,
+      53.1
+     ],
+     [
+      24.82,
+      53.09
+     ],
+     [
+      24.87,
+      53.04
+     ],
+     [
+      24.85,
+      53.0
+     ],
+     [
+      24.75,
+      52.98
+     ],
+     [
+      24.6,
+      53.0
+     ],
+     [
+      24.5,
+      53.03
+     ]
+    ],
+    "north": "137. (~7 km)",
+    "east": "34. (~5 km)",
+    "south": "134. (~6 km)",
+    "west": "292. (~11 km)",
+    "conf": "clear",
+    "note": "small closed red oval with the single word Teile, south-east of Bialystok"
+   }
+  ],
+  "notes": "No closed red circle at Minsk; there are only blue arcs. Red text with no outline: \"Ruecklaeufige Bewegungen in kleineren Gruppen\" near 27.6E 54.5N, \"Reste XXIX\" near 27.2E 55.0N, \"Versprengte\" near 24.0E 52.8N and 24.7E 53.7N, \"Reste 5.u.23\" near 25.0E 55.2N. Several red arrows on the east side. Dashed blue arc \"18.m. (ab 30.6)\" near 26.3E 54.5N is unusual. 3.Pz. appears far east near Bobruisk, away from other symbols, as on the day before."
+ },
+ "0630": {
+  "front": [
+   {
+    "unit": "6.Pz.",
+    "lon": 26.48,
+    "lat": 56.42,
+    "conf": "rough",
+    "note": "arc partly cut by the top of the zoom; east end estimated"
+   },
+   {
+    "unit": "?.T. (small arc beside 3.m., text like 14.T.? unreadable)",
+    "lon": 27.14,
+    "lat": 55.88,
+    "conf": "rough",
+    "note": "8.Pz. and 3.m. arcs lie just west of it (3.m. east end about 0.1 deg west)"
+   },
+   {
+    "unit": "290.",
+    "lon": 26.09,
+    "lat": 55.66,
+    "conf": "clear",
+    "note": "arc next to a headquarters box"
+   },
+   {
+    "unit": "Br.900",
+    "lon": 25.49,
+    "lat": 54.72,
+    "conf": "clear",
+    "note": "circle at Vilnius"
+   },
+   {
+    "unit": "18.m.",
+    "lon": 26.42,
+    "lat": 54.61,
+    "conf": "rough",
+    "note": "closed blue oval, drawn with a dashed-looking outline in places"
+   },
+   {
+    "unit": "20.m.",
+    "lon": 27.8,
+    "lat": 54.24,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 28.18,
+    "lat": 54.06,
+    "conf": "clear",
+    "note": "red arrows from the east point at it"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 28.18,
+    "lat": 53.9,
+    "conf": "clear",
+    "note": "arc south-east of Minsk with red arrow below"
+   },
+   {
+    "unit": "Tle. 3.Pz.",
+    "lon": 29.01,
+    "lat": 53.46,
+    "conf": "clear",
+    "note": "small arc isolated far east at about 53.5N"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 29.44,
+    "lat": 53.14,
+    "conf": "clear",
+    "note": "arc at Bobruisk with two red arrows pointing at it from the east"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 27.93,
+    "lat": 53.04,
+    "conf": "clear",
+    "note": "question mark beside it; not strictly front by rule since 3.Pz. is east at same latitude"
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 26.79,
+    "lat": 52.95,
+    "conf": "clear",
+    "note": "closed blue oval; not strictly front by rule since 3.Pz. is east at about the same latitude"
+   },
+   {
+    "unit": "Tle. 45.",
+    "lon": 24.97,
+    "lat": 52.19,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "Tle. 267.",
+    "lon": 24.24,
+    "lat": 51.87,
+    "conf": "clear",
+    "note": "arc sitting on the army boundary line"
+   },
+   {
+    "unit": "62.",
+    "lon": 25.34,
+    "lat": 50.93,
+    "conf": "clear",
+    "note": "long dashed arrows run east from it (not units)"
+   },
+   {
+    "unit": "298.",
+    "lon": 25.37,
+    "lat": 50.76,
+    "conf": "rough",
+    "note": "hard to separate from adjacent dashed arcs"
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 27.06,
+    "lat": 50.53,
+    "conf": "clear",
+    "note": "blue arrow continues east from it (arrow, not a unit)"
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 26.5,
+    "lat": 50.28,
+    "conf": "clear",
+    "note": ""
+   }
+  ],
+  "red": [
+   {
+    "text": "30.K.D. / Tle.48. / Tle.175. / 125. / X.",
+    "outline": [
+     [
+      24.34,
+      56.3
+     ],
+     [
+      24.34,
+      56.36
+     ],
+     [
+      24.44,
+      56.44
+     ],
+     [
+      24.56,
+      56.51
+     ],
+     [
+      24.71,
+      56.57
+     ],
+     [
+      24.89,
+      56.59
+     ],
+     [
+      25.01,
+      56.56
+     ],
+     [
+      25.02,
+      56.49
+     ],
+     [
+      24.94,
+      56.4
+     ],
+     [
+      24.83,
+      56.31
+     ],
+     [
+      24.66,
+      56.25
+     ],
+     [
+      24.48,
+      56.24
+     ]
+    ],
+    "north": "1. (~20 km)",
+    "east": "36.m. (~3 km)",
+    "south": "11. (~6 km)",
+    "west": "11. (~11 km)",
+    "conf": "clear",
+    "note": "closed red oval in the north (Lithuania/Latvia border); red arrow with ? leaves its NE side"
+   },
+   {
+    "text": "Tle. 3.u.10 Armee",
+    "outline": [
+     [
+      24.64,
+      53.28
+     ],
+     [
+      24.72,
+      53.3
+     ],
+     [
+      24.89,
+      53.29
+     ],
+     [
+      25.13,
+      53.28
+     ],
+     [
+      25.28,
+      53.24
+     ],
+     [
+      25.31,
+      53.19
+     ],
+     [
+      25.25,
+      53.15
+     ],
+     [
+      25.12,
+      53.13
+     ],
+     [
+      24.99,
+      53.15
+     ],
+     [
+      24.89,
+      53.18
+     ],
+     [
+      24.78,
+      53.22
+     ],
+     [
+      24.67,
+      53.25
+     ]
+    ],
+    "north": "8. (~6 km)",
+    "east": "Tle.29.m. (~14 km)",
+    "south": "34. (~6 km)",
+    "west": "23./7. (~14 km)",
+    "conf": "clear",
+    "note": "closed red loop east of Bialystok; a blue army boundary line runs along its north edge"
+   },
+   {
+    "text": "Tle. 3.u.10 Arm. (label overprinted across the loop, unsure)",
+    "outline": [
+     [
+      24.83,
+      53.11
+     ],
+     [
+      24.92,
+      53.11
+     ],
+     [
+      24.94,
+      53.06
+     ],
+     [
+      24.94,
+      53.01
+     ],
+     [
+      24.88,
+      52.97
+     ],
+     [
+      24.8,
+      52.97
+     ],
+     [
+      24.75,
+      53.01
+     ],
+     [
+      24.8,
+      53.04
+     ],
+     [
+      24.81,
+      53.09
+     ]
+    ],
+    "north": "292. (~4 km)",
+    "east": "34. (~8 km)",
+    "south": "184. (~5 km)",
+    "west": "263. (~6 km)",
+    "conf": "rough",
+    "note": "small closed teardrop loop just south of the larger loop; text crossing it is hard to read"
+   }
+  ],
+  "notes": "Red rectangle (a text box, not a loop) at about 25.4E 53.0N reads \"9.Pz.? Tle.23? 130.\" Red text without a closed outline: \"Tle.3.u.10 Armee ?\" at 23.9E 53.1N, \"Versprengte\" (several places, e.g. 24.2E 52.7N, 27.6E 52.9N, 25.3E 50.4N), and in the Minsk area stacked red labels \"Tle.64 / 29.55 / 108?\", \"(4.)Pz / 32.)Br.?\", \"Tle.36.K.D. / Tle.155 / Tle.86\", \"Tle.13 / 4.Pz / 42.K.D.?\" with red arrows pointing to the south-east; none of them has a closed red outline. Red arrows point at 3.Pz. at Bobruisk. Blue army-group boundaries cross the Minsk area."
+ },
+ "0701": {
+  "front": [
+   {
+    "unit": "6.Pz.",
+    "lon": 26.51,
+    "lat": 56.46,
+    "conf": "rough",
+    "note": "arc at the top edge of the zoom, east end estimated; \"Tle. 6.Pz.\" label beside it"
+   },
+   {
+    "unit": "?.T. (arc east of 3.m., text like 14.T.? unreadable)",
+    "lon": 27.18,
+    "lat": 55.88,
+    "conf": "clear",
+    "note": "8.Pz. and 3.m. arcs lie just west of it"
+   },
+   {
+    "unit": "290.",
+    "lon": 26.51,
+    "lat": 55.8,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 25.54,
+    "lat": 54.78,
+    "conf": "clear",
+    "note": "oval overlapping the Br.900 oval at Vilnius"
+   },
+   {
+    "unit": "1 Btl. 20.m.",
+    "lon": 27.27,
+    "lat": 54.59,
+    "conf": "clear",
+    "note": "small arc; 18.m. oval is about 0.7 deg west of it"
+   },
+   {
+    "unit": "Tle. 18.Pz.",
+    "lon": 28.51,
+    "lat": 54.22,
+    "conf": "clear",
+    "note": "arc at Borisov with dotted air-recon line east of it (not a unit)"
+   },
+   {
+    "unit": "18. (Pz.)",
+    "lon": 28.16,
+    "lat": 53.96,
+    "conf": "clear",
+    "note": "arc south-west of Tle.18.Pz., label reads 18 / Pz."
+   },
+   {
+    "unit": "20.Pz.",
+    "lon": 27.78,
+    "lat": 53.8,
+    "conf": "rough",
+    "note": "at Minsk; borderline, 18. is east of it at about 0.16 deg latitude difference"
+   },
+   {
+    "unit": "10.R. (arc, label 10.R.)",
+    "lon": 27.87,
+    "lat": 53.54,
+    "conf": "rough",
+    "note": "with red o.Pz.Br. label beside it; a blue arrow points north-east from it"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 28.99,
+    "lat": 53.42,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 29.34,
+    "lat": 53.16,
+    "conf": "clear",
+    "note": "near Bobruisk"
+   },
+   {
+    "unit": "dashed arc with ? (south-east of 1.K.D.)",
+    "lon": 27.73,
+    "lat": 52.93,
+    "conf": "unsure",
+    "note": "dashed arc plus question mark, blue arrow from the 1.K.D. oval points at it; 1.K.D. itself is a closed oval about 0.8 deg west"
+   },
+   {
+    "unit": "255.",
+    "lon": 25.1,
+    "lat": 52.51,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "Tle. 45.",
+    "lon": 24.92,
+    "lat": 52.19,
+    "conf": "rough",
+    "note": "dashed arrow with ? runs east from it"
+   },
+   {
+    "unit": "62. / 298.",
+    "lon": 25.59,
+    "lat": 50.75,
+    "conf": "rough",
+    "note": "two arcs stacked; red arrow pointing north-east above them"
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 26.73,
+    "lat": 50.53,
+    "conf": "clear",
+    "note": "blue arrow continues east from it"
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 26.52,
+    "lat": 50.32,
+    "conf": "clear",
+    "note": ""
+   }
+  ],
+  "red": [
+   {
+    "text": "(no text, empty small red oval)",
+    "outline": [
+     [
+      24.71,
+      53.04
+     ],
+     [
+      24.78,
+      53.03
+     ],
+     [
+      24.86,
+      53.04
+     ],
+     [
+      24.92,
+      53.02
+     ],
+     [
+      24.92,
+      52.99
+     ],
+     [
+      24.86,
+      52.97
+     ],
+     [
+      24.79,
+      52.97
+     ],
+     [
+      24.73,
+      52.98
+     ],
+     [
+      24.71,
+      53.01
+     ]
+    ],
+    "north": "263. (~6 km)",
+    "east": "34. (~6 km)",
+    "south": "31. (~12 km)",
+    "west": "134. (~9 km)",
+    "conf": "clear",
+    "note": "closed red oval south-east of Bialystok, ringed by blue division ovals; below your two thresholds (no text, width about 0.2 deg) but it is the only closed red outline left in the region"
+   }
+  ],
+  "notes": "The big red loops of the days before are gone; the area around Bialystok is filled with small blue oval division symbols (23, 268, 7, 137, 263, 34, 292, 31, 17, 252, 134, 131, 78, 258 ...). No closed red outline at Minsk, only stacked red labels without outline: \"Tle.7.Pz / 44. Pz. / 32 Br.?\", \"Tle.64 / 29.55 / 108?\", \"204.mot/mech.?\", \"Tle.36.K.D. / 155 / 86\", \"Tle.50 / 113.121 / 133 / 27.K.D.\", \"Tle.5.121.129.22.Pz.Br.\", \"Tle.55.121.129.29.Pz.Br.\", \"Reste 2.86\" near 25.1E 53.3N. Red arrows near Orsha and Borisov. Many red supply-column symbols east of the front are not units. In the south red labels \"1 Pz.K. (XXII.?) / 19.Pz.\", \"XXXI.?\", \"Reste 135\", \"131.m.\" etc, no outlines."
+ },
+ "0702": {
+  "front": [
+   {
+    "unit": "Tle. 6.Pz. / Tle. 8.Pz. (arcs along Dvina)",
+    "lon": 27.06,
+    "lat": 56.51,
+    "conf": "rough",
+    "note": "arc at the top edge; label partly cut by the tile edge"
+   },
+   {
+    "unit": "3.m.",
+    "lon": 27.35,
+    "lat": 56.12,
+    "conf": "clear",
+    "note": "long arc; SS \"T.\" arc and 1.Rgt.121 arc just south of it"
+   },
+   {
+    "unit": "1.Rgt. 121.",
+    "lon": 27.25,
+    "lat": 55.91,
+    "conf": "clear",
+    "note": "arc with 121. label"
+   },
+   {
+    "unit": "V.A. II. (small arc east of Dunaburg)",
+    "lon": 26.73,
+    "lat": 55.59,
+    "conf": "rough",
+    "note": "arc at the blue army boundary line"
+   },
+   {
+    "unit": "18.m.",
+    "lon": 27.88,
+    "lat": 55.15,
+    "conf": "rough",
+    "note": "arc just east of 19.Pz.; question whether it is east-most at 55N"
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 27.2,
+    "lat": 55.12,
+    "conf": "rough",
+    "note": "arc east of Glebokie area"
+   },
+   {
+    "unit": "20.Pz. (arc with 3 / Krewo HQ)",
+    "lon": 27.45,
+    "lat": 54.64,
+    "conf": "rough",
+    "note": "arc beside the HQ at Wileika"
+   },
+   {
+    "unit": "20.m.",
+    "lon": 27.8,
+    "lat": 54.43,
+    "conf": "clear",
+    "note": "open arc (label 20. m.)"
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 28.11,
+    "lat": 54.28,
+    "conf": "clear",
+    "note": "arc; small arc south of it unlabelled"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 28.68,
+    "lat": 54.24,
+    "conf": "clear",
+    "note": "arc at Borisov; red 50.Pz.Br. and red 18.Pz. labels beside it"
+   },
+   {
+    "unit": "Tle. 44.R. (SS \"R\")",
+    "lon": 28.9,
+    "lat": 53.77,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 28.49,
+    "lat": 53.7,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 28.93,
+    "lat": 53.38,
+    "conf": "clear",
+    "note": "blue arrow continues north-east from it"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 29.42,
+    "lat": 53.15,
+    "conf": "clear",
+    "note": "dashed blue arrow and red arrow continue east of it"
+   },
+   {
+    "unit": "V.A. (before 8.Pz./3.Pz., label hard to read \"V.A. 8.Pz.?\")",
+    "lon": 30.03,
+    "lat": 52.91,
+    "conf": "unsure",
+    "note": "arc at the far east of the south-east tile (about 53.0N 30.0E); next to red \"29.Pz.B\""
+   },
+   {
+    "unit": "Tle. 45. / 45.",
+    "lon": 24.94,
+    "lat": 52.2,
+    "conf": "rough",
+    "note": "oval east of Brest, east end estimated"
+   },
+   {
+    "unit": "56.",
+    "lon": 25.21,
+    "lat": 51.13,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "298.",
+    "lon": 25.68,
+    "lat": 50.77,
+    "conf": "clear",
+    "note": "red arrow beside it; XXII.Pz.K label in red above"
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 26.69,
+    "lat": 50.49,
+    "conf": "clear",
+    "note": "blue arrow east of it"
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 26.49,
+    "lat": 50.4,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "16.m.",
+    "lon": 26.32,
+    "lat": 50.21,
+    "conf": "rough",
+    "note": ""
+   }
+  ],
+  "red": [],
+  "notes": "No closed red circles at all this day. The Bialystok-Novogrudok region is full of blue division ovals. Red text without a closed outline: arrow-edged \"Reste 33 u. III.Pz.Kps / Tle.98\" near 26.5E 55.4N with a red arrow pointing east; \"Reste XXIX.?\" near 27.5E 55.3N; \"Tle.13 / 4.Pz / 42.K.D.?\" near 25.7E 53.4N; \"Tle.7.Pz / 44. Pz.Br / 204.mot/mech?\" and \"Tle.36 K.D 7. / 86\" near Minsk-west; \"Reste 55.143.155.29.Pz.Br\" and \"Versprengte\" near 27.8E 52.8N; \"Tle.64 Schtz.D u 32.Pz.Br\" near Borisov; red \"Reste 5.121\" etc. near 30.0E 53.4N. A mine-field barrier (\"Minensperre\") dashed line is drawn west of Minsk. The army boundary line crosses near Minsk. Some labels in the 14.m. / 2/3 14.m. cluster are hard to separate."
+ },
+ "0703": {
+  "front": [
+   {
+    "unit": "8.Pz.",
+    "lon": 27.35,
+    "lat": 56.48,
+    "conf": "rough",
+    "note": "arc at the top of the tile, north of the Dvina; Tle.46.Pz. in red beside it"
+   },
+   {
+    "unit": "3.m.",
+    "lon": 27.68,
+    "lat": 56.28,
+    "conf": "clear",
+    "note": "long arc"
+   },
+   {
+    "unit": "SS \"T\" arc (with Tle.185.m.? / Tle.152.? in red just east)",
+    "lon": 27.49,
+    "lat": 56.05,
+    "conf": "clear",
+    "note": "SS T arc; its east end is a long vertical arc; red labels sit directly east"
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 28.26,
+    "lat": 55.56,
+    "conf": "clear",
+    "note": "arc with Reste 33 u. III.Pz.Kps red arc/arrow immediately west of it"
+   },
+   {
+    "unit": "18.m.",
+    "lon": 28.55,
+    "lat": 55.39,
+    "conf": "rough",
+    "note": "arc south-east of 19.Pz."
+   },
+   {
+    "unit": "20.Pz. / 7.Pz.",
+    "lon": 28.83,
+    "lat": 54.87,
+    "conf": "clear",
+    "note": "one arc carrying both labels"
+   },
+   {
+    "unit": "20.m.",
+    "lon": 27.96,
+    "lat": 54.74,
+    "conf": "clear",
+    "note": "arc; the 3 HQ box is west of it"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 28.96,
+    "lat": 54.29,
+    "conf": "clear",
+    "note": "arc at Borisov; red 18.Pz. and Tle.4.Pz. labels below it (red = Soviet remnants as the map labels them)"
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 29.02,
+    "lat": 53.85,
+    "conf": "clear",
+    "note": "red arrow with Reste 85 / Tle.141 points at it from the east"
+   },
+   {
+    "unit": "44. R. (SS)",
+    "lon": 28.94,
+    "lat": 53.64,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 29.22,
+    "lat": 53.5,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 29.59,
+    "lat": 53.16,
+    "conf": "clear",
+    "note": "closed arc at Bobruisk"
+   },
+   {
+    "unit": "Tle. 3.Pz.",
+    "lon": 30.16,
+    "lat": 53.09,
+    "conf": "rough",
+    "note": "small arc north of Rogatschew with red tick beside it"
+   },
+   {
+    "unit": "267.",
+    "lon": 25.38,
+    "lat": 52.65,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "45. (oval with arrow)",
+    "lon": 24.96,
+    "lat": 52.23,
+    "conf": "clear",
+    "note": "dashed arrow continues east"
+   },
+   {
+    "unit": "V.A. 46 (arc at Pinsk)",
+    "lon": 26.16,
+    "lat": 52.19,
+    "conf": "rough",
+    "note": "isolated arc with text V.A.46; reading of the number unsure"
+   },
+   {
+    "unit": "56.",
+    "lon": 25.53,
+    "lat": 51.12,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "62.",
+    "lon": 25.7,
+    "lat": 51.05,
+    "conf": "rough",
+    "note": "just below 56."
+   },
+   {
+    "unit": "298.",
+    "lon": 25.99,
+    "lat": 50.78,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 26.6,
+    "lat": 50.64,
+    "conf": "clear",
+    "note": "arrow east of it"
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 27.11,
+    "lat": 50.5,
+    "conf": "rough",
+    "note": "right edge of the zoom, partly cut"
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 26.9,
+    "lat": 50.38,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "16.m.",
+    "lon": 26.68,
+    "lat": 50.1,
+    "conf": "rough",
+    "note": "arrow beside it"
+   }
+  ],
+  "red": [
+   {
+    "text": "Versprengte / Reste von 10-12 Divn.",
+    "outline": [
+     [
+      25.86,
+      53.95
+     ],
+     [
+      26.21,
+      54.05
+     ],
+     [
+      26.73,
+      53.96
+     ],
+     [
+      27.15,
+      53.87
+     ],
+     [
+      27.15,
+      53.77
+     ],
+     [
+      26.85,
+      53.63
+     ],
+     [
+      26.38,
+      53.46
+     ],
+     [
+      25.9,
+      53.31
+     ],
+     [
+      25.75,
+      53.46
+     ],
+     [
+      25.91,
+      53.66
+     ],
+     [
+      25.92,
+      53.81
+     ]
+    ],
+    "north": "35. / 161. (~3 km)",
+    "east": "12.Pz. (~10 km)",
+    "south": "M.G.B.5 (~5 km)",
+    "west": "V.A. / 28. (~8 km)",
+    "conf": "clear",
+    "note": "large closed red loop west of Minsk (Rakow-Lubcza-Stolpce area), closed all around. A blue army boundary line and a dashed blue north-south line cross it, and a blue arrow inside it points south-west. Blue arcs (5., 35., 161., 14.m., 29.m., M.G.B.5, V.A.) touch the loop on its north, east and south sides; on the west side the nearest are small V.A. arcs"
+   }
+  ],
+  "notes": "The only closed red outline is the loop west of Minsk. \"Reste 33 u. III.Pz.Kps / Tle.98\" at about 27.2E 55.4N is a red open arc with an arrow (not closed). Red labels with no closed outline east of the front: \"Tle.185.m.? / Tle.152.?\", \"50.Pz.Br.? / Reste 64\" with a short red arc near 28.5E 54.4N, \"Tle.141 / Reste 85 / 34.Pz.Br\", \"Tle.100\", \"Reste 5 / 121 / 129, 22.Pz.Br\", \"Versprengte Reste 55.143.155.29.Pz.Br\" at 28.0-29.5E 53.0N, and in the south \"XXVII.Pz.K / II / 19.Pz.D\", \"Reste 42 / 146?\", \"Tle.140 / Reste 145 / Tle.14.K.D\". A long dashed blue north-south line runs from Vilnius/Grodno south past Bialystok to Brest (about 24.5E to 25E) and also dashed lines near Kaunas; I read these as lines, not units. Hatched blue ovals (213.Sich, 87., 162., 403.Sich, 285.Sich) are in the rear. Parachute symbol near 26.1E 55.2N is not a unit. The north end of the Dvina front (Tle.46.Pz in red) lies east of 8.Pz."
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "0622": {
+  "drop_front": [
+   [
+    23.64,
+    51.42
+   ]
+  ],
+  "why": {
+   "23.64,51.42": "213.Sich. is drawn as a dashed arc: an expected position, not where the unit was"
+  }
+ },
+ "0623": {
+  "drop_front": [
+   [
+    23.64,
+    51.42
+   ]
+  ],
+  "why": {
+   "23.64,51.42": "213.Sich. is drawn as a dashed arc: an expected position, not where the unit was"
+  }
+ },
+ "0624": {
+  "drop_front": [
+   [
+    23.64,
+    51.42
+   ]
+  ],
+  "why": {
+   "23.64,51.42": "213.Sich. is drawn as a dashed arc: an expected position, not where the unit was"
+  }
+ },
+ "0625": {
+  "drop_front": [
+   [
+    23.64,
+    51.42
+   ]
+  ],
+  "why": {
+   "23.64,51.42": "213.Sich. is drawn as a dashed arc: an expected position, not where the unit was"
+  }
+ },
+ "0626": {
+  "drop_front": [
+   [
+    23.64,
+    51.42
+   ]
+  ],
+  "why": {
+   "23.64,51.42": "213.Sich. is drawn as a dashed arc: an expected position, not where the unit was"
+  }
+ },
+ "0627": {
+  "drop_front": [
+   [
+    23.64,
+    51.42
+   ]
+  ],
+  "why": {
+   "23.64,51.42": "213.Sich. is drawn as a dashed arc: an expected position, not where the unit was"
+  }
+ },
+ "0628": {
+  "add_front": [
+   [
+    26.5,
+    52.94,
+    "10.Pz."
+   ],
+   [
+    27.89,
+    53.96,
+    "20.Pz."
+   ]
+  ],
+  "why": {
+   "26.50,52.94": "both readers missed this arc; found by the independent verifier and confirmed on the sheet: its east tip lies about 40 km east of the 10.m. arc in the same band of latitude",
+   "27.89,53.96": "both readers left out the 20.Pz. arc at Minsk; found by the independent verifier and confirmed on the sheet: its east tip lies about 20 km east of the 12.Pz. arc in the same band"
+  }
+ },
+ "0629": {
+  "drop_front": [
+   [
+    26.48,
+    54.67
+   ],
+   [
+    26.48,
+    54.52
+   ]
+  ],
+  "drop_rings": [
+   [
+    24.62,
+    56.42
+   ]
+  ],
+  "why": {
+   "26.48,54.6": "18.m. is a dashed ellipse labelled 'ab 30.6' (from 30 June): a planned position",
+   "24.62,56.42": "ring centre lies north of the map"
+  }
+ },
+ "0630": {
+  "drop_rings": [
+   [
+    24.69,
+    56.42
+   ],
+   [
+    25.62,
+    53.07
+   ]
+  ],
+  "why": {
+   "24.69,56.42": "ring centre lies north of the map",
+   "25.62,53.07": "a red rectangular text box, not a ring (one reader)",
+   "24.85,53.04": "kept: a small closed red loop with no text inside; its label 'Tle. 3.u.10 Arm.' stands beside it, joined by a leader line"
+  }
+ },
+ "0701": {
+  "drop_front": [
+   [
+    27.73,
+    52.93
+   ]
+  ],
+  "drop_rings": [
+   [
+    24.81,
+    53.01
+   ]
+  ],
+  "why": {
+   "27.73,52.93": "dashed arc with a question mark",
+   "24.81,53.01": "small empty red oval without text, below the size threshold (one reader)"
+  }
+ },
+ "0706": {
+  "drop_front": [
+   [
+    26.45,
+    51.75
+   ]
+  ],
+  "why": {
+   "26.45,51.75": "V.A. 45. is a dashed oval"
+  }
+ }
+}

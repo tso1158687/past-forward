@@ -1,0 +1,1237 @@
+{
+ "0704": {
+  "front": [
+   {
+    "unit": "1.Pz.",
+    "lon": 28.18,
+    "lat": 57.25,
+    "conf": "clear",
+    "note": "north of the tile range (tile top is 56.5N); read from zoom"
+   },
+   {
+    "unit": "6.Pz.",
+    "lon": 28.12,
+    "lat": 56.94,
+    "conf": "clear",
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "unit": "8.Pz.",
+    "lon": 27.87,
+    "lat": 56.72,
+    "conf": "clear",
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "unit": "3.m.",
+    "lon": 27.98,
+    "lat": 56.53,
+    "conf": "clear",
+    "note": "at top edge of tile"
+   },
+   {
+    "unit": "SS \"T\"",
+    "lon": 28.13,
+    "lat": 56.31,
+    "conf": "rough",
+    "note": "SS Totenkopf-style label"
+   },
+   {
+    "unit": "290.",
+    "lon": 27.55,
+    "lat": 56.07,
+    "conf": "rough",
+    "note": "two adjacent blue arcs near the label; east tip of the lower one taken"
+   },
+   {
+    "unit": "121.",
+    "lon": 27.36,
+    "lat": 55.91,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 28.27,
+    "lat": 55.57,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "18.m.",
+    "lon": 28.61,
+    "lat": 55.4,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "20.Pz.",
+    "lon": 29.26,
+    "lat": 55.21,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 29.1,
+    "lat": 54.86,
+    "conf": "clear",
+    "note": "a separate unlabelled small arc stands just north of it at about 29.10E 54.99N"
+   },
+   {
+    "unit": "20.m.",
+    "lon": 27.99,
+    "lat": 54.67,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 29.11,
+    "lat": 54.33,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 28.96,
+    "lat": 53.84,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.29,
+    "lat": 53.48,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.16,
+    "lat": 53.06,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "267.",
+    "lon": 25.57,
+    "lat": 52.7,
+    "conf": "rough",
+    "note": "arc beside label; unit label partly overlapped"
+   },
+   {
+    "unit": "V.A.",
+    "lon": 26.15,
+    "lat": 52.16,
+    "conf": "rough",
+    "note": "arc west of Pinsk labelled only V.A., no number"
+   },
+   {
+    "unit": "62.",
+    "lon": 25.92,
+    "lat": 51.04,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 27.3,
+    "lat": 50.48,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "Tle.",
+    "lon": 27.0,
+    "lat": 50.18,
+    "conf": "rough",
+    "note": "arc labelled only Tle. (next to a 11.Pz. label); number not clear"
+   },
+   {
+    "unit": "V.A.",
+    "lon": 26.37,
+    "lat": 49.81,
+    "conf": "rough",
+    "note": "small arc, no number"
+   },
+   {
+    "unit": "Tle. 9.Pz.",
+    "lon": 26.04,
+    "lat": 49.5,
+    "conf": "clear",
+    "note": "south of tile range (tile bottom is about 50.2N); read from zoom"
+   },
+   {
+    "unit": "4.Geb.",
+    "lon": 25.24,
+    "lat": 49.34,
+    "conf": "rough",
+    "note": "south of tile range; read from zoom"
+   },
+   {
+    "unit": "V.A. 101.",
+    "lon": 25.04,
+    "lat": 49.08,
+    "conf": "unsure",
+    "note": "south of tile range; read from zoom, stopped reading here"
+   }
+  ],
+  "red": [
+   {
+    "text": "Versprengte Reste von 10-12 Divn.",
+    "outline": [
+     [
+      26.1,
+      54.1
+     ],
+     [
+      26.52,
+      54.06
+     ],
+     [
+      26.85,
+      53.95
+     ],
+     [
+      26.95,
+      53.83
+     ],
+     [
+      26.83,
+      53.71
+     ],
+     [
+      26.75,
+      53.6
+     ],
+     [
+      26.46,
+      53.52
+     ],
+     [
+      26.2,
+      53.61
+     ],
+     [
+      25.91,
+      53.77
+     ],
+     [
+      25.84,
+      53.94
+     ],
+     [
+      25.94,
+      54.05
+     ]
+    ],
+    "north": "5. (~4 km); 35. (~8 km)",
+    "east": "161. (~0-3 km, ellipse touches the circle); 12.Pz./Br.900 (~13 km)",
+    "south": "M.G.B.5 (~7 km)",
+    "west": "28. (~10 km)",
+    "conf": "clear",
+    "note": "closed red loop; a small red box with a cross-bar sits on its south-east side where a blue boundary line crosses (near 26.75E 53.65N); the 29.m. label touches it"
+   }
+  ],
+  "notes": "Red text blocks (Tle.100,101,108,141 / Reste 24,56,143,155 / 7.Pz.? Reste 50.? near Borisov-Tschaussy, 11.Armee arcs near Polozk, XXV.Pz.K. etc. in the south) have no closing outline and lie east of or at the front, not recorded as pockets. 1.K.D. (ring at about 28.09E 52.97N) and 255. are not 'front' by the 0.15-degree rule because 3.Pz. is within 0.15 degree to the east; Pinsk-area V.A. and 267. stand far west of the line near 53N. Front south of about 50N is beyond the tile range and was read from zoom only down to about 49.1N."
+ },
+ "0705": {
+  "front": [
+   {
+    "unit": "1.Pz.",
+    "lon": 28.49,
+    "lat": 57.3,
+    "conf": "clear",
+    "note": "north of the tile range (tile top is 56.5N); read from zoom"
+   },
+   {
+    "unit": "6.Pz.",
+    "lon": 28.05,
+    "lat": 57.11,
+    "conf": "clear",
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "unit": "8.Pz.",
+    "lon": 28.29,
+    "lat": 56.83,
+    "conf": "clear",
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "unit": "3.m.",
+    "lon": 28.1,
+    "lat": 56.58,
+    "conf": "clear",
+    "note": "long arc, at the top edge of tile"
+   },
+   {
+    "unit": "SS \"T\"",
+    "lon": 28.12,
+    "lat": 56.4,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "290.",
+    "lon": 27.52,
+    "lat": 56.08,
+    "conf": "rough",
+    "note": "two adjacent blue arcs; east tip of the lower one"
+   },
+   {
+    "unit": "V.A. 32.",
+    "lon": 27.4,
+    "lat": 55.81,
+    "conf": "rough",
+    "note": "small arc labelled V.A. 32.; 121. arc is just north"
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 28.29,
+    "lat": 55.58,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "18.m.",
+    "lon": 28.64,
+    "lat": 55.43,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "V.A.",
+    "lon": 29.54,
+    "lat": 55.09,
+    "conf": "rough",
+    "note": "arc labelled V.A. with no number, north of Potschetkowo"
+   },
+   {
+    "unit": "V.A. 17.",
+    "lon": 29.77,
+    "lat": 54.81,
+    "conf": "rough",
+    "note": "arc labelled V.A. next to a 17.P(z). label"
+   },
+   {
+    "unit": "Tle. 17.Pz.",
+    "lon": 29.31,
+    "lat": 54.65,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 29.5,
+    "lat": 54.38,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 29.98,
+    "lat": 53.96,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "SS \"R\"",
+    "lon": 29.56,
+    "lat": 53.65,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "Tle. 3.Pz.",
+    "lon": 30.41,
+    "lat": 53.32,
+    "conf": "rough",
+    "note": "arc labelled Tle. 3.Pz."
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.22,
+    "lat": 53.08,
+    "conf": "clear",
+    "note": "double arc"
+   },
+   {
+    "unit": "15.",
+    "lon": 24.95,
+    "lat": 52.6,
+    "conf": "rough",
+    "note": "oval near the dashed boundary, 'XXXIII' area; far west of everything else at this latitude"
+   },
+   {
+    "unit": "V.A.",
+    "lon": 26.17,
+    "lat": 52.15,
+    "conf": "rough",
+    "note": "arc west of Pinsk, no number"
+   },
+   {
+    "unit": "62.",
+    "lon": 26.3,
+    "lat": 51.17,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "99.1",
+    "lon": 26.31,
+    "lat": 50.98,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 27.43,
+    "lat": 50.64,
+    "conf": "clear",
+    "note": "13.Pz. is about 0.15 degree south and further east: borderline"
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 27.69,
+    "lat": 50.49,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 27.62,
+    "lat": 50.12,
+    "conf": "clear",
+    "note": "south of tile range (tile bottom is about 50.2N); read from zoom"
+   },
+   {
+    "unit": "16.Pz.",
+    "lon": 26.51,
+    "lat": 49.96,
+    "conf": "rough",
+    "note": "column of overlapping arcs (Tle.16.Pz., 111., 16.Pz., 75., 57., 9.); ties within reading error with 75."
+   },
+   {
+    "unit": "57.",
+    "lon": 26.46,
+    "lat": 49.73,
+    "conf": "rough",
+    "note": "same column of arcs; ties with 75."
+   },
+   {
+    "unit": "Tle. 9.Pz.",
+    "lon": 26.04,
+    "lat": 49.48,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "101.",
+    "lon": 25.19,
+    "lat": 49.02,
+    "conf": "unsure",
+    "note": "arc beside label 101.1; stopped reading here"
+   }
+  ],
+  "red": [
+   {
+    "text": "Versprengte Reste von 10-12 Divn.",
+    "outline": [
+     [
+      26.02,
+      54.09
+     ],
+     [
+      26.41,
+      54.07
+     ],
+     [
+      26.78,
+      53.98
+     ],
+     [
+      27.01,
+      53.89
+     ],
+     [
+      26.93,
+      53.77
+     ],
+     [
+      26.69,
+      53.62
+     ],
+     [
+      26.34,
+      53.66
+     ],
+     [
+      26.04,
+      53.74
+     ],
+     [
+      26.01,
+      53.86
+     ],
+     [
+      25.92,
+      54.01
+     ]
+    ],
+    "north": "5. (~7 km)",
+    "east": "Tle. 14.m. / Br.900 (~3-5 km)",
+    "south": "Tle. 8. (~3 km)",
+    "west": "Tle. 28. (~3 km)",
+    "conf": "clear",
+    "note": "closed loop, same shape as the day before but slightly smaller; blue boundary line crosses its south-east corner"
+   }
+  ],
+  "notes": "Another red text 'Versprengte Feindteile' (no outline) lies in the Slutsk-Starobino-Mokroe area (about 27.2-28.4E 52.5N); not a closed circle. Red text blocks around Mogilev (Tle.100, 101,108,141 / Reste 24,56,143,155), Tle.55 121 and 143.155 east of 4.Pz./Tle.3.Pz. have no outline and stand east of the front. 1.K.D. ring (28.09E 52.97N) is not front by the 0.15 rule because 3.Pz. is within 0.15 degree to the east. Tile range ends about 50.2N; southern symbols down to 49.0N read from zoom only."
+ },
+ "0706": {
+  "front": [
+   {
+    "unit": "1./6.Pz.",
+    "lon": 28.36,
+    "lat": 57.28,
+    "conf": "rough",
+    "note": "north of the tile range (tile top is 56.5N); one big arc labelled 1. and 6.Pz. near Ostrow; read from zoom"
+   },
+   {
+    "unit": "8.Pz.",
+    "lon": 28.29,
+    "lat": 56.82,
+    "conf": "clear",
+    "note": "north of tile range; long arc; read from zoom"
+   },
+   {
+    "unit": "Tle. 3.m.",
+    "lon": 28.16,
+    "lat": 56.59,
+    "conf": "rough",
+    "note": "arc labelled Tle. 3.m.; the larger 3.m. oval is about 0.4 degree further west on the same latitude"
+   },
+   {
+    "unit": "SS \"T\"",
+    "lon": 28.34,
+    "lat": 56.31,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "Tle. 32.",
+    "lon": 27.42,
+    "lat": 55.82,
+    "conf": "rough",
+    "note": "arc labelled 32. Tle. just south of 121./12. on the Dvina"
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 28.38,
+    "lat": 55.6,
+    "conf": "clear",
+    "note": "shares one arc with a Tle. 18.m. label"
+   },
+   {
+    "unit": "Tle. 18.m.",
+    "lon": 28.62,
+    "lat": 55.43,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 29.76,
+    "lat": 55.08,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "17.Pz.",
+    "lon": 29.76,
+    "lat": 54.81,
+    "conf": "clear",
+    "note": "label printed 'Pz 17'; a red/blue '?' sits beside it"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 29.77,
+    "lat": 54.43,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 29.72,
+    "lat": 53.93,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.29,
+    "lat": 53.51,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.38,
+    "lat": 53.32,
+    "conf": "rough",
+    "note": "upper of two arcs belonging to the 3.Pz. label"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.17,
+    "lat": 53.13,
+    "conf": "rough",
+    "note": "lower of the two arcs; red line (Soviet) runs right beside it"
+   },
+   {
+    "unit": "62.",
+    "lon": 26.36,
+    "lat": 51.1,
+    "conf": "rough",
+    "note": "tie with 99.1 (0.14 degree south, same longitude); both left in"
+   },
+   {
+    "unit": "99.1",
+    "lon": 26.37,
+    "lat": 50.96,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 27.6,
+    "lat": 50.51,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 27.67,
+    "lat": 50.14,
+    "conf": "clear",
+    "note": "south of tile range (tile bottom is about 50.2N); read from zoom"
+   },
+   {
+    "unit": "9.Pz.",
+    "lon": 26.36,
+    "lat": 49.42,
+    "conf": "clear",
+    "note": "south of tile range; read from zoom"
+   },
+   {
+    "unit": "Tle. SS \"W\"",
+    "lon": 26.23,
+    "lat": 49.08,
+    "conf": "rough",
+    "note": "south of tile range; label reads Tle. 44.W. (SS W); stopped reading here"
+   }
+  ],
+  "red": [
+   {
+    "text": "Versprengte Reste v. 10-12 Div.",
+    "outline": [
+     [
+      26.51,
+      54.07
+     ],
+     [
+      26.72,
+      54.05
+     ],
+     [
+      26.97,
+      53.96
+     ],
+     [
+      27.08,
+      53.86
+     ],
+     [
+      26.96,
+      53.76
+     ],
+     [
+      26.78,
+      53.67
+     ],
+     [
+      26.65,
+      53.69
+     ],
+     [
+      26.64,
+      53.8
+     ],
+     [
+      26.57,
+      53.92
+     ],
+     [
+      26.46,
+      54.03
+     ]
+    ],
+    "north": "161. label touches it (~2 km); 5. (~25 km)",
+    "east": "12.Pz. (~5 km); Br.900 (~15 km)",
+    "south": "V.A. 2.Arm. / 29.m. (~8 km); 137./IX (~8 km)",
+    "west": "1/3 8. (~1 km, touching)",
+    "conf": "rough",
+    "note": "much smaller, elongated closed loop than on earlier days; the blue boundary line crosses its east side; only the text 'Versprengte Reste v.' and '10-12 Div.' inside"
+   }
+  ],
+  "notes": "Chains: at many places the front is a diagonal chain of arcs so the 0.15-degree rule keeps only the extremes. Left out by the rule: the larger 3.m. oval (27.72E 56.60N), 1.K.D. (29.20E 53.06N), 10.m., SS \"R\" (30.0E 53.6N), 20.m., 20.Pz. (29.3E 55.2N), 14.Pz. (27.5E 50.62N, 0.11 degree from 13.Pz.), and the whole overlapping column of arcs 16.Pz., 111., 75., 57., 9., 297. (26.3-27.0E, 49.6-50.0N) which leads from 11.Pz. down to 9.Pz. Red text 'Versprengte Feindteile' lies across the Slutsk-Starobino-Mokroe area (27-28.5E, 52.5N) with no outline; red lines and arrows around Rogatschew (30.2-30.9E) and a red T-shaped sign at Witebsk are open lines, not closed circles. Tile range ends about 50.2N; south of that read from zoom only."
+ },
+ "0707": {
+  "front": [
+   {
+    "unit": "3.m.",
+    "lon": 28.88,
+    "lat": 57.27,
+    "conf": "clear",
+    "note": "north of the tile range (tile top is 56.5N); read from zoom; arc labelled 3.m., red 1A.K.? line just east"
+   },
+   {
+    "unit": "8.Pz.",
+    "lon": 28.59,
+    "lat": 56.95,
+    "conf": "clear",
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "unit": "V.A. 290.",
+    "lon": 28.03,
+    "lat": 56.66,
+    "conf": "rough",
+    "note": "small arc labelled V.A. 290. on the Korsowka line"
+   },
+   {
+    "unit": "SS \"T\"",
+    "lon": 28.34,
+    "lat": 56.34,
+    "conf": "clear",
+    "note": "290. arc is about 0.2 degree further west on the same latitude"
+   },
+   {
+    "unit": "V.A. 123.",
+    "lon": 27.97,
+    "lat": 56.12,
+    "conf": "rough",
+    "note": "small arc"
+   },
+   {
+    "unit": "32.",
+    "lon": 27.7,
+    "lat": 55.84,
+    "conf": "rough",
+    "note": "arc labelled 32. right on the Dvina/Dryssa line"
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 28.44,
+    "lat": 55.6,
+    "conf": "clear",
+    "note": "one arc with Tle.18.m. and 3/3 14.m. labels"
+   },
+   {
+    "unit": "Tle. 18.m.",
+    "lon": 28.64,
+    "lat": 55.4,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 29.78,
+    "lat": 55.0,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "17.Pz.",
+    "lon": 29.78,
+    "lat": 54.81,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 29.73,
+    "lat": 54.43,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 29.74,
+    "lat": 53.91,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.3,
+    "lat": 53.52,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.37,
+    "lat": 53.29,
+    "conf": "rough",
+    "note": "arc beside '3.Pz.' label; red Soviet line touches it"
+   },
+   {
+    "unit": "10.m.",
+    "lon": 30.12,
+    "lat": 52.94,
+    "conf": "rough",
+    "note": "arc at Rogatschew-Shlobin; 1.K.D. is about 0.6 degree west"
+   },
+   {
+    "unit": "V.A. 45.",
+    "lon": 27.26,
+    "lat": 52.08,
+    "conf": "rough",
+    "note": "arc sitting on the blue boundary line near Dawid-grodek"
+   },
+   {
+    "unit": "V.A.",
+    "lon": 26.76,
+    "lat": 51.05,
+    "conf": "rough",
+    "note": "small arc, label V.A. only, near Wolschtja"
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 27.6,
+    "lat": 50.65,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 27.6,
+    "lat": 50.39,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 28.47,
+    "lat": 49.95,
+    "conf": "clear",
+    "note": "south of tile range (tile bottom about 50.2N); read from zoom"
+   },
+   {
+    "unit": "9.Pz.",
+    "lon": 26.72,
+    "lat": 49.45,
+    "conf": "clear",
+    "note": "south of tile range; read from zoom"
+   },
+   {
+    "unit": "SS \"W\"",
+    "lon": 26.41,
+    "lat": 49.16,
+    "conf": "rough",
+    "note": "south of tile range; arc with an arrow; stopped reading here"
+   }
+  ],
+  "red": [
+   {
+    "text": "Versprengte Reste von 10-12 Divn.",
+    "outline": [
+     [
+      26.61,
+      54.12
+     ],
+     [
+      26.85,
+      54.03
+     ],
+     [
+      27.05,
+      53.95
+     ],
+     [
+      27.19,
+      53.84
+     ],
+     [
+      27.17,
+      53.77
+     ],
+     [
+      27.07,
+      53.73
+     ],
+     [
+      26.96,
+      53.79
+     ],
+     [
+      26.88,
+      53.87
+     ],
+     [
+      26.84,
+      53.95
+     ],
+     [
+      26.72,
+      54.05
+     ]
+    ],
+    "north": "161. (~5 km)",
+    "east": "14.m. / 1/3 (~4 km); Br.900 (~8 km)",
+    "south": "137. / IX (~4 km)",
+    "west": "Tle. 8. (~2 km); Tle. 28. (~8 km)",
+    "conf": "rough",
+    "note": "thin teardrop-shaped closed loop running NW-SE; a short red arrow points into it from the west of the text; blue boundary line crosses it"
+   }
+  ],
+  "notes": "Red arcs at Polozk and Witebsk (Reste 23., 17.Pz., arrows) are open lines, not closed circles; red '(' and ')' pair around Tle.185 / Tle.152 east of Dvina is not closed. 'Versprengte Feindteile' as text across Slutsk-Starobino area, no outline. Left out of front by the 0.15 rule: 290. (28.14E 56.33N), 1.K.D., Tle. 1.K.D., V.A. 52., SS A.H. (27.78E 50.17N), Tle. 16.m. (28.04E 50.07N), 20.m., 20.Pz. Some labelled arcs along the Slutsk line (V.A., 255., 52.) at 52.9-53.1N are well west. The sheet has a printed seam near 57.9N. Tile range is 50.2-56.5N; north and south ends read from zoom."
+ },
+ "0708": {
+  "front": [
+   {
+    "unit": "3.m.",
+    "lon": 29.19,
+    "lat": 57.3,
+    "conf": "rough",
+    "note": "north of tile range (tile top is 56.5N); read from zoom; arc labelled 3. m. with a hook below it; the red 1.Pz./I.Pz. text is just east"
+   },
+   {
+    "unit": "8.Pz.",
+    "lon": 28.84,
+    "lat": 57.01,
+    "conf": "clear",
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "unit": "SS \"T\"",
+    "lon": 28.67,
+    "lat": 56.55,
+    "conf": "rough",
+    "note": "arc labelled 44 .T. (SS T); red line 85/170 passes through it"
+   },
+   {
+    "unit": "290.",
+    "lon": 28.45,
+    "lat": 56.27,
+    "conf": "rough",
+    "note": "red line labelled 170 crosses the arc"
+   },
+   {
+    "unit": "18.m.",
+    "lon": 28.51,
+    "lat": 55.63,
+    "conf": "rough",
+    "note": "cluster of overlapping labels at the Dvina near Polozk: 1/3 18.m., 2/3 14.m.Pz., 19., V.A. XXIII; east tip of the top arc taken"
+   },
+   {
+    "unit": "20.m.",
+    "lon": 29.8,
+    "lat": 55.21,
+    "conf": "rough",
+    "note": "long arc; V.A. 20.Pz. small arc at 29.77E 55.34N is about 0.1 degree north and equally far east"
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 29.73,
+    "lat": 54.99,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "17.Pz. Tle.",
+    "lon": 29.73,
+    "lat": 54.83,
+    "conf": "clear",
+    "note": "label '17.Pz. Tle.'"
+   },
+   {
+    "unit": "V.A.",
+    "lon": 29.98,
+    "lat": 54.53,
+    "conf": "rough",
+    "note": "small arc labelled V.A. south of Barsuki, no number readable"
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 30.29,
+    "lat": 54.08,
+    "conf": "clear",
+    "note": "arc just west of Mogilew"
+   },
+   {
+    "unit": "10.m. / SS \"R\"",
+    "lon": 30.26,
+    "lat": 53.65,
+    "conf": "rough",
+    "note": "stacked labels: SS 'R' (1R.R. ?) and 10.m. dashed oval; the lower 10.m. arc east tip taken"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.24,
+    "lat": 53.53,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.34,
+    "lat": 53.32,
+    "conf": "rough",
+    "note": "upper arc of the 3.Pz. label"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 30.18,
+    "lat": 53.13,
+    "conf": "rough",
+    "note": "lower arc, near Rogatschew; red 117. line touches it"
+   },
+   {
+    "unit": "V.A. 45.",
+    "lon": 27.37,
+    "lat": 52.12,
+    "conf": "rough",
+    "note": "small arc on the blue boundary line near Dawid-grodek; V.A. 293 at 27.08E 52.25N"
+   },
+   {
+    "unit": "62.",
+    "lon": 26.79,
+    "lat": 51.0,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 28.0,
+    "lat": 50.42,
+    "conf": "clear",
+    "note": "south of tile range edge area; also read from zoom"
+   },
+   {
+    "unit": "SS \"A.H.\"",
+    "lon": 27.9,
+    "lat": 50.17,
+    "conf": "rough",
+    "note": "arc"
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 28.51,
+    "lat": 49.93,
+    "conf": "clear",
+    "note": "south of tile range; read from zoom"
+   },
+   {
+    "unit": "9.Pz.",
+    "lon": 27.2,
+    "lat": 49.68,
+    "conf": "rough",
+    "note": "arc labelled 9. with the 9.Pz. arrow arc 0.15 degree south at 27.11E 49.55N; both near Konstantinow"
+   },
+   {
+    "unit": "V.A. 100.",
+    "lon": 26.78,
+    "lat": 49.15,
+    "conf": "rough",
+    "note": "small arc labelled V.A. 100.1; south of tile range; stopped reading here"
+   }
+  ],
+  "red": [],
+  "notes": "No red closed circle west of the front on this sheet. 'Versprengte Reste von 10-12 Divn.' (around 26.0-27.0E, 53.7-54.1N) is only red text now, no outline at all. Red closed loop with 'Reste 64.' / '17.Pz.' near 29.85-30.2E, 54.55-54.9N (outline about [[29.84,54.89],[29.98,54.9],[30.14,54.84],[30.2,54.73],[30.11,54.6],[29.96,54.57],[29.87,54.65],[29.89,54.78]]): it is east of the front symbols 7.Pz., 17.Pz.Tle. (0.1-0.15 degree) and V.A.(29.98E 54.53N) and the blue army boundary line crosses it, so it is not behind them; recorded here only in notes. Open red arcs, not closed: '12.112 / 174. 58. Kav. 98. / 186' arcs around Drissa-Polozk (27.8-29E, 55.5-56.2N), 170/85 lines near the SS T arc, a short red '(' near Borisov at about 29.2E 54.2N, and red lines 187/143/61/167/117 beside Rogatschew. Many labels are 'Masse' (arcs marked Masse, e.g. 12.Pz., 18.Pz., 20.Pz., SS R) which seems to mean the main body. Left out by the 0.15 rule: 12.Pz., 18.Pz. (29.75E 54.44N), 29.m., 1.K.D., V.A. 52., 14.Pz., 25.m., 299., 298., 99.1, SS Tle.- arcs at 26.3E 49.3N. Tile range is 50.2-56.5N; north and south ends read from zoom only."
+ },
+ "0709": {
+  "front": [
+   {
+    "unit": "3.m.",
+    "lon": 29.22,
+    "lat": 57.4,
+    "conf": "rough",
+    "note": "north of tile range (tile top is 56.5N); read from zoom; next to a '1 Rgt' label; red 185 label just east"
+   },
+   {
+    "unit": "8.Pz.",
+    "lon": 28.91,
+    "lat": 57.06,
+    "conf": "clear",
+    "note": "north of tile range; read from zoom"
+   },
+   {
+    "unit": "126.",
+    "lon": 28.1,
+    "lat": 56.9,
+    "conf": "rough",
+    "note": "north of tile range; oval/arc beside the 'Nord' headquarters label; 0.15 degree from the 8.Pz. latitude so left in"
+   },
+   {
+    "unit": "SS \"T\"",
+    "lon": 28.64,
+    "lat": 56.62,
+    "conf": "rough",
+    "note": "arc labelled 44 .T. (SS T)"
+   },
+   {
+    "unit": "290.",
+    "lon": 28.5,
+    "lat": 56.31,
+    "conf": "clear",
+    "note": "red line 170 passes beside it"
+   },
+   {
+    "unit": "12.",
+    "lon": 28.18,
+    "lat": 55.99,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "V.A. 253.",
+    "lon": 27.97,
+    "lat": 55.77,
+    "conf": "rough",
+    "note": "small arc on the Dvina below 121./32."
+   },
+   {
+    "unit": "18.m.",
+    "lon": 28.57,
+    "lat": 55.61,
+    "conf": "rough",
+    "note": "cluster at Polozk: 1/3 18.m., V.A. XXIII, 19.Pz., 2/3 14.m.; east tip of the biggest arc"
+   },
+   {
+    "unit": "A.A. 20.Pz.",
+    "lon": 29.93,
+    "lat": 55.42,
+    "conf": "rough",
+    "note": "small arc labelled A.A. 20.Pz. north of Sirotino"
+   },
+   {
+    "unit": "20.Pz. / 20.m.",
+    "lon": 30.31,
+    "lat": 55.24,
+    "conf": "clear",
+    "note": "one arc with two labels, at Witebsk (red 'Wilebsk', 2700, 37. just east)"
+   },
+   {
+    "unit": "12.Pz.",
+    "lon": 29.79,
+    "lat": 54.83,
+    "conf": "clear",
+    "note": "label 'Pz. 12.'; blue boundary line crosses it"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 29.99,
+    "lat": 54.44,
+    "conf": "clear",
+    "note": "arc beside the corps HQ symbol (2.) near Tolotschin"
+   },
+   {
+    "unit": "10.Pz.",
+    "lon": 30.37,
+    "lat": 54.1,
+    "conf": "clear",
+    "note": "west of the Dnjepr near Schklow"
+   },
+   {
+    "unit": "J.R. Gr.D.",
+    "lon": 29.78,
+    "lat": 53.93,
+    "conf": "rough",
+    "note": "arc labelled J.R. 'Gr.D.' near Mogilew; 0.15 degree below 10.Pz. and further west, kept for the 0.15 rule"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 30.33,
+    "lat": 53.47,
+    "conf": "clear",
+    "note": "stacked arcs: 1R./SS R, 10.m., 4.Pz., 3.Pz.; 4.Pz. east tip taken"
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 29.73,
+    "lat": 53.08,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "V.A. 255.",
+    "lon": 29.56,
+    "lat": 52.75,
+    "conf": "rough",
+    "note": "small arc at the Beresina south of Shlobin"
+   },
+   {
+    "unit": "V.A. 45.",
+    "lon": 27.4,
+    "lat": 52.1,
+    "conf": "rough",
+    "note": "small arc on the blue boundary line; short red '(' beside it just east"
+   },
+   {
+    "unit": "62.",
+    "lon": 26.8,
+    "lat": 51.0,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 28.0,
+    "lat": 50.44,
+    "conf": "rough",
+    "note": "arc beside the red 'V.K.K.' text; shares a label stack with 25.m., 14.Pz., III.m."
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 28.6,
+    "lat": 50.24,
+    "conf": "clear",
+    "note": "big arc at Schitomir; just north of tile bottom edge, read from zoom"
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 28.55,
+    "lat": 49.92,
+    "conf": "clear",
+    "note": "south of tile range (tile bottom is about 50.2N); read from zoom"
+   },
+   {
+    "unit": "9.",
+    "lon": 27.22,
+    "lat": 49.63,
+    "conf": "rough",
+    "note": "arc beside Konstantinow; south of tile range; read from zoom"
+   },
+   {
+    "unit": "Tle. 44. W (SS W)",
+    "lon": 26.91,
+    "lat": 49.4,
+    "conf": "rough",
+    "note": "south of tile range; read from zoom"
+   },
+   {
+    "unit": "V.A.",
+    "lon": 26.96,
+    "lat": 49.08,
+    "conf": "unsure",
+    "note": "small blue arc 'V.A.' among red text near 37.Pz.; south of tile range; stopped reading here"
+   }
+  ],
+  "red": [],
+  "notes": "No red closed circle west of the front. The pocket east of Minsk is gone: 'Versprengte' (red text only, no outline) at about 26.5-27.3E 53.95N and a second 'Versprengte' near 25.9-26.1E 49.6-50.0N; 'Versprengte Feindteile' as text across Slutsk-Starobino-Mokroe. Open red arcs only: 174/112,12/58/Kav./98/186 arcs around Drissa-Polozk (27.9-29.0E, 55.4-56.2N), the 170 line beside 290., '(' beside V.A. 45. at 27.5E 52.1N, red 187/143/61/167/117 lines at Rogatschew-Propoisk, 'Pz. Ansammlg 18' red arc at 28.7E 56.6N. A long blue line with bars and dots (air reconnaissance style) crosses at about 54.7-54.8N from 29.7E to 31E+, with 'Reste 64.' on it; it is not a unit symbol. A long wavy blue line runs from 3.Pz. south along the Dnjepr (30.0-30.3E, 53.0-53.4N), no number, read as a boundary and not as a unit. Left out by the 0.15 rule: 17.Pz. (29.67E 54.58N), 29.m., SS R (29.92E 54.24N), 7.Pz. (29.85E 55.12N), 3.Pz. (30.32E 53.41N), 16.m., 16.Pz., SS A.H., 60.m., 25.m., 299., 44., 298., 4.Geb. Tile range is 50.2-56.5N; north and south ends read from zoom only."
+ }
+}

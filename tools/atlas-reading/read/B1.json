@@ -1,0 +1,1473 @@
+{
+ "0622": {
+  "front": [
+   {
+    "unit": "291.",
+    "lon": 21.42,
+    "lat": 56.11,
+    "conf": "clear",
+    "note": "northernmost arc, near the coast"
+   },
+   {
+    "unit": "V.A. (next to 217.)",
+    "lon": 21.83,
+    "lat": 55.79,
+    "conf": "rough",
+    "note": "unnumbered V.A. arc with an arrow beside 217.; 217. east end is 21.74/55.77"
+   },
+   {
+    "unit": "Tle. 8.Pz.",
+    "lon": 23.54,
+    "lat": 55.25,
+    "conf": "clear",
+    "note": "first of two Tle. 8.Pz. arcs"
+   },
+   {
+    "unit": "Tle. 8.Pz.",
+    "lon": 23.5,
+    "lat": 55.11,
+    "conf": "clear",
+    "note": "second Tle. 8.Pz. arc"
+   },
+   {
+    "unit": "20.Pz.",
+    "lon": 24.2,
+    "lat": 54.47,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 24.21,
+    "lat": 54.39,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "18.m.",
+    "lon": 24.53,
+    "lat": 54.2,
+    "conf": "clear",
+    "note": "12.Pz. is drawn with an arrow just west of it"
+   },
+   {
+    "unit": "161.",
+    "lon": 23.97,
+    "lat": 53.9,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "256.",
+    "lon": 23.65,
+    "lat": 53.61,
+    "conf": "rough",
+    "note": "borderline: 28./8. arcs just north are further east within 0.15 lat"
+   },
+   {
+    "unit": "87.",
+    "lon": 22.03,
+    "lat": 53.37,
+    "conf": "rough",
+    "note": "two arcs near 87. (22.03/53.37 and 21.98/53.23)"
+   },
+   {
+    "unit": "V.A.",
+    "lon": 23.09,
+    "lat": 52.64,
+    "conf": "rough",
+    "note": "unnumbered V.A. arc near Klosz. area"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 24.37,
+    "lat": 52.46,
+    "conf": "clear",
+    "note": "arrow runs NE from the arc"
+   },
+   {
+    "unit": "17.Pz.",
+    "lon": 23.71,
+    "lat": 52.28,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 24.17,
+    "lat": 52.04,
+    "conf": "clear",
+    "note": "second of two 3.Pz. arcs"
+   },
+   {
+    "unit": "V.A.",
+    "lon": 24.09,
+    "lat": 51.75,
+    "conf": "rough",
+    "note": "V.A. above 255.; unnumbered"
+   },
+   {
+    "unit": "213.Sich.",
+    "lon": 23.66,
+    "lat": 51.4,
+    "conf": "rough",
+    "note": "dashed arc"
+   },
+   {
+    "unit": "56.",
+    "lon": 23.99,
+    "lat": 51.22,
+    "conf": "clear",
+    "note": "62. directly below at same longitude"
+   },
+   {
+    "unit": "62.",
+    "lon": 24.0,
+    "lat": 51.11,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "298.",
+    "lon": 24.23,
+    "lat": 50.85,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "299.",
+    "lon": 24.45,
+    "lat": 50.67,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 24.62,
+    "lat": 50.37,
+    "conf": "rough",
+    "note": "dashed rectangle symbol, arrow from 57. points to it"
+   }
+  ],
+  "red": [],
+  "notes": "Tile bottoms end near 50.0-50.3N so the southern end (Gebirgs units, XXXXIX) is cut off. Dense chain 121./12./32./26./6./30./126./122./123. along 23.2-23.4E 54.5-55.0N omitted by strict rule (Tle. 8.Pz. and 20.Pz. further east within 0.15 lat); 28./8. near Augustow also omitted. No red circle lies behind the German line; all Soviet circles are east of it, though 56./2./30 near Sokolka/Bialystok sit just beside 87./129./256 at the border."
+ },
+ "0623": {
+  "front": [
+   {
+    "unit": "291.",
+    "lon": 21.5,
+    "lat": 56.25,
+    "conf": "clear",
+    "note": "top of tile, near Maleti"
+   },
+   {
+    "unit": "217.",
+    "lon": 21.96,
+    "lat": 55.8,
+    "conf": "clear",
+    "note": "61. sits just west"
+   },
+   {
+    "unit": "6.Pz.",
+    "lon": 23.14,
+    "lat": 55.5,
+    "conf": "clear",
+    "note": "1.Pz. arc just NW is slightly less east"
+   },
+   {
+    "unit": "8.Pz.",
+    "lon": 23.9,
+    "lat": 55.3,
+    "conf": "rough",
+    "note": "arc with arrows drawn on it, 3.m. arrow just SW; arrows are not counted as units"
+   },
+   {
+    "unit": "126.",
+    "lon": 23.59,
+    "lat": 55.04,
+    "conf": "rough",
+    "note": "easternmost of the chain 30./126./122./123./121./12."
+   },
+   {
+    "unit": "6.",
+    "lon": 23.99,
+    "lat": 54.67,
+    "conf": "rough",
+    "note": "arc labelled \"6.\" near 26./VI."
+   },
+   {
+    "unit": "20.Pz.",
+    "lon": 24.83,
+    "lat": 54.48,
+    "conf": "clear",
+    "note": "west of Wilna; 14.m./20.m. behind it"
+   },
+   {
+    "unit": "12.Pz.",
+    "lon": 25.29,
+    "lat": 54.21,
+    "conf": "rough",
+    "note": "east end close to the tile edge; 7.Pz. arc (25.08/54.31) just north is slightly less east"
+   },
+   {
+    "unit": "161.",
+    "lon": 24.11,
+    "lat": 53.89,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "256.",
+    "lon": 23.57,
+    "lat": 53.56,
+    "conf": "clear",
+    "note": "ellipse; 162. (23.38/53.68) just NW"
+   },
+   {
+    "unit": "Tle. 87.",
+    "lon": 22.16,
+    "lat": 53.34,
+    "conf": "rough",
+    "note": "borderline: 256. is further east within 0.15 lat; arrow to the east; 1/3 87. at 22.61/53.51"
+   },
+   {
+    "unit": "263.",
+    "lon": 23.02,
+    "lat": 52.73,
+    "conf": "clear",
+    "note": "137. east end is about the same longitude 23.0"
+   },
+   {
+    "unit": "292.",
+    "lon": 23.1,
+    "lat": 52.53,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "V.A.",
+    "lon": 25.02,
+    "lat": 52.51,
+    "conf": "clear",
+    "note": "unnumbered V.A. arc east of 18.Pz.; 18.Pz. east end 24.56/52.59 with arrow"
+   },
+   {
+    "unit": "3./4.Pz.",
+    "lon": 24.72,
+    "lat": 52.4,
+    "conf": "rough",
+    "note": "borderline: long oval of 3.Pz./4.Pz.; V.A. just north is further east"
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 24.06,
+    "lat": 51.8,
+    "conf": "rough",
+    "note": "symbol drawn with an arrow; 255. just below"
+   },
+   {
+    "unit": "213.Sich.",
+    "lon": 23.58,
+    "lat": 51.39,
+    "conf": "rough",
+    "note": "dashed arc"
+   },
+   {
+    "unit": "56.",
+    "lon": 23.9,
+    "lat": 51.24,
+    "conf": "clear",
+    "note": "62. directly below at the same longitude"
+   },
+   {
+    "unit": "62.",
+    "lon": 23.92,
+    "lat": 51.13,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "299.",
+    "lon": 24.8,
+    "lat": 50.77,
+    "conf": "clear",
+    "note": "111. just below slightly less east"
+   },
+   {
+    "unit": "57.",
+    "lon": 24.6,
+    "lat": 50.42,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 25.19,
+    "lat": 50.29,
+    "conf": "rough",
+    "note": "near bottom of tile; German symbols south of about 50.1N are cut off"
+   }
+  ],
+  "red": [
+   {
+    "text": "5. Pz.D.",
+    "outline": [
+     [
+      23.95,
+      54.61
+     ],
+     [
+      24.02,
+      54.65
+     ],
+     [
+      24.2,
+      54.67
+     ],
+     [
+      24.34,
+      54.65
+     ],
+     [
+      24.37,
+      54.6
+     ],
+     [
+      24.32,
+      54.55
+     ],
+     [
+      24.17,
+      54.53
+     ],
+     [
+      24.02,
+      54.54
+     ],
+     [
+      23.95,
+      54.57
+     ]
+    ],
+    "north": "6. (~12 km)",
+    "east": "20.Pz. (~30 km)",
+    "south": "20.m. (~9 km)",
+    "west": "6./26. (~6 km)",
+    "conf": "rough",
+    "note": "oval just west of Wilna, single unit; 20.Pz. is east of it at the same latitude; wider than 0.3 deg"
+   },
+   {
+    "text": "Tle. 22.Pz.Br.",
+    "outline": [
+     [
+      24.17,
+      54.48
+     ],
+     [
+      24.27,
+      54.51
+     ],
+     [
+      24.45,
+      54.52
+     ],
+     [
+      24.57,
+      54.5
+     ],
+     [
+      24.59,
+      54.45
+     ],
+     [
+      24.52,
+      54.41
+     ],
+     [
+      24.34,
+      54.39
+     ],
+     [
+      24.23,
+      54.4
+     ],
+     [
+      24.17,
+      54.43
+     ]
+    ],
+    "north": "6. (~22 km)",
+    "east": "20.Pz. (~15 km)",
+    "south": "5. (~20 km)",
+    "west": "20.m. (~5 km)",
+    "conf": "rough",
+    "note": "oval directly south of the 5. Pz.D. oval; 20.Pz. east end at 24.82/54.48 touches its east side"
+   }
+  ],
+  "notes": "Germans cross the border in the north (Lithuania) and reach 20.Pz. west of Wilna; centre and south are still at the border. Two red ovals (5. Pz.D., Tle. 22.Pz.Br.) lie just west of 20.Pz. near Wilna. The Bialystok group (VI.K.K., 23.Pz.Br., 146., 1.?) is ringed by Tle.87./87. in the north, 221.Sich./23./7./268. in the south-west and has no German symbol east of it within 60 km, but nothing is in front of the listed front symbols either. 3 red circles near Kaunas (XVI., 5./83., 33.m.) sit just east of 126./121./12. at the same latitude."
+ },
+ "0624": {
+  "front": [
+   {
+    "unit": "61.",
+    "lon": 22.11,
+    "lat": 55.92,
+    "conf": "rough",
+    "note": "217. directly below has nearly the same east end (22.13/55.83); 291. no longer visible on this sheet"
+   },
+   {
+    "unit": "217.",
+    "lon": 22.13,
+    "lat": 55.83,
+    "conf": "rough",
+    "note": "borderline, see 61."
+   },
+   {
+    "unit": "1.Pz.",
+    "lon": 23.55,
+    "lat": 55.6,
+    "conf": "clear",
+    "note": "6.Pz. and 269./290. are south-west of it"
+   },
+   {
+    "unit": "8.Pz.",
+    "lon": 25.12,
+    "lat": 55.43,
+    "conf": "rough",
+    "note": "arc with arrow towards NE, arrows themselves not counted; 3.m. (24.60/55.30) just SW"
+   },
+   {
+    "unit": "Abt. Helm",
+    "lon": 24.0,
+    "lat": 54.96,
+    "conf": "rough",
+    "note": "small arc next to the text Abt. Helm; 126./122./123./121./12./32. are west of it"
+   },
+   {
+    "unit": "unlabelled arc",
+    "lon": 26.18,
+    "lat": 54.85,
+    "conf": "unsure",
+    "note": "blue arc NE of Wilna with no number"
+   },
+   {
+    "unit": "20.Pz.",
+    "lon": 25.85,
+    "lat": 54.49,
+    "conf": "clear",
+    "note": "east of Wilna; 7.Pz. east end 25.75/54.78"
+   },
+   {
+    "unit": "12.Pz.",
+    "lon": 26.15,
+    "lat": 54.22,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "18.m.",
+    "lon": 25.2,
+    "lat": 54.02,
+    "conf": "clear",
+    "note": "19.Pz. just NW"
+   },
+   {
+    "unit": "161.",
+    "lon": 24.4,
+    "lat": 53.84,
+    "conf": "clear",
+    "note": "28. directly south, V.A. next to it"
+   },
+   {
+    "unit": "V.A. (next to 28.)",
+    "lon": 24.42,
+    "lat": 53.7,
+    "conf": "rough",
+    "note": "small unnumbered V.A. arc; tie with 161."
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 26.31,
+    "lat": 52.94,
+    "conf": "clear",
+    "note": "long arc, SE tile; east end of the arc"
+   },
+   {
+    "unit": "18.Pz.",
+    "lon": 25.81,
+    "lat": 53.03,
+    "conf": "rough",
+    "note": "borderline: 3.Pz. just south is further east"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 25.36,
+    "lat": 52.65,
+    "conf": "rough",
+    "note": "borderline: V.A. at 25.54/52.82 slightly further east"
+   },
+   {
+    "unit": "10.m.",
+    "lon": 24.55,
+    "lat": 52.28,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 24.59,
+    "lat": 52.03,
+    "conf": "clear",
+    "note": "elongated arcs with 255./267. behind"
+   },
+   {
+    "unit": "213.Sich.",
+    "lon": 23.64,
+    "lat": 51.45,
+    "conf": "rough",
+    "note": "dashed arc"
+   },
+   {
+    "unit": "62.",
+    "lon": 24.12,
+    "lat": 51.17,
+    "conf": "clear",
+    "note": "56. just above, slightly less east"
+   },
+   {
+    "unit": "298.",
+    "lon": 24.46,
+    "lat": 50.94,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 25.06,
+    "lat": 50.8,
+    "conf": "clear",
+    "note": "13.Pz. just below at 25.03/50.71"
+   },
+   {
+    "unit": "75.",
+    "lon": 25.09,
+    "lat": 50.47,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 25.48,
+    "lat": 50.27,
+    "conf": "clear",
+    "note": "near bottom of tile; southern end cut off"
+   }
+  ],
+  "red": [
+   {
+    "text": "Verspreng. u. Tle. / 23.m. / 188. / 128.m. (with 83. 84.m. labels just above)",
+    "outline": [
+     [
+      24.18,
+      54.66
+     ],
+     [
+      24.43,
+      54.72
+     ],
+     [
+      24.69,
+      54.71
+     ],
+     [
+      24.87,
+      54.61
+     ],
+     [
+      24.93,
+      54.51
+     ],
+     [
+      24.88,
+      54.4
+     ],
+     [
+      24.7,
+      54.34
+     ],
+     [
+      24.49,
+      54.35
+     ],
+     [
+      24.32,
+      54.41
+     ],
+     [
+      24.17,
+      54.53
+     ]
+    ],
+    "north": "Abt. Helm (~40 km)",
+    "east": "20.m. (~21 km)",
+    "south": "18.m. (~10 km)",
+    "west": "14.m. (~5 km)",
+    "conf": "clear",
+    "note": "west of Wilna; 26./6. arcs touch the NW edge, Soviet 28.Pz.Br. circle directly north"
+   },
+   {
+    "text": "28. Pz.Br.",
+    "outline": [
+     [
+      24.71,
+      54.82
+     ],
+     [
+      24.83,
+      54.86
+     ],
+     [
+      25.02,
+      54.87
+     ],
+     [
+      25.18,
+      54.83
+     ],
+     [
+      25.16,
+      54.77
+     ],
+     [
+      25.04,
+      54.71
+     ],
+     [
+      24.86,
+      54.7
+     ],
+     [
+      24.72,
+      54.76
+     ]
+    ],
+    "north": "none within 60 km",
+    "east": "7.Pz. (~38 km)",
+    "south": "20.m. (~15 km)",
+    "west": "26./6. (~40 km)",
+    "conf": "rough",
+    "note": "just NW of Wilna, 7.Pz. is east at the same latitude"
+   },
+   {
+    "text": "29.u.86.Pz.Br. / 1.u.2 Pz.Br. / IV.Pz. / 9.Pz.Div. (Tle. 85 just outside east edge)",
+    "outline": [
+     [
+      23.3,
+      53.42
+     ],
+     [
+      23.51,
+      53.51
+     ],
+     [
+      23.83,
+      53.54
+     ],
+     [
+      24.08,
+      53.51
+     ],
+     [
+      24.17,
+      53.39
+     ],
+     [
+      24.12,
+      53.26
+     ],
+     [
+      23.94,
+      53.18
+     ],
+     [
+      23.67,
+      53.14
+     ],
+     [
+      23.42,
+      53.16
+     ],
+     [
+      23.25,
+      53.22
+     ],
+     [
+      23.21,
+      53.32
+     ]
+    ],
+    "north": "256. (~3 km)",
+    "east": "8. (~5 km)",
+    "south": "263. (~27 km)",
+    "west": "1/3 87. (~45 km)",
+    "conf": "clear",
+    "note": "large circle around Bialystok, Germans on three sides"
+   },
+   {
+    "text": "23.Pz.Br.",
+    "outline": [
+     [
+      22.56,
+      53.18
+     ],
+     [
+      22.73,
+      53.22
+     ],
+     [
+      22.95,
+      53.21
+     ],
+     [
+      23.08,
+      53.16
+     ],
+     [
+      23.02,
+      53.09
+     ],
+     [
+      22.84,
+      53.07
+     ],
+     [
+      22.64,
+      53.08
+     ],
+     [
+      22.55,
+      53.13
+     ]
+    ],
+    "north": "Tle. 87. (~28 km)",
+    "east": "none within 60 km",
+    "south": "23. (~15 km)",
+    "west": "V.A. near 221. (~28 km)",
+    "conf": "clear",
+    "note": "ellipse west of Bialystok; 162./256. are about 50 km to the NE"
+   },
+   {
+    "text": "55.Pz.Br.",
+    "outline": [
+     [
+      23.93,
+      53.04
+     ],
+     [
+      24.09,
+      53.09
+     ],
+     [
+      24.33,
+      53.11
+     ],
+     [
+      24.51,
+      53.07
+     ],
+     [
+      24.53,
+      53.01
+     ],
+     [
+      24.34,
+      52.98
+     ],
+     [
+      24.1,
+      52.97
+     ],
+     [
+      23.94,
+      53.0
+     ]
+    ],
+    "north": "8. (~50 km)",
+    "east": "17.Pz. (~50 km)",
+    "south": "V.A. (~33 km)",
+    "west": "263. (~25 km)",
+    "conf": "clear",
+    "note": "ellipse east of Bialystok"
+   },
+   {
+    "text": "VI.K.K. mit 3-6 K.D.",
+    "outline": [
+     [
+      24.52,
+      53.42
+     ],
+     [
+      24.98,
+      53.45
+     ],
+     [
+      25.01,
+      53.24
+     ],
+     [
+      24.55,
+      53.21
+     ]
+    ],
+    "north": "V.A. near 28. (~35 km)",
+    "east": "18.Pz. (~60 km)",
+    "south": "17.Pz. (~37 km)",
+    "west": "256. (~52 km)",
+    "conf": "clear",
+    "note": "red rectangle (box), not an oval"
+   },
+   {
+    "text": "III.Pz.K. mit 2 Pz.D.",
+    "outline": [
+     [
+      23.95,
+      55.67
+     ],
+     [
+      24.05,
+      55.73
+     ],
+     [
+      24.26,
+      55.76
+     ],
+     [
+      24.45,
+      55.74
+     ],
+     [
+      24.56,
+      55.66
+     ],
+     [
+      24.54,
+      55.59
+     ],
+     [
+      24.38,
+      55.55
+     ],
+     [
+      24.18,
+      55.54
+     ],
+     [
+      24.02,
+      55.56
+     ],
+     [
+      23.94,
+      55.61
+     ]
+    ],
+    "north": "none within 60 km",
+    "east": "8.Pz. (~43 km)",
+    "south": "3.m. (~31 km)",
+    "west": "1.Pz. (~20 km)",
+    "conf": "rough",
+    "note": "borderline: 8.Pz. lies SE of it at 55.43N"
+   }
+  ],
+  "notes": "Wilna has fallen: 7.Pz./20.Pz./12.Pz. east of it. Bialystok group of Soviet circles is now ringed by Germans (256./8./162. north, Tle.87/221. west, 23./7./268./263./137./292. south), the eastern side is open for roughly 50-60 km before 17.Pz./18.Pz./3.Pz. Open red arcs with a single number (27., 2., 8., 1.7, 13., 1 Div., 86., 113./49. bracket, 125., 48., 3., 29., 75., 123.) and plain red text (11.K.D., V., 83., 84.m., 33.m.) were not counted as circles. Red circles in the far east (121./155./146./143., 5. HQ with neue Pz.Kraefte, XXVIII, 39.) lie east of the German line."
+ },
+ "0625": {
+  "front": [
+   {
+    "unit": "61.",
+    "lon": 22.4,
+    "lat": 55.94,
+    "conf": "rough",
+    "note": "arc with a blue arrow; 217. and Tle.61. just west of it"
+   },
+   {
+    "unit": "1.Pz.",
+    "lon": 23.69,
+    "lat": 55.57,
+    "conf": "clear",
+    "note": "arc with an arrow below it"
+   },
+   {
+    "unit": "290.",
+    "lon": 23.79,
+    "lat": 55.42,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "8.Pz.",
+    "lon": 25.46,
+    "lat": 55.5,
+    "conf": "clear",
+    "note": "arc with arrow towards NE (arrow itself not counted); 3.m. east end at 25.06/55.34"
+   },
+   {
+    "unit": "V.A. (123.)",
+    "lon": 24.2,
+    "lat": 55.16,
+    "conf": "rough",
+    "note": "small V.A. arc above the 123. label"
+   },
+   {
+    "unit": "1/3 32.",
+    "lon": 24.24,
+    "lat": 54.91,
+    "conf": "rough",
+    "note": "cluster of small arcs 121./12./32./1/3 123.; east end of the 1/3 32. arc"
+   },
+   {
+    "unit": "unlabelled arc",
+    "lon": 26.17,
+    "lat": 54.82,
+    "conf": "unsure",
+    "note": "blue hook NE of Wilna without a number"
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 26.66,
+    "lat": 54.44,
+    "conf": "clear",
+    "note": "long arc south-east of Wilna; 20.Pz. and 19.Pz. drawn parallel to it, slightly less east"
+   },
+   {
+    "unit": "12.Pz.",
+    "lon": 26.83,
+    "lat": 54.03,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "161.",
+    "lon": 24.89,
+    "lat": 53.86,
+    "conf": "rough",
+    "note": "18.m. (25.47/54.03) and 28. (24.54/53.71) are just west/south"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 27.35,
+    "lat": 53.03,
+    "conf": "clear",
+    "note": "very long arc, SE tile; 18.Pz./4.Pz. further west at 26.0-26.2"
+   },
+   {
+    "unit": "10.m.",
+    "lon": 25.38,
+    "lat": 52.65,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 25.0,
+    "lat": 52.16,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "255.",
+    "lon": 24.25,
+    "lat": 51.91,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "267.",
+    "lon": 24.03,
+    "lat": 51.66,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "213.Sich.",
+    "lon": 23.65,
+    "lat": 51.41,
+    "conf": "rough",
+    "note": "dashed arc"
+   },
+   {
+    "unit": "62.",
+    "lon": 24.25,
+    "lat": 51.18,
+    "conf": "clear",
+    "note": "56. just above"
+   },
+   {
+    "unit": "298.",
+    "lon": 24.38,
+    "lat": 50.94,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 25.35,
+    "lat": 50.77,
+    "conf": "clear",
+    "note": "14.Pz. just west of it"
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 25.72,
+    "lat": 50.43,
+    "conf": "clear",
+    "note": "near the bottom of the tile; units south of about 50.3N are cut off"
+   }
+  ],
+  "red": [
+   {
+    "text": "VI.K.K. mit 2 K.D.",
+    "outline": [
+     [
+      24.54,
+      53.43
+     ],
+     [
+      25.04,
+      53.45
+     ],
+     [
+      25.06,
+      53.28
+     ],
+     [
+      24.56,
+      53.25
+     ]
+    ],
+    "north": "28. (~33 km)",
+    "east": "29.m. (~35 km)",
+    "south": "V.A. 131. (~17 km)",
+    "west": "256. (~52 km)",
+    "conf": "clear",
+    "note": "red rectangle (box) not oval; the only closed red shape on this sheet"
+   }
+  ],
+  "notes": "Red convention changes: Soviet groups are now mostly shown as underlined text with arrows (e.g. 29.Pz.D., 1.u.2 Pz.Br., Reste 86. Pz.Br., Reste 5.Pz.D., III.Pz.Kps. mit 2.Pz.D., Verspreng. der 23.m. 129.m. 188.), open red arcs near Lomza and Bialystok (2., 6.K.D., 1.) and no closed ovals, so only the VI.K.K. box was counted. Germans have joined up all round the Bialystok area (87./221. west, 28./161. north, 263./137./292. south) and 3.Pz./18.Pz./4.Pz. are east of it near Slonim. 3.Pz. reaches 27.35E, 53.03N. 74.m. at 24.18/54.46 omitted by strict rule (7.Pz. further east within 0.15 lat). Symbols near Lomza (XXXXII., 87., 221.Sich. with arrows at about 22.7E, 53.2-53.5N) omitted by strict rule."
+ },
+ "0626": {
+  "front": [
+   {
+    "unit": "8.Pz.",
+    "lon": 26.64,
+    "lat": 55.88,
+    "conf": "clear",
+    "note": "at Dunaburg; 3.m. arrow tip at 26.75/55.82 is an arrow, not counted"
+   },
+   {
+    "unit": "1.Pz. (with 6.Pz. below)",
+    "lon": 24.08,
+    "lat": 55.42,
+    "conf": "rough",
+    "note": "borderline: 290. (24.62/55.38) and SS T. arc (24.70/55.28) are further east; listed separately"
+   },
+   {
+    "unit": "290.",
+    "lon": 24.62,
+    "lat": 55.38,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "SS T.",
+    "lon": 24.7,
+    "lat": 55.28,
+    "conf": "rough",
+    "note": "arc with arrow towards NE next to Wilkomierz; label reads SS and T., partly unreadable"
+   },
+   {
+    "unit": "14.m.",
+    "lon": 25.22,
+    "lat": 54.66,
+    "conf": "clear",
+    "note": "NW of Wilna; 20.m. further SE"
+   },
+   {
+    "unit": "20.m.",
+    "lon": 25.75,
+    "lat": 54.46,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 26.72,
+    "lat": 54.4,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "20.Pz.",
+    "lon": 27.14,
+    "lat": 54.26,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 26.54,
+    "lat": 54.16,
+    "conf": "clear",
+    "note": "question mark beside it"
+   },
+   {
+    "unit": "12.Pz.",
+    "lon": 27.66,
+    "lat": 53.93,
+    "conf": "clear",
+    "note": "arc curves down towards Minsk; east tip 27.62/54.00, lowest tip 27.68/53.90"
+   },
+   {
+    "unit": "28.",
+    "lon": 24.66,
+    "lat": 53.58,
+    "conf": "rough",
+    "note": "small arc with question mark, near the VI.K.K. box"
+   },
+   {
+    "unit": "4.Pz.",
+    "lon": 26.74,
+    "lat": 53.02,
+    "conf": "clear",
+    "note": "east end 26.74; question mark beside it"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 27.61,
+    "lat": 53.04,
+    "conf": "clear",
+    "note": "arrow continues east of the arc"
+   },
+   {
+    "unit": "V.A. XII",
+    "lon": 25.57,
+    "lat": 52.84,
+    "conf": "rough",
+    "note": "small V.A. arc near Byten; 10.m. (25.46/52.70) just below"
+   },
+   {
+    "unit": "1.K.D.",
+    "lon": 25.25,
+    "lat": 52.18,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "255.",
+    "lon": 24.18,
+    "lat": 51.99,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "Tle. 267.",
+    "lon": 24.19,
+    "lat": 51.87,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "267.",
+    "lon": 24.17,
+    "lat": 51.76,
+    "conf": "rough",
+    "note": ""
+   },
+   {
+    "unit": "213.Sich.",
+    "lon": 23.63,
+    "lat": 51.44,
+    "conf": "rough",
+    "note": "dashed arc"
+   },
+   {
+    "unit": "56./62.",
+    "lon": 24.36,
+    "lat": 51.24,
+    "conf": "clear",
+    "note": "two arcs one above the other, east end of both about 24.36"
+   },
+   {
+    "unit": "14.Pz. (Tle.)",
+    "lon": 25.2,
+    "lat": 50.96,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 25.41,
+    "lat": 50.74,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 25.45,
+    "lat": 50.63,
+    "conf": "rough",
+    "note": "label partly overlapped by arrows"
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 25.85,
+    "lat": 50.44,
+    "conf": "clear",
+    "note": "arrow from 11.Pz. reaches 26.01/50.52 (arrow not counted); southern edge of tile, units further south are cut off"
+   }
+  ],
+  "red": [
+   {
+    "text": "VI.K.K. mit 2 K.D. (with note \"starke Belegung\")",
+    "outline": [
+     [
+      24.43,
+      53.42
+     ],
+     [
+      24.91,
+      53.45
+     ],
+     [
+      24.94,
+      53.28
+     ],
+     [
+      24.45,
+      53.25
+     ]
+    ],
+    "north": "28. (~14 km)",
+    "east": "29.m. (~20 km)",
+    "south": "V.A. 134/131 (~35 km)",
+    "west": "8./256. (~45 km)",
+    "conf": "clear",
+    "note": "red rectangle (box), not an oval"
+   }
+  ],
+  "notes": "Most red on this sheet is arcs, arrows and plain text, no closed ovals. Open red arcs and text near Bialystok (2., 6.K.D., 1., 4.K.D., 7.m., 29.Pz.D., 1.u.2 Pz.Br., 9.Pz.D., VI.Pz.K., Reste 86.Pz.B., Tle.85) and the red words Verspreng. der 128.m./23./188. north-west of Wilna sit behind the German line but are not closed circles, so not counted. 3.Pz. and 4.Pz. now stand east of Slonim, 12.Pz. close to Minsk, but the line between 54N and 53N is only 4.Pz./3.Pz. and 28.; the symbols in that gap (161., 18.m.) are covered by the strict rule. The northern Lithuanian arcs (61., 217., 11., 1., 21., 36.m.) are covered by 8.Pz. under the 0.15 rule but are the real local front there. 1.Pz./6.Pz. region has several symbols stacked within a small area."
+ },
+ "0627": {
+  "front": [
+   {
+    "unit": "1.",
+    "lon": 23.58,
+    "lat": 56.15,
+    "conf": "rough",
+    "note": "northernmost arc beside V.A.I. A.K.; 217. (23.06/56.12) just west"
+   },
+   {
+    "unit": "36.m.",
+    "lon": 24.61,
+    "lat": 55.99,
+    "conf": "unsure",
+    "note": "label only, sits inside a long curved boundary line; no clear arc seen"
+   },
+   {
+    "unit": "8.Pz.",
+    "lon": 26.65,
+    "lat": 55.83,
+    "conf": "clear",
+    "note": "arc at Dunaburg, 3.m. label below it"
+   },
+   {
+    "unit": "SS \"T.\"",
+    "lon": 26.02,
+    "lat": 55.68,
+    "conf": "rough",
+    "note": "arc left of Dunaburg beside the label with a flag symbol; borderline (8.Pz. is 0.15 lat north)"
+   },
+   {
+    "unit": "6.Pz.",
+    "lon": 25.11,
+    "lat": 55.55,
+    "conf": "rough",
+    "note": "arc east of 290.; the big curved blue line next to it is a boundary line, not a unit"
+   },
+   {
+    "unit": "20.m.",
+    "lon": 25.68,
+    "lat": 54.66,
+    "conf": "clear",
+    "note": "ellipse with Br.900 circle beside it at Wilna"
+   },
+   {
+    "unit": "14.m.",
+    "lon": 26.85,
+    "lat": 54.35,
+    "conf": "clear",
+    "note": "arc west of Molodeczno"
+   },
+   {
+    "unit": "19.Pz.",
+    "lon": 26.2,
+    "lat": 54.19,
+    "conf": "rough",
+    "note": "borderline: 14.m. is 0.16 lat north and further east"
+   },
+   {
+    "unit": "7.Pz.",
+    "lon": 28.17,
+    "lat": 54.12,
+    "conf": "clear",
+    "note": "arc east of Minsk"
+   },
+   {
+    "unit": "17.Pz.",
+    "lon": 26.86,
+    "lat": 53.43,
+    "conf": "rough",
+    "note": "arc with arrow like tail at top of SE tile"
+   },
+   {
+    "unit": "3.Pz.",
+    "lon": 27.87,
+    "lat": 53.02,
+    "conf": "clear",
+    "note": "long arc, easternmost in the centre-south; 4.Pz. east end 26.77/53.02 further west"
+   },
+   {
+    "unit": "10.m.",
+    "lon": 25.54,
+    "lat": 52.73,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "V.A. 5.",
+    "lon": 25.97,
+    "lat": 52.29,
+    "conf": "rough",
+    "note": "small arc with question mark; 1.K.D. (25.45/52.21) just west"
+   },
+   {
+    "unit": "255.",
+    "lon": 24.36,
+    "lat": 51.96,
+    "conf": "rough",
+    "note": "oval; Tle.267. just below and 267. further south"
+   },
+   {
+    "unit": "267.",
+    "lon": 24.2,
+    "lat": 51.82,
+    "conf": "rough",
+    "note": "oval at the south end of that chain"
+   },
+   {
+    "unit": "213.Sich.",
+    "lon": 23.65,
+    "lat": 51.45,
+    "conf": "rough",
+    "note": "dashed arc, labelled Sichen 213."
+   },
+   {
+    "unit": "62.",
+    "lon": 24.62,
+    "lat": 51.17,
+    "conf": "clear",
+    "note": "56. just above at 24.60/51.30"
+   },
+   {
+    "unit": "Tle. 14.Pz.",
+    "lon": 25.26,
+    "lat": 50.94,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "14.Pz.",
+    "lon": 25.41,
+    "lat": 50.8,
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "unit": "13.Pz.",
+    "lon": 26.05,
+    "lat": 50.65,
+    "conf": "rough",
+    "note": "arc with arrow tail pointing east, east end of the arc about 25.8, arrow tip at 26.05; 299./111./75. stand west of it"
+   },
+   {
+    "unit": "11.Pz.",
+    "lon": 26.51,
+    "lat": 50.34,
+    "conf": "clear",
+    "note": "arc near Mizocz; southern limit of what is visible"
+   }
+  ],
+  "red": [
+   {
+    "text": "2 Armee-Staebe / 2-3 Korps-Staebe / 10 Jnf. Divn. (dabei 1 m.) / 1 K.D., 2 Pz.D., 4 Pz.Br.",
+    "outline": [
+     [
+      23.06,
+      53.34
+     ],
+     [
+      23.32,
+      53.51
+     ],
+     [
+      23.89,
+      53.48
+     ],
+     [
+      24.24,
+      53.45
+     ],
+     [
+      24.66,
+      53.39
+     ],
+     [
+      24.91,
+      53.26
+     ],
+     [
+      24.8,
+      53.05
+     ],
+     [
+      24.62,
+      53.14
+     ],
+     [
+      24.37,
+      53.2
+     ],
+     [
+      23.88,
+      53.19
+     ],
+     [
+      23.36,
+      53.22
+     ],
+     [
+      23.14,
+      53.23
+     ]
+    ],
+    "north": "Tle. 28. (~0-5 km, touches the north edge near 24.5E)",
+    "east": "29.m. (~10 km)",
+    "south": "7./268./137./263. (~5 km)",
+    "west": "87. (~15 km)",
+    "conf": "clear",
+    "note": "one large closed red loop around Bialystok-Wolkowysk; blue boundary lines cross it; Tle.28. and a small unit near 24.9E/53.35N touch its edge"
+   }
+  ],
+  "notes": "Big new picture: the Bialystok group is drawn as one huge closed red loop with the text above. It lies fully behind (west of) the blue line 4.Pz./3.Pz./17.Pz. Rows of dashes with dots near Minsk (blue line with bars) are boundaries or air-recon lines and were not counted. 12.Pz. (27.40/53.96) and 20.Pz. (27.56/54.06) are omitted by strict rule because 7.Pz. is further east within 0.15 lat; both are clearly in the chain at Minsk (50.Pz.Br. red text east of them). 18.Pz. (26.16/53.15), 4.Pz. (26.77/53.02), 18.m. (25.43/53.95) and 161. also omitted by strict rule. 290./1.Pz. cluster in Lithuania has a curved blue line that looks like a boundary. South of 50.3N tiles run out, no unit seen there farther east than 11.Pz. Red 62./40./45.m./XV with arrows is to the east of the Germans in the south, not a closed circle."
+ }
+}

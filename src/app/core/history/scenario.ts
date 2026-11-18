@@ -2,6 +2,7 @@ import { GeographicLocation } from '../geo/geo-types';
 import { LocalizedText } from '../i18n/localized-text';
 import { CalendarDate } from '../timeline/calendar';
 import { TimeRange } from '../timeline/timeline-state';
+import { FrontSituation } from './front-situation';
 import { Certainty, HistoricalEvent, HistoricalSource } from './historical-event';
 
 /**
@@ -89,10 +90,12 @@ export interface Scenario {
   readonly epoch: CalendarDate;
   readonly timeRange: TimeRange;
   readonly units: readonly MilitaryUnit[];
+  /** At most one per calendar day, in order of `day`. */
+  readonly situations: readonly FrontSituation[];
   /** Borders that hold for the whole of `timeRange`. */
   readonly borders: readonly HistoricalBorder[];
   /** In chronological order of `startDay`. */
   readonly events: readonly HistoricalEvent[];
-  /** Every source referred to by the events and the unit positions. */
+  /** Every source referred to by the events, the unit positions and the situations. */
   readonly sources: readonly HistoricalSource[];
 }

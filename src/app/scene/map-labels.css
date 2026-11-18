@@ -97,6 +97,33 @@
   font-weight: 600;
 }
 
+.situation-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.situation-label-front {
+  padding-right: 8px;
+  color: #123a7a;
+  text-shadow:
+    0 0 3px #e6f0ff,
+    0 0 3px #e6f0ff,
+    0 0 5px #e6f0ff;
+}
+
+.situation-label-pocket {
+  /* The layer of labels ignores the pointer; this one answers it so that its tooltip can show. */
+  pointer-events: auto;
+  cursor: help;
+  color: #7a140c;
+  text-shadow:
+    0 0 3px #fff0ec,
+    0 0 3px #fff0ec,
+    0 0 5px #fff0ec;
+}
+
 /*
  * The name tag of a unit, shown above its piece while the piece is hovered or selected: an
  * emblem for the side (iron cross or red star) and the unit's designation, in a frame of the

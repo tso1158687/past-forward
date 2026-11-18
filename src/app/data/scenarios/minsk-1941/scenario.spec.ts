@@ -52,6 +52,7 @@ describe('Minsk 1941 scenario', () => {
     const used = new Set([
       ...events.flatMap((event) => event.sourceIds),
       ...MINSK_SCENARIO.units.flatMap((unit) => unit.positions.flatMap((p) => p.sourceIds)),
+      ...MINSK_SCENARIO.situations.flatMap((situation) => situation.sourceIds),
     ]);
     expect(sources.filter((source) => !used.has(source.id)).map((source) => source.id)).toEqual([]);
   });
@@ -77,6 +78,50 @@ describe('Minsk 1941 scenario', () => {
     for (const border of MINSK_SCENARIO.borders) {
       expect(border.name['zh-TW'], border.id).toBeTruthy();
     }
+  });
+
+  describe('front situations', () => {
+    const { situations } = MINSK_SCENARIO;
+
+    it('has one for every evening of the time range, in order', () => {
+      expect(situations.map((situation) => situation.day)).toEqual(
+        Array.from({ length: lastCalendarDay + 1 }, (_, day) => day),
+      );
+    });
+
+    it('draws each front from beyond the northern edge of the map to beyond the southern edge', () => {
+      for (const { day, germanFront } of situations) {
+        expect(germanFront.length, `day ${day}`).toBeGreaterThanOrEqual(2);
+        expect(germanFront[0].lat, `day ${day}`).toBeGreaterThanOrEqual(MAP_BOUNDS.north);
+        expect(germanFront.at(-1)!.lat, `day ${day}`).toBeLessThanOrEqual(MAP_BOUNDS.south);
+        const latitudes = germanFront.map((point) => point.lat);
+        expect(latitudes, `day ${day}`).toEqual([...latitudes].sort((a, b) => b - a));
+      }
+    });
+
+    it('keeps every area of Soviet forces on the map, with what the atlas writes in it', () => {
+      for (const { day, pockets } of situations) {
+        for (const pocket of pockets) {
+          expect(pocket.outline.length, `day ${day}`).toBeGreaterThanOrEqual(3);
+          expect(pocket.outline.every(isOnMap), `day ${day}`).toBe(true);
+          expect(pocket.description['zh-TW'], `day ${day}`).toBeTruthy();
+        }
+      }
+    });
+
+    it('shows Soviet forces behind the front only on the evenings the atlas rings them', () => {
+      const withAreas = situations.filter((s) => s.pockets.length > 0).map((s) => s.day);
+      // 23, 24 and 27–30 June; 3–7 July.
+      expect(withAreas).toEqual([1, 2, 5, 6, 7, 8, 11, 12, 13, 14, 15]);
+    });
+
+    it('cites a known source for every evening', () => {
+      const sourceIds = new Set(sources.map((source) => source.id));
+      for (const situation of situations) {
+        expect(situation.sourceIds.length, `day ${situation.day}`).toBeGreaterThan(0);
+        for (const id of situation.sourceIds) expect(sourceIds.has(id), id).toBe(true);
+      }
+    });
   });
 
   describe('units', () => {

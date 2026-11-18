@@ -12,6 +12,7 @@ import { EventPanel } from './ui/events/event-panel';
 import { LocaleService } from './ui/i18n/locale-service';
 import { MapView } from './ui/map-view/map-view';
 import { toPlaceMarkers } from './ui/map-view/place-markers';
+import { toSituationView } from './ui/map-view/situation-view';
 import { toUnitMarkers, toUnitTrails, unitTransition } from './ui/map-view/unit-markers';
 import { TimelineBar } from './ui/timeline/timeline-bar';
 import { TimelineStore } from './ui/timeline/timeline-store';
@@ -52,6 +53,18 @@ export class App {
     toUnitTrails(this.timeline.scenario.units, this.timeline.calendarDay()),
   );
   protected readonly unitTransition = computed(() => unitTransition(this.timeline.timeline()));
+
+  /**
+   * The estimate for the evening of the current day. The world state is derived anew many times
+   * a second while the timeline plays, but within one day it holds the same situation, so this
+   * changes, and the map repaints its shading, only when the date does.
+   */
+  private readonly situation = computed(() => this.timeline.worldState().situation);
+  protected readonly situationView = computed(() =>
+    toSituationView(this.situation(), this.i18n.messages().situation, (text) =>
+      this.i18n.text(text),
+    ),
+  );
 
   /** The places of the selected event, pointed out on the map. */
   protected readonly placeMarkers = computed(() =>
