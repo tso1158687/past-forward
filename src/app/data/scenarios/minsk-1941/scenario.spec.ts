@@ -69,6 +69,13 @@ describe('Minsk 1941 scenario', () => {
     }
   });
 
+  it('draws one border, the German–Soviet border of June 1941, with a name to show', () => {
+    expect(MINSK_SCENARIO.borders.map((border) => border.id)).toEqual(['german-soviet-1941']);
+    for (const border of MINSK_SCENARIO.borders) {
+      expect(border.name['zh-TW'], border.id).toBeTruthy();
+    }
+  });
+
   describe('units', () => {
     const { units } = MINSK_SCENARIO;
     const unit = (id: string) => units.find((candidate) => candidate.id === id)!;

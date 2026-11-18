@@ -1,6 +1,7 @@
 // Bakes the static map assets used by the 3D scene from open data:
 //   - public/map/terrain.bin / terrain.json : elevation grid (AWS Terrain Tiles, "terrarium" encoding)
 //   - public/map/rivers.json                : river centre lines (Natural Earth 1:10m, public domain)
+//   - public/map/borders.json               : borders of June 1941 (OpenHistoricalMap, CC0)
 //
 // Run with `pnpm bake:map`. Downloads are cached in tools/.cache so re-runs are offline.
 
@@ -28,6 +29,22 @@ const TERRAIN_TILE_URL = (z, x, y) =>
 const NATURAL_EARTH_URL = (name) =>
   `https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/${name}.geojson`;
 const RIVER_DATASETS = ['ne_10m_rivers_lake_centerlines', 'ne_10m_rivers_europe'];
+
+const OHM_OVERPASS_URL = 'https://overpass-api.openhistoricalmap.org/api/interpreter';
+/**
+ * A border is the set of boundary ways that two OpenHistoricalMap relations have in common. Each
+ * relation is one state's outline during the period in its name. Which lines these are, and how
+ * they were checked, is recorded in docs/research/minsk-borders.md.
+ */
+const BORDERS = [
+  {
+    id: 'german-soviet-1941',
+    // Soviet Union 1940-08-06..1941-07-17 and Deutsches Reich 1941-04-14..1941-08-01
+    relations: [2848812, 2704717],
+  },
+];
+/** Points closer than this to the simplified line are dropped; the relief grid is about 0.4 km. */
+const BORDER_TOLERANCE_KM = 0.15;
 
 async function fetchCached(url, cacheName) {
   const cachePath = join(CACHE_DIR, cacheName);
@@ -227,6 +244,128 @@ async function bakeRivers() {
   );
 }
 
+// ---------- Borders ----------
+
+/** The member ways of a boundary relation that touch the region, keyed by way id. */
+async function loadBoundaryWays(relationId) {
+  const margin = 0.2;
+  const box = [
+    BOUNDS.south - margin,
+    BOUNDS.west - margin,
+    BOUNDS.north + margin,
+    BOUNDS.east + margin,
+  ];
+  const query = `[out:json][timeout:120];relation(${relationId});way(r)(${box.join(',')});out geom;`;
+  const url = `${OHM_OVERPASS_URL}?data=${encodeURIComponent(query)}`;
+  const response = JSON.parse(await fetchCached(url, `ohm/relation-${relationId}.json`));
+  const ways = new Map(response.elements.map((way) => [way.id, way]));
+  return { ways, dataTimestamp: response.osm3s.timestamp_osm_base };
+}
+
+/** Joins ways that share an end node into the longest possible chains of [lon, lat] points. */
+function chainWays(ways) {
+  const waysByEndNode = new Map();
+  for (const way of ways) {
+    for (const node of [way.nodes[0], way.nodes.at(-1)]) {
+      waysByEndNode.set(node, [...(waysByEndNode.get(node) ?? []), way]);
+    }
+  }
+  const used = new Set();
+  const pointsOf = (way) => way.geometry.map(({ lon, lat }) => [lon, lat]);
+  /** The one unused way that continues from `node`, with its points ordered away from it. */
+  const continuationFrom = (node) => {
+    const candidates = waysByEndNode.get(node).filter((way) => !used.has(way.id));
+    if (candidates.length !== 1) return undefined;
+    const [way] = candidates;
+    const startsHere = way.nodes[0] === node;
+    return {
+      way,
+      points: startsHere ? pointsOf(way) : pointsOf(way).reverse(),
+      endNode: startsHere ? way.nodes.at(-1) : way.nodes[0],
+    };
+  };
+
+  const chains = [];
+  for (const first of ways) {
+    if (used.has(first.id)) continue;
+    used.add(first.id);
+    let chain = pointsOf(first);
+    for (let end = first.nodes.at(-1), next; (next = continuationFrom(end)); end = next.endNode) {
+      used.add(next.way.id);
+      chain = [...chain, ...next.points.slice(1)];
+    }
+    for (let start = first.nodes[0], next; (next = continuationFrom(start)); start = next.endNode) {
+      used.add(next.way.id);
+      chain = [...next.points.slice(1).reverse(), ...chain];
+    }
+    chains.push(chain);
+  }
+  return chains;
+}
+
+/** Douglas–Peucker simplification with the tolerance measured in kilometres on the ground. */
+function simplifyLine(line, toleranceKm) {
+  const kmPerDegLat = 111.2;
+  const kmPerDegLon = kmPerDegLat * Math.cos(degToRad((BOUNDS.south + BOUNDS.north) / 2));
+  const flat = line.map(([lon, lat]) => [lon * kmPerDegLon, lat * kmPerDegLat]);
+  const distanceToSegment = ([px, py], [ax, ay], [bx, by]) => {
+    const lengthSquared = (bx - ax) ** 2 + (by - ay) ** 2;
+    const t =
+      lengthSquared === 0
+        ? 0
+        : Math.max(0, Math.min(1, ((px - ax) * (bx - ax) + (py - ay) * (by - ay)) / lengthSquared));
+    return Math.hypot(px - (ax + t * (bx - ax)), py - (ay + t * (by - ay)));
+  };
+
+  const keep = new Array(line.length).fill(false);
+  keep[0] = keep[line.length - 1] = true;
+  const pending = [[0, line.length - 1]];
+  while (pending.length > 0) {
+    const [first, last] = pending.pop();
+    let farthest = -1;
+    let farthestDistance = toleranceKm;
+    for (let i = first + 1; i < last; i++) {
+      const distance = distanceToSegment(flat[i], flat[first], flat[last]);
+      if (distance > farthestDistance) {
+        farthest = i;
+        farthestDistance = distance;
+      }
+    }
+    if (farthest === -1) continue;
+    keep[farthest] = true;
+    pending.push([first, farthest], [farthest, last]);
+  }
+  return line.filter((_, i) => keep[i]);
+}
+
+async function bakeBorders() {
+  const borders = [];
+  const dataTimestamps = new Set();
+  for (const { id, relations } of BORDERS) {
+    const loaded = [];
+    // One request at a time: this is a small volunteer-run server.
+    for (const relationId of relations) loaded.push(await loadBoundaryWays(relationId));
+    loaded.forEach(({ dataTimestamp }) => dataTimestamps.add(dataTimestamp));
+    const shared = [...loaded[0].ways.values()].filter((way) => loaded[1].ways.has(way.id));
+    const lines = chainWays(shared)
+      .flatMap(clipLineToBounds)
+      .map((line) => simplifyLine(line, BORDER_TOLERANCE_KM))
+      .sort((a, b) => b.length - a.length);
+    if (lines.length === 0) throw new Error(`Border ${id} has no line inside the region`);
+    borders.push({ id, relations, lines });
+  }
+  const output = {
+    source: 'OpenHistoricalMap (CC0), boundary relations as listed for each border',
+    dataTimestamp: [...dataTimestamps].sort().at(-1),
+    borders,
+  };
+  await writeFile(join(OUTPUT_DIR, 'borders.json'), JSON.stringify(output) + '\n');
+  console.log(
+    `borders: ${borders.map((b) => `${b.id}: ${b.lines.length} lines, ${b.lines.flat().length} points`).join('; ')}`,
+  );
+}
+
 await mkdir(OUTPUT_DIR, { recursive: true });
 await bakeTerrain();
 await bakeRivers();
+await bakeBorders();

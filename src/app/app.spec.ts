@@ -1,6 +1,7 @@
 import { Component, input, output } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
+import { HistoricalBorder } from './core/history/scenario';
 import { City } from './data/map/cities';
 import type { PlaceMarker } from './scene/layers/place-layer';
 import type { UnitMarker, UnitTrail, UnitTransition } from './scene/layers/unit-layer';
@@ -19,6 +20,7 @@ import { TimelineStore } from './ui/timeline/timeline-store';
 })
 class MapViewStub {
   readonly cities = input.required<readonly City[]>();
+  readonly borders = input<readonly HistoricalBorder[]>([]);
   readonly units = input<readonly UnitMarker[]>([]);
   readonly unitTrails = input<readonly UnitTrail[]>([]);
   readonly unitTransition = input<UnitTransition>({ seconds: 0, easing: 'eased' });
@@ -59,6 +61,12 @@ describe('App', () => {
     expect(element.querySelector('.brand')?.textContent).toContain('歷史進行式');
     expect(element.querySelector('h1')?.textContent).toContain('巴巴羅薩行動');
     expect(element.querySelector('.data-notice')?.textContent).toContain('1942 年德軍參謀本部圖集');
+  });
+
+  it('asks the map to draw the German–Soviet border and says where its course comes from', async () => {
+    const { element, map } = await render();
+    expect(map.borders().map((border) => border.id)).toEqual(['german-soviet-1941']);
+    expect(element.querySelector('.data-notice')?.textContent).toContain('OpenHistoricalMap');
   });
 
   const unitIds = (map: MapViewStub) => map.units().map((unit) => unit.id);

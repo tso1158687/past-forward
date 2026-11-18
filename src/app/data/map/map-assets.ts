@@ -10,9 +10,16 @@ export interface River {
   readonly lines: readonly (readonly GeographicLocation[])[];
 }
 
+/** The course of a border as baked by tools/bake-map-data.mjs from OpenHistoricalMap. */
+export interface BorderLine {
+  readonly id: string;
+  readonly lines: readonly (readonly GeographicLocation[])[];
+}
+
 export interface MapAssets {
   readonly elevation: ElevationGrid;
   readonly rivers: readonly River[];
+  readonly borders: readonly BorderLine[];
 }
 
 interface TerrainMetadata {
@@ -22,11 +29,20 @@ interface TerrainMetadata {
   readonly metersPerUnit: number;
 }
 
+type LineCoordinates = readonly (readonly [lon: number, lat: number])[];
+
 interface RiversFile {
   readonly rivers: readonly {
     readonly name: string;
     readonly scaleRank: number;
-    readonly lines: readonly (readonly [lon: number, lat: number][])[];
+    readonly lines: readonly LineCoordinates[];
+  }[];
+}
+
+interface BordersFile {
+  readonly borders: readonly {
+    readonly id: string;
+    readonly lines: readonly LineCoordinates[];
   }[];
 }
 
@@ -34,10 +50,11 @@ const ASSET_BASE = 'map/';
 
 /** Loads the static map assets produced by `pnpm bake:map`. */
 export async function loadMapAssets(): Promise<MapAssets> {
-  const [metadata, samples, riversFile] = await Promise.all([
+  const [metadata, samples, riversFile, bordersFile] = await Promise.all([
     fetchAsset('terrain.json').then((response) => response.json() as Promise<TerrainMetadata>),
     fetchAsset('terrain.bin').then((response) => response.arrayBuffer()),
     fetchAsset('rivers.json').then((response) => response.json() as Promise<RiversFile>),
+    fetchAsset('borders.json').then((response) => response.json() as Promise<BordersFile>),
   ]);
 
   if (samples.byteLength !== metadata.width * metadata.height * Int16Array.BYTES_PER_ELEMENT) {
@@ -49,9 +66,17 @@ export async function loadMapAssets(): Promise<MapAssets> {
     rivers: riversFile.rivers.map((river) => ({
       name: river.name,
       scaleRank: river.scaleRank,
-      lines: river.lines.map((line) => line.map(([lon, lat]) => ({ lon, lat }))),
+      lines: river.lines.map(toLocations),
+    })),
+    borders: bordersFile.borders.map((border) => ({
+      id: border.id,
+      lines: border.lines.map(toLocations),
     })),
   };
+}
+
+function toLocations(line: LineCoordinates): GeographicLocation[] {
+  return line.map(([lon, lat]) => ({ lon, lat }));
 }
 
 async function fetchAsset(fileName: string): Promise<Response> {

@@ -14,6 +14,7 @@ import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import { ElevationGrid } from '../core/geo/elevation-grid';
 import { GeographicLocation } from '../core/geo/geo-types';
 import { createMapControls, moveToInitialView } from './camera/map-controls';
+import { createBorderLayer, SceneBorder } from './layers/border-layer';
 import { CityMarker, createCityLayer } from './layers/city-layer';
 import { createRiverLayer, SceneRiver } from './layers/river-layer';
 import { KeyedLabelLayer } from './layers/keyed-label-layer';
@@ -29,6 +30,7 @@ import { createTerrainTexture } from './terrain/terrain-texture';
 export interface MapSceneContent {
   readonly elevation: ElevationGrid;
   readonly rivers: readonly SceneRiver[];
+  readonly borders: readonly SceneBorder[];
   readonly cities: readonly CityMarker[];
 }
 
@@ -75,6 +77,7 @@ export class MapScene {
     this.scene.add(
       this.createTerrain(),
       createRiverLayer(content.rivers, this.surface),
+      createBorderLayer(content.borders, this.surface),
       createCityLayer(content.cities, this.surface, (id) => events.onCitySelected(id)),
       this.unitLayer.object,
       this.placeLayer.object,

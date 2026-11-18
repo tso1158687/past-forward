@@ -31,7 +31,7 @@ pnpm start        # 開發伺服器，http://localhost:4200
 | `pnpm test:watch` | 單元測試（監看模式） |
 | `pnpm lint` | ESLint |
 | `pnpm format` / `pnpm format:check` | Prettier |
-| `pnpm bake:map` | 從開放資料重新產生 `public/map/` 的地形與河流 |
+| `pnpm bake:map` | 從開放資料重新產生 `public/map/` 的地形、河流與國界 |
 
 ## 操作
 
@@ -51,6 +51,7 @@ pnpm start        # 開發伺服器，http://localhost:4200
 | 地形 | AWS Open Data 的 Terrain Tiles（zoom 8） | 真實高程，約 0.4 公里一格；高度誇張 30 倍 |
 | 河流 | Natural Earth 1:10m（公有領域） | 現代河道 |
 | 城市 | Natural Earth 與 OpenStreetMap | 現代座標與今日常見譯名，並非 1941 年當時的名稱 |
+| 國界 | OpenHistoricalMap（CC0），見 [docs/research/minsk-borders.md](docs/research/minsk-borders.md) | 1941 年 6 月 22 日開戰時的德蘇邊界；走向對照過 1939 年 10 月德蘇劃界議定書描述的地點 |
 | 事件 | 逐項對照史料，見 [docs/research/minsk-events-verified.md](docs/research/minsk-events-verified.md) | 每個事件附來源；地點標的是今日城鎮中心，不是橋或戰場的確切位置 |
 
 事件的可信度有三種，畫面上用顏色區分：
@@ -89,11 +90,11 @@ src/app/
     timeline/ 日曆換算、時間軸狀態（播放、暫停、跳轉、推進）
     history/  劇本、事件、來源與部隊的型別；由日期推導世界狀態
     i18n/     多語系文字型別
-  data/     靜態資料：城市、河流名稱、地圖資產載入、劇本（scenarios/minsk-1941：事件與來源）
-  scene/    three.js 呈現層：地形、河流、標籤、單位與事件地點標記、鏡頭。不含歷史邏輯，也不依賴 Angular
+  data/     靜態資料：城市、河流名稱、地圖資產載入、劇本（scenarios/minsk-1941：事件、部隊、國界與來源）
+  scene/    three.js 呈現層：地形、河流、國界、標籤、單位與事件地點標記、鏡頭。不含歷史邏輯，也不依賴 Angular
   ui/       Angular 元件（地圖、時間軸、事件面板）、時間軸狀態管理與介面文字
 tools/      離線資料烘焙腳本
-public/map/ 烘焙產生的地形與河流資產
+public/map/ 烘焙產生的地形、河流與國界資產
 docs/       專案概要、路線、決策紀錄、開發日誌、史料研究
 ```
 
@@ -107,7 +108,8 @@ docs/       專案概要、路線、決策紀錄、開發日誌、史料研究
 - 地形解析度約 0.4 公里，拉到最近時會看得出模糊。
 - 投影是簡單的等距圓柱投影，區域南北邊緣的東西向比例誤差約 6%。
 - 河流線與低解析度地形不完全貼合，因此河流不做深度遮蔽，一律畫在地形之上。
-- 尚未畫出 1941 年的國界與分界線（屬於歷史資料，留待 Milestone 3）。
+- 國界只畫了 1941 年 6 月的德蘇邊界；邊界兩側的行政區界（東普魯士、總督府、各加盟共和國）與 1939 年以前的波蘇舊邊界沒有畫。
+- 德蘇邊界的走向取自志工編輯的 OpenHistoricalMap，只對照過條約描述的地點，沒有逐公里比對條約附圖。
 - 開戰頭幾天各軍擠在邊境，棋子仍會互相重疊。
 - 軌跡線整段保留，到 7 月上旬線很多，目前不能關掉或只看某一支部隊的。
 - 第 57 摩托化軍的棋子 6 月 28 日會在明斯克附近淡出、在西邊約 100 公里處淡入：領頭的裝甲師從這天起在圖集上改畫在另一個軍旁邊（decisions U10、D31）。

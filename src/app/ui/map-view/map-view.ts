@@ -13,6 +13,7 @@ import {
   viewChild,
 } from '@angular/core';
 import { GeographicLocation } from '../../core/geo/geo-types';
+import { HistoricalBorder } from '../../core/history/scenario';
 import { City } from '../../data/map/cities';
 import { loadMapAssets, MapAssets } from '../../data/map/map-assets';
 import { RIVER_NAMES } from '../../data/map/river-names';
@@ -35,6 +36,8 @@ type MapStatus = 'loading' | 'ready' | 'failed';
 })
 export class MapView {
   readonly cities = input.required<readonly City[]>();
+  /** Borders to draw; the course of each comes from the map assets. */
+  readonly borders = input<readonly HistoricalBorder[]>([]);
   /** Units to show right now. */
   readonly units = input<readonly UnitMarker[]>([]);
   /** Where the units have been so far. */
@@ -110,6 +113,11 @@ export class MapView {
       rivers: assets.rivers.map((river) => {
         const name = RIVER_NAMES[river.name];
         return { ...river, label: name ? this.i18n.text(name) : undefined };
+      }),
+      borders: this.borders().map((border) => {
+        const course = assets.borders.find((line) => line.id === border.id);
+        if (!course) throw new Error(`The map assets have no border "${border.id}"`);
+        return { lines: course.lines, label: this.i18n.text(border.name) };
       }),
       cities: this.cities().map((city) => ({
         id: city.id,

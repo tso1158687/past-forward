@@ -78,6 +78,19 @@
     0 1px 4px #173a5c;
 }
 
+.border-label {
+  padding-right: 10px;
+  color: #2a1438;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  text-shadow:
+    0 0 3px #fff6dc,
+    0 0 3px #fff6dc,
+    0 0 5px #fff6dc;
+}
+
 /*
  * The name tag of a unit, shown above its piece while the piece is hovered or selected: an
  * emblem for the side (iron cross or red star) and the unit's designation, in a frame of the

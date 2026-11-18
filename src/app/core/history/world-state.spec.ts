@@ -63,6 +63,7 @@ const SCENARIO: Scenario = {
   epoch: { year: 1941, month: 6, day: 22 },
   timeRange: { startDay: 0, endDay: 10 },
   units: [MOVER, STATIONARY, SIGHTED],
+  borders: [],
   events: [CLOSING_EVENT],
   sources: [{ id: 'source', citation: 'Test source', kind: 'primary' }],
 };

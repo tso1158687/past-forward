@@ -59,6 +59,15 @@ export interface MilitaryUnit {
 }
 
 /**
+ * A border drawn on the map. Its course is not stored here: it is a map asset with the same `id`,
+ * because it is thousands of points traced from a map rather than a fact stated by a source.
+ */
+export interface HistoricalBorder {
+  readonly id: string;
+  readonly name: LocalizedText;
+}
+
+/**
  * Everything the timeline plays: a time span, the events in it and the units moving through it. The history and a
  * future alternative history are both just scenarios, so swapping one for another needs no change
  * to the timeline or the map.
@@ -73,6 +82,8 @@ export interface Scenario {
   readonly epoch: CalendarDate;
   readonly timeRange: TimeRange;
   readonly units: readonly MilitaryUnit[];
+  /** Borders that hold for the whole of `timeRange`. */
+  readonly borders: readonly HistoricalBorder[];
   /** In chronological order of `startDay`. */
   readonly events: readonly HistoricalEvent[];
   /** Every source referred to by the events and the unit positions. */
