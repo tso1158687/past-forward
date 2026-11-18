@@ -7,20 +7,50 @@ import { TerrainSurface } from '../terrain/terrain-surface';
 import { createLabel } from './label';
 
 export interface SceneBorder {
+  /** `former` borders had been abolished and are drawn fainter than those `in-force`. */
+  readonly kind: 'in-force' | 'former';
   readonly lines: readonly (readonly GeographicLocation[])[];
-  /** Shown once, half-way along the border's longest line. */
+  /** Shown once, beside the border's longest line. */
   readonly label: string;
 }
 
-const LINE_COLOR = '#3b1d4f';
-const LINE_WIDTH_PIXELS = 3.2;
-/** Dash and gap lengths in scene units (kilometres on the ground). */
-const DASH_KM = 9;
-const GAP_KM = 3.5;
-/** A pale band under the line keeps it readable on any relief colour. */
+interface BorderStyle {
+  readonly color: string;
+  readonly widthPixels: number;
+  /** Dash and gap lengths in scene units (kilometres on the ground). */
+  readonly dashKm: number;
+  readonly gapKm: number;
+  /** A pale band under the line keeps it readable on any relief colour. */
+  readonly casingWidthPixels: number;
+  readonly casingOpacity: number;
+  /**
+   * How far along the line its name sits, from 0 (its start) to 1. Chosen by eye so that the
+   * names stay clear of city names.
+   */
+  readonly labelFraction: number;
+}
+
+const STYLES: Readonly<Record<SceneBorder['kind'], BorderStyle>> = {
+  'in-force': {
+    color: '#3b1d4f',
+    widthPixels: 3.2,
+    dashKm: 9,
+    gapKm: 3.5,
+    casingWidthPixels: 6.5,
+    casingOpacity: 0.45,
+    labelFraction: 0.5,
+  },
+  former: {
+    color: '#5b4a3a',
+    widthPixels: 2,
+    dashKm: 3,
+    gapKm: 3,
+    casingWidthPixels: 4.5,
+    casingOpacity: 0.3,
+    labelFraction: 0.3,
+  },
+};
 const CASING_COLOR = '#fff6dc';
-const CASING_WIDTH_PIXELS = 6.5;
-const CASING_OPACITY = 0.45;
 const LIFT_ABOVE_TERRAIN = 0.35;
 /** Above the rivers (1), below unit trails (3) and pieces; the dashes go over their casing. */
 const CASING_RENDER_ORDER = 2;
@@ -30,6 +60,7 @@ export function createBorderLayer(borders: readonly SceneBorder[], surface: Terr
   const group = new Group();
   for (const border of borders) {
     if (border.lines.length === 0) continue;
+    const style = STYLES[border.kind];
     const lines = border.lines.map((line) =>
       line.map((location) => surface.positionAt(location, LIFT_ABOVE_TERRAIN)),
     );
@@ -40,9 +71,9 @@ export function createBorderLayer(borders: readonly SceneBorder[], surface: Terr
       // Like the rivers, borders are a map overlay and ignore depth.
       new LineMaterial({
         color: CASING_COLOR,
-        linewidth: CASING_WIDTH_PIXELS,
+        linewidth: style.casingWidthPixels,
         transparent: true,
-        opacity: CASING_OPACITY,
+        opacity: style.casingOpacity,
         depthTest: false,
         depthWrite: false,
       }),
@@ -52,11 +83,11 @@ export function createBorderLayer(borders: readonly SceneBorder[], surface: Terr
     const dashes = new LineSegments2(
       new LineSegmentsGeometry().setPositions(positions),
       new LineMaterial({
-        color: LINE_COLOR,
-        linewidth: LINE_WIDTH_PIXELS,
+        color: style.color,
+        linewidth: style.widthPixels,
         dashed: true,
-        dashSize: DASH_KM,
-        gapSize: GAP_KM,
+        dashSize: style.dashKm,
+        gapSize: style.gapKm,
         // Transparent objects are drawn after opaque ones, so an opaque line would end up under
         // its own casing.
         transparent: true,
@@ -68,8 +99,8 @@ export function createBorderLayer(borders: readonly SceneBorder[], surface: Terr
     dashes.computeLineDistances();
     dashes.renderOrder = DASH_RENDER_ORDER;
 
-    const label = createLabel('border-label', border.label);
-    label.position.copy(pointHalfWayAlong(longest(lines)));
+    const label = createLabel(`border-label border-label-${border.kind}`, border.label);
+    label.position.copy(pointAlong(longest(lines), style.labelFraction));
     // The label ends at the line instead of sitting on top of it.
     label.center.set(1, 0.5);
     group.add(casing, dashes, label);
@@ -98,11 +129,13 @@ function longest(lines: readonly (readonly Vector3[])[]): readonly Vector3[] {
   return lines.reduce((a, b) => (lengthOf(b) > lengthOf(a) ? b : a));
 }
 
-function pointHalfWayAlong(line: readonly Vector3[]): Vector3 {
-  let remaining = lengthOf(line) / 2;
+/** The point `fraction` of the way along the line, measured by length. */
+function pointAlong(line: readonly Vector3[], fraction: number): Vector3 {
+  let remaining = lengthOf(line) * fraction;
   for (let i = 1; i < line.length; i++) {
     const segment = line[i].distanceTo(line[i - 1]);
-    if (segment >= remaining) return line[i - 1].clone().lerp(line[i], remaining / segment);
+    if (segment > 0 && segment >= remaining)
+      return line[i - 1].clone().lerp(line[i], remaining / segment);
     remaining -= segment;
   }
   return line[line.length - 1].clone();

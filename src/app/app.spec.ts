@@ -63,10 +63,15 @@ describe('App', () => {
     expect(element.querySelector('.data-notice')?.textContent).toContain('1942 年德軍參謀本部圖集');
   });
 
-  it('asks the map to draw the German–Soviet border and says where its course comes from', async () => {
+  it('asks the map to draw both borders, and says where they come from and that one is no longer a border', async () => {
     const { element, map } = await render();
-    expect(map.borders().map((border) => border.id)).toEqual(['german-soviet-1941']);
-    expect(element.querySelector('.data-notice')?.textContent).toContain('OpenHistoricalMap');
+    expect(map.borders().map((border) => border.id)).toEqual([
+      'german-soviet-1941',
+      'polish-soviet-1939',
+    ]);
+    const notice = element.querySelector('.data-notice')?.textContent;
+    expect(notice).toContain('OpenHistoricalMap');
+    expect(notice).toContain('1941 年它已經不是國界');
   });
 
   const unitIds = (map: MapViewStub) => map.units().map((unit) => unit.id);

@@ -117,7 +117,7 @@ export class MapView {
       borders: this.borders().map((border) => {
         const course = assets.borders.find((line) => line.id === border.id);
         if (!course) throw new Error(`The map assets have no border "${border.id}"`);
-        return { lines: course.lines, label: this.i18n.text(border.name) };
+        return { kind: border.kind, lines: course.lines, label: this.i18n.text(border.name) };
       }),
       cities: this.cities().map((city) => ({
         id: city.id,

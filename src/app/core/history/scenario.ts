@@ -59,12 +59,19 @@ export interface MilitaryUnit {
 }
 
 /**
+ * `in-force` is a border that held during the scenario; `former` is one that had been abolished
+ * by then and is drawn only to help read the map.
+ */
+export type BorderKind = 'in-force' | 'former';
+
+/**
  * A border drawn on the map. Its course is not stored here: it is a map asset with the same `id`,
  * because it is thousands of points traced from a map rather than a fact stated by a source.
  */
 export interface HistoricalBorder {
   readonly id: string;
   readonly name: LocalizedText;
+  readonly kind: BorderKind;
 }
 
 /**

@@ -1,7 +1,7 @@
 // Bakes the static map assets used by the 3D scene from open data:
 //   - public/map/terrain.bin / terrain.json : elevation grid (AWS Terrain Tiles, "terrarium" encoding)
 //   - public/map/rivers.json                : river centre lines (Natural Earth 1:10m, public domain)
-//   - public/map/borders.json               : borders of June 1941 (OpenHistoricalMap, CC0)
+//   - public/map/borders.json               : historical borders (OpenHistoricalMap, CC0)
 //
 // Run with `pnpm bake:map`. Downloads are cached in tools/.cache so re-runs are offline.
 
@@ -41,6 +41,11 @@ const BORDERS = [
     id: 'german-soviet-1941',
     // Soviet Union 1940-08-06..1941-07-17 and Deutsches Reich 1941-04-14..1941-08-01
     relations: [2848812, 2704717],
+  },
+  {
+    id: 'polish-soviet-1939',
+    // Polska 1938-11-01..1939-10-06 and Soviet Union 1926..1939-10-06
+    relations: [2741574, 2851157],
   },
 ];
 /** Points closer than this to the simplified line are dropped; the relief grid is about 0.4 km. */
@@ -340,23 +345,25 @@ function simplifyLine(line, toleranceKm) {
 
 async function bakeBorders() {
   const borders = [];
-  const dataTimestamps = new Set();
   for (const { id, relations } of BORDERS) {
     const loaded = [];
     // One request at a time: this is a small volunteer-run server.
     for (const relationId of relations) loaded.push(await loadBoundaryWays(relationId));
-    loaded.forEach(({ dataTimestamp }) => dataTimestamps.add(dataTimestamp));
     const shared = [...loaded[0].ways.values()].filter((way) => loaded[1].ways.has(way.id));
     const lines = chainWays(shared)
       .flatMap(clipLineToBounds)
       .map((line) => simplifyLine(line, BORDER_TOLERANCE_KM))
       .sort((a, b) => b.length - a.length);
     if (lines.length === 0) throw new Error(`Border ${id} has no line inside the region`);
-    borders.push({ id, relations, lines });
+    // OpenHistoricalMap keeps being edited; this is the state of the newer of the two downloads.
+    const dataTimestamp = loaded
+      .map((relation) => relation.dataTimestamp)
+      .sort()
+      .at(-1);
+    borders.push({ id, relations, dataTimestamp, lines });
   }
   const output = {
     source: 'OpenHistoricalMap (CC0), boundary relations as listed for each border',
-    dataTimestamp: [...dataTimestamps].sort().at(-1),
     borders,
   };
   await writeFile(join(OUTPUT_DIR, 'borders.json'), JSON.stringify(output) + '\n');
