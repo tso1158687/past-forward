@@ -105,6 +105,67 @@ describe('App', () => {
     expect(map.situation()).not.toBe(morning);
   });
 
+  it('hands the map new pieces only when they change, not at every moment of a day', async () => {
+    const { fixture, map, store } = await render();
+    store.seek(6.1);
+    await fixture.whenStable();
+    const morning = map.units();
+
+    store.seek(6.9);
+    await fixture.whenStable();
+    expect(map.units()).toBe(morning);
+
+    store.seek(7.1);
+    await fixture.whenStable();
+    expect(map.units()).not.toBe(morning);
+  });
+
+  describe('story', () => {
+    beforeEach(() => vi.stubGlobal('requestAnimationFrame', () => 0));
+    afterEach(() => vi.unstubAllGlobals());
+
+    const button = (element: HTMLElement, text: string) =>
+      [...element.querySelectorAll<HTMLButtonElement>('button')].find((candidate) =>
+        candidate.textContent?.includes(text),
+      );
+
+    it('starts from the title bar, shows the narration in place of the event panel, and turns the camera', async () => {
+      const { fixture, element, map } = await render();
+      button(element, '開始導覽')!.click();
+      await fixture.whenStable();
+
+      expect(element.querySelector('app-story-panel')?.textContent).toContain('導覽 1／14');
+      expect(element.querySelector('app-story-panel h2')?.textContent).toContain('這一章');
+      expect(element.querySelector('app-event-panel')).toBeNull();
+      expect(button(element, '開始導覽')).toBeUndefined();
+      expect(map.cameraRequests.at(-1)).toBe('reset');
+
+      button(element, '下一站')!.click();
+      await fixture.whenStable();
+      button(element, '下一站')!.click();
+      await fixture.whenStable();
+      expect(element.querySelector('app-story-panel h2')?.textContent).toContain('尼曼河上的橋');
+      expect(map.cameraRequests.at(-1)).toMatchObject({ distanceKm: 260 });
+    });
+
+    it('steps aside when the user moves the timeline, and offers to resume', async () => {
+      const { fixture, element, store } = await render();
+      button(element, '開始導覽')!.click();
+      await fixture.whenStable();
+      button(element, '下一站')!.click();
+      await fixture.whenStable();
+
+      store.seek(10);
+      await fixture.whenStable();
+      expect(element.querySelector('app-story-panel')).toBeNull();
+      expect(element.querySelector('app-event-panel')).not.toBeNull();
+
+      button(element, '繼續導覽（第 2 站）')!.click();
+      await fixture.whenStable();
+      expect(element.querySelector('app-story-panel h2')?.textContent).toContain('全線進攻');
+    });
+  });
+
   const unitIds = (map: MapViewStub) => map.units().map((unit) => unit.id);
 
   it('puts on the map the units that a source places on the first day, and no demonstration badge', async () => {

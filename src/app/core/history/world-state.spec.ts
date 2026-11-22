@@ -64,6 +64,7 @@ const SCENARIO: Scenario = {
   timeRange: { startDay: 0, endDay: 10 },
   units: [MOVER, STATIONARY, SIGHTED],
   situations: [],
+  story: [],
   borders: [],
   events: [CLOSING_EVENT],
   sources: [{ id: 'source', citation: 'Test source', kind: 'primary' }],

@@ -40,6 +40,42 @@ export function toUnitMarkers(
   });
 }
 
+/**
+ * Whether two lists of markers would draw the same pieces. The world state is derived anew many
+ * times a second while the timeline plays, but a piece only changes when its day, run, place or
+ * selection does; comparing by content keeps the map from being sent the same pieces every frame.
+ */
+export function sameUnitMarkers(a: readonly UnitMarker[], b: readonly UnitMarker[]): boolean {
+  return a.length === b.length && a.every((marker, i) => sameMarker(marker, b[i]));
+}
+
+/**
+ * How to compare each field of a marker. Typed as a record over every key of `UnitMarker`, so a
+ * field added to the marker fails to compile here until it is compared too.
+ */
+const SAME_FIELD: {
+  readonly [K in keyof UnitMarker]: (a: UnitMarker[K], b: UnitMarker[K]) => boolean;
+} = {
+  id: (a, b) => a === b,
+  label: (a, b) => a === b,
+  location: (a, b) => a.lon === b.lon && a.lat === b.lat,
+  faction: (a, b) => a === b,
+  symbol: (a, b) =>
+    a.kind === 'character'
+      ? b.kind === 'character' && a.character === b.character
+      : b.kind === a.kind,
+  number: (a, b) => a === b,
+  basis: (a, b) => a === b,
+  selected: (a, b) => a === b,
+  run: (a, b) => a === b,
+};
+
+function sameMarker(a: UnitMarker, b: UnitMarker): boolean {
+  return (Object.keys(SAME_FIELD) as (keyof UnitMarker)[]).every((key) =>
+    (SAME_FIELD[key] as (x: unknown, y: unknown) => boolean)(a[key], b[key]),
+  );
+}
+
 /** How the unit's location on screen was obtained, in the three kinds the map tells apart. */
 export function locationBasis(state: UnitState): UnitMarker['basis'] {
   if (state.basis === 'interpolated') return 'interpolated';

@@ -134,4 +134,64 @@ describe('TimelineStore', () => {
       expect(store.nextEvent()).toBeUndefined();
     });
   });
+
+  describe('travelling for the story', () => {
+    it('jumps to a day without counting as a user action', () => {
+      const { store } = setUp();
+      store.travelTo(6);
+      expect(store.timeline()).toMatchObject({ currentDay: 6, playing: false });
+      expect(store.userActions()).toBe(0);
+    });
+
+    it('plays through the days in between, stops on the day and restores the user speed', () => {
+      const { store } = setUp();
+      store.setSpeed(0.5);
+      const actions = store.userActions();
+      store.travelTo(2, 1);
+      // Frames a quarter of a second apart, the longest step the store credits to one frame.
+      for (let time = 0; time <= 1000; time += 250) runFrame(time);
+      expect(store.timeline().currentDay).toBeCloseTo(1);
+      expect(store.timeline()).toMatchObject({ playing: true, daysPerSecond: 1 });
+      expect(store.chosenSpeed()).toBe(0.5);
+      for (let time = 1250; time <= 3000; time += 250) runFrame(time);
+      expect(store.timeline()).toMatchObject({ currentDay: 2, playing: false, daysPerSecond: 0.5 });
+      expect(pendingFrames).toHaveLength(0);
+      expect(store.userActions()).toBe(actions);
+    });
+
+    it("keeps the user's speed when one journey follows another before it arrives", () => {
+      const { store } = setUp();
+      store.setSpeed(0.5);
+      store.travelTo(3, 2);
+      runFrame(0);
+      runFrame(250);
+      store.travelTo(8, 4);
+      expect(store.chosenSpeed()).toBe(0.5);
+      for (let time = 500; time <= 3000; time += 250) runFrame(time);
+      expect(store.timeline()).toMatchObject({ currentDay: 8, playing: false, daysPerSecond: 0.5 });
+    });
+
+    it('stops a journey on request without counting it as a user action', () => {
+      const { store } = setUp();
+      store.travelTo(5, 2);
+      runFrame(0);
+      runFrame(250);
+      store.stopTravel();
+      expect(store.timeline()).toMatchObject({ currentDay: 0.5, playing: false, daysPerSecond: 1 });
+      expect(store.userActions()).toBe(0);
+    });
+
+    it('counts the user moving the timeline, and stops a journey where it is', () => {
+      const { store } = setUp();
+      store.travelTo(5, 2);
+      runFrame(0);
+      runFrame(250);
+      store.togglePlayback();
+      expect(store.userActions()).toBe(1);
+      expect(store.timeline()).toMatchObject({ currentDay: 0.5, playing: false, daysPerSecond: 1 });
+      store.seek(3);
+      store.setSpeed(2);
+      expect(store.userActions()).toBe(3);
+    });
+  });
 });

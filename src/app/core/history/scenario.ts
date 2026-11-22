@@ -3,6 +3,7 @@ import { LocalizedText } from '../i18n/localized-text';
 import { CalendarDate } from '../timeline/calendar';
 import { TimeRange } from '../timeline/timeline-state';
 import { FrontSituation } from './front-situation';
+import { StoryStop } from './story';
 import { Certainty, HistoricalEvent, HistoricalSource } from './historical-event';
 
 /**
@@ -92,10 +93,12 @@ export interface Scenario {
   readonly units: readonly MilitaryUnit[];
   /** At most one per calendar day, in order of `day`. */
   readonly situations: readonly FrontSituation[];
+  /** The guided story, in the order it is told. */
+  readonly story: readonly StoryStop[];
   /** Borders that hold for the whole of `timeRange`. */
   readonly borders: readonly HistoricalBorder[];
   /** In chronological order of `startDay`. */
   readonly events: readonly HistoricalEvent[];
-  /** Every source referred to by the events, the unit positions and the situations. */
+  /** Every source referred to by the events, the unit positions, the situations and the story. */
   readonly sources: readonly HistoricalSource[];
 }

@@ -67,6 +67,23 @@ export class TimelineStore {
   readonly previousEvent = computed(() => this.neighbour(-1));
   readonly nextEvent = computed(() => this.neighbour(1));
 
+  /**
+   * Counts the times the user moved the timeline: pressing play or pause, dragging, changing the
+   * speed or choosing an event. The guided story leaves as soon as this changes.
+   */
+  private readonly userActionCount = signal(0);
+  readonly userActions = this.userActionCount.asReadonly();
+
+  /** While the story plays through to a stop: the day to stop on and the speed to restore. */
+  private readonly journey = signal<{ readonly toDay: number; readonly userSpeed: number } | null>(
+    null,
+  );
+  /**
+   * The playback speed the user chose. While the story plays through to a stop the timeline runs
+   * at the story's own speed, but the speed control keeps showing the user's choice.
+   */
+  readonly chosenSpeed = computed(() => this.journey()?.userSpeed ?? this.state().daysPerSecond);
+
   private frameRequest = 0;
   private lastFrameTime: number | undefined;
 
@@ -75,6 +92,7 @@ export class TimelineStore {
   }
 
   togglePlayback(): void {
+    this.byUser();
     if (this.state().playing) this.pause();
     else this.play();
   }
@@ -89,17 +107,37 @@ export class TimelineStore {
   }
 
   seek(day: number): void {
+    this.byUser();
     this.state.update((state) => seek(state, day));
   }
 
   setSpeed(daysPerSecond: number): void {
+    this.byUser();
     this.state.update((state) => setSpeed(state, daysPerSecond));
   }
 
   /** Pauses on the first day of the event and makes it the selected one. */
   selectEvent(event: HistoricalEvent): void {
+    this.byUser();
     this.state.update((state) => seek(pause(state), event.startDay));
     this.selectedEventId.set(event.id);
+  }
+
+  /**
+   * Takes the timeline to `day` for the guided story: plays through the days in between at
+   * `daysPerSecond` and stops on `day`, or jumps there when no speed is given. The user's own
+   * playback speed is restored on arrival. This is not a user action.
+   */
+  travelTo(day: number, daysPerSecond?: number): void {
+    this.endJourney();
+    this.selectedEventId.set(null);
+    if (daysPerSecond === undefined) {
+      this.state.update((state) => seek(pause(state), day));
+      return;
+    }
+    this.journey.set({ toDay: day, userSpeed: this.state().daysPerSecond });
+    this.state.update((state) => play(setSpeed(state, daysPerSecond)));
+    this.startClock();
   }
 
   selectUnit(unitId: string): void {
@@ -108,6 +146,26 @@ export class TimelineStore {
 
   clearUnitSelection(): void {
     this.selectedUnitId.set(null);
+  }
+
+  /** Stops a journey of the story where it is, restoring the user's speed. Not a user action. */
+  stopTravel(): void {
+    if (!this.journey()) return;
+    this.state.update(pause);
+    this.endJourney();
+  }
+
+  /** The user took over: any journey of the story stops where it is. */
+  private byUser(): void {
+    this.endJourney();
+    this.userActionCount.update((count) => count + 1);
+  }
+
+  private endJourney(): void {
+    const journey = this.journey();
+    if (!journey) return;
+    this.journey.set(null);
+    this.state.update((state) => setSpeed(state, journey.userSpeed));
   }
 
   private neighbour(direction: 1 | -1): HistoricalEvent | undefined {
@@ -133,6 +191,11 @@ export class TimelineStore {
         : Math.min((time - this.lastFrameTime) / 1000, MAX_FRAME_SECONDS);
     this.lastFrameTime = time;
     this.state.update((state) => advance(state, elapsedSeconds));
+    const journey = this.journey();
+    if (journey && this.state().currentDay >= journey.toDay) {
+      this.state.update((state) => seek(pause(state), journey.toDay));
+      this.endJourney();
+    }
     this.frameRequest = this.state().playing ? requestAnimationFrame(this.onFrame) : 0;
   };
 }

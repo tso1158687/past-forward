@@ -53,6 +53,16 @@ export const MESSAGES_ZH_TW: Messages = {
       statistical: '統計彙編',
     },
   },
+  story: {
+    start: '開始導覽',
+    resume: (stopNumber) => `繼續導覽（第 ${stopNumber} 站）`,
+    restart: '從頭開始',
+    progress: (stopNumber, total) => `導覽 ${stopNumber}／${total}`,
+    previous: '上一站',
+    next: '下一站',
+    leave: '離開導覽',
+    finish: '結束導覽',
+  },
   situation: {
     front: '德軍前緣（估計）',
     pocket: '前緣後方的蘇軍（估計）',

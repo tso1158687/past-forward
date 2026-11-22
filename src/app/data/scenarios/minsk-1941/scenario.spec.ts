@@ -53,6 +53,7 @@ describe('Minsk 1941 scenario', () => {
       ...events.flatMap((event) => event.sourceIds),
       ...MINSK_SCENARIO.units.flatMap((unit) => unit.positions.flatMap((p) => p.sourceIds)),
       ...MINSK_SCENARIO.situations.flatMap((situation) => situation.sourceIds),
+      ...MINSK_SCENARIO.story.flatMap((stop) => stop.sourceIds),
     ]);
     expect(sources.filter((source) => !used.has(source.id)).map((source) => source.id)).toEqual([]);
   });
@@ -78,6 +79,55 @@ describe('Minsk 1941 scenario', () => {
     for (const border of MINSK_SCENARIO.borders) {
       expect(border.name['zh-TW'], border.id).toBeTruthy();
     }
+  });
+
+  describe('story', () => {
+    const { story } = MINSK_SCENARIO;
+
+    it('has fourteen stops with unique ids, in order of day, inside the time range', () => {
+      expect(story.length).toBe(14);
+      expect(new Set(story.map((stop) => stop.id)).size).toBe(story.length);
+      const days = story.map((stop) => stop.day);
+      expect(days).toEqual([...days].sort((a, b) => a - b));
+      for (const stop of story) {
+        expect(Number.isInteger(stop.day), stop.id).toBe(true);
+        expect(stop.day, stop.id).toBeGreaterThanOrEqual(0);
+        expect(stop.day, stop.id).toBeLessThanOrEqual(lastCalendarDay);
+      }
+    });
+
+    it('opens on the first day and closes on the last', () => {
+      expect(story[0].day).toBe(0);
+      expect(story.at(-1)!.day).toBe(lastCalendarDay);
+    });
+
+    it('gives every stop a title, narration and known sources, and refers only to known events', () => {
+      const eventIds = new Set(events.map((event) => event.id));
+      const sourceIds = new Set(sources.map((source) => source.id));
+      for (const stop of story) {
+        expect(stop.title['zh-TW'], stop.id).toBeTruthy();
+        expect(stop.narration.length, stop.id).toBeGreaterThan(0);
+        for (const paragraph of stop.narration) expect(paragraph['zh-TW'], stop.id).toBeTruthy();
+        expect(stop.sourceIds.length, stop.id).toBeGreaterThan(0);
+        for (const id of stop.sourceIds) expect(sourceIds.has(id), `${stop.id}: ${id}`).toBe(true);
+        for (const id of stop.eventIds) expect(eventIds.has(id), `${stop.id}: ${id}`).toBe(true);
+      }
+    });
+
+    it('cites every source of the events it tells about', () => {
+      for (const stop of story) {
+        for (const eventId of stop.eventIds) {
+          const event = events.find((candidate) => candidate.id === eventId)!;
+          for (const id of event.sourceIds)
+            expect(stop.sourceIds, `${stop.id}: ${id}`).toContain(id);
+        }
+      }
+    });
+
+    it('keeps every camera target on the map', () => {
+      for (const stop of story)
+        if (stop.camera) expect(isOnMap(stop.camera.target), stop.id).toBe(true);
+    });
   });
 
   describe('front situations', () => {

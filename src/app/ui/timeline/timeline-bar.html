@@ -55,7 +55,7 @@
   <span>{{ messages.speed }}</span>
   <select (change)="onSpeedChange($event)">
     @for (option of speedOptions; track option) {
-      <option [value]="option" [selected]="option === timeline.daysPerSecond">
+      <option [value]="option" [selected]="option === store.chosenSpeed()">
         {{ messages.speedOption(option) }}
       </option>
     }

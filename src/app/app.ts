@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   computed,
+  effect,
   inject,
   signal,
   viewChild,
@@ -9,11 +10,18 @@ import {
 import { HistoricalEvent } from './core/history/historical-event';
 import { CITIES, City } from './data/map/cities';
 import { EventPanel } from './ui/events/event-panel';
+import { StoryPanel } from './ui/story/story-panel';
+import { StoryStore } from './ui/story/story-store';
 import { LocaleService } from './ui/i18n/locale-service';
 import { MapView } from './ui/map-view/map-view';
 import { toPlaceMarkers } from './ui/map-view/place-markers';
 import { toSituationView } from './ui/map-view/situation-view';
-import { toUnitMarkers, toUnitTrails, unitTransition } from './ui/map-view/unit-markers';
+import {
+  sameUnitMarkers,
+  toUnitMarkers,
+  toUnitTrails,
+  unitTransition,
+} from './ui/map-view/unit-markers';
 import { TimelineBar } from './ui/timeline/timeline-bar';
 import { TimelineStore } from './ui/timeline/timeline-store';
 import { UnitPanel } from './ui/units/unit-panel';
@@ -21,7 +29,7 @@ import { UnitPanel } from './ui/units/unit-panel';
 const WIDE_SCREEN_QUERY = '(min-width: 721px)';
 
 @Component({
-  imports: [EventPanel, MapView, TimelineBar, UnitPanel],
+  imports: [EventPanel, MapView, StoryPanel, TimelineBar, UnitPanel],
   selector: 'app-root',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './app.css',
@@ -30,6 +38,7 @@ const WIDE_SCREEN_QUERY = '(min-width: 721px)';
 export class App {
   protected readonly i18n = inject(LocaleService);
   protected readonly timeline = inject(TimelineStore);
+  protected readonly story = inject(StoryStore);
 
   protected readonly cities = CITIES;
   /** On narrow screens the data notice starts collapsed so that it does not cover the map. */
@@ -37,17 +46,21 @@ export class App {
     typeof matchMedia !== 'function' || matchMedia(WIDE_SCREEN_QUERY).matches;
 
   /** The units on the map at the timeline's current time. */
-  protected readonly unitMarkers = computed(() =>
-    toUnitMarkers(
-      this.timeline.worldState(),
-      this.timeline.scenario.units,
-      this.timeline.selectedUnit()?.unit.id,
-      {
-        text: (text) => this.i18n.text(text),
-        typeCharacter: this.i18n.messages().units.typeCharacter,
-      },
-    ),
+  protected readonly unitMarkers = computed(
+    () =>
+      toUnitMarkers(
+        this.timeline.worldState(),
+        this.timeline.scenario.units,
+        this.timeline.selectedUnit()?.unit.id,
+        {
+          text: (text) => this.i18n.text(text),
+          typeCharacter: this.i18n.messages().units.typeCharacter,
+        },
+      ),
+    // Within a day the pieces stay the same; only hand the map a new list when they change.
+    { equal: sameUnitMarkers },
   );
+
   /** Where the units have been up to the current day; changes only when the date does. */
   protected readonly unitTrails = computed(() =>
     toUnitTrails(this.timeline.scenario.units, this.timeline.calendarDay()),
@@ -77,6 +90,17 @@ export class App {
   );
 
   private readonly mapView = viewChild.required(MapView);
+
+  constructor() {
+    // Each stop of the story turns the camera to where it happens, or back to the whole map.
+    effect(() => {
+      const stop = this.story.currentStop();
+      if (!stop) return;
+      this.selectedCityId.set(null);
+      if (stop.camera) this.mapView().focusOn(stop.camera.target, stop.camera.distanceKm);
+      else this.mapView().resetView();
+    });
+  }
 
   protected selectCity(cityId: string): void {
     this.selectedCityId.set(cityId);

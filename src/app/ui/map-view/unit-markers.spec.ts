@@ -1,6 +1,6 @@
 import { MilitaryUnit, UnitPosition } from '../../core/history/scenario';
 import { WorldState } from '../../core/history/world-state';
-import { toUnitMarkers, toUnitTrails, unitTransition } from './unit-markers';
+import { sameUnitMarkers, toUnitMarkers, toUnitTrails, unitTransition } from './unit-markers';
 
 const position = (day: number, lon: number, estimated = false): UnitPosition => ({
   day,
@@ -95,6 +95,36 @@ describe('toUnitMarkers', () => {
 
   it('marks only the selected unit', () => {
     expect(markers.filter((m) => m.selected).map((m) => m.id)).toEqual(['soviet']);
+  });
+});
+
+describe('sameUnitMarkers', () => {
+  const piece = {
+    id: 'a',
+    label: 'A',
+    location: { lon: 24, lat: 53 },
+    faction: 'german',
+    symbol: { kind: 'character', character: '甲' },
+    number: '24',
+    basis: 'stated',
+    selected: false,
+    run: 0,
+  } as const;
+
+  it('treats lists that would draw the same pieces as the same, even as new objects', () => {
+    expect(sameUnitMarkers([piece], [{ ...piece, location: { lon: 24, lat: 53 } }])).toBe(true);
+  });
+
+  it('sees every change that alters what is drawn', () => {
+    expect(sameUnitMarkers([piece], [])).toBe(false);
+    expect(sameUnitMarkers([piece], [{ ...piece, location: { lon: 24.1, lat: 53 } }])).toBe(false);
+    expect(sameUnitMarkers([piece], [{ ...piece, selected: true }])).toBe(false);
+    expect(sameUnitMarkers([piece], [{ ...piece, run: 1 }])).toBe(false);
+    expect(sameUnitMarkers([piece], [{ ...piece, basis: 'estimated' }])).toBe(false);
+    expect(
+      sameUnitMarkers([piece], [{ ...piece, symbol: { kind: 'character', character: '步' } }]),
+    ).toBe(false);
+    expect(sameUnitMarkers([piece], [{ ...piece, symbol: { kind: 'star' } }])).toBe(false);
   });
 });
 

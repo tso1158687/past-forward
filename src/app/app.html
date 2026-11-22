@@ -17,6 +17,22 @@
     <p class="brand">{{ messages.brandName }} · Past Forward</p>
     <h1>{{ messages.chapterTitle }}</h1>
     <p class="scope">{{ messages.chapterScope }}</p>
+    @if (!story.active()) {
+      <div class="story-entry">
+        @if (story.resumeIndex(); as index) {
+          <button type="button" class="story-button" (click)="story.resume()">
+            {{ messages.story.resume(index + 1) }}
+          </button>
+          <button type="button" class="story-link" (click)="story.start()">
+            {{ messages.story.restart }}
+          </button>
+        } @else {
+          <button type="button" class="story-button" (click)="story.start()">
+            {{ messages.story.start }}
+          </button>
+        }
+      </div>
+    }
   </header>
 
   <details class="panel data-notice" [open]="noticeInitiallyOpen">
@@ -34,7 +50,11 @@
 
 <div class="dock bottom-dock">
   <div class="dock info-row">
-    <app-event-panel class="panel" (eventChosen)="chooseEvent($event)" />
+    @if (story.active()) {
+      <app-story-panel class="panel" />
+    } @else {
+      <app-event-panel class="panel" (eventChosen)="chooseEvent($event)" />
+    }
 
     @if (timeline.selectedUnit()) {
       <app-unit-panel class="panel" />

@@ -1,0 +1,57 @@
+@let messages = i18n.messages().story;
+@if (story.currentStop(); as stop) {
+  <header class="panel-header">
+    <button
+      type="button"
+      class="step"
+      [attr.aria-label]="messages.previous"
+      [disabled]="isFirst()"
+      (click)="story.previous()"
+    >
+      ‹
+    </button>
+    <p class="heading">{{ messages.progress((story.currentIndex() ?? 0) + 1, stopCount) }}</p>
+    <button
+      type="button"
+      class="step"
+      [attr.aria-label]="messages.next"
+      [disabled]="isLast()"
+      (click)="story.next()"
+    >
+      ›
+    </button>
+  </header>
+
+  <article class="stop" aria-live="polite">
+    <p class="date">{{ dateLabel() }}</p>
+    <h2>{{ i18n.text(stop.title) }}</h2>
+    @for (paragraph of stop.narration; track $index) {
+      <p class="narration">{{ i18n.text(paragraph) }}</p>
+    }
+
+    <details class="sources">
+      <summary>{{ i18n.messages().events.sources(sources().length) }}</summary>
+      <ul>
+        @for (source of sources(); track source.id) {
+          <li>
+            <span class="source-kind">{{ i18n.messages().events.sourceKind[source.kind] }}</span>
+            @if (source.url; as url) {
+              <a [href]="url" target="_blank" rel="noopener noreferrer">{{ source.citation }}</a>
+            } @else {
+              <span>{{ source.citation }}</span>
+            }
+          </li>
+        }
+      </ul>
+    </details>
+  </article>
+
+  <footer class="actions">
+    @if (isLast()) {
+      <button type="button" class="primary" (click)="story.leave()">{{ messages.finish }}</button>
+    } @else {
+      <button type="button" class="primary" (click)="story.next()">{{ messages.next }}</button>
+      <button type="button" class="secondary" (click)="story.leave()">{{ messages.leave }}</button>
+    }
+  </footer>
+}

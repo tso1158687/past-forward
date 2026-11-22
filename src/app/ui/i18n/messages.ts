@@ -40,6 +40,17 @@ export interface Messages {
     readonly sources: (count: number) => string;
     readonly sourceKind: Readonly<Record<SourceKind, string>>;
   };
+  readonly story: {
+    readonly start: string;
+    /** Offered after the story was left, with the 1-based number of the stop it will resume on. */
+    readonly resume: (stopNumber: number) => string;
+    readonly restart: string;
+    readonly progress: (stopNumber: number, total: number) => string;
+    readonly previous: string;
+    readonly next: string;
+    readonly leave: string;
+    readonly finish: string;
+  };
   /** Names of the shaded estimates on the map; each must say that it is an estimate. */
   readonly situation: {
     readonly front: string;

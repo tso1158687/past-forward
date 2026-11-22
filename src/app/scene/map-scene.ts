@@ -178,10 +178,15 @@ export class MapScene {
     });
   }
 
-  /** Pieces are meshes, not DOM labels, so hovering and clicking them needs a ray into the scene. */
+  /**
+   * Pieces are meshes, not DOM labels, so hovering and clicking them needs a ray into the scene.
+   * Only the bare map counts: a pointer on a label that answers it itself (a city's name, say)
+   * must not also reach a piece that happens to lie under that label.
+   */
   private listenForUnits(events: MapSceneEvents): void {
+    const onBareMap = (event: Event) => event.target === this.renderer.domElement;
     this.host.addEventListener('pointermove', (event) => {
-      const unitId = this.unitUnderPointer(event);
+      const unitId = onBareMap(event) ? this.unitUnderPointer(event) : undefined;
       this.host.style.cursor = unitId ? 'pointer' : '';
       if (this.unitLayer.setHovered(unitId)) this.needsRender = true;
     });
@@ -189,6 +194,7 @@ export class MapScene {
       if (this.unitLayer.setHovered(undefined)) this.needsRender = true;
     });
     onClickWithoutDrag(this.host, (event) => {
+      if (!onBareMap(event)) return;
       const unitId = this.unitUnderPointer(event);
       if (unitId) events.onUnitSelected(unitId);
     });

@@ -2,6 +2,7 @@ import { Scenario } from '../../../core/history/scenario';
 import { MINSK_BORDERS } from './borders';
 import { MINSK_EVENTS } from './events';
 import { MINSK_SITUATIONS } from './situations';
+import { MINSK_STORY } from './story';
 import { MINSK_SOURCES } from './sources';
 import { MINSK_UNITS } from './units';
 
@@ -18,6 +19,7 @@ export const MINSK_SCENARIO: Scenario = {
   timeRange: { startDay: 0, endDay: 18 },
   units: MINSK_UNITS,
   situations: MINSK_SITUATIONS,
+  story: MINSK_STORY,
   borders: MINSK_BORDERS,
   events: MINSK_EVENTS,
   sources: MINSK_SOURCES,
