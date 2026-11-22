@@ -187,6 +187,18 @@ describe('App', () => {
     expect(element.querySelector('app-unit-panel')).toBeNull();
   });
 
+  it('says so on the city card when no official name of 1941 was found', async () => {
+    const { fixture, element, map } = await render();
+    map.citySelected.emit('vilnius');
+    await fixture.whenStable();
+
+    const panel = element.querySelector('.city-panel')?.textContent ?? '';
+    expect(panel).toContain('查不到法令上的名稱');
+    expect(panel).toContain('Wilna');
+    expect(panel).toContain('Вильнюс');
+    expect(element.querySelector('.city-panel .period-name')).toBeNull();
+  });
+
   it('shows the selected city and asks the map to focus on it', async () => {
     const { fixture, element, map } = await render();
     expect(element.querySelector('.city-panel')).toBeNull();
@@ -196,6 +208,11 @@ describe('App', () => {
 
     expect(element.querySelector('.city-panel h2')?.textContent).toContain('明斯克');
     expect(element.querySelector('.city-panel')?.textContent).toContain('53.90°N, 27.57°E');
+    const panel = element.querySelector('.city-panel')?.textContent ?? '';
+    expect(panel).toContain('白俄羅斯 SSR');
+    expect(panel).toContain('Минск');
+    expect(element.querySelector('.city-panel .period-name')?.getAttribute('lang')).toBe('ru');
+    expect(panel).toContain('1942 年德軍圖集上的寫法');
     expect(map.cameraRequests).toEqual([
       { location: { lon: 27.565, lat: 53.902 }, distanceKm: undefined },
     ]);

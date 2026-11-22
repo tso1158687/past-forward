@@ -38,7 +38,7 @@ pnpm start        # 開發伺服器，http://localhost:4200
 - 拖曳：平移
 - 右鍵拖曳（觸控為雙指）：旋轉與傾斜
 - 滾輪（觸控為雙指縮放）：縮放
-- 點選城市：鏡頭聚焦並顯示資訊
+- 點選城市：鏡頭聚焦，並顯示 1941 年當時的名稱與歸屬
 - 「回到全圖」：回到初始視角
 - 時間軸：播放／暫停、拖曳滑桿切換日期、調整播放速度
 - 事件：點時間軸上的色塊，或用事件面板的左右按鈕逐一瀏覽；選取後鏡頭會移到事件地點
@@ -50,7 +50,7 @@ pnpm start        # 開發伺服器，http://localhost:4200
 | --- | --- | --- |
 | 地形 | AWS Open Data 的 Terrain Tiles（zoom 8） | 真實高程，約 0.4 公里一格；高度誇張 30 倍 |
 | 河流 | Natural Earth 1:10m（公有領域） | 現代河道 |
-| 城市 | Natural Earth 與 OpenStreetMap | 現代座標與今日常見譯名，並非 1941 年當時的名稱 |
+| 城市 | Natural Earth 與 OpenStreetMap；1941 年的名稱見 [docs/research/minsk-place-names.md](docs/research/minsk-place-names.md) | 地圖標籤是今日常見譯名與現代座標。資訊卡另列 1941 年 6 月 22 日的歸屬、當時的正式名稱（白俄羅斯 SSR 各城取自蘇聯命令原文；德國側四城只有維基百科；波羅的海三城查不到）與 1942 年德軍圖集上的寫法 |
 | 國界 | OpenHistoricalMap（CC0），見 [docs/research/minsk-borders.md](docs/research/minsk-borders.md) | 兩條線：1941 年 6 月 22 日開戰時的德蘇邊界（對照過 1939 年 10 月德蘇劃界議定書描述的地點），以及 1921 至 1939 年的波蘇舊邊界（對照過里加條約點名的村鎮）。舊邊界在 1941 年已經不是國界，畫得較細較淡 |
 | 事件 | 逐項對照史料，見 [docs/research/minsk-events-verified.md](docs/research/minsk-events-verified.md) | 每個事件附來源；地點標的是今日城鎮中心，不是橋或戰場的確切位置 |
 

@@ -153,7 +153,7 @@ app-unit-panel {
 
 .city-panel {
   position: relative;
-  flex: 0 1 260px;
+  flex: 0 1 300px;
   padding: 14px 16px;
   box-sizing: border-box;
 }
@@ -176,6 +176,23 @@ app-unit-panel {
 .city-panel dt {
   font-size: 11px;
   color: var(--text-muted);
+}
+
+.city-panel dd + dt {
+  margin-top: 6px;
+}
+
+.city-panel .period-entry {
+  display: block;
+}
+
+.city-panel .period-name {
+  font-weight: 600;
+}
+
+.city-panel .period-note {
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .city-panel .note {

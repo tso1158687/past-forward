@@ -64,6 +64,16 @@ export interface Messages {
   readonly cityPanel: {
     readonly coordinates: string;
     readonly coordinatesNote: string;
+    /** Heading of the state and region that held the place on 22 June 1941. */
+    readonly heldBy1941: string;
+    /** Heading of the place's official names in June 1941. */
+    readonly officialNames1941: string;
+    /** Shown instead of an official name where none was found in an enactment. */
+    readonly noOfficialName: string;
+    /** Heading of how the 1942 German atlas prints the name. */
+    readonly atlasSpelling: string;
+    /** Heading of what is uncertain about the names of 1941. */
+    readonly note1941: string;
     readonly close: string;
   };
 }

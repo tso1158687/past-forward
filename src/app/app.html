@@ -55,6 +55,27 @@
           <p class="romanized">{{ romanized }}</p>
         }
         <dl>
+          <dt>{{ messages.cityPanel.heldBy1941 }}</dt>
+          <dd>{{ i18n.text(city.in1941.heldBy) }}</dd>
+          <dt>{{ messages.cityPanel.officialNames1941 }}</dt>
+          <dd>
+            @for (official of city.in1941.officialNames; track official.name) {
+              <span class="period-entry">
+                <span class="period-name" [attr.lang]="official.lang">{{ official.name }}</span>
+                <span class="note">（{{ i18n.text(official.language) }}）</span>
+              </span>
+            } @empty {
+              <span class="note">{{ messages.cityPanel.noOfficialName }}</span>
+            }
+          </dd>
+          @if (city.in1941.atlasSpelling; as spelling) {
+            <dt>{{ messages.cityPanel.atlasSpelling }}</dt>
+            <dd>{{ spelling }}</dd>
+          }
+          @if (city.in1941.note; as note) {
+            <dt>{{ messages.cityPanel.note1941 }}</dt>
+            <dd class="period-note">{{ i18n.text(note) }}</dd>
+          }
           <dt>{{ messages.cityPanel.coordinates }}</dt>
           <dd>
             {{ formatCoordinates(city) }}
