@@ -169,6 +169,7 @@ describe('deriveWorldState', () => {
         { lon: 28, lat: 50 },
       ],
       pockets: [],
+      arrows: [],
       sourceIds: ['source'],
     };
     const scenario: Scenario = { ...SCENARIO, situations: [evening] };

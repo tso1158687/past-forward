@@ -18,6 +18,7 @@ export function toSituationView(
   if (!situation) return undefined;
   return {
     front: situation.germanFront,
+    arrows: situation.arrows,
     frontLabel: labels.front,
     pockets: situation.pockets.map((pocket) => ({
       outline: pocket.outline,

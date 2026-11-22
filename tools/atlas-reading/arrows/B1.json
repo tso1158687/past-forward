@@ -1,0 +1,1840 @@
+{
+ "0622": {
+  "arrows": [
+   {
+    "points": [
+     [
+      21.75,
+      55.8
+     ],
+     [
+      21.8,
+      55.85
+     ]
+    ],
+    "style": "solid",
+    "unit": "61.",
+    "label": "V.A.",
+    "conf": "rough",
+    "note": "very short arrow right of 61. bracket, pointing up-right; the V.A. label sits between this and the next arrow"
+   },
+   {
+    "points": [
+     [
+      21.75,
+      55.75
+     ],
+     [
+      21.9,
+      55.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "217.",
+    "label": "V.A.",
+    "conf": "rough",
+    "note": "short arrow pointing east from 217. bracket"
+   },
+   {
+    "points": [
+     [
+      24.25,
+      54.5
+     ],
+     [
+      24.8,
+      54.5
+     ],
+     [
+      24.9,
+      54.55
+     ],
+     [
+      25.05,
+      54.6
+     ]
+    ],
+    "style": "dashed",
+    "unit": "20.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "head near the 28.Pz.Br. red symbol, points toward Wilna; open head"
+   },
+   {
+    "points": [
+     [
+      24.2,
+      54.35
+     ],
+     [
+      24.6,
+      54.4
+     ],
+     [
+      24.85,
+      54.4
+     ],
+     [
+      25.0,
+      54.5
+     ],
+     [
+      25.25,
+      54.65
+     ]
+    ],
+    "style": "dashed",
+    "unit": "7.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "head just short of Wilna"
+   },
+   {
+    "points": [
+     [
+      24.55,
+      54.2
+     ],
+     [
+      25.0,
+      54.2
+     ],
+     [
+      25.25,
+      54.15
+     ]
+    ],
+    "style": "dashed",
+    "unit": "18.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "head touches red dash-dot line near Woronowo"
+   },
+   {
+    "points": [
+     [
+      24.1,
+      54.15
+     ],
+     [
+      24.3,
+      54.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "12.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short filled-head arrow pointing east; a tiny '6 67' mark under it"
+   },
+   {
+    "points": [
+     [
+      19.4,
+      51.85
+     ],
+     [
+      19.4,
+      51.9
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.Rgt. SS-Verb.",
+    "label": "",
+    "conf": "rough",
+    "note": "tiny arrowhead on top of the arc symbol, pointing up/north-east; may be a unit mark rather than an advance arrow"
+   },
+   {
+    "points": [
+     [
+      20.85,
+      51.9
+     ],
+     [
+      20.85,
+      51.95
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.Rgt. SS-Verb.",
+    "label": "",
+    "conf": "rough",
+    "note": "same kind of tiny arrowhead on second SS-Verb arc, pointing north"
+   },
+   {
+    "points": [
+     [
+      24.25,
+      52.4
+     ],
+     [
+      24.4,
+      52.5
+     ],
+     [
+      24.55,
+      52.6
+     ]
+    ],
+    "style": "dashed",
+    "unit": "18.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "points toward 54.Pz.Br. / 1.A.K. area, filled head"
+   },
+   {
+    "points": [
+     [
+      24.0,
+      52.1
+     ],
+     [
+      24.1,
+      52.15
+     ],
+     [
+      24.3,
+      52.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "34.",
+    "label": "",
+    "conf": "rough",
+    "note": "from the 31./34. bracket pointing east-north-east into the 4./6.XXVIII red symbol"
+   },
+   {
+    "points": [
+     [
+      22.15,
+      50.65
+     ],
+     [
+      22.3,
+      50.65
+     ],
+     [
+      22.4,
+      50.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "curved, filled head pointing south-east; near the southern edge of range (50.5N)"
+   },
+   {
+    "points": [
+     [
+      22.65,
+      50.6
+     ],
+     [
+      22.8,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "small arrow with a circle at tail, pointing north-east; tail not connected to a symbol"
+   }
+  ],
+  "notes": "Out of range (south of 50.5N, not read): 11.Pz. arrows near 24.2E 50.4N (solid) and dashed one east of it; arrow from 101.Lei. near 22.9E 49.8N. Small hooks labelled V.A. near 23.2E/52.7N, 23.5E/52.4N, 24.0E/51.6N look like unit arcs, not arrows; Sp.V. has crossed marks only. Red arrows ignored."
+ },
+ "0623": {
+  "arrows": [
+   {
+    "points": [
+     [
+      21.85,
+      55.1
+     ],
+     [
+      21.9,
+      55.15
+     ],
+     [
+      22.0,
+      55.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "36.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "curved, filled head, from arc near 4. HQ square at Tilsit pointing north-east"
+   },
+   {
+    "points": [
+     [
+      23.7,
+      55.25
+     ],
+     [
+      23.8,
+      55.25
+     ],
+     [
+      23.9,
+      55.3
+     ]
+    ],
+    "style": "solid",
+    "unit": "8.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "filled head pointing north-east; tail is a small circle"
+   },
+   {
+    "points": [
+     [
+      23.5,
+      55.15
+     ],
+     [
+      23.6,
+      55.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "3.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "short filled-head arrow pointing north-east, tail circle"
+   },
+   {
+    "points": [
+     [
+      23.65,
+      54.8
+     ],
+     [
+      23.75,
+      54.85
+     ]
+    ],
+    "style": "solid",
+    "unit": "121.",
+    "label": "V.A.",
+    "conf": "rough",
+    "note": "small arrow under the V.A. label, pointing north-east"
+   },
+   {
+    "points": [
+     [
+      22.1,
+      53.65
+     ],
+     [
+      22.25,
+      53.7
+     ]
+    ],
+    "style": "dashed",
+    "unit": "102.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed, open head pointing north-east"
+   },
+   {
+    "points": [
+     [
+      22.5,
+      53.95
+     ],
+     [
+      22.7,
+      53.95
+     ]
+    ],
+    "style": "solid",
+    "unit": "110.",
+    "label": "",
+    "conf": "rough",
+    "note": "arrow starting at the HQ square inside the 110./403.Sich. oval, pointing east; the triangle ticks along the oval edge are not read as arrows"
+   },
+   {
+    "points": [
+     [
+      22.65,
+      53.8
+     ],
+     [
+      22.95,
+      53.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "1/3 129",
+    "label": "",
+    "conf": "clear",
+    "note": "underlined label is the tail, head at Augustow, pointing east"
+   },
+   {
+    "points": [
+     [
+      22.2,
+      53.35
+     ],
+     [
+      22.3,
+      53.4
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle.87.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow pointing east from arc"
+   },
+   {
+    "points": [
+     [
+      20.6,
+      52.9
+     ],
+     [
+      20.85,
+      53.0
+     ]
+    ],
+    "style": "dashed",
+    "unit": "K.R.1 (SS)",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed, from SS arc pointing north-east"
+   },
+   {
+    "points": [
+     [
+      22.25,
+      52.6
+     ],
+     [
+      22.4,
+      52.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "17.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow pointing east toward dashed 17. oval; tiny text '24.6' beside it"
+   },
+   {
+    "points": [
+     [
+      22.35,
+      52.45
+     ],
+     [
+      22.55,
+      52.45
+     ]
+    ],
+    "style": "solid",
+    "unit": "78.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow pointing east toward dashed 78. oval"
+   },
+   {
+    "points": [
+     [
+      22.7,
+      52.7
+     ],
+     [
+      22.6,
+      52.7
+     ]
+    ],
+    "style": "solid",
+    "unit": "263.",
+    "label": "",
+    "conf": "unsure",
+    "note": "arrowhead pointing west by 268./263.; could be the end of a unit symbol rather than an arrow"
+   },
+   {
+    "points": [
+     [
+      24.35,
+      52.6
+     ],
+     [
+      24.7,
+      52.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "18.Pz.",
+    "label": "",
+    "conf": "unsure",
+    "note": "thick line from 18.Pz. oval going east to '54.' (Pz.Br.); head not clearly visible"
+   },
+   {
+    "points": [
+     [
+      24.0,
+      51.8
+     ],
+     [
+      24.1,
+      51.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.K.D.",
+    "label": "",
+    "conf": "rough",
+    "note": "tiny filled arrowhead on the 1.K.D. arc pointing east, near the army boundary line"
+   },
+   {
+    "points": [
+     [
+      22.1,
+      50.7
+     ],
+     [
+      22.25,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow with arrowhead pointing south-east; just inside 50.5N"
+   }
+  ],
+  "notes": "Out of range: heavy 4.Geb./XXXIV arrow at about 22.4E 50.0N. 12.B / 18.m / 129 arcs near Woronowo are unit symbols, not arrows. V.A. hooks near 25.0E 52.8N and 24.9E 52.45N look like unit arcs. Red arrows ignored."
+ },
+ "0624": {
+  "arrows": [
+   {
+    "points": [
+     [
+      21.4,
+      54.95
+     ],
+     [
+      21.6,
+      55.0
+     ],
+     [
+      21.8,
+      55.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "44.T.",
+    "label": "2",
+    "conf": "clear",
+    "note": "thick solid, filled head pointing north-east; the unit text near the tail reads like '44. T.' (small circle at the tail); tiny '2' at the head"
+   },
+   {
+    "points": [
+     [
+      24.85,
+      55.35
+     ],
+     [
+      25.0,
+      55.4
+     ],
+     [
+      25.15,
+      55.45
+     ]
+    ],
+    "style": "solid",
+    "unit": "8.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "filled head pointing north-east, tail small circles"
+   },
+   {
+    "points": [
+     [
+      23.85,
+      55.25
+     ],
+     [
+      23.9,
+      55.3
+     ]
+    ],
+    "style": "solid",
+    "unit": "30.",
+    "label": "V.A.",
+    "conf": "rough",
+    "note": "very short arrow above the 30. arc next to V.A. label, pointing north"
+   },
+   {
+    "points": [
+     [
+      22.95,
+      53.85
+     ],
+     [
+      23.15,
+      53.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "129.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow from Augustow area pointing south-east"
+   },
+   {
+    "points": [
+     [
+      23.2,
+      54.2
+     ],
+     [
+      23.35,
+      54.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "403.Sich.",
+    "label": "",
+    "conf": "clear",
+    "note": "thin arrow from the right end of the 403.Sich oval pointing east"
+   },
+   {
+    "points": [
+     [
+      21.4,
+      53.6
+     ],
+     [
+      21.6,
+      53.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "m.Br.900",
+    "label": "",
+    "conf": "clear",
+    "note": "short curved arrow leaving the hatched oval, pointing east/north-east"
+   },
+   {
+    "points": [
+     [
+      22.0,
+      53.1
+     ],
+     [
+      22.1,
+      53.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "221.Sich.",
+    "label": "?",
+    "conf": "rough",
+    "note": "short arrow with a question mark at the head, pointing east"
+   },
+   {
+    "points": [
+     [
+      20.7,
+      50.9
+     ],
+     [
+      20.9,
+      51.0
+     ]
+    ],
+    "style": "solid",
+    "unit": "Gisk.Tle. SS A.H.",
+    "label": "Rad.Tle ab 25.6.",
+    "conf": "clear",
+    "note": "filled head pointing north-east toward the SS A.H. oval; text 'Rad. Tle ab 25.6.' beside it"
+   },
+   {
+    "points": [
+     [
+      22.75,
+      50.85
+     ],
+     [
+      22.85,
+      50.8
+     ],
+     [
+      22.9,
+      50.75
+     ],
+     [
+      22.95,
+      50.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "curved arrow from north curving south, filled head at the bottom; tip near 50.55-50.6N, just inside range"
+   },
+   {
+    "points": [
+     [
+      23.0,
+      50.7
+     ],
+     [
+      23.2,
+      50.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow with filled head pointing east, near 'Musg.' label next to 79."
+   },
+   {
+    "points": [
+     [
+      23.3,
+      50.95
+     ],
+     [
+      23.5,
+      50.95
+     ],
+     [
+      23.65,
+      50.95
+     ],
+     [
+      23.8,
+      50.9
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "slightly curved, filled head pointing south-east; two small circles on the line"
+   },
+   {
+    "points": [
+     [
+      24.5,
+      52.05
+     ],
+     [
+      24.5,
+      52.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.K.D.",
+    "label": "2",
+    "conf": "unsure",
+    "note": "tiny arrowhead sitting on top of the 1.K.D. loop pointing north, with '2.' beside it"
+   },
+   {
+    "points": [
+     [
+      24.6,
+      50.75
+     ],
+     [
+      24.85,
+      50.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "299.",
+    "label": "",
+    "conf": "unsure",
+    "note": "thin line with small head pointing east between 299. and 14.Pz.; could be part of the unit symbol"
+   }
+  ],
+  "notes": "The many long narrow loops (17.Pz., 4.Pz., 29.m., 10.m., 18.Pz., 3.Pz., 20.m. etc.) have rounded ends and no arrowhead, so I treated them as unit symbols and did not read them. SS Rgt.8 has a wavy line with a hooked end at 21.9E 53.55N, no arrowhead, not read. V.A. hooks near 24.5E 52.7N and 25.3E 52.9N look like arcs, not arrows. Out of range: 16.Pz. arrow near 24.7E 50.1N and arrows south of 50.5N. Red arrows ignored."
+ },
+ "0625": {
+  "arrows": [
+   {
+    "points": [
+     [
+      22.3,
+      55.95
+     ],
+     [
+      22.4,
+      55.9
+     ]
+    ],
+    "style": "solid",
+    "unit": "61.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow leaving the hook-shaped 61. symbol, filled head pointing south-east"
+   },
+   {
+    "points": [
+     [
+      22.3,
+      55.85
+     ],
+     [
+      22.35,
+      55.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "217.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow from hook below 217., filled head pointing south-east, head touches red 22.Pz.Br. text"
+   },
+   {
+    "points": [
+     [
+      23.1,
+      55.6
+     ],
+     [
+      23.3,
+      55.65
+     ],
+     [
+      23.45,
+      55.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "36.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "slightly curved line with two small circles, filled head at the red Kav. arrow tip, pointing east-north-east; crosses the army boundary line"
+   },
+   {
+    "points": [
+     [
+      23.45,
+      55.55
+     ],
+     [
+      23.55,
+      55.55
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow from the 1.Pz. arc, head points down/south, filled"
+   },
+   {
+    "points": [
+     [
+      23.2,
+      55.45
+     ],
+     [
+      23.3,
+      55.45
+     ]
+    ],
+    "style": "solid",
+    "unit": "6.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "short hooked arrow with filled head pointing east, next to the crossed boundary mark"
+   },
+   {
+    "points": [
+     [
+      25.05,
+      55.35
+     ],
+     [
+      25.2,
+      55.4
+     ],
+     [
+      25.3,
+      55.4
+     ],
+     [
+      25.55,
+      55.45
+     ]
+    ],
+    "style": "dashed",
+    "unit": "3.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "solid stub from the 3.m. loop, then dashed, filled head pointing east-north-east; 8.Pz. label sits next to the head"
+   },
+   {
+    "points": [
+     [
+      24.25,
+      54.4
+     ],
+     [
+      24.4,
+      54.4
+     ],
+     [
+      24.6,
+      54.35
+     ],
+     [
+      24.65,
+      54.35
+     ],
+     [
+      24.75,
+      54.4
+     ]
+    ],
+    "style": "dashed",
+    "unit": "74.m.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed from the end of the 74.m. loop near Olita, dips and ends in a filled head pointing north-east; may be one arrow with the next"
+   },
+   {
+    "points": [
+     [
+      24.7,
+      54.25
+     ],
+     [
+      24.85,
+      54.15
+     ],
+     [
+      25.0,
+      54.05
+     ],
+     [
+      25.25,
+      53.9
+     ]
+    ],
+    "style": "dashed",
+    "unit": "5.35.",
+    "label": "V.A.",
+    "conf": "clear",
+    "note": "long dashed arrow from the 5./35. oval going south-east, filled head near Lida, pointing south-east; head touches a red small arrow"
+   },
+   {
+    "points": [
+     [
+      24.75,
+      53.8
+     ],
+     [
+      24.8,
+      53.7
+     ],
+     [
+      24.85,
+      53.6
+     ]
+    ],
+    "style": "dashed",
+    "unit": "161.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed, pointing south, filled head overlapping red Tle.56 text"
+   },
+   {
+    "points": [
+     [
+      24.5,
+      53.65
+     ],
+     [
+      24.55,
+      53.6
+     ],
+     [
+      24.6,
+      53.5
+     ]
+    ],
+    "style": "dashed",
+    "unit": "28.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed, pointing south, filled head at red 3. HQ"
+   },
+   {
+    "points": [
+     [
+      22.6,
+      53.45
+     ],
+     [
+      22.75,
+      53.45
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle.87.",
+    "label": "",
+    "conf": "rough",
+    "note": "short hooked arrow with small head pointing east"
+   },
+   {
+    "points": [
+     [
+      22.55,
+      53.35
+     ],
+     [
+      22.65,
+      53.35
+     ]
+    ],
+    "style": "solid",
+    "unit": "87.",
+    "label": "",
+    "conf": "clear",
+    "note": "short hooked arrow, filled head pointing east"
+   },
+   {
+    "points": [
+     [
+      22.55,
+      53.2
+     ],
+     [
+      22.65,
+      53.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "221.Sich.",
+    "label": "",
+    "conf": "clear",
+    "note": "short hooked arrow leaving the 221.Sich. oval pointing east"
+   },
+   {
+    "points": [
+     [
+      23.2,
+      52.7
+     ],
+     [
+      23.4,
+      52.75
+     ],
+     [
+      23.55,
+      52.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "137.",
+    "label": "?",
+    "conf": "clear",
+    "note": "arrow from 137. oval, filled head pointing north-east, question mark beside head"
+   },
+   {
+    "points": [
+     [
+      23.2,
+      52.55
+     ],
+     [
+      23.45,
+      52.6
+     ],
+     [
+      23.5,
+      52.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "292.",
+    "label": "?",
+    "conf": "clear",
+    "note": "arrow from 292. oval pointing north-east, question mark beside head"
+   },
+   {
+    "points": [
+     [
+      22.45,
+      52.0
+     ],
+     [
+      22.7,
+      52.1
+     ],
+     [
+      23.05,
+      52.2
+     ],
+     [
+      23.45,
+      52.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "label": "J.R.Gr.D.",
+    "conf": "clear",
+    "note": "curved thick arrow with two small circles, filled head pointing east at LIII."
+   },
+   {
+    "points": [
+     [
+      22.65,
+      51.85
+     ],
+     [
+      22.9,
+      51.95
+     ],
+     [
+      23.2,
+      52.05
+     ],
+     [
+      23.65,
+      52.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "label": "",
+    "conf": "clear",
+    "note": "curved thick arrow from SS-R tail with a small circle, passes through 52. oval, filled head at the 45. oval pointing east"
+   },
+   {
+    "points": [
+     [
+      24.0,
+      50.9
+     ],
+     [
+      24.15,
+      50.9
+     ],
+     [
+      24.25,
+      50.85
+     ]
+    ],
+    "style": "solid",
+    "unit": "99.l.",
+    "label": "",
+    "conf": "clear",
+    "note": "filled head pointing east-south-east, ends at Wlodzimierz"
+   }
+  ],
+  "notes": "Not read: army-group boundary lines (long, no head) and big unit loops (17.Pz, 18.Pz, 3.Pz, 4.Pz, 20.m, 7.Pz, 20.Pz, 12.Pz, 19.Pz, 10.m, 29.m) which have rounded ends and no arrowhead. A thin curved line from 23./7. through 268. near 23.3E 52.9N runs into a red arrow; I could not tell if it has a blue head (not read). 86. arc near 22.4E 54.6N has a tiny tick at the bottom-left, not read. Out of range: dashed arrow from 9. near 24.0E 50.3N heading south-east and a small arrow near 26.3E 50.3N. Red arrows ignored."
+ },
+ "0626": {
+  "arrows": [
+   {
+    "points": [
+     [
+      23.65,
+      55.8
+     ],
+     [
+      23.8,
+      55.8
+     ],
+     [
+      23.95,
+      55.85
+     ]
+    ],
+    "style": "solid",
+    "unit": "36.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "thick arrow with small circles on the line, head near 30.K.D. red text, pointing east-north-east"
+   },
+   {
+    "points": [
+     [
+      24.45,
+      55.2
+     ],
+     [
+      24.6,
+      55.25
+     ],
+     [
+      24.7,
+      55.3
+     ]
+    ],
+    "style": "solid",
+    "unit": "44.T.",
+    "label": "",
+    "conf": "clear",
+    "note": "thick, filled head pointing north-east, tail is the SS 44.T. mark"
+   },
+   {
+    "points": [
+     [
+      26.5,
+      55.75
+     ],
+     [
+      26.65,
+      55.8
+     ],
+     [
+      26.75,
+      55.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "3.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "filled head pointing north-east, tail with small circles under 8.Pz. arc"
+   },
+   {
+    "points": [
+     [
+      25.45,
+      53.15
+     ],
+     [
+      25.7,
+      53.2
+     ],
+     [
+      25.9,
+      53.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "17.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "filled head pointing east near the red 121./1.Prol. symbol; tail starts at the 17.Pz. loop"
+   },
+   {
+    "points": [
+     [
+      27.65,
+      53.05
+     ],
+     [
+      27.75,
+      53.05
+     ],
+     [
+      27.9,
+      53.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "3.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow from the right end of the 3.Pz. oval, filled head pointing east"
+   },
+   {
+    "points": [
+     [
+      22.85,
+      53.45
+     ],
+     [
+      23.0,
+      53.5
+     ],
+     [
+      23.2,
+      53.5
+     ]
+    ],
+    "style": "dashed",
+    "unit": "87.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed, open head pointing east, starts at the 87. arc"
+   },
+   {
+    "points": [
+     [
+      24.0,
+      52.95
+     ],
+     [
+      24.1,
+      52.95
+     ]
+    ],
+    "style": "solid",
+    "unit": "137.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow with filled head pointing east from 137. arc"
+   },
+   {
+    "points": [
+     [
+      22.5,
+      52.25
+     ],
+     [
+      22.65,
+      52.3
+     ]
+    ],
+    "style": "dashed",
+    "unit": "293.",
+    "label": "",
+    "conf": "rough",
+    "note": "short dashed arrow from the 293. oval pointing east-north-east; small head"
+   },
+   {
+    "points": [
+     [
+      22.9,
+      52.25
+     ],
+     [
+      23.2,
+      52.25
+     ],
+     [
+      23.45,
+      52.2
+     ],
+     [
+      23.6,
+      52.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "label": "J.R.Gr.D.",
+    "conf": "clear",
+    "note": "thick arrow with two small circles on the line, filled head pointing east at the Bug; label J.R.Gr.D. is the line above"
+   },
+   {
+    "points": [
+     [
+      22.85,
+      52.0
+     ],
+     [
+      23.15,
+      52.0
+     ],
+     [
+      23.45,
+      52.05
+     ],
+     [
+      23.75,
+      52.05
+     ],
+     [
+      23.9,
+      52.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "label": "",
+    "conf": "clear",
+    "note": "thick curved arrow with two small circles, passes under the 52. oval, filled head pointing east-north-east beyond the 45. oval"
+   },
+   {
+    "points": [
+     [
+      25.3,
+      52.15
+     ],
+     [
+      25.45,
+      52.15
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.K.D.",
+    "label": "73.00",
+    "conf": "clear",
+    "note": "short arrow from the 1.K.D. loop pointing east beside '1m.Rgt'; red bracket '(' beside the tail"
+   },
+   {
+    "points": [
+     [
+      23.25,
+      50.7
+     ],
+     [
+      23.4,
+      50.7
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow from the right of the 79. oval pointing east, filled head"
+   },
+   {
+    "points": [
+     [
+      25.4,
+      50.75
+     ],
+     [
+      25.6,
+      50.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow from the 14.Pz. loop pointing east, head near red '17.m.'"
+   },
+   {
+    "points": [
+     [
+      25.5,
+      50.55
+     ],
+     [
+      25.7,
+      50.6
+     ],
+     [
+      25.75,
+      50.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "curved from the 299./111. hooks, filled head pointing east; overlaps a dashed arrow from the same area"
+   },
+   {
+    "points": [
+     [
+      25.75,
+      50.6
+     ],
+     [
+      26.0,
+      50.65
+     ]
+    ],
+    "style": "dashed",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "unsure",
+    "note": "dashed line continuing east with a head, possibly the continuation of the previous one or a separate dashed arrow; text '124.23.(m.)' in red lies above it"
+   },
+   {
+    "points": [
+     [
+      25.65,
+      50.4
+     ],
+     [
+      25.75,
+      50.45
+     ],
+     [
+      26.0,
+      50.55
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "thick curved arrow from XXXXVIII.m. / 11.Pz. loop pointing east-north-east; tail is south of 50.5N, tip inside"
+   }
+  ],
+  "notes": "Not read (outside range): 16.Pz. arrow near 25.9E 50.2N pointing south-east with a '?' (south of 50.5N); 4.Pz '?' marks. The loops of 7.Pz., 20.Pz., 19.Pz., 18.m., 12.Pz., 20.m., 14.m., 4.Pz. etc. have rounded ends and no arrowheads, so were not read. Small '?' marks next to loops are not arrows. Red arrows ignored. A short blue line near 22.0E 52.35N and a tiny head at 26.3E 54.8N were too faint to be sure; not read."
+ },
+ "0627": {
+  "arrows": [
+   {
+    "points": [
+     [
+      22.85,
+      53.45
+     ],
+     [
+      23.0,
+      53.45
+     ],
+     [
+      23.1,
+      53.45
+     ]
+    ],
+    "style": "dashed",
+    "unit": "87.",
+    "label": "",
+    "conf": "clear",
+    "note": "upper dashed arrow from the 87. arc, filled head pointing east at the red '2 Armee-Stabe' outline"
+   },
+   {
+    "points": [
+     [
+      22.8,
+      53.35
+     ],
+     [
+      22.9,
+      53.35
+     ],
+     [
+      22.95,
+      53.3
+     ]
+    ],
+    "style": "dashed",
+    "unit": "87.",
+    "label": "",
+    "conf": "rough",
+    "note": "lower dashed arrow from the same arc, head pointing east-south-east; tail seems to start at the lower end of the arc"
+   },
+   {
+    "points": [
+     [
+      23.45,
+      53.15
+     ],
+     [
+      23.55,
+      53.15
+     ],
+     [
+      23.6,
+      53.15
+     ]
+    ],
+    "style": "solid",
+    "unit": "23.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow with filled head pointing east from the 23. arc"
+   },
+   {
+    "points": [
+     [
+      23.4,
+      53.2
+     ],
+     [
+      23.55,
+      53.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "23.",
+    "label": "",
+    "conf": "unsure",
+    "note": "second small hooked arrow above the previous one, pointing east-north-east"
+   },
+   {
+    "points": [
+     [
+      23.1,
+      52.25
+     ],
+     [
+      23.4,
+      52.2
+     ],
+     [
+      23.6,
+      52.2
+     ],
+     [
+      23.85,
+      52.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "label": "J.R.Gr.D.",
+    "conf": "clear",
+    "note": "thick curved arrow, two small circles on the line, filled head pointing east with a '2' above; label J.R.Gr.D. is above the line (belongs to this arrow)"
+   },
+   {
+    "points": [
+     [
+      24.1,
+      52.4
+     ],
+     [
+      24.25,
+      52.45
+     ],
+     [
+      24.4,
+      52.5
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from near '10.Pz.' text heading north-east to the 4. HQ (Czachec); head ends at the HQ square; likely a separate short arrow"
+   },
+   {
+    "points": [
+     [
+      24.1,
+      52.25
+     ],
+     [
+      24.2,
+      52.35
+     ]
+    ],
+    "style": "solid",
+    "unit": "52.",
+    "label": "",
+    "conf": "rough",
+    "note": "thin short arrow from the 52. oval pointing north-east to the 167. oval"
+   },
+   {
+    "points": [
+     [
+      23.95,
+      52.1
+     ],
+     [
+      24.15,
+      52.15
+     ],
+     [
+      24.3,
+      52.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "label": "",
+    "conf": "clear",
+    "note": "thick curved arrow with small circle, filled head pointing east-north-east beyond the 1/3 45. oval; a '3' beside the head"
+   },
+   {
+    "points": [
+     [
+      24.15,
+      52.7
+     ],
+     [
+      23.95,
+      52.65
+     ]
+    ],
+    "style": "dashed",
+    "unit": "2/3 78.",
+    "label": "",
+    "conf": "unsure",
+    "note": "dashed arc above the 2/3 78. oval with a possible arrowhead on its left end pointing west-south-west; could be just a dashed unit symbol"
+   },
+   {
+    "points": [
+     [
+      26.15,
+      53.15
+     ],
+     [
+      26.3,
+      53.15
+     ],
+     [
+      26.45,
+      53.15
+     ]
+    ],
+    "style": "solid",
+    "unit": "18.Pz.",
+    "label": "?",
+    "conf": "clear",
+    "note": "filled head pointing east with a '?' beside it; tail at the 18.Pz. oval"
+   },
+   {
+    "points": [
+     [
+      26.8,
+      53.0
+     ],
+     [
+      26.9,
+      53.05
+     ],
+     [
+      27.0,
+      53.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "label": "?",
+    "conf": "clear",
+    "note": "short arrow with filled head pointing east from the right end of the 4.Pz. oval"
+   },
+   {
+    "points": [
+     [
+      26.75,
+      53.05
+     ],
+     [
+      26.8,
+      53.1
+     ],
+     [
+      26.9,
+      53.15
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "label": "?",
+    "conf": "rough",
+    "note": "second short arrow pointing north-east near the first, with a '?' under it; they share the same tail"
+   },
+   {
+    "points": [
+     [
+      24.9,
+      52.95
+     ],
+     [
+      24.9,
+      53.0
+     ]
+    ],
+    "style": "solid",
+    "unit": "31.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow from the 31. arc pointing north (up); close to a dashed 29.m. arc"
+   },
+   {
+    "points": [
+     [
+      25.65,
+      54.6
+     ],
+     [
+      25.8,
+      54.6
+     ],
+     [
+      25.95,
+      54.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "20.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "filled head pointing east at Slobodka, tail leaves the 20.m. oval"
+   },
+   {
+    "points": [
+     [
+      24.6,
+      50.8
+     ],
+     [
+      24.8,
+      50.8
+     ],
+     [
+      25.0,
+      50.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "thick curved arrow with two small circles, filled head pointing east at III.m."
+   },
+   {
+    "points": [
+     [
+      25.65,
+      50.6
+     ],
+     [
+      25.85,
+      50.65
+     ],
+     [
+      26.05,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "curved with small circle, filled head pointing east; tail begins left of the 13.Pz. label"
+   },
+   {
+    "points": [
+     [
+      26.45,
+      50.65
+     ],
+     [
+      26.55,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "",
+    "label": "",
+    "conf": "unsure",
+    "note": "small double-line arrowhead pointing east, tail not connected to any unit; beside red '124. 23.m.'"
+   },
+   {
+    "points": [
+     [
+      23.25,
+      50.7
+     ],
+     [
+      23.4,
+      50.7
+     ],
+     [
+      23.5,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow from the 79. oval pointing east-south-east"
+   }
+  ],
+  "notes": "Not read: blue dash-dot lines with ticks and dots along the Minsk-Borissow road and west of Minsk (Lubcza to Tolotschin) look like air-reconnaissance routes. NE half of the sheet (north of 55N and east of 26E) has no blue arrow heads; the large curved blue line around 1.Pz./XXXXI.m. at 25.0E 55.9N has no head (a boundary). The 110., 105/106 ovals with triangle ticks and squiggles are unit symbols. Loops without heads (14.m., 20.Pz., 12.Pz., 19.Pz., 18.m., 17.Pz., 10.m., 34, 29.m.) not read. Red arrows ignored. A 16.m. arrow near 24.8E 50.3N lies south of 50.5N and was left out."
+ }
+}

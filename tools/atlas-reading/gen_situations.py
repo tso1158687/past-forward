@@ -9,7 +9,11 @@ final=json.load(open('final.json'))
 def pts(ps): return '[' + ', '.join(f'[{p[0]:g}, {p[1]:g}]' for p in ps) + ']'
 def q(s): return "'" + s.replace("\\","\\\\").replace("'","\\'") + "'"
 lines=["""import { GeographicLocation } from '../../../core/geo/geo-types';
-import { FrontSituation, Pocket } from '../../../core/history/front-situation';
+import {
+  FrontSituation,
+  Pocket,
+  SituationArrow,
+} from '../../../core/history/front-situation';
 import { LocalizedText } from '../../../core/i18n/localized-text';
 
 /*
@@ -28,11 +32,22 @@ const pocket = (outline: Coordinates, description: LocalizedText): Pocket => ({
   description,
 });
 
+const arrow = (points: Coordinates, style: SituationArrow['style']): SituationArrow => ({
+  points: places(points),
+  style,
+});
+
 /** One evening as drawn on the atlas sheet for that day. */
-const evening = (day: number, front: Coordinates, pockets: readonly Pocket[]): FrontSituation => ({
+const evening = (
+  day: number,
+  front: Coordinates,
+  pockets: readonly Pocket[],
+  arrows: readonly SituationArrow[] = [],
+): FrontSituation => ({
   day,
   germanFront: places(front),
   pockets,
+  arrows,
   sourceIds: ['okh-atlas'],
 });
 
@@ -42,7 +57,9 @@ for mmdd in sorted(final, key=lambda k: DAY[k]):
     d=final[mmdd]
     lines.append(f"  // {int(mmdd[:2])}/{int(mmdd[2:])}")
     ps=[f"pocket({pts(p['outline'])}, {{ 'zh-TW': {q(p['zh'])}, en: {q(p['en'])} }})" for p in d['pockets']]
-    lines.append(f"  evening({DAY[mmdd]}, {pts(d['front'])}, [{', '.join(ps)}]),")
+    arrows=[f"arrow({pts(a['points'])}, {q(a['style'])})" for a in d.get('arrows',[])]
+    tail=f", [{', '.join(arrows)}]" if arrows else ''
+    lines.append(f"  evening({DAY[mmdd]}, {pts(d['front'])}, [{', '.join(ps)}]{tail}),")
 lines.append("];\n")
 open(OUT,'w').write('\n'.join(lines))
 print('wrote', OUT, len(final), 'evenings')

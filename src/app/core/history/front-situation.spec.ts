@@ -10,6 +10,7 @@ const situation = (day: number): FrontSituation => ({
     { lon: 24.5, lat: 49.5 },
   ],
   pockets: [],
+  arrows: [],
   sourceIds: ['source'],
 });
 

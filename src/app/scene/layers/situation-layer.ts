@@ -11,14 +11,22 @@ import { CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 import { GeographicLocation } from '../../core/geo/geo-types';
 import { advanceArea } from '../../core/history/front-situation';
 import { TerrainSurface } from '../terrain/terrain-surface';
+import { arrowShape } from './arrow-shape';
 import { createLabel } from './label';
 
 /** What to shade on the map for one evening. Everything in it is an estimate. */
 export interface SituationView {
   /** A line through the foremost German units; the land west of it is shaded. */
   readonly front: readonly GeographicLocation[];
+  /** The German arrows of the evening, as drawn on the source: tail to tip. */
+  readonly arrows: readonly SituationArrowView[];
   readonly frontLabel: string;
   readonly pockets: readonly SituationPocket[];
+}
+
+export interface SituationArrowView {
+  readonly points: readonly GeographicLocation[];
+  readonly style: 'solid' | 'dashed';
 }
 
 export interface SituationPocket {
@@ -38,6 +46,13 @@ const HATCH_STROKE = 'rgba(160, 32, 20, 0.55)';
 const HATCH_SPACING_PIXELS = 7;
 /** Estimates are drawn with dashed edges, like estimated unit positions. */
 const DASH_PIXELS = [9, 6];
+const ARROW_STROKE = 'rgba(22, 58, 140, 0.95)';
+const ARROW_CASING = 'rgba(230, 240, 255, 0.75)';
+const ARROW_WIDTH_PIXELS = 4;
+const ARROW_DASH_PIXELS = [8, 5];
+/** Length of the arrowhead along the shaft, and its half-width, in painting pixels. */
+const ARROWHEAD_LENGTH_PIXELS = 16;
+const ARROWHEAD_HALF_WIDTH_PIXELS = 9;
 /** Above the relief, below rivers' labels, borders, trails and pieces. */
 const RENDER_ORDER = 0.5;
 const LABEL_LIFT = 0.4;
@@ -182,8 +197,59 @@ export class SituationLayer {
         context.stroke();
       }
       context.setLineDash([]);
+      for (const arrow of view.arrows) this.paintArrow(context, canvas, arrow);
     }
     sheet.texture.needsUpdate = true;
+  }
+
+  /** A shaft along the arrow's points with a solid head at its tip, on a pale casing. */
+  private paintArrow(
+    context: CanvasRenderingContext2D,
+    canvas: HTMLCanvasElement,
+    arrow: SituationArrowView,
+  ): void {
+    const shape = arrowShape(
+      arrow.points.map((location) => this.canvasPoint(canvas, location)),
+      ARROWHEAD_LENGTH_PIXELS,
+      ARROWHEAD_HALF_WIDTH_PIXELS,
+    );
+    if (!shape) return;
+    const { shaft, tip, headCorners } = shape;
+    const dashed = arrow.style === 'dashed';
+
+    const traceShaft = () => {
+      context.beginPath();
+      shaft.forEach(({ x, y }, i) => (i === 0 ? context.moveTo(x, y) : context.lineTo(x, y)));
+    };
+    const traceHead = () => {
+      context.beginPath();
+      context.moveTo(tip.x, tip.y);
+      for (const { x, y } of headCorners) context.lineTo(x, y);
+      context.closePath();
+    };
+
+    context.lineCap = 'round';
+    context.lineJoin = 'round';
+    context.setLineDash([]);
+    traceShaft();
+    context.strokeStyle = ARROW_CASING;
+    context.lineWidth = ARROW_WIDTH_PIXELS + 3;
+    context.stroke();
+    traceHead();
+    context.lineWidth = 3;
+    context.stroke();
+
+    // Round ends would fill the gaps between dashes, so dashes are cut square.
+    context.lineCap = dashed ? 'butt' : 'round';
+    context.setLineDash(dashed ? ARROW_DASH_PIXELS : []);
+    traceShaft();
+    context.strokeStyle = ARROW_STROKE;
+    context.lineWidth = ARROW_WIDTH_PIXELS;
+    context.stroke();
+    context.setLineDash([]);
+    traceHead();
+    context.fillStyle = ARROW_STROKE;
+    context.fill();
   }
 
   /** Where a place falls on the painting, matching the relief's texture coordinates. */

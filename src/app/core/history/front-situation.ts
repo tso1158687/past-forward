@@ -8,6 +8,13 @@ export interface Pocket {
   readonly description: LocalizedText;
 }
 
+/** A German arrow as the source draws it on that evening's map, from its tail to its tip. */
+export interface SituationArrow {
+  readonly points: readonly GeographicLocation[];
+  /** Dashed arrows are drawn dashed on the source; what the dashes mean it does not say. */
+  readonly style: 'solid' | 'dashed';
+}
+
 /**
  * One evening's picture of the front: how far the foremost German units had come and which
  * Soviet forces were cut off behind them. It is always an estimate. The line joins the foremost
@@ -22,6 +29,8 @@ export interface FrontSituation {
    */
   readonly germanFront: readonly GeographicLocation[];
   readonly pockets: readonly Pocket[];
+  /** The German arrows drawn on the source for that evening. */
+  readonly arrows: readonly SituationArrow[];
   readonly sourceIds: readonly string[];
 }
 

@@ -21,6 +21,15 @@ const SITUATION: FrontSituation = {
       description: { 'zh-TW': '圈內的文字' },
     },
   ],
+  arrows: [
+    {
+      points: [
+        { lon: 27, lat: 53 },
+        { lon: 27.5, lat: 53.1 },
+      ],
+      style: 'dashed',
+    },
+  ],
   sourceIds: ['source'],
 };
 
@@ -29,9 +38,10 @@ describe('toSituationView', () => {
     expect(toSituationView(undefined, LABELS, text)).toBeUndefined();
   });
 
-  it('hands the map the front line and every pocket, each named as an estimate', () => {
+  it('hands the map the front line, every pocket and every arrow, the named ones as estimates', () => {
     expect(toSituationView(SITUATION, LABELS, text)).toEqual({
       front: SITUATION.germanFront,
+      arrows: SITUATION.arrows,
       frontLabel: 'front (estimate)',
       pockets: [
         {

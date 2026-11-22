@@ -1,0 +1,6207 @@
+{
+ "0622": {
+  "arrows": [
+   {
+    "points": [
+     [
+      24.22,
+      54.47
+     ],
+     [
+      24.61,
+      54.52
+     ],
+     [
+      25.04,
+      54.59
+     ]
+    ],
+    "style": "dashed",
+    "unit": "20.Pz.",
+    "unitB": "20.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.3,
+    "tailKm": 3.9,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.23,
+      54.37
+     ],
+     [
+      24.8,
+      54.4
+     ],
+     [
+      25.05,
+      54.5
+     ],
+     [
+      25.19,
+      54.59
+     ],
+     [
+      25.25,
+      54.62
+     ]
+    ],
+    "style": "dashed",
+    "unit": "7.Pz.",
+    "unitB": "7.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 3.3,
+    "tailKm": 3.0,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.57,
+      54.21
+     ],
+     [
+      24.94,
+      54.18
+     ],
+     [
+      25.25,
+      54.17
+     ]
+    ],
+    "style": "dashed",
+    "unit": "18.m.",
+    "unitB": "18.m.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.2,
+    "tailKm": 1.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.11,
+      54.15
+     ],
+     [
+      24.31,
+      54.18
+     ]
+    ],
+    "style": "solid",
+    "unit": "12.Pz.",
+    "unitB": "12.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.3,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.37,
+      52.47
+     ],
+     [
+      24.49,
+      52.55
+     ]
+    ],
+    "style": "dashed",
+    "unit": "18.Pz.",
+    "unitB": "18.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 6.9,
+    "tailKm": 11.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.14,
+      52.13
+     ],
+     [
+      24.22,
+      52.16
+     ],
+     [
+      24.32,
+      52.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "34.",
+    "unitB": "34.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.4,
+    "tailKm": 10.1,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.15,
+      50.65
+     ],
+     [
+      22.26,
+      50.64
+     ],
+     [
+      22.38,
+      50.63
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "unitB": "16.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 3.6,
+    "tailKm": 0.0,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.65,
+      50.58
+     ],
+     [
+      22.72,
+      50.62
+     ],
+     [
+      22.79,
+      50.66
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "unitB": "13.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 2.2,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      20.87,
+      51.9
+     ],
+     [
+      20.87,
+      51.93
+     ]
+    ],
+    "style": "solid",
+    "unit": "1 Rgt. SS-Verb.",
+    "unitB": "1.Rgt. SS-Verb.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 1.4,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      21.74,
+      55.81
+     ],
+     [
+      21.81,
+      55.84
+     ]
+    ],
+    "style": "solid",
+    "unit": "217.",
+    "unitB": "61.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 1.3,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      21.77,
+      55.76
+     ],
+     [
+      21.89,
+      55.77
+     ]
+    ],
+    "style": "solid",
+    "unit": "217.",
+    "unitB": "217.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.3,
+    "tailKm": 1.7,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   }
+  ],
+  "transport": [],
+  "onlyA": [],
+  "onlyB": []
+ },
+ "0623": {
+  "arrows": [
+   {
+    "points": [
+     [
+      23.72,
+      55.23
+     ],
+     [
+      23.91,
+      55.31
+     ]
+    ],
+    "style": "solid",
+    "unit": "8.Pz.",
+    "unitB": "8.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.42,
+      55.14
+     ],
+     [
+      23.51,
+      55.18
+     ],
+     [
+      23.61,
+      55.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "3.m.",
+    "unitB": "3.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 5.2,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.63,
+      54.77
+     ],
+     [
+      23.74,
+      54.82
+     ]
+    ],
+    "style": "solid",
+    "unit": "33.m.",
+    "unitB": "121.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 3.4,
+    "tailKm": 3.6,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      21.85,
+      55.1
+     ],
+     [
+      21.87,
+      55.15
+     ],
+     [
+      22.0,
+      55.19
+     ]
+    ],
+    "style": "solid",
+    "unit": "36.m.",
+    "unitB": "36.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 0.0,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.02,
+      53.62
+     ],
+     [
+      22.14,
+      53.68
+     ],
+     [
+      22.26,
+      53.71
+     ]
+    ],
+    "style": "dashed",
+    "unit": "102.",
+    "unitB": "102.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.3,
+    "tailKm": 6.2,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.77,
+      53.81
+     ],
+     [
+      22.97,
+      53.82
+     ]
+    ],
+    "style": "solid",
+    "unit": "1/3.129",
+    "unitB": "1/3 129",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 8.0,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.16,
+      53.37
+     ],
+     [
+      22.32,
+      53.4
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle.87.",
+    "unitB": "Tle.87.",
+    "styleA": "dashed",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 3.5,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      20.6,
+      52.89
+     ],
+     [
+      20.7,
+      52.95
+     ],
+     [
+      20.81,
+      53.01
+     ]
+    ],
+    "style": "dashed",
+    "unit": "K.R.1",
+    "unitB": "K.R.1 (SS)",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.9,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.25,
+      52.59
+     ],
+     [
+      22.4,
+      52.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "17.",
+    "unitB": "17.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.35,
+      52.43
+     ],
+     [
+      22.53,
+      52.46
+     ]
+    ],
+    "style": "solid",
+    "unit": "78.",
+    "unitB": "78.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.8,
+    "tailKm": 2.2,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.68,
+      52.69
+     ],
+     [
+      22.59,
+      52.68
+     ]
+    ],
+    "style": "solid",
+    "unit": "268.",
+    "unitB": "263.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.3,
+    "tailKm": 1.7,
+    "conf": [
+     "rough",
+     "unsure"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.03,
+      50.66
+     ],
+     [
+      22.14,
+      50.66
+     ],
+     [
+      22.26,
+      50.66
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "unitB": "16.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 6.6,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.94,
+      51.64
+     ],
+     [
+      24.01,
+      51.73
+     ],
+     [
+      24.06,
+      51.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "255.",
+    "unitB": "1.K.D.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.8,
+    "tailKm": 18.3,
+    "conf": [
+     "unsure",
+     "rough"
+    ]
+   }
+  ],
+  "transport": [],
+  "onlyA": [],
+  "onlyB": [
+   {
+    "points": [
+     [
+      22.5,
+      53.95
+     ],
+     [
+      22.7,
+      53.95
+     ]
+    ],
+    "unit": "110.",
+    "style": "solid",
+    "conf": "rough",
+    "note": "arrow starting at the HQ square inside the 110./403.Sich. oval, pointing east; the triangle ticks along the oval edge are not read as arrows"
+   },
+   {
+    "points": [
+     [
+      24.35,
+      52.6
+     ],
+     [
+      24.7,
+      52.6
+     ]
+    ],
+    "unit": "18.Pz.",
+    "style": "solid",
+    "conf": "unsure",
+    "note": "thick line from 18.Pz. oval going east to '54.' (Pz.Br.); head not clearly visible"
+   }
+  ]
+ },
+ "0624": {
+  "arrows": [
+   {
+    "points": [
+     [
+      21.42,
+      54.94
+     ],
+     [
+      21.61,
+      55.03
+     ],
+     [
+      21.81,
+      55.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "44. T.",
+    "unitB": "44.T.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.6,
+    "tailKm": 1.7,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      21.35,
+      53.57
+     ],
+     [
+      21.45,
+      53.6
+     ],
+     [
+      21.58,
+      53.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "m.Br.900",
+    "unitB": "m.Br.900",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 4.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      21.93,
+      53.11
+     ],
+     [
+      21.99,
+      53.08
+     ],
+     [
+      22.12,
+      53.11
+     ]
+    ],
+    "style": "solid",
+    "unit": "221.Sich.",
+    "unitB": "221.Sich.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.7,
+    "tailKm": 4.8,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.19,
+      54.23
+     ],
+     [
+      23.35,
+      54.24
+     ]
+    ],
+    "style": "solid",
+    "unit": "403.Sich.",
+    "unitB": "403.Sich.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 3.4,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.8,
+      53.85
+     ],
+     [
+      22.99,
+      53.82
+     ],
+     [
+      23.15,
+      53.77
+     ]
+    ],
+    "style": "solid",
+    "unit": "129.",
+    "unitB": "129.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.2,
+    "tailKm": 9.8,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.83,
+      55.23
+     ],
+     [
+      23.89,
+      55.29
+     ],
+     [
+      23.91,
+      55.32
+     ]
+    ],
+    "style": "solid",
+    "unit": "30.",
+    "unitB": "30.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.3,
+    "tailKm": 2.6,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.89,
+      55.35
+     ],
+     [
+      25.12,
+      55.44
+     ]
+    ],
+    "style": "solid",
+    "unit": "8.Pz.",
+    "unitB": "8.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.2,
+    "tailKm": 2.5,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      20.69,
+      50.89
+     ],
+     [
+      20.91,
+      50.99
+     ]
+    ],
+    "style": "solid",
+    "unit": "Rad. Tle",
+    "unitB": "Gisk.Tle. SS A.H.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 1.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.32,
+      50.96
+     ],
+     [
+      23.48,
+      50.96
+     ],
+     [
+      23.67,
+      50.94
+     ],
+     [
+      23.81,
+      50.89
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "unitB": "25.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 1.8,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.75,
+      50.84
+     ],
+     [
+      22.89,
+      50.78
+     ],
+     [
+      22.95,
+      50.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.m.",
+    "unitB": "16.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.99,
+      50.72
+     ],
+     [
+      23.18,
+      50.76
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "unitB": "79.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.8,
+    "tailKm": 2.3,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.63,
+      50.74
+     ],
+     [
+      24.83,
+      50.77
+     ]
+    ],
+    "style": "solid",
+    "unit": "299.",
+    "unitB": "299.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 2.4,
+    "conf": [
+     "rough",
+     "unsure"
+    ]
+   }
+  ],
+  "transport": [],
+  "onlyA": [],
+  "onlyB": [
+   {
+    "points": [
+     [
+      24.5,
+      52.05
+     ],
+     [
+      24.5,
+      52.1
+     ]
+    ],
+    "unit": "1.K.D.",
+    "style": "solid",
+    "conf": "unsure",
+    "note": "tiny arrowhead sitting on top of the 1.K.D. loop pointing north, with '2.' beside it"
+   }
+  ]
+ },
+ "0625": {
+  "arrows": [
+   {
+    "points": [
+     [
+      25.06,
+      55.35
+     ],
+     [
+      25.25,
+      55.39
+     ],
+     [
+      25.38,
+      55.42
+     ],
+     [
+      25.54,
+      55.48
+     ]
+    ],
+    "style": "dashed",
+    "unit": "3.m.",
+    "unitB": "3.m.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 3.4,
+    "tailKm": 0.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.25,
+      54.43
+     ],
+     [
+      24.42,
+      54.38
+     ],
+     [
+      24.62,
+      54.34
+     ],
+     [
+      24.68,
+      54.37
+     ],
+     [
+      24.75,
+      54.42
+     ]
+    ],
+    "style": "dashed",
+    "unit": "74.m.",
+    "unitB": "74.m.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.2,
+    "tailKm": 3.3,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.7,
+      54.27
+     ],
+     [
+      24.86,
+      54.19
+     ],
+     [
+      25.01,
+      54.05
+     ],
+     [
+      25.14,
+      53.96
+     ],
+     [
+      25.27,
+      53.91
+     ]
+    ],
+    "style": "dashed",
+    "unit": "5./35.",
+    "unitB": "5.35.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.7,
+    "tailKm": 2.2,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.78,
+      53.79
+     ],
+     [
+      24.82,
+      53.7
+     ],
+     [
+      24.85,
+      53.61
+     ]
+    ],
+    "style": "dashed",
+    "unit": "161.",
+    "unitB": "161.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.1,
+    "tailKm": 2.3,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.52,
+      53.66
+     ],
+     [
+      24.57,
+      53.59
+     ],
+     [
+      24.61,
+      53.49
+     ]
+    ],
+    "style": "dashed",
+    "unit": "28.",
+    "unitB": "28.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.3,
+    "tailKm": 1.7,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.57,
+      53.33
+     ],
+     [
+      22.66,
+      53.33
+     ]
+    ],
+    "style": "solid",
+    "unit": "87.",
+    "unitB": "87.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.3,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.56,
+      53.22
+     ],
+     [
+      22.66,
+      53.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "221.Sich.",
+    "unitB": "221.Sich.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.68,
+      53.48
+     ],
+     [
+      22.72,
+      53.45
+     ],
+     [
+      22.74,
+      53.43
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle.87",
+    "unitB": "Tle.87.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.3,
+    "tailKm": 6.3,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.38,
+      52.72
+     ],
+     [
+      23.48,
+      52.75
+     ],
+     [
+      23.57,
+      52.77
+     ]
+    ],
+    "style": "solid",
+    "unit": "137.",
+    "unitB": "137.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 3.6,
+    "tailKm": 12.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.42,
+      52.59
+     ],
+     [
+      23.48,
+      52.62
+     ],
+     [
+      23.51,
+      52.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "292.",
+    "unitB": "292.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 15.5,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.44,
+      51.98
+     ],
+     [
+      22.58,
+      52.06
+     ],
+     [
+      22.73,
+      52.12
+     ],
+     [
+      22.97,
+      52.18
+     ],
+     [
+      23.2,
+      52.19
+     ],
+     [
+      23.47,
+      52.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "unitB": "10.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.8,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.65,
+      51.86
+     ],
+     [
+      22.79,
+      51.96
+     ],
+     [
+      22.99,
+      52.02
+     ],
+     [
+      23.28,
+      52.06
+     ],
+     [
+      23.48,
+      52.08
+     ],
+     [
+      23.68,
+      52.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "unitB": "SS R.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.0,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.98,
+      50.89
+     ],
+     [
+      24.14,
+      50.89
+     ],
+     [
+      24.27,
+      50.87
+     ]
+    ],
+    "style": "solid",
+    "unit": "99.l.",
+    "unitB": "99.l.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 1.8,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.17,
+      55.62
+     ],
+     [
+      23.33,
+      55.63
+     ],
+     [
+      23.44,
+      55.66
+     ]
+    ],
+    "style": "solid",
+    "unit": "36.m.",
+    "unitB": "36.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 4.9,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.42,
+      55.61
+     ],
+     [
+      23.52,
+      55.57
+     ],
+     [
+      23.56,
+      55.53
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.Pz.",
+    "unitB": "1.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.3,
+    "tailKm": 6.9,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.19,
+      55.45
+     ],
+     [
+      23.3,
+      55.45
+     ]
+    ],
+    "style": "solid",
+    "unit": "6.Pz.",
+    "unitB": "6.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 0.6,
+    "conf": [
+     "unsure",
+     "rough"
+    ]
+   }
+  ],
+  "transport": [],
+  "onlyA": [],
+  "onlyB": [
+   {
+    "points": [
+     [
+      22.3,
+      55.95
+     ],
+     [
+      22.4,
+      55.9
+     ]
+    ],
+    "unit": "61.",
+    "style": "solid",
+    "conf": "clear",
+    "note": "short arrow leaving the hook-shaped 61. symbol, filled head pointing south-east"
+   },
+   {
+    "points": [
+     [
+      22.3,
+      55.85
+     ],
+     [
+      22.35,
+      55.8
+     ]
+    ],
+    "unit": "217.",
+    "style": "solid",
+    "conf": "clear",
+    "note": "short arrow from hook below 217., filled head pointing south-east, head touches red 22.Pz.Br. text"
+   }
+  ]
+ },
+ "0626": {
+  "arrows": [
+   {
+    "points": [
+     [
+      23.64,
+      55.79
+     ],
+     [
+      23.83,
+      55.81
+     ],
+     [
+      23.94,
+      55.84
+     ]
+    ],
+    "style": "solid",
+    "unit": "36.m.",
+    "unitB": "36.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 1.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.46,
+      55.22
+     ],
+     [
+      24.6,
+      55.27
+     ],
+     [
+      24.71,
+      55.29
+     ]
+    ],
+    "style": "solid",
+    "unit": "44.T.",
+    "unitB": "44.T.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.53,
+      55.75
+     ],
+     [
+      26.63,
+      55.79
+     ],
+     [
+      26.75,
+      55.82
+     ]
+    ],
+    "style": "solid",
+    "unit": "3.m.",
+    "unitB": "3.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.2,
+    "tailKm": 1.9,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.76,
+      53.45
+     ],
+     [
+      22.9,
+      53.48
+     ],
+     [
+      23.15,
+      53.51
+     ]
+    ],
+    "style": "dashed",
+    "unit": "87.",
+    "unitB": "87.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 3.5,
+    "tailKm": 6.0,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.95,
+      52.93
+     ],
+     [
+      24.11,
+      52.96
+     ]
+    ],
+    "style": "solid",
+    "unit": "137.",
+    "unitB": "137.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 4.0,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.92,
+      52.22
+     ],
+     [
+      23.12,
+      52.21
+     ],
+     [
+      23.38,
+      52.21
+     ],
+     [
+      23.6,
+      52.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "unitB": "10.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 3.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.87,
+      52.01
+     ],
+     [
+      23.11,
+      52.03
+     ],
+     [
+      23.36,
+      52.03
+     ],
+     [
+      23.56,
+      52.05
+     ],
+     [
+      23.7,
+      52.09
+     ],
+     [
+      23.93,
+      52.13
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "unitB": "SS R.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 3.9,
+    "tailKm": 1.8,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.47,
+      52.25
+     ],
+     [
+      22.65,
+      52.31
+     ]
+    ],
+    "style": "dashed",
+    "unit": "293.",
+    "unitB": "293.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.1,
+    "tailKm": 2.0,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.53,
+      53.13
+     ],
+     [
+      25.66,
+      53.16
+     ],
+     [
+      25.76,
+      53.18
+     ],
+     [
+      25.88,
+      53.19
+     ]
+    ],
+    "style": "solid",
+    "unit": "17.Pz.",
+    "unitB": "17.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.7,
+    "tailKm": 5.8,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.22,
+      50.71
+     ],
+     [
+      23.32,
+      50.69
+     ],
+     [
+      23.42,
+      50.68
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "unitB": "79.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 2.4,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.35,
+      50.74
+     ],
+     [
+      25.44,
+      50.78
+     ],
+     [
+      25.57,
+      50.81
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "unitB": "14.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.4,
+    "tailKm": 3.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.53,
+      50.56
+     ],
+     [
+      25.67,
+      50.58
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "unitB": "13.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 6.1,
+    "tailKm": 2.4,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.74,
+      50.61
+     ],
+     [
+      25.89,
+      50.63
+     ],
+     [
+      26.05,
+      50.65
+     ]
+    ],
+    "style": "dashed",
+    "unit": "13.Pz.",
+    "unitB": "13.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 3.5,
+    "tailKm": 1.3,
+    "conf": [
+     "rough",
+     "unsure"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.64,
+      50.36
+     ],
+     [
+      25.83,
+      50.47
+     ],
+     [
+      26.01,
+      50.53
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "unitB": "11.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.3,
+    "tailKm": 4.5,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.64,
+      53.05
+     ],
+     [
+      27.88,
+      53.07
+     ]
+    ],
+    "style": "solid",
+    "unit": "3.Pz.",
+    "unitB": "3.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   }
+  ],
+  "transport": [],
+  "onlyA": [],
+  "onlyB": [
+   {
+    "points": [
+     [
+      25.3,
+      52.15
+     ],
+     [
+      25.45,
+      52.15
+     ]
+    ],
+    "unit": "1.K.D.",
+    "style": "solid",
+    "conf": "clear",
+    "note": "short arrow from the 1.K.D. loop pointing east beside '1m.Rgt'; red bracket '(' beside the tail"
+   }
+  ]
+ },
+ "0627": {
+  "arrows": [
+   {
+    "points": [
+     [
+      26.18,
+      53.16
+     ],
+     [
+      26.34,
+      53.16
+     ],
+     [
+      26.45,
+      53.16
+     ]
+    ],
+    "style": "solid",
+    "unit": "18.Pz.",
+    "unitB": "18.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.74,
+      53.07
+     ],
+     [
+      26.82,
+      53.11
+     ],
+     [
+      26.91,
+      53.15
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "unitB": "4.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 2.3,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.8,
+      53.03
+     ],
+     [
+      26.89,
+      53.04
+     ],
+     [
+      26.98,
+      53.04
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "unitB": "4.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.7,
+    "tailKm": 3.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.1,
+      52.24
+     ],
+     [
+      23.27,
+      52.21
+     ],
+     [
+      23.44,
+      52.19
+     ],
+     [
+      23.64,
+      52.21
+     ],
+     [
+      23.81,
+      52.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "J.R.Gr.D.",
+    "unitB": "10.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.7,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.09,
+      52.41
+     ],
+     [
+      24.22,
+      52.45
+     ],
+     [
+      24.33,
+      52.49
+     ],
+     [
+      24.36,
+      52.51
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "unitB": "10.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.9,
+    "tailKm": 1.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.15,
+      52.28
+     ],
+     [
+      24.22,
+      52.32
+     ],
+     [
+      24.27,
+      52.34
+     ]
+    ],
+    "style": "solid",
+    "unit": "52.",
+    "unitB": "52.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 4.9,
+    "tailKm": 4.8,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.94,
+      52.11
+     ],
+     [
+      24.11,
+      52.14
+     ],
+     [
+      24.25,
+      52.18
+     ],
+     [
+      24.35,
+      52.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "unitB": "SS R.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 3.6,
+    "tailKm": 1.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.26,
+      50.7
+     ],
+     [
+      23.37,
+      50.68
+     ],
+     [
+      23.49,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "unitB": "79.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.63,
+      50.82
+     ],
+     [
+      24.79,
+      50.82
+     ],
+     [
+      24.93,
+      50.8
+     ],
+     [
+      25.0,
+      50.78
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "unitB": "25.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.2,
+    "tailKm": 3.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.65,
+      50.57
+     ],
+     [
+      25.77,
+      50.61
+     ],
+     [
+      25.91,
+      50.63
+     ],
+     [
+      26.07,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "unitB": "13.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.4,
+    "tailKm": 3.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.42,
+      50.65
+     ],
+     [
+      26.56,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "",
+    "unitB": "",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 2.1,
+    "conf": [
+     "rough",
+     "unsure"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.81,
+      53.45
+     ],
+     [
+      22.97,
+      53.44
+     ],
+     [
+      23.11,
+      53.43
+     ]
+    ],
+    "style": "dashed",
+    "unit": "87.",
+    "unitB": "87.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.3,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.79,
+      53.33
+     ],
+     [
+      22.9,
+      53.33
+     ],
+     [
+      22.97,
+      53.32
+     ]
+    ],
+    "style": "dashed",
+    "unit": "87.",
+    "unitB": "87.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.6,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.45,
+      53.19
+     ],
+     [
+      23.51,
+      53.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "23.",
+    "unitB": "23.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.7,
+    "tailKm": 3.5,
+    "conf": [
+     "rough",
+     "unsure"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.49,
+      53.14
+     ],
+     [
+      23.62,
+      53.15
+     ]
+    ],
+    "style": "solid",
+    "unit": "23.",
+    "unitB": "23.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 2.9,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   }
+  ],
+  "transport": [],
+  "onlyA": [
+   {
+    "points": [
+     [
+      23.96,
+      52.66
+     ],
+     [
+      24.04,
+      52.67
+     ],
+     [
+      24.15,
+      52.7
+     ],
+     [
+      24.23,
+      52.71
+     ]
+    ],
+    "unit": "2/3 78.",
+    "style": "dashed",
+    "conf": "unsure",
+    "note": "dashed arc between the 1/3 oval and the 2/3 78. oval; tip direction and which end is the tip are unclear"
+   }
+  ],
+  "onlyB": [
+   {
+    "points": [
+     [
+      24.15,
+      52.7
+     ],
+     [
+      23.95,
+      52.65
+     ]
+    ],
+    "unit": "2/3 78.",
+    "style": "dashed",
+    "conf": "unsure",
+    "note": "dashed arc above the 2/3 78. oval with a possible arrowhead on its left end pointing west-south-west; could be just a dashed unit symbol"
+   },
+   {
+    "points": [
+     [
+      24.9,
+      52.95
+     ],
+     [
+      24.9,
+      53.0
+     ]
+    ],
+    "unit": "31.",
+    "style": "solid",
+    "conf": "rough",
+    "note": "short arrow from the 31. arc pointing north (up); close to a dashed 29.m. arc"
+   },
+   {
+    "points": [
+     [
+      25.65,
+      54.6
+     ],
+     [
+      25.8,
+      54.6
+     ],
+     [
+      25.95,
+      54.6
+     ]
+    ],
+    "unit": "20.m.",
+    "style": "solid",
+    "conf": "clear",
+    "note": "filled head pointing east at Slobodka, tail leaves the 20.m. oval"
+   }
+  ]
+ },
+ "0628": {
+  "arrows": [
+   {
+    "points": [
+     [
+      23.08,
+      50.89
+     ],
+     [
+      23.11,
+      50.84
+     ],
+     [
+      23.14,
+      50.81
+     ]
+    ],
+    "style": "solid",
+    "unit": "9.Pz.",
+    "unitB": "9.Pz.",
+    "styleA": "solid",
+    "styleB": "dashed",
+    "tipKm": 1.1,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.25,
+      50.69
+     ],
+     [
+      23.29,
+      50.62
+     ],
+     [
+      23.29,
+      50.57
+     ]
+    ],
+    "style": "dashed",
+    "unit": "95.",
+    "unitB": "95.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.4,
+    "tailKm": 1.1,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.76,
+      51.24
+     ],
+     [
+      24.84,
+      51.19
+     ],
+     [
+      24.92,
+      51.13
+     ]
+    ],
+    "style": "dashed",
+    "unit": "62.",
+    "unitB": "62.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.7,
+    "tailKm": 0.0,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.0,
+      50.85
+     ],
+     [
+      25.04,
+      50.89
+     ],
+     [
+      25.08,
+      50.91
+     ]
+    ],
+    "style": "solid",
+    "unit": "298.",
+    "unitB": "298.",
+    "styleA": "dashed",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 1.4,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.07,
+      50.78
+     ],
+     [
+      25.17,
+      50.76
+     ],
+     [
+      25.25,
+      50.74
+     ],
+     [
+      25.32,
+      50.71
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "unitB": "25.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.74,
+      53.26
+     ],
+     [
+      26.85,
+      53.31
+     ],
+     [
+      26.95,
+      53.34
+     ]
+    ],
+    "style": "solid",
+    "unit": "18.Pz.",
+    "unitB": "18.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 3.0,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.27,
+      53.2
+     ],
+     [
+      27.35,
+      53.23
+     ],
+     [
+      27.41,
+      53.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "unitB": "V.A. 10.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.31,
+      50.64
+     ],
+     [
+      26.45,
+      50.63
+     ],
+     [
+      26.58,
+      50.62
+     ]
+    ],
+    "style": "dashed",
+    "unit": "13.Pz.",
+    "unitB": "13.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.0,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   }
+  ],
+  "transport": [
+   {
+    "points": [
+     [
+      21.59,
+      52.51
+     ],
+     [
+      21.7,
+      52.56
+     ]
+    ],
+    "unit": "112.",
+    "labelA": "",
+    "labelB": ""
+   },
+   {
+    "points": [
+     [
+      22.69,
+      51.96
+     ],
+     [
+      22.89,
+      51.99
+     ],
+     [
+      23.1,
+      52.01
+     ]
+    ],
+    "unit": "15.",
+    "labelA": "",
+    "labelB": ""
+   },
+   {
+    "points": [
+     [
+      22.89,
+      50.72
+     ],
+     [
+      23.06,
+      50.75
+     ]
+    ],
+    "unit": "95.",
+    "labelA": "",
+    "labelB": "bis 3.7"
+   }
+  ],
+  "onlyA": [
+   {
+    "points": [
+     [
+      22.38,
+      53.96
+     ],
+     [
+      22.52,
+      54.0
+     ],
+     [
+      22.68,
+      54.05
+     ]
+    ],
+    "unit": "106.",
+    "style": "solid",
+    "conf": "clear",
+    "note": "tail starts just outside the left end of the 106. oval and runs through it; tip inside the oval"
+   }
+  ],
+  "onlyB": [
+   {
+    "points": [
+     [
+      26.42,
+      53.13
+     ],
+     [
+      26.64,
+      53.14
+     ]
+    ],
+    "unit": "18.Pz.",
+    "style": "solid",
+    "conf": "unsure",
+    "note": "arrow head drawn inside the long 18.Pz. shape (a long pointed symbol); may be part of the symbol rather than a separate arrow"
+   }
+  ]
+ },
+ "0629": {
+  "arrows": [
+   {
+    "points": [
+     [
+      23.91,
+      55.39
+     ],
+     [
+      23.93,
+      55.46
+     ]
+    ],
+    "style": "solid",
+    "unit": "251.",
+    "unitB": "251.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 1.3,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.41,
+      55.63
+     ],
+     [
+      24.46,
+      55.65
+     ],
+     [
+      24.51,
+      55.67
+     ]
+    ],
+    "style": "solid",
+    "unit": "30.",
+    "unitB": "30.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.6,
+    "tailKm": 0.0,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.48,
+      55.56
+     ],
+     [
+      24.54,
+      55.59
+     ],
+     [
+      24.6,
+      55.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "126.",
+    "unitB": "126.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 3.8,
+    "tailKm": 2.2,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.69,
+      53.8
+     ],
+     [
+      23.8,
+      53.82
+     ],
+     [
+      23.92,
+      53.85
+     ]
+    ],
+    "style": "dashed",
+    "unit": "102.",
+    "unitB": "102.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.7,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.38,
+      53.92
+     ],
+     [
+      25.47,
+      53.95
+     ],
+     [
+      25.57,
+      53.98
+     ]
+    ],
+    "style": "solid",
+    "unit": "161.",
+    "unitB": "Tle.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 7.4,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.38,
+      54.23
+     ],
+     [
+      25.46,
+      54.27
+     ],
+     [
+      25.52,
+      54.29
+     ]
+    ],
+    "style": "solid",
+    "unit": "6.",
+    "unitB": "18.m.",
+    "styleA": "solid",
+    "styleB": "dashed",
+    "tipKm": 0.6,
+    "tailKm": 13.4,
+    "conf": [
+     "rough",
+     "unsure"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.32,
+      52.75
+     ],
+     [
+      23.46,
+      52.73
+     ],
+     [
+      23.62,
+      52.72
+     ]
+    ],
+    "style": "solid",
+    "unit": "197.",
+    "unitB": "197.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 3.4,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.22,
+      51.99
+     ],
+     [
+      24.26,
+      52.03
+     ],
+     [
+      24.29,
+      52.07
+     ]
+    ],
+    "style": "solid",
+    "unit": "267.",
+    "unitB": "255.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 5.2,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.54,
+      52.35
+     ],
+     [
+      24.59,
+      52.37
+     ],
+     [
+      24.63,
+      52.39
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle.45",
+    "unitB": "Tle. 45.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.4,
+    "tailKm": 1.3,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.32,
+      50.78
+     ],
+     [
+      22.41,
+      50.75
+     ],
+     [
+      22.49,
+      50.72
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS A.H.",
+    "unitB": "SS A.H.",
+    "styleA": "dashed",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.25,
+      50.66
+     ],
+     [
+      23.28,
+      50.61
+     ],
+     [
+      23.29,
+      50.57
+     ]
+    ],
+    "style": "solid",
+    "unit": "95.",
+    "unitB": "95.",
+    "styleA": "solid",
+    "styleB": "dashed",
+    "tipKm": 0.7,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.61,
+      50.6
+     ],
+     [
+      23.69,
+      50.58
+     ],
+     [
+      23.76,
+      50.57
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "unitB": "79.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 2.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.79,
+      50.74
+     ],
+     [
+      23.75,
+      50.69
+     ],
+     [
+      23.71,
+      50.64
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS W",
+    "unitB": "SS W.",
+    "styleA": "dashed",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 3.6,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.84,
+      53.4
+     ],
+     [
+      27.92,
+      53.42
+     ],
+     [
+      27.99,
+      53.44
+     ]
+    ],
+    "style": "solid",
+    "unit": "V.A. XXXXVI",
+    "unitB": "V.R. XXXXVII",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.53,
+      52.8
+     ],
+     [
+      25.68,
+      52.84
+     ],
+     [
+      25.84,
+      52.88
+     ],
+     [
+      25.99,
+      52.91
+     ]
+    ],
+    "style": "dashed",
+    "unit": "10.m.",
+    "unitB": "10.m.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.3,
+    "tailKm": 2.6,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.89,
+      50.79
+     ],
+     [
+      25.95,
+      50.78
+     ],
+     [
+      26.01,
+      50.77
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "unitB": "14.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.86,
+      50.65
+     ],
+     [
+      26.98,
+      50.64
+     ],
+     [
+      27.11,
+      50.64
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "unitB": "23.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 0.7,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.32,
+      50.65
+     ],
+     [
+      27.42,
+      50.64
+     ],
+     [
+      27.53,
+      50.62
+     ]
+    ],
+    "style": "dashed",
+    "unit": "",
+    "unitB": "5.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.0,
+    "tailKm": 0.7,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.65,
+      50.71
+     ],
+     [
+      24.68,
+      50.71
+     ],
+     [
+      24.72,
+      50.7
+     ]
+    ],
+    "style": "solid",
+    "unit": "99.l.",
+    "unitB": "99.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 2.8,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.59,
+      50.56
+     ],
+     [
+      24.62,
+      50.53
+     ],
+     [
+      24.64,
+      50.51
+     ]
+    ],
+    "style": "solid",
+    "unit": "168.",
+    "unitB": "168.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 4.4,
+    "conf": [
+     "unsure",
+     "rough"
+    ]
+   }
+  ],
+  "transport": [
+   {
+    "points": [
+     [
+      21.69,
+      52.55
+     ],
+     [
+      21.81,
+      52.6
+     ]
+    ],
+    "unit": "112.",
+    "labelA": "bis 1.7",
+    "labelB": "bis 1.7"
+   },
+   {
+    "points": [
+     [
+      22.95,
+      52.02
+     ],
+     [
+      23.1,
+      52.04
+     ]
+    ],
+    "unit": "15.",
+    "labelA": "bis 1.7",
+    "labelB": "bis 1.7"
+   },
+   {
+    "points": [
+     [
+      22.89,
+      50.72
+     ],
+     [
+      23.0,
+      50.74
+     ]
+    ],
+    "unit": "95.",
+    "labelA": "",
+    "labelB": "bis 3.7"
+   }
+  ],
+  "onlyA": [],
+  "onlyB": [
+   {
+    "points": [
+     [
+      22.5,
+      54.0
+     ],
+     [
+      22.67,
+      54.01
+     ]
+    ],
+    "unit": "106.",
+    "style": "solid",
+    "conf": "rough",
+    "note": "arrow starting at a locomotive symbol and entering the 106. ellipse"
+   },
+   {
+    "points": [
+     [
+      24.01,
+      54.32
+     ],
+     [
+      23.89,
+      54.34
+     ],
+     [
+      23.76,
+      54.29
+     ]
+    ],
+    "unit": "110.",
+    "style": "solid",
+    "conf": "unsure",
+    "note": "the 110. arc seems to end in a small arrow tip pointing west; may only be a symbol"
+   },
+   {
+    "points": [
+     [
+      26.99,
+      53.84
+     ],
+     [
+      27.3,
+      53.85
+     ]
+    ],
+    "unit": "12.Pz.",
+    "style": "solid",
+    "conf": "unsure",
+    "note": "horizontal line with an arrow-like end under the 12.Pz. label; not sure it is an arrow rather than part of a symbol"
+   }
+  ]
+ },
+ "0630": {
+  "arrows": [
+   {
+    "points": [
+     [
+      23.36,
+      54.72
+     ],
+     [
+      23.44,
+      54.7
+     ],
+     [
+      23.53,
+      54.68
+     ]
+    ],
+    "style": "solid",
+    "unit": "281.Sich.",
+    "unitB": "281.Sich.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 14.5,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.86,
+      52.92
+     ],
+     [
+      26.96,
+      52.95
+     ],
+     [
+      27.03,
+      52.97
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.K.D.",
+    "unitB": "1.K.D.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 4.8,
+    "tailKm": 5.2,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.36,
+      53.52
+     ],
+     [
+      27.47,
+      53.55
+     ],
+     [
+      27.56,
+      53.58
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "unitB": "10.Pz.",
+    "styleA": "solid",
+    "styleB": "dashed",
+    "tipKm": 0.0,
+    "tailKm": 3.9,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.38,
+      53.41
+     ],
+     [
+      27.5,
+      53.42
+     ],
+     [
+      27.6,
+      53.42
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "unitB": "SS R.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.49,
+      52.38
+     ],
+     [
+      23.56,
+      52.39
+     ],
+     [
+      23.65,
+      52.39
+     ]
+    ],
+    "style": "solid",
+    "unit": "293.",
+    "unitB": "293.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.29,
+      52.42
+     ],
+     [
+      24.34,
+      52.45
+     ],
+     [
+      24.4,
+      52.48
+     ]
+    ],
+    "style": "solid",
+    "unit": "52.",
+    "unitB": "52.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.4,
+    "tailKm": 2.9,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.13,
+      51.05
+     ],
+     [
+      25.24,
+      51.05
+     ],
+     [
+      25.37,
+      51.06
+     ]
+    ],
+    "style": "solid",
+    "unit": "56.",
+    "unitB": "56.",
+    "styleA": "solid",
+    "styleB": "dashed",
+    "tipKm": 1.1,
+    "tailKm": 1.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.28,
+      50.95
+     ],
+     [
+      25.4,
+      50.95
+     ],
+     [
+      25.51,
+      50.95
+     ],
+     [
+      25.6,
+      50.93
+     ]
+    ],
+    "style": "dashed",
+    "unit": "62.",
+    "unitB": "62.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.3,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.56,
+      50.53
+     ],
+     [
+      24.62,
+      50.52
+     ],
+     [
+      24.67,
+      50.51
+     ]
+    ],
+    "style": "solid",
+    "unit": "168.",
+    "unitB": "168.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 0.7,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.05,
+      50.51
+     ],
+     [
+      24.12,
+      50.49
+     ],
+     [
+      24.19,
+      50.48
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "unitB": "79.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 1.1,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.3,
+      50.59
+     ],
+     [
+      27.48,
+      50.57
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "unitB": "13.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 19.2,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   }
+  ],
+  "transport": [
+   {
+    "points": [
+     [
+      22.22,
+      53.94
+     ],
+     [
+      22.36,
+      53.96
+     ],
+     [
+      22.5,
+      53.99
+     ]
+    ],
+    "unit": "1/4 106.",
+    "labelA": "bis 1.7.",
+    "labelB": "bis 1.7"
+   },
+   {
+    "points": [
+     [
+      22.88,
+      51.96
+     ],
+     [
+      22.95,
+      51.97
+     ],
+     [
+      23.03,
+      51.99
+     ]
+    ],
+    "unit": "15.",
+    "labelA": "bis 9.7.",
+    "labelB": "bis 9.7"
+   },
+   {
+    "points": [
+     [
+      21.71,
+      52.56
+     ],
+     [
+      21.81,
+      52.59
+     ],
+     [
+      21.9,
+      52.62
+     ]
+    ],
+    "unit": "112.",
+    "labelA": "bis 7.7.",
+    "labelB": "bis 7.7"
+   }
+  ],
+  "onlyA": [
+   {
+    "points": [
+     [
+      23.45,
+      54.18
+     ],
+     [
+      23.5,
+      54.19
+     ],
+     [
+      23.54,
+      54.2
+     ]
+    ],
+    "unit": "3/4 106.",
+    "style": "solid",
+    "conf": "rough",
+    "note": "short arrowhead at the upper end of the 3/4 106. hook, pointing east"
+   },
+   {
+    "points": [
+     [
+      26.6,
+      50.53
+     ],
+     [
+      26.66,
+      50.52
+     ],
+     [
+      26.72,
+      50.51
+     ]
+    ],
+    "unit": "III.m.",
+    "style": "solid",
+    "conf": "rough",
+    "note": "short arrow under the III.m. label"
+   }
+  ],
+  "onlyB": [
+   {
+    "points": [
+     [
+      27.71,
+      53.85
+     ],
+     [
+      27.86,
+      53.89
+     ]
+    ],
+    "unit": "20.Pz.",
+    "style": "solid",
+    "conf": "rough",
+    "note": "short arrow from the 20.Pz. symbol (south of Minsk) toward the ENE"
+   }
+  ]
+ },
+ "0701": {
+  "arrows": [
+   {
+    "points": [
+     [
+      23.93,
+      52.13
+     ],
+     [
+      24.06,
+      52.16
+     ],
+     [
+      24.18,
+      52.18
+     ]
+    ],
+    "style": "solid",
+    "unit": "45.",
+    "unitB": "Mas. 45.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.4,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.92,
+      52.2
+     ],
+     [
+      25.1,
+      52.2
+     ],
+     [
+      25.3,
+      52.2
+     ]
+    ],
+    "style": "dashed",
+    "unit": "Tle.45",
+    "unitB": "Tle. 45.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.0,
+    "tailKm": 2.0,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.03,
+      50.76
+     ],
+     [
+      25.09,
+      50.76
+     ],
+     [
+      25.14,
+      50.76
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS A.H.",
+    "unitB": "SS A.H.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.97,
+      50.62
+     ],
+     [
+      25.03,
+      50.62
+     ],
+     [
+      25.08,
+      50.62
+     ]
+    ],
+    "style": "solid",
+    "unit": "99.I.",
+    "unitB": "99.I.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 1.4,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.64,
+      51.01
+     ],
+     [
+      25.66,
+      51.04
+     ],
+     [
+      25.67,
+      51.06
+     ]
+    ],
+    "style": "solid",
+    "unit": "62.",
+    "unitB": "",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 3.6,
+    "conf": [
+     "clear",
+     "unsure"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.57,
+      50.63
+     ],
+     [
+      26.68,
+      50.64
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "unitB": "14.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.75,
+      50.53
+     ],
+     [
+      26.88,
+      50.53
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "unitB": "13.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.11,
+      50.66
+     ],
+     [
+      26.08,
+      50.7
+     ],
+     [
+      26.06,
+      50.73
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "unitB": "25.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 1.4,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.32,
+      50.74
+     ],
+     [
+      23.41,
+      50.74
+     ],
+     [
+      23.51,
+      50.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle.95",
+    "unitB": "Tle. 95.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 0.0,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.39,
+      52.95
+     ],
+     [
+      27.49,
+      52.95
+     ],
+     [
+      27.59,
+      52.96
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.K.D.",
+    "unitB": "1.K.D.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.98,
+      53.62
+     ],
+     [
+      28.08,
+      53.66
+     ],
+     [
+      28.19,
+      53.71
+     ]
+    ],
+    "style": "dashed",
+    "unit": "10.R.",
+    "unitB": "10.R.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.7,
+    "tailKm": 6.8,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.89,
+      53.41
+     ],
+     [
+      28.11,
+      53.43
+     ],
+     [
+      28.33,
+      53.47
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "unitB": "44.R.",
+    "styleA": "solid",
+    "styleB": "dashed",
+    "tipKm": 0.0,
+    "tailKm": 2.0,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      28.21,
+      54.07
+     ],
+     [
+      28.24,
+      54.11
+     ],
+     [
+      28.28,
+      54.15
+     ]
+    ],
+    "style": "solid",
+    "unit": "18.Pz.",
+    "unitB": "18.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.2,
+    "tailKm": 1.7,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   }
+  ],
+  "transport": [
+   {
+    "points": [
+     [
+      21.85,
+      54.56
+     ],
+     [
+      22.0,
+      54.57
+     ],
+     [
+      22.15,
+      54.57
+     ]
+    ],
+    "unit": "93.",
+    "labelA": "",
+    "labelB": ""
+   },
+   {
+    "points": [
+     [
+      22.93,
+      50.69
+     ],
+     [
+      23.06,
+      50.73
+     ]
+    ],
+    "unit": "95.",
+    "labelA": "",
+    "labelB": "bis 3.7"
+   }
+  ],
+  "onlyA": [],
+  "onlyB": []
+ },
+ "0702": {
+  "arrows": [
+   {
+    "points": [
+     [
+      22.37,
+      54.61
+     ],
+     [
+      22.47,
+      54.62
+     ],
+     [
+      22.55,
+      54.63
+     ]
+    ],
+    "style": "solid",
+    "unit": "285.Sich.",
+    "unitB": "285.Sich.",
+    "styleA": "dashed",
+    "styleB": "solid",
+    "tipKm": 1.7,
+    "tailKm": 0.6,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.27,
+      53.34
+     ],
+     [
+      25.37,
+      53.36
+     ],
+     [
+      25.45,
+      53.38
+     ]
+    ],
+    "style": "solid",
+    "unit": "137.",
+    "unitB": "137.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.4,
+      53.25
+     ],
+     [
+      25.48,
+      53.27
+     ],
+     [
+      25.56,
+      53.29
+     ]
+    ],
+    "style": "dashed",
+    "unit": "292.",
+    "unitB": "292.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.7,
+    "tailKm": 1.3,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.4,
+      53.07
+     ],
+     [
+      25.5,
+      53.1
+     ],
+     [
+      25.59,
+      53.13
+     ]
+    ],
+    "style": "solid",
+    "unit": "34.",
+    "unitB": "34.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 1.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.56,
+      53.03
+     ],
+     [
+      25.63,
+      53.05
+     ],
+     [
+      25.7,
+      53.08
+     ]
+    ],
+    "style": "solid",
+    "unit": "31.",
+    "unitB": "31.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 5.2,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      28.04,
+      53.08
+     ],
+     [
+      28.21,
+      53.08
+     ],
+     [
+      28.36,
+      53.08
+     ]
+    ],
+    "style": "dashed",
+    "unit": "10.m.",
+    "unitB": "10.m.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.7,
+    "tailKm": 2.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      29.44,
+      53.13
+     ],
+     [
+      29.56,
+      53.1
+     ],
+     [
+      29.71,
+      53.06
+     ]
+    ],
+    "style": "dashed",
+    "unit": "3.Pz.",
+    "unitB": "3.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.3,
+    "tailKm": 0.0,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      28.94,
+      53.45
+     ],
+     [
+      29.01,
+      53.48
+     ],
+     [
+      29.09,
+      53.52
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "unitB": "4.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 2.2,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.22,
+      50.68
+     ],
+     [
+      26.14,
+      50.68
+     ],
+     [
+      26.06,
+      50.68
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "unitB": "25.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 3.7,
+    "tailKm": 2.2,
+    "conf": [
+     "rough",
+     "unsure"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.7,
+      50.51
+     ],
+     [
+      26.76,
+      50.51
+     ],
+     [
+      26.82,
+      50.51
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "unitB": "13.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 4.8,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   }
+  ],
+  "transport": [
+   {
+    "points": [
+     [
+      21.8,
+      54.59
+     ],
+     [
+      22.02,
+      54.57
+     ],
+     [
+      22.25,
+      54.57
+     ]
+    ],
+    "unit": "93.",
+    "labelA": "im Rotransp.",
+    "labelB": "im Rotransp."
+   }
+  ],
+  "onlyA": [
+   {
+    "points": [
+     [
+      25.61,
+      50.95
+     ],
+     [
+      25.64,
+      50.99
+     ],
+     [
+      25.67,
+      51.04
+     ]
+    ],
+    "unit": "62.",
+    "style": "solid",
+    "conf": "clear",
+    "note": "short arrow pointing NNE next to the red 45.m. text"
+   },
+   {
+    "points": [
+     [
+      27.22,
+      53.76
+     ],
+     [
+      27.13,
+      53.78
+     ],
+     [
+      27.03,
+      53.8
+     ]
+    ],
+    "unit": "17.Pz.",
+    "style": "dashed",
+    "conf": "unsure",
+    "note": "small dashed arrow with a tip pointing west, near the 25. label by the dashed boundary line; unit uncertain"
+   },
+   {
+    "points": [
+     [
+      27.1,
+      53.7
+     ],
+     [
+      27.04,
+      53.71
+     ],
+     [
+      26.98,
+      53.71
+     ]
+    ],
+    "unit": "17.Pz.",
+    "style": "dashed",
+    "conf": "unsure",
+    "note": "second small dashed arrow pointing west, below the first"
+   }
+  ],
+  "onlyB": [
+   {
+    "points": [
+     [
+      26.32,
+      50.5
+     ],
+     [
+      26.49,
+      50.4
+     ]
+    ],
+    "unit": "11.Pz.",
+    "style": "solid",
+    "conf": "clear",
+    "note": "dark arrow from 11.Pz. toward the SE"
+   },
+   {
+    "points": [
+     [
+      29.0,
+      53.48
+     ],
+     [
+      29.1,
+      53.52
+     ]
+    ],
+    "unit": "4.Pz.",
+    "style": "solid",
+    "conf": "clear",
+    "note": "same as the 4.Pz. arrow near Gradjanka (duplicate coordinate read from a second zoom)"
+   }
+  ]
+ },
+ "0703": {
+  "arrows": [
+   {
+    "points": [
+     [
+      25.09,
+      52.21
+     ],
+     [
+      25.18,
+      52.21
+     ],
+     [
+      25.25,
+      52.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "45.",
+    "unitB": "45.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 1.4,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.35,
+      50.74
+     ],
+     [
+      23.44,
+      50.75
+     ],
+     [
+      23.53,
+      50.76
+     ]
+    ],
+    "style": "solid",
+    "unit": "95.",
+    "unitB": "95.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.0,
+    "tailKm": 2.4,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.61,
+      50.68
+     ],
+     [
+      26.68,
+      50.68
+     ],
+     [
+      26.75,
+      50.68
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "unitB": "14.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 0.0,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.71,
+      50.89
+     ],
+     [
+      26.83,
+      50.91
+     ],
+     [
+      26.93,
+      50.93
+     ]
+    ],
+    "style": "dashed",
+    "unit": "",
+    "unitB": "",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.7,
+    "tailKm": 2.2,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   }
+  ],
+  "transport": [
+   {
+    "points": [
+     [
+      21.82,
+      54.61
+     ],
+     [
+      22.11,
+      54.61
+     ],
+     [
+      22.39,
+      54.62
+     ]
+    ],
+    "unit": "93.",
+    "labelA": "Antransp. bis 6.7.",
+    "labelB": "Antransp. bis 6.7."
+   },
+   {
+    "points": [
+     [
+      22.3,
+      53.98
+     ],
+     [
+      22.43,
+      54.0
+     ],
+     [
+      22.57,
+      54.02
+     ]
+    ],
+    "unit": "1/3 96.",
+    "labelA": "7.6.",
+    "labelB": ""
+   },
+   {
+    "points": [
+     [
+      22.9,
+      52.02
+     ],
+     [
+      23.08,
+      52.03
+     ],
+     [
+      23.26,
+      52.03
+     ]
+    ],
+    "unit": "260.",
+    "labelA": "6.7.",
+    "labelB": ""
+   }
+  ],
+  "onlyA": [
+   {
+    "points": [
+     [
+      27.15,
+      50.5
+     ],
+     [
+      27.22,
+      50.5
+     ],
+     [
+      27.28,
+      50.49
+     ]
+    ],
+    "unit": "13.Pz.",
+    "style": "solid",
+    "conf": "clear",
+    "note": "thick arrow east from the 13.Pz. arc, at the southern limit of the range"
+   },
+   {
+    "points": [
+     [
+      26.52,
+      53.38
+     ],
+     [
+      26.42,
+      53.35
+     ],
+     [
+      26.33,
+      53.33
+     ]
+    ],
+    "unit": "12.Pz.",
+    "style": "solid",
+    "conf": "rough",
+    "note": "small arrow near Minsk pointing down-left inside the red encircled area, tail at the 12.Pz. arc"
+   }
+  ],
+  "onlyB": [
+   {
+    "points": [
+     [
+      26.21,
+      51.05
+     ],
+     [
+      26.28,
+      51.1
+     ]
+    ],
+    "unit": "",
+    "style": "solid",
+    "conf": "rough",
+    "note": "small blue arrow pointing NE just under the red 45.m. label; tail not at a blue symbol; not connected"
+   },
+   {
+    "points": [
+     [
+      27.24,
+      53.88
+     ],
+     [
+      27.03,
+      53.82
+     ]
+    ],
+    "unit": "12.Pz.",
+    "style": "dashed",
+    "conf": "unsure",
+    "note": "thin dashed blue line with a small tip pointing SW just west of Minsk; tail near the 12.Pz. arc; may be part of a boundary line"
+   }
+  ]
+ },
+ "0704": {
+  "arrows": [
+   {
+    "points": [
+     [
+      22.15,
+      53.95
+     ],
+     [
+      22.5,
+      54.0
+     ]
+    ],
+    "style": "solid",
+    "unit": "Rest.96",
+    "unitB": "Rest.96",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 5.7,
+    "tailKm": 0.7,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.95,
+      54.65
+     ],
+     [
+      26.05,
+      54.7
+     ],
+     [
+      26.1,
+      54.75
+     ]
+    ],
+    "style": "dashed",
+    "unit": "26.",
+    "unitB": "26.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 4.5,
+    "tailKm": 1.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.2,
+      54.55
+     ],
+     [
+      26.25,
+      54.55
+     ],
+     [
+      26.35,
+      54.6
+     ]
+    ],
+    "style": "dashed",
+    "unit": "6.",
+    "unitB": "6.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.3,
+    "tailKm": 2.2,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.2,
+      54.15
+     ],
+     [
+      26.25,
+      54.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "35.",
+    "unitB": "35.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.9,
+      54.1
+     ],
+     [
+      26.0,
+      54.05
+     ],
+     [
+      26.15,
+      54.0
+     ]
+    ],
+    "style": "dashed",
+    "unit": "5.",
+    "unitB": "5.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.7,
+    "tailKm": 1.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.8,
+      53.8
+     ],
+     [
+      25.95,
+      53.8
+     ],
+     [
+      26.15,
+      53.85
+     ]
+    ],
+    "style": "solid",
+    "unit": "28.",
+    "unitB": "28.",
+    "styleA": "dashed",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.9,
+      53.6
+     ],
+     [
+      26.1,
+      53.6
+     ]
+    ],
+    "style": "dashed",
+    "unit": "8.",
+    "unitB": "8.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.3,
+    "tailKm": 2.2,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.0,
+      53.65
+     ],
+     [
+      26.1,
+      53.65
+     ],
+     [
+      26.3,
+      53.65
+     ]
+    ],
+    "style": "dashed",
+    "unit": "8.",
+    "unitB": "8.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.3,
+    "tailKm": 9.3,
+    "conf": [
+     "unsure",
+     "unsure"
+    ]
+   },
+   {
+    "points": [
+     [
+      22.9,
+      52.0
+     ],
+     [
+      23.05,
+      52.0
+     ],
+     [
+      23.25,
+      52.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "260.",
+    "unitB": "260.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 1.4,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.3,
+      52.75
+     ],
+     [
+      23.65,
+      52.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "112.",
+    "unitB": "112.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.2,
+      52.4
+     ],
+     [
+      24.3,
+      52.35
+     ],
+     [
+      24.35,
+      52.3
+     ]
+    ],
+    "style": "dashed",
+    "unit": "293.",
+    "unitB": "293.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.0,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      24.95,
+      52.2
+     ],
+     [
+      25.1,
+      52.2
+     ],
+     [
+      25.35,
+      52.2
+     ],
+     [
+      25.5,
+      52.15
+     ]
+    ],
+    "style": "dashed",
+    "unit": "45.",
+    "unitB": "45.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.1,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   }
+  ],
+  "transport": [],
+  "onlyA": [],
+  "onlyB": []
+ },
+ "0705": {
+  "arrows": [],
+  "transport": [
+   {
+    "points": [
+     [
+      22.95,
+      52.0
+     ],
+     [
+      23.3,
+      52.0
+     ]
+    ],
+    "unit": "260.",
+    "labelA": "bis 6.7.",
+    "labelB": "bis 6.7."
+   },
+   {
+    "points": [
+     [
+      22.45,
+      54.0
+     ],
+     [
+      22.65,
+      54.05
+     ]
+    ],
+    "unit": "96",
+    "labelA": "bis 6.",
+    "labelB": "bis 6."
+   },
+   {
+    "points": [
+     [
+      22.75,
+      50.7
+     ],
+     [
+      23.05,
+      50.7
+     ]
+    ],
+    "unit": "98.",
+    "labelA": "-8.7.",
+    "labelB": "-8.7."
+   }
+  ],
+  "onlyA": [],
+  "onlyB": []
+ },
+ "0706": {
+  "arrows": [
+   {
+    "points": [
+     [
+      26.7,
+      55.0
+     ],
+     [
+      26.8,
+      55.0
+     ],
+     [
+      26.9,
+      55.0
+     ]
+    ],
+    "style": "dashed",
+    "unit": "26.",
+    "unitB": "26.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.6,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.85,
+      54.8
+     ],
+     [
+      26.95,
+      54.85
+     ],
+     [
+      27.0,
+      54.85
+     ]
+    ],
+    "style": "dashed",
+    "unit": "6.",
+    "unitB": "6.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 3.4,
+    "tailKm": 2.8,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.55,
+      54.9
+     ],
+     [
+      27.55,
+      54.95
+     ],
+     [
+      27.6,
+      55.0
+     ]
+    ],
+    "style": "dashed",
+    "unit": "14.m.",
+    "unitB": "14.m.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.6,
+    "tailKm": 3.8,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      29.3,
+      55.2
+     ],
+     [
+      29.4,
+      55.2
+     ],
+     [
+      29.5,
+      55.2
+     ]
+    ],
+    "style": "dashed",
+    "unit": "20.Pz.",
+    "unitB": "20.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 1.7,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      28.7,
+      54.9
+     ],
+     [
+      28.85,
+      54.95
+     ],
+     [
+      29.05,
+      55.0
+     ]
+    ],
+    "style": "dashed",
+    "unit": "20.m.",
+    "unitB": "20.m.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.6,
+    "tailKm": 4.2,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      29.75,
+      54.75
+     ],
+     [
+      29.85,
+      54.7
+     ],
+     [
+      29.95,
+      54.7
+     ]
+    ],
+    "style": "dashed",
+    "unit": "17.Pz.",
+    "unitB": "17.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.9,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      29.75,
+      54.75
+     ],
+     [
+      29.75,
+      54.65
+     ],
+     [
+      29.8,
+      54.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "17.Pz.",
+    "unitB": "17.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 1.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      28.5,
+      55.65
+     ],
+     [
+      28.6,
+      55.6
+     ],
+     [
+      28.65,
+      55.55
+     ]
+    ],
+    "style": "dashed",
+    "unit": "19.Pz.",
+    "unitB": "19.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.8,
+    "tailKm": 1.3,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      25.8,
+      54.15
+     ],
+     [
+      25.9,
+      54.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "129.",
+    "unitB": "129.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.4,
+      53.7
+     ],
+     [
+      27.5,
+      53.7
+     ],
+     [
+      27.65,
+      53.7
+     ]
+    ],
+    "style": "solid",
+    "unit": "J.R.Gr.D.",
+    "unitB": "Br.900",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 6.0,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.35,
+      51.05
+     ],
+     [
+      26.45,
+      51.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "62.",
+    "unitB": "62.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.3,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.7,
+      50.85
+     ],
+     [
+      26.8,
+      50.85
+     ]
+    ],
+    "style": "solid",
+    "unit": "298.",
+    "unitB": "298.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.1,
+    "tailKm": 1.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.85,
+      50.8
+     ],
+     [
+      26.95,
+      50.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "44.",
+    "unitB": "44.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 3.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.05,
+      50.7
+     ],
+     [
+      27.15,
+      50.7
+     ]
+    ],
+    "style": "solid",
+    "unit": "299.",
+    "unitB": "299.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.4,
+    "tailKm": 3.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.5,
+      50.6
+     ],
+     [
+      27.55,
+      50.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "unitB": "14.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.8,
+    "tailKm": 5.8,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.6,
+      50.5
+     ],
+     [
+      27.7,
+      50.5
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "unitB": "13.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 0.7,
+    "tailKm": 0.0,
+    "conf": [
+     "unsure",
+     "unsure"
+    ]
+   }
+  ],
+  "transport": [
+   {
+    "points": [
+     [
+      22.9,
+      50.65
+     ],
+     [
+      23.15,
+      50.7
+     ]
+    ],
+    "unit": "98.",
+    "labelA": "5.-8.7.",
+    "labelB": "5.-8.7."
+   }
+  ],
+  "onlyA": [],
+  "onlyB": [
+   {
+    "points": [
+     [
+      26.35,
+      50.96
+     ],
+     [
+      26.44,
+      50.96
+     ]
+    ],
+    "unit": "99.",
+    "style": "solid",
+    "conf": "unsure",
+    "note": "very short stub with a tip hidden under red text 30,35.Pz.D."
+   }
+  ]
+ },
+ "0707": {
+  "arrows": [
+   {
+    "points": [
+     [
+      27.8,
+      55.2
+     ],
+     [
+      27.85,
+      55.2
+     ],
+     [
+      27.9,
+      55.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "V.A. VI.",
+    "unitB": "V.A. VI.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.7,
+    "tailKm": 2.9,
+    "conf": [
+     "rough",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      29.65,
+      54.75
+     ],
+     [
+      29.7,
+      54.7
+     ],
+     [
+      29.75,
+      54.6
+     ]
+    ],
+    "style": "dashed",
+    "unit": "17.Pz.",
+    "unitB": "17.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 0.6,
+    "tailKm": 1.7,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   }
+  ],
+  "transport": [
+   {
+    "points": [
+     [
+      22.35,
+      50.55
+     ],
+     [
+      22.55,
+      50.6
+     ],
+     [
+      22.7,
+      50.65
+     ]
+    ],
+    "unit": "294.",
+    "labelA": "",
+    "labelB": "294."
+   }
+  ],
+  "onlyA": [],
+  "onlyB": []
+ },
+ "0708": {
+  "arrows": [
+   {
+    "points": [
+     [
+      26.6,
+      53.5
+     ],
+     [
+      26.75,
+      53.5
+     ],
+     [
+      26.9,
+      53.5
+     ]
+    ],
+    "style": "solid",
+    "unit": "7.",
+    "unitB": "7.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 4.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.2,
+      53.05
+     ],
+     [
+      27.3,
+      53.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "LIII.",
+    "unitB": "255.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.0,
+    "tailKm": 0.7,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.3,
+      51.25
+     ],
+     [
+      26.4,
+      51.25
+     ],
+     [
+      26.5,
+      51.3
+     ]
+    ],
+    "style": "solid",
+    "unit": "56.",
+    "unitB": "56.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 3.0,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.4,
+      50.9
+     ],
+     [
+      26.5,
+      50.95
+     ],
+     [
+      26.6,
+      50.95
+     ]
+    ],
+    "style": "solid",
+    "unit": "62.",
+    "unitB": "62.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.1,
+    "tailKm": 1.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.15,
+      50.7
+     ],
+     [
+      27.2,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "298.",
+    "unitB": "298.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.2,
+    "tailKm": 3.9,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.3,
+      50.65
+     ],
+     [
+      27.4,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "44.",
+    "unitB": "44.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.8,
+    "tailKm": 3.0,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      29.75,
+      53.3
+     ],
+     [
+      29.8,
+      53.4
+     ],
+     [
+      29.85,
+      53.5
+     ],
+     [
+      29.95,
+      53.55
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "unitB": "4.Pz.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.0,
+    "tailKm": 2.6,
+    "conf": [
+     "rough",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.35,
+      50.7
+     ],
+     [
+      23.5,
+      50.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle.98",
+    "unitB": "Tle.98",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.3,
+    "tailKm": 3.3,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   }
+  ],
+  "transport": [
+   {
+    "points": [
+     [
+      22.65,
+      50.55
+     ],
+     [
+      22.85,
+      50.6
+     ]
+    ],
+    "unit": "294.",
+    "labelA": "l.Antransp.",
+    "labelB": "1. Antransp."
+   }
+  ],
+  "onlyA": [
+   {
+    "points": [
+     [
+      27.3,
+      53.9
+     ],
+     [
+      27.5,
+      53.95
+     ],
+     [
+      27.7,
+      53.95
+     ]
+    ],
+    "unit": "137.",
+    "style": "solid",
+    "conf": "rough",
+    "note": "thin line from the 137. symbol east to the Br.900 symbol with a small head at Minsk; may be a link line rather than an advance"
+   },
+   {
+    "points": [
+     [
+      25.65,
+      50.45
+     ],
+     [
+      25.75,
+      50.5
+     ],
+     [
+      25.8,
+      50.5
+     ]
+    ],
+    "unit": "60.",
+    "style": "solid",
+    "conf": "rough",
+    "note": "arrow NE from the 60. symbol; near the southern edge of range"
+   }
+  ],
+  "onlyB": []
+ },
+ "0709": {
+  "arrows": [
+   {
+    "points": [
+     [
+      28.55,
+      55.35
+     ],
+     [
+      28.65,
+      55.3
+     ],
+     [
+      28.75,
+      55.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "2/3 18.m.",
+    "unitB": "2/3 18.m.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.2,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.85,
+      53.1
+     ],
+     [
+      28.0,
+      53.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "255.",
+    "unitB": "255.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.3,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      26.9,
+      51.05
+     ],
+     [
+      27.1,
+      51.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "62.",
+    "unitB": "62.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.4,
+    "tailKm": 1.8,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.25,
+      50.75
+     ],
+     [
+      27.45,
+      50.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "V.A.298.",
+    "unitB": "V.A. 298.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.4,
+    "tailKm": 4.9,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.35,
+      50.65
+     ],
+     [
+      27.4,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "44.",
+    "unitB": "44.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 2.6,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      27.6,
+      50.6
+     ],
+     [
+      27.8,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "299.",
+    "unitB": "299.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 3.1,
+    "tailKm": 2.6,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      29.95,
+      53.3
+     ],
+     [
+      30.1,
+      53.35
+     ]
+    ],
+    "style": "dashed",
+    "unit": "3.Pz.",
+    "unitB": "3.Pz.",
+    "styleA": "dashed",
+    "styleB": "dashed",
+    "tipKm": 2.3,
+    "tailKm": 2.3,
+    "conf": [
+     "clear",
+     "rough"
+    ]
+   },
+   {
+    "points": [
+     [
+      23.55,
+      50.75
+     ],
+     [
+      23.75,
+      50.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "98.",
+    "unitB": "98.",
+    "styleA": "solid",
+    "styleB": "solid",
+    "tipKm": 1.8,
+    "tailKm": 1.1,
+    "conf": [
+     "clear",
+     "clear"
+    ]
+   }
+  ],
+  "transport": [
+   {
+    "points": [
+     [
+      22.4,
+      50.55
+     ],
+     [
+      22.8,
+      50.65
+     ]
+    ],
+    "unit": "294.",
+    "labelA": "",
+    "labelB": ""
+   }
+  ],
+  "onlyA": [],
+  "onlyB": []
+ }
+}

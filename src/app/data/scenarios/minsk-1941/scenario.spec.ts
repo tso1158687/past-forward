@@ -165,6 +165,16 @@ describe('Minsk 1941 scenario', () => {
       expect(withAreas).toEqual([1, 2, 5, 6, 7, 8, 11, 12, 13, 14, 15]);
     });
 
+    it('draws the German arrows the atlas shows, each at least partly on the map', () => {
+      expect(situations.reduce((sum, s) => sum + s.arrows.length, 0)).toBe(194);
+      for (const { day, arrows } of situations) {
+        for (const arrow of arrows) {
+          expect(arrow.points.length, `day ${day}`).toBeGreaterThanOrEqual(2);
+          expect(arrow.points.some(isOnMap), `day ${day}`).toBe(true);
+        }
+      }
+    });
+
     it('cites a known source for every evening', () => {
       const sourceIds = new Set(sources.map((source) => source.id));
       for (const situation of situations) {

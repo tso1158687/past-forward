@@ -1,0 +1,2215 @@
+{
+ "0628": {
+  "arrows": [
+   {
+    "points": [
+     [
+      23.17,
+      56.19
+     ],
+     [
+      23.36,
+      56.26
+     ]
+    ],
+    "style": "solid",
+    "unit": "61.",
+    "label": "V.A.",
+    "conf": "rough",
+    "note": "label \"V.A.\" and \"XXVI\" beside the arrow; tail touches the 61. symbol"
+   },
+   {
+    "points": [
+     [
+      26.77,
+      53.24
+     ],
+     [
+      26.94,
+      53.34
+     ]
+    ],
+    "style": "solid",
+    "unit": "18.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "thin arrow leaving the curl of the 18.Pz. symbol toward the NE, near the XXXXVII label"
+   },
+   {
+    "points": [
+     [
+      27.26,
+      53.2
+     ],
+     [
+      27.4,
+      53.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "V.A. 10.Pz.",
+    "label": "7:30",
+    "conf": "rough",
+    "note": "small arrow from the V.A. 10.Pz. arc; time label read as \"7:30\" (poorly legible)"
+   },
+   {
+    "points": [
+     [
+      26.42,
+      53.13
+     ],
+     [
+      26.64,
+      53.14
+     ]
+    ],
+    "style": "solid",
+    "unit": "18.Pz.",
+    "label": "",
+    "conf": "unsure",
+    "note": "arrow head drawn inside the long 18.Pz. shape (a long pointed symbol); may be part of the symbol rather than a separate arrow"
+   },
+   {
+    "points": [
+     [
+      21.56,
+      52.5
+     ],
+     [
+      21.69,
+      52.55
+     ]
+    ],
+    "style": "solid",
+    "unit": "112.",
+    "label": "",
+    "conf": "rough",
+    "note": "arrow drawn inside the 112. ellipse, joined to a locomotive symbol on its west side"
+   },
+   {
+    "points": [
+     [
+      22.92,
+      51.98
+     ],
+     [
+      23.09,
+      51.99
+     ]
+    ],
+    "style": "solid",
+    "unit": "15.",
+    "label": "",
+    "conf": "rough",
+    "note": "arrow drawn inside the 15. ellipse, joined to a locomotive symbol on its west side"
+   },
+   {
+    "points": [
+     [
+      21.86,
+      50.06
+     ],
+     [
+      22.27,
+      50.09
+     ]
+    ],
+    "style": "solid",
+    "unit": "132.",
+    "label": "Auslad. bis 4.7",
+    "conf": "clear",
+    "note": "arrow starting at the Lancut headquarters box and pointing into the 132. ellipse; label under it"
+   },
+   {
+    "points": [
+     [
+      22.9,
+      50.73
+     ],
+     [
+      23.04,
+      50.74
+     ]
+    ],
+    "style": "solid",
+    "unit": "95.",
+    "label": "bis 3.7",
+    "conf": "rough",
+    "note": "arrow inside the 95. ellipse (label \"Auslg.\"), joined to a locomotive symbol on its west side"
+   },
+   {
+    "points": [
+     [
+      23.08,
+      50.9
+     ],
+     [
+      23.14,
+      50.82
+     ]
+    ],
+    "style": "dashed",
+    "unit": "9.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "short dotted arrow pointing down into the 95. ellipse from the 9.Pz. label"
+   },
+   {
+    "points": [
+     [
+      23.25,
+      50.68
+     ],
+     [
+      23.31,
+      50.57
+     ]
+    ],
+    "style": "dashed",
+    "unit": "95.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed arrow leaving the 95. ellipse toward the south, ending near the 79. symbol"
+   },
+   {
+    "points": [
+     [
+      24.76,
+      51.24
+     ],
+     [
+      24.93,
+      51.13
+     ]
+    ],
+    "style": "dashed",
+    "unit": "62.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed arrow from the 62. symbol toward the SE"
+   },
+   {
+    "points": [
+     [
+      24.98,
+      50.85
+     ],
+     [
+      25.08,
+      50.92
+     ]
+    ],
+    "style": "solid",
+    "unit": "298.",
+    "label": "",
+    "conf": "clear",
+    "note": "thin arrow from the 298. symbol toward the NE"
+   },
+   {
+    "points": [
+     [
+      25.06,
+      50.78
+     ],
+     [
+      25.18,
+      50.76
+     ],
+     [
+      25.32,
+      50.72
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "label": "",
+    "conf": "rough",
+    "note": "curved thick line with arrow head ending at the XXIX / 25.m. symbols; could be a symbol border"
+   },
+   {
+    "points": [
+     [
+      25.35,
+      50.33
+     ],
+     [
+      25.35,
+      50.39
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle. 16.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "tiny arrow pointing north next to the 16.Pz. symbols"
+   },
+   {
+    "points": [
+     [
+      25.39,
+      50.33
+     ],
+     [
+      25.47,
+      50.35
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle. 16.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "tiny arrow pointing east next to the 16.Pz. symbols"
+   },
+   {
+    "points": [
+     [
+      25.59,
+      50.24
+     ],
+     [
+      25.55,
+      50.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "111.",
+    "label": "",
+    "conf": "rough",
+    "note": "tiny arrow pointing SW from the 111. symbol"
+   },
+   {
+    "points": [
+     [
+      26.32,
+      50.64
+     ],
+     [
+      26.58,
+      50.62
+     ]
+    ],
+    "style": "dashed",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed arrow from the 13.Pz. symbol toward the east"
+   },
+   {
+    "points": [
+     [
+      26.77,
+      50.28
+     ],
+     [
+      26.89,
+      50.18
+     ]
+    ],
+    "style": "dashed",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed thin blue arrow near Isjasslawl pointing SE; tail not connected to any symbol (11.Pz. is about 0.2 deg west)"
+   }
+  ],
+  "notes": "Also seen but not read: V.A. arcs at (23.7,56.3) and (25.0,55.4) are symbols without arrow tips; blue army boundary lines and the dashed/dotted air recon line near Wilebsk-Borissow (28.6. 16:40) in the NE tile are not read. The two-pointed lens shapes labelled 18.Pz., 10.Pz., 4.Pz., 3.Pz. are unit symbols, not arrows."
+ },
+ "0629": {
+  "arrows": [
+   {
+    "points": [
+     [
+      22.5,
+      54.0
+     ],
+     [
+      22.67,
+      54.01
+     ]
+    ],
+    "style": "solid",
+    "unit": "106.",
+    "label": "",
+    "conf": "rough",
+    "note": "arrow starting at a locomotive symbol and entering the 106. ellipse"
+   },
+   {
+    "points": [
+     [
+      23.7,
+      53.8
+     ],
+     [
+      23.91,
+      53.85
+     ]
+    ],
+    "style": "dashed",
+    "unit": "102.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed arrow from the 102. circle pointing east/ENE"
+   },
+   {
+    "points": [
+     [
+      24.01,
+      54.32
+     ],
+     [
+      23.89,
+      54.34
+     ],
+     [
+      23.76,
+      54.29
+     ]
+    ],
+    "style": "solid",
+    "unit": "110.",
+    "label": "",
+    "conf": "unsure",
+    "note": "the 110. arc seems to end in a small arrow tip pointing west; may only be a symbol"
+   },
+   {
+    "points": [
+     [
+      23.92,
+      55.38
+     ],
+     [
+      23.92,
+      55.45
+     ]
+    ],
+    "style": "solid",
+    "unit": "251.",
+    "label": "",
+    "conf": "rough",
+    "note": "small arrow pointing north out of the top of the 251. symbol"
+   },
+   {
+    "points": [
+     [
+      24.41,
+      55.63
+     ],
+     [
+      24.52,
+      55.67
+     ]
+    ],
+    "style": "solid",
+    "unit": "30.",
+    "label": "?",
+    "conf": "rough",
+    "note": "small arrow NE of the 30. symbol, \"?\" beside it"
+   },
+   {
+    "points": [
+     [
+      24.48,
+      55.58
+     ],
+     [
+      24.63,
+      55.63
+     ]
+    ],
+    "style": "solid",
+    "unit": "126.",
+    "label": "?",
+    "conf": "rough",
+    "note": "small arrow NE of the 126. symbol, \"?\" beside it"
+   },
+   {
+    "points": [
+     [
+      22.32,
+      50.79
+     ],
+     [
+      22.49,
+      50.72
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS A.H.",
+    "label": "",
+    "conf": "clear",
+    "note": "thin arrow leaving the \"SS A.H.\" ellipse toward the SE"
+   },
+   {
+    "points": [
+     [
+      22.91,
+      50.74
+     ],
+     [
+      22.99,
+      50.74
+     ]
+    ],
+    "style": "solid",
+    "unit": "95.",
+    "label": "bis 3.7",
+    "conf": "rough",
+    "note": "arrow inside the 95. ellipse, joined to a locomotive symbol on its west side"
+   },
+   {
+    "points": [
+     [
+      23.25,
+      50.65
+     ],
+     [
+      23.3,
+      50.57
+     ]
+    ],
+    "style": "dashed",
+    "unit": "95.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed arrow leaving the 95. ellipse southwards (toward 79.)"
+   },
+   {
+    "points": [
+     [
+      23.3,
+      52.73
+     ],
+     [
+      23.61,
+      52.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "197.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 197. circle pointing east toward the XIII. mark"
+   },
+   {
+    "points": [
+     [
+      22.85,
+      52.01
+     ],
+     [
+      23.08,
+      52.04
+     ]
+    ],
+    "style": "solid",
+    "unit": "15.",
+    "label": "bis 1.7",
+    "conf": "rough",
+    "note": "arrow inside the 15. ellipse, joined to a locomotive symbol on its west side"
+   },
+   {
+    "points": [
+     [
+      21.63,
+      52.54
+     ],
+     [
+      21.86,
+      52.62
+     ]
+    ],
+    "style": "solid",
+    "unit": "112.",
+    "label": "bis 1.7",
+    "conf": "rough",
+    "note": "arrow inside the 112. ellipse, joined to a locomotive symbol on its west side"
+   },
+   {
+    "points": [
+     [
+      21.81,
+      50.02
+     ],
+     [
+      22.23,
+      50.11
+     ]
+    ],
+    "style": "solid",
+    "unit": "132.",
+    "label": "Ausld. bis 3.7",
+    "conf": "clear",
+    "note": "arrow from the Lancut headquarters box into the 132. ellipse"
+   },
+   {
+    "points": [
+     [
+      24.26,
+      52.03
+     ],
+     [
+      24.28,
+      52.08
+     ]
+    ],
+    "style": "solid",
+    "unit": "255.",
+    "label": "",
+    "conf": "rough",
+    "note": "tiny arrow pointing north inside the 255. ellipse, with a short line joining it to 267."
+   },
+   {
+    "points": [
+     [
+      24.55,
+      52.34
+     ],
+     [
+      24.61,
+      52.39
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle. 45.",
+    "label": "",
+    "conf": "rough",
+    "note": "small double-tipped arrow pointing NE just above the Tle. 45. symbol"
+   },
+   {
+    "points": [
+     [
+      23.64,
+      50.6
+     ],
+     [
+      23.76,
+      50.57
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow leaving the 79. symbol toward the east, ending near the Dolhobyczow label"
+   },
+   {
+    "points": [
+     [
+      23.81,
+      50.71
+     ],
+     [
+      23.71,
+      50.64
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS W.",
+    "label": "",
+    "conf": "rough",
+    "note": "thin arrow from the \"SS W.\" arc pointing SW"
+   },
+   {
+    "points": [
+     [
+      25.55,
+      52.78
+     ],
+     [
+      25.75,
+      52.86
+     ],
+     [
+      26.0,
+      52.92
+     ]
+    ],
+    "style": "dashed",
+    "unit": "10.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed arrow from the 10.m. symbol toward the ENE, passing Bytsen"
+   },
+   {
+    "points": [
+     [
+      25.88,
+      50.81
+     ],
+     [
+      26.02,
+      50.78
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 14.Pz. symbol pointing to the III.m. label"
+   },
+   {
+    "points": [
+     [
+      26.87,
+      50.65
+     ],
+     [
+      27.11,
+      50.64
+     ]
+    ],
+    "style": "solid",
+    "unit": "23.m.",
+    "label": "",
+    "conf": "rough",
+    "note": "thick arrow east of the red 23.m. label, tail not at a visible blue symbol; nearest blue symbol is 13.Pz. about 0.4 deg west; not connected"
+   },
+   {
+    "points": [
+     [
+      27.31,
+      50.65
+     ],
+     [
+      27.53,
+      50.62
+     ]
+    ],
+    "style": "dashed",
+    "unit": "5.",
+    "label": "",
+    "conf": "rough",
+    "note": "thick dashed arrow starting at the \"5.\" headquarters flag pointing east; tail not at a blue unit symbol; not connected"
+   },
+   {
+    "points": [
+     [
+      26.5,
+      50.36
+     ],
+     [
+      26.7,
+      50.36
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 11.Pz. symbol pointing east"
+   },
+   {
+    "points": [
+     [
+      26.82,
+      50.31
+     ],
+     [
+      26.96,
+      50.21
+     ]
+    ],
+    "style": "dashed",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed arrow ending near Schepetowka pointing SE; tail not connected to a symbol"
+   },
+   {
+    "points": [
+     [
+      25.39,
+      54.11
+     ],
+     [
+      25.45,
+      54.22
+     ],
+     [
+      25.51,
+      54.29
+     ]
+    ],
+    "style": "dashed",
+    "unit": "18.m.",
+    "label": "",
+    "conf": "unsure",
+    "note": "thin dashed line from the 18.m. symbol going north to an arrow tip near 26./6. symbols"
+   },
+   {
+    "points": [
+     [
+      25.47,
+      53.96
+     ],
+     [
+      25.55,
+      53.98
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle.",
+    "label": "",
+    "conf": "rough",
+    "note": "small arrow from the Tle. symbol toward the east"
+   },
+   {
+    "points": [
+     [
+      27.84,
+      53.41
+     ],
+     [
+      28.01,
+      53.44
+     ]
+    ],
+    "style": "solid",
+    "unit": "V.R. XXXXVII",
+    "label": "16:00",
+    "conf": "rough",
+    "note": "thin arrow from the V.R. arc toward the east; time label \"16:00\""
+   },
+   {
+    "points": [
+     [
+      26.99,
+      53.84
+     ],
+     [
+      27.3,
+      53.85
+     ]
+    ],
+    "style": "solid",
+    "unit": "12.Pz.",
+    "label": "",
+    "conf": "unsure",
+    "note": "horizontal line with an arrow-like end under the 12.Pz. label; not sure it is an arrow rather than part of a symbol"
+   },
+   {
+    "points": [
+     [
+      24.61,
+      50.71
+     ],
+     [
+      24.72,
+      50.71
+     ]
+    ],
+    "style": "solid",
+    "unit": "99.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 99. symbol pointing east"
+   },
+   {
+    "points": [
+     [
+      24.53,
+      50.55
+     ],
+     [
+      24.64,
+      50.5
+     ]
+    ],
+    "style": "solid",
+    "unit": "168.",
+    "label": "",
+    "conf": "rough",
+    "note": "the 168. arc ends in an arrow tip pointing SE"
+   },
+   {
+    "points": [
+     [
+      24.82,
+      50.34
+     ],
+     [
+      24.91,
+      50.34
+     ]
+    ],
+    "style": "solid",
+    "unit": "262.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 262. symbol pointing east"
+   },
+   {
+    "points": [
+     [
+      24.84,
+      50.23
+     ],
+     [
+      24.96,
+      50.17
+     ],
+     [
+      25.09,
+      50.12
+     ]
+    ],
+    "style": "solid",
+    "unit": "9.",
+    "label": "",
+    "conf": "rough",
+    "note": "the 9. arc ends in an arrow tip pointing SE"
+   },
+   {
+    "points": [
+     [
+      25.09,
+      50.12
+     ],
+     [
+      25.1,
+      50.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "57.",
+    "label": "",
+    "conf": "unsure",
+    "note": "tiny downward tip under the 57. symbol; unsure it is an arrow"
+   },
+   {
+    "points": [
+     [
+      25.35,
+      50.07
+     ],
+     [
+      25.38,
+      50.01
+     ]
+    ],
+    "style": "solid",
+    "unit": "75.",
+    "label": "",
+    "conf": "unsure",
+    "note": "tiny downward tip under the 75. symbol; unsure it is an arrow"
+   },
+   {
+    "points": [
+     [
+      25.34,
+      50.37
+     ],
+     [
+      25.43,
+      50.35
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle. 16.m.",
+    "label": "",
+    "conf": "unsure",
+    "note": "small arc with a short arrow pointing east, left of the 16.Pz. symbols"
+   }
+  ],
+  "notes": "Not read: the long straight blue boundary lines, dashed blue boundary lines (Narew, Dnepr-Bug), the dotted blue air-recon line near Borissow/Bobr (end of 28.6. flight), arcs of 36.m., 290., 26./6., 5./28. without a clear tip. Many Panzer units appear as long two-pointed lens shapes (18.Pz., 20.Pz., 17.Pz., 4.Pz., 3.Pz., 1.K.D.); these are unit symbols, not arrows."
+ },
+ "0630": {
+  "arrows": [
+   {
+    "points": [
+     [
+      22.31,
+      53.94
+     ],
+     [
+      22.58,
+      54.0
+     ]
+    ],
+    "style": "solid",
+    "unit": "1/4 106.",
+    "label": "bis 1.7",
+    "conf": "rough",
+    "note": "arrow starting at a locomotive symbol and entering the 106. ellipse"
+   },
+   {
+    "points": [
+     [
+      23.14,
+      54.75
+     ],
+     [
+      23.51,
+      54.7
+     ]
+    ],
+    "style": "solid",
+    "unit": "281.Sich.",
+    "label": "",
+    "conf": "rough",
+    "note": "thin arrow starting west of Firbalis and pointing east to the 281.Sich. symbol; tail not at a unit symbol (nearest is the Pol. symbol about 0.4 deg north)"
+   },
+   {
+    "points": [
+     [
+      21.64,
+      52.56
+     ],
+     [
+      21.77,
+      52.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "112.",
+    "label": "bis 7.7",
+    "conf": "rough",
+    "note": "arrow inside the 112. ellipse, joined to a locomotive symbol on its west side"
+   },
+   {
+    "points": [
+     [
+      22.69,
+      51.95
+     ],
+     [
+      23.0,
+      51.99
+     ]
+    ],
+    "style": "solid",
+    "unit": "15.",
+    "label": "bis 9.7",
+    "conf": "rough",
+    "note": "arrow entering the 15. ellipse from a locomotive symbol to its west"
+   },
+   {
+    "points": [
+     [
+      23.48,
+      52.38
+     ],
+     [
+      23.66,
+      52.39
+     ]
+    ],
+    "style": "solid",
+    "unit": "293.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 293. symbol pointing east"
+   },
+   {
+    "points": [
+     [
+      24.25,
+      52.43
+     ],
+     [
+      24.42,
+      52.48
+     ]
+    ],
+    "style": "solid",
+    "unit": "52.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 52. circle toward the NE"
+   },
+   {
+    "points": [
+     [
+      25.12,
+      51.04
+     ],
+     [
+      25.37,
+      51.05
+     ]
+    ],
+    "style": "dashed",
+    "unit": "56.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed arrow from the 56. symbol pointing east"
+   },
+   {
+    "points": [
+     [
+      25.29,
+      50.95
+     ],
+     [
+      25.61,
+      50.94
+     ]
+    ],
+    "style": "dashed",
+    "unit": "62.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed arrow from the 62. symbol pointing east"
+   },
+   {
+    "points": [
+     [
+      24.57,
+      50.53
+     ],
+     [
+      24.68,
+      50.51
+     ]
+    ],
+    "style": "solid",
+    "unit": "168.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow leaving the end of the 168. arc toward the ESE"
+   },
+   {
+    "points": [
+     [
+      24.05,
+      50.52
+     ],
+     [
+      24.2,
+      50.48
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow pointing ESE into the 79. symbol; tail near the Dolhobyczow label"
+   },
+   {
+    "points": [
+     [
+      23.35,
+      50.37
+     ],
+     [
+      23.45,
+      50.29
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS W.",
+    "label": "",
+    "conf": "rough",
+    "note": "arrow from the \"SS W.\" arc toward the SSE"
+   },
+   {
+    "points": [
+     [
+      24.65,
+      49.77
+     ],
+     [
+      24.77,
+      49.73
+     ]
+    ],
+    "style": "solid",
+    "unit": "8.Pz.",
+    "label": "",
+    "conf": "unsure",
+    "note": "arrow tip near the 8.Pz. symbol lying along a long blue boundary line; may be part of the boundary"
+   },
+   {
+    "points": [
+     [
+      21.83,
+      50.01
+     ],
+     [
+      22.23,
+      50.06
+     ]
+    ],
+    "style": "solid",
+    "unit": "132.",
+    "label": "Ausladg. bis 3.7",
+    "conf": "clear",
+    "note": "arrow from the Lancut headquarters label into the 132. ellipse"
+   },
+   {
+    "points": [
+     [
+      25.72,
+      50.17
+     ],
+     [
+      25.73,
+      50.14
+     ]
+    ],
+    "style": "solid",
+    "unit": "111.",
+    "label": "",
+    "conf": "rough",
+    "note": "tiny arrow pointing south from the 111. symbol"
+   },
+   {
+    "points": [
+     [
+      25.47,
+      50.25
+     ],
+     [
+      25.48,
+      50.3
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "tiny arrow pointing north from the 16.Pz. symbol"
+   },
+   {
+    "points": [
+     [
+      27.03,
+      50.57
+     ],
+     [
+      27.48,
+      50.57
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "long arrow from the 13.Pz. symbol to the east toward Nowograd Wolynsk, just below a red arrow of similar direction"
+   },
+   {
+    "points": [
+     [
+      26.83,
+      50.26
+     ],
+     [
+      26.98,
+      50.19
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "thick arrow toward the SE ending at Schepetowka; tail not at a clear symbol (11.Pz. about 0.3 deg west)"
+   },
+   {
+    "points": [
+     [
+      26.71,
+      50.19
+     ],
+     [
+      26.73,
+      50.13
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "unsure",
+    "note": "short arrow pointing south next to a red parallelogram symbol; not connected"
+   },
+   {
+    "points": [
+     [
+      27.33,
+      53.49
+     ],
+     [
+      27.56,
+      53.58
+     ]
+    ],
+    "style": "dashed",
+    "unit": "10.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed arrow from the 10.Pz. symbol toward the NE"
+   },
+   {
+    "points": [
+     [
+      27.37,
+      53.41
+     ],
+     [
+      27.6,
+      53.42
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the \"SS R.\" arc toward the east, ending near the Versprengte label"
+   },
+   {
+    "points": [
+     [
+      26.79,
+      52.94
+     ],
+     [
+      26.96,
+      52.96
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.K.D.",
+    "label": "",
+    "conf": "rough",
+    "note": "arrow from the 1.K.D. symbol toward the ENE"
+   },
+   {
+    "points": [
+     [
+      27.71,
+      53.85
+     ],
+     [
+      27.86,
+      53.89
+     ]
+    ],
+    "style": "solid",
+    "unit": "20.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow from the 20.Pz. symbol (south of Minsk) toward the ENE"
+   }
+  ],
+  "notes": "Not read: arcs of 3/4 106., 110., 86., 281.Sich. that end in small hooks; long straight blue boundary lines (e.g. 113 to XIV.m diagonal); dashed blue boundary lines; the dotted blue air-recon line with time labels east of Borissow (Keine Bewegungen); dashed curve segments near 25.m. at about (26.2, 50.6) which I could not resolve into an arrow; arrow-like tip on the 29.m. circle (26.8, 53.4) unclear. Lens-shaped 7.Pz., 18.Pz., 20.Pz., 12.Pz., 17.Pz., 4.Pz. are symbols."
+ },
+ "0701": {
+  "arrows": [
+   {
+    "points": [
+     [
+      21.9,
+      54.56
+     ],
+     [
+      22.16,
+      54.57
+     ]
+    ],
+    "style": "solid",
+    "unit": "93.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from a locomotive symbol at the tail, passing the \"93.\" label, pointing east to the 285.Sich. symbol"
+   },
+   {
+    "points": [
+     [
+      22.89,
+      50.67
+     ],
+     [
+      23.06,
+      50.73
+     ]
+    ],
+    "style": "solid",
+    "unit": "95.",
+    "label": "bis 3.7",
+    "conf": "rough",
+    "note": "short arrow from the locomotive-like symbol (labelled 95.) into the ellipse west of Hrubieszow"
+   },
+   {
+    "points": [
+     [
+      23.32,
+      50.74
+     ],
+     [
+      23.51,
+      50.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle. 95.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the ellipse (labelled Tle. 95.) pointing east"
+   },
+   {
+    "points": [
+     [
+      21.87,
+      50.05
+     ],
+     [
+      22.25,
+      50.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "132.",
+    "label": "Ausl. bis 3.7",
+    "conf": "clear",
+    "note": "arrow from the \"Ausl.\" label into the 132. ellipse"
+   },
+   {
+    "points": [
+     [
+      23.92,
+      52.13
+     ],
+     [
+      24.2,
+      52.18
+     ]
+    ],
+    "style": "solid",
+    "unit": "Mas. 45.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the Mas. 45. circle pointing east/ENE"
+   },
+   {
+    "points": [
+     [
+      24.89,
+      52.2
+     ],
+     [
+      25.33,
+      52.2
+     ]
+    ],
+    "style": "dashed",
+    "unit": "Tle. 45.",
+    "label": "?",
+    "conf": "clear",
+    "note": "dashed arrow from the Tle. 45. arc pointing east; a \"?\" printed at its tip"
+   },
+   {
+    "points": [
+     [
+      24.99,
+      50.62
+     ],
+     [
+      25.08,
+      50.62
+     ]
+    ],
+    "style": "solid",
+    "unit": "99.I.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow from the 99.I. arc pointing east"
+   },
+   {
+    "points": [
+     [
+      25.02,
+      50.76
+     ],
+     [
+      25.13,
+      50.76
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS A.H.",
+    "label": "?",
+    "conf": "clear",
+    "note": "arrow from the SS A.H. arc pointing east, \"?\" printed after the tip"
+   },
+   {
+    "points": [
+     [
+      24.37,
+      50.47
+     ],
+     [
+      24.53,
+      50.48
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 79. symbol pointing east"
+   },
+   {
+    "points": [
+     [
+      24.26,
+      50.3
+     ],
+     [
+      24.37,
+      50.29
+     ]
+    ],
+    "style": "solid",
+    "unit": "113.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow from the 113. symbol pointing ESE (toward Krystynopol)"
+   },
+   {
+    "points": [
+     [
+      24.63,
+      50.44
+     ],
+     [
+      24.78,
+      50.34
+     ]
+    ],
+    "style": "solid",
+    "unit": "168.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 168. symbol pointing SE toward the 6. headquarters flag"
+   },
+   {
+    "points": [
+     [
+      25.5,
+      50.22
+     ],
+     [
+      25.52,
+      50.19
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow pointing south from the 16.Pz. circle toward the 111. symbol"
+   },
+   {
+    "points": [
+     [
+      26.22,
+      50.46
+     ],
+     [
+      26.31,
+      50.37
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 16.m. arc pointing SE, ending near the 11.Pz. symbol"
+   },
+   {
+    "points": [
+     [
+      26.5,
+      50.37
+     ],
+     [
+      26.53,
+      50.43
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow pointing north from the 11.Pz. symbol (arc with an upward tip)"
+   },
+   {
+    "points": [
+     [
+      26.61,
+      50.17
+     ],
+     [
+      26.74,
+      50.12
+     ]
+    ],
+    "style": "dashed",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "short dashed arrow ending at Schepetowka pointing SE; tail not at the symbol (11.Pz. about 0.3 deg NW) so not connected"
+   },
+   {
+    "points": [
+     [
+      26.57,
+      50.64
+     ],
+     [
+      26.68,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 14.Pz. symbol pointing east"
+   },
+   {
+    "points": [
+     [
+      26.76,
+      50.53
+     ],
+     [
+      26.89,
+      50.53
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 13.Pz. symbol pointing east"
+   },
+   {
+    "points": [
+     [
+      26.13,
+      50.66
+     ],
+     [
+      26.06,
+      50.72
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "label": "",
+    "conf": "rough",
+    "note": "small arrow pointing NW out of the 25.m. arc"
+   },
+   {
+    "points": [
+     [
+      27.4,
+      52.95
+     ],
+     [
+      27.58,
+      52.96
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.K.D.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 1.K.D. ellipse pointing east toward a \"?\" symbol"
+   },
+   {
+    "points": [
+     [
+      27.92,
+      53.57
+     ],
+     [
+      28.2,
+      53.71
+     ]
+    ],
+    "style": "dashed",
+    "unit": "10.R.",
+    "label": "?",
+    "conf": "rough",
+    "note": "thin dashed arrow from the 10.R. symbol pointing NE with a \"?\" at its tip"
+   },
+   {
+    "points": [
+     [
+      27.86,
+      53.41
+     ],
+     [
+      28.05,
+      53.43
+     ],
+     [
+      28.33,
+      53.47
+     ]
+    ],
+    "style": "dashed",
+    "unit": "44.R.",
+    "label": "?",
+    "conf": "rough",
+    "note": "thick dashed arrow from the 44.R. arc pointing east; \"?\" at its tip"
+   },
+   {
+    "points": [
+     [
+      28.23,
+      54.06
+     ],
+     [
+      28.28,
+      54.13
+     ]
+    ],
+    "style": "solid",
+    "unit": "18.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow pointing NE from the 18.Pz. symbol, east of Minsk"
+   },
+   {
+    "points": [
+     [
+      25.6,
+      50.99
+     ],
+     [
+      25.68,
+      51.06
+     ]
+    ],
+    "style": "solid",
+    "unit": "",
+    "label": "",
+    "conf": "unsure",
+    "note": "blue arrow pointing NE near Kotki; tail not at a clear blue symbol (56. arcs about 0.3 deg NW); not connected"
+   }
+  ],
+  "notes": "Not read: long blue boundary lines (Pripyat line, Narew line, XXXIX/XXXXVII boundary lines); the dotted/dashed blue line with small bars east of Minsk to Bobr (air recon, Keine Bewegungen) at about (28.2-29.0, 54.0-54.3); double-dash wavy lines between V.R.167 and J.R.Gr.D. (about 25.5-26.0, 53.0) with no arrow tip; dashed arcs of Tle.XXIV and 25.m. (26.0, 50.8) and the 56. hooks (25.4, 51.0) which look like symbol parts rather than arrows; hooks on 106., 110., 254., 58. etc. are unit symbols."
+ },
+ "0702": {
+  "arrows": [
+   {
+    "points": [
+     [
+      21.85,
+      54.56
+     ],
+     [
+      22.26,
+      54.58
+     ]
+    ],
+    "style": "solid",
+    "unit": "93.",
+    "label": "im Rotransp.",
+    "conf": "clear",
+    "note": "arrow from the 93. symbol (a train-like symbol) pointing east toward 285.Sich."
+   },
+   {
+    "points": [
+     [
+      22.36,
+      54.61
+     ],
+     [
+      22.53,
+      54.62
+     ]
+    ],
+    "style": "solid",
+    "unit": "285.Sich.",
+    "label": "",
+    "conf": "rough",
+    "note": "short double-dash arrow entering the 285.Sich. arc from the west, a separate short piece after a gap"
+   },
+   {
+    "points": [
+     [
+      25.27,
+      53.33
+     ],
+     [
+      25.46,
+      53.39
+     ]
+    ],
+    "style": "solid",
+    "unit": "137.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 137. symbol pointing ENE; to the east, a red arrow lies near Moleczad"
+   },
+   {
+    "points": [
+     [
+      25.39,
+      53.26
+     ],
+     [
+      25.57,
+      53.29
+     ]
+    ],
+    "style": "dashed",
+    "unit": "292.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed arrow from the 292. arc pointing east toward the red arrow tail near Moleczad"
+   },
+   {
+    "points": [
+     [
+      25.42,
+      53.08
+     ],
+     [
+      25.59,
+      53.13
+     ]
+    ],
+    "style": "solid",
+    "unit": "34.",
+    "label": "V.A.",
+    "conf": "clear",
+    "note": "arrow from the 34. arc to the V.A. symbol, pointing ENE"
+   },
+   {
+    "points": [
+     [
+      25.5,
+      53.0
+     ],
+     [
+      25.7,
+      53.08
+     ]
+    ],
+    "style": "solid",
+    "unit": "31.",
+    "label": "V.A.",
+    "conf": "clear",
+    "note": "arrow from the 31. arc pointing ENE, below the previous one"
+   },
+   {
+    "points": [
+     [
+      28.0,
+      53.08
+     ],
+     [
+      28.37,
+      53.08
+     ]
+    ],
+    "style": "dashed",
+    "unit": "10.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed arrow from the 10.m. symbol pointing east to Star. Dorogi"
+   },
+   {
+    "points": [
+     [
+      28.94,
+      53.47
+     ],
+     [
+      29.09,
+      53.51
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow NE from the 4.Pz. symbol near Sabischin"
+   },
+   {
+    "points": [
+     [
+      29.44,
+      53.13
+     ],
+     [
+      29.68,
+      53.07
+     ]
+    ],
+    "style": "dashed",
+    "unit": "3.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed arrow from the 3.Pz. arc pointing ESE, with a thick red arrow overlapping its end"
+   },
+   {
+    "points": [
+     [
+      26.22,
+      50.7
+     ],
+     [
+      26.01,
+      50.67
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "label": "",
+    "conf": "unsure",
+    "note": "small black arrow inside the 25.m. arc; arrow tip points west; tail/tip order read by eye, unsure it is a true arrow"
+   },
+   {
+    "points": [
+     [
+      26.7,
+      50.52
+     ],
+     [
+      26.88,
+      50.53
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 13.Pz. arc pointing east, ending at the 109. label"
+   },
+   {
+    "points": [
+     [
+      26.32,
+      50.5
+     ],
+     [
+      26.49,
+      50.4
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "dark arrow from 11.Pz. toward the SE"
+   },
+   {
+    "points": [
+     [
+      26.55,
+      50.3
+     ],
+     [
+      26.67,
+      50.31
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the lower arc of 11.Pz. pointing east"
+   },
+   {
+    "points": [
+     [
+      25.52,
+      50.22
+     ],
+     [
+      25.61,
+      50.04
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 16.Pz. symbol pointing SE; most of it lies south of 50.5 N"
+   },
+   {
+    "points": [
+     [
+      26.23,
+      50.19
+     ],
+     [
+      26.41,
+      50.09
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 16.m. arc pointing SE; lies south of 50.5 N"
+   },
+   {
+    "points": [
+     [
+      29.0,
+      53.48
+     ],
+     [
+      29.1,
+      53.52
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "same as the 4.Pz. arrow near Gradjanka (duplicate coordinate read from a second zoom)"
+   }
+  ],
+  "notes": "Not read: long boundary lines (e.g. Pripyat line, Narew line, 28-29E diagonal NE of Minsk, 12.Pz boundaries); dashed blue vertical line with small arrow-like tips west of Minsk at (26.8-27.0, 53.6-53.8) which looks like a boundary with small tips; Minensperre crosses (blue + marks, not an arrow); red arrows, red recon lines (Smolensk-Orscha). Hooks of 56., 62., 298., 99.I. etc. are unit symbols without tips."
+ },
+ "0703": {
+  "arrows": [
+   {
+    "points": [
+     [
+      21.83,
+      54.61
+     ],
+     [
+      22.4,
+      54.62
+     ]
+    ],
+    "style": "solid",
+    "unit": "93.",
+    "label": "Antransp. bis 6.7.",
+    "conf": "clear",
+    "note": "arrow from the train-like 93. symbol pointing east"
+   },
+   {
+    "points": [
+     [
+      22.24,
+      53.98
+     ],
+     [
+      22.58,
+      54.02
+     ]
+    ],
+    "style": "solid",
+    "unit": "7/3 96.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow from the train-like symbol (labelled 7.6.) pointing ESE toward the 96. arc; tail is the symbol"
+   },
+   {
+    "points": [
+     [
+      22.89,
+      52.01
+     ],
+     [
+      23.27,
+      52.03
+     ]
+    ],
+    "style": "solid",
+    "unit": "260",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from a train-like symbol west of the 260 ellipse, pointing east to it"
+   },
+   {
+    "points": [
+     [
+      23.38,
+      50.75
+     ],
+     [
+      23.53,
+      50.76
+     ]
+    ],
+    "style": "solid",
+    "unit": "95.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 95. ellipse pointing east toward the Tle. 95. symbol"
+   },
+   {
+    "points": [
+     [
+      25.11,
+      52.21
+     ],
+     [
+      25.25,
+      52.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "45.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 45. ellipse pointing east; crosses a dashed blue boundary line"
+   },
+   {
+    "points": [
+     [
+      24.29,
+      50.31
+     ],
+     [
+      24.41,
+      50.27
+     ]
+    ],
+    "style": "solid",
+    "unit": "113.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 113. arc pointing ESE (toward Krystynopol)"
+   },
+   {
+    "points": [
+     [
+      26.61,
+      50.68
+     ],
+     [
+      26.75,
+      50.69
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 14.Pz. arc pointing east"
+   },
+   {
+    "points": [
+     [
+      27.13,
+      50.49
+     ],
+     [
+      27.27,
+      50.49
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 13.Pz. arc pointing east, tip at the Reste 135 label"
+   },
+   {
+    "points": [
+     [
+      26.5,
+      50.2
+     ],
+     [
+      26.68,
+      50.11
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 16.m. arc pointing SE; lies south of 50.5 N"
+   },
+   {
+    "points": [
+     [
+      27.51,
+      50.48
+     ],
+     [
+      27.74,
+      50.45
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "thick dark blue arrow east of the red labels near Nowograd Wolynsk; tail not at a symbol (13.Pz. about 0.5 deg west); not connected"
+   },
+   {
+    "points": [
+     [
+      27.2,
+      49.96
+     ],
+     [
+      27.45,
+      49.94
+     ]
+    ],
+    "style": "solid",
+    "unit": "",
+    "label": "",
+    "conf": "rough",
+    "note": "blue arrow at the bottom (near Lepessowka, label Reste 145 above it) pointing east; no symbol within 30 km; mostly south of 50.5 N"
+   },
+   {
+    "points": [
+     [
+      26.71,
+      50.87
+     ],
+     [
+      26.92,
+      50.93
+     ]
+    ],
+    "style": "dashed",
+    "unit": "",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed blue arrow NE of Wolschja above the red 19.Pz.D. arrow; tail not at any blue symbol; not connected"
+   },
+   {
+    "points": [
+     [
+      26.21,
+      51.05
+     ],
+     [
+      26.28,
+      51.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "",
+    "label": "",
+    "conf": "rough",
+    "note": "small blue arrow pointing NE just under the red 45.m. label; tail not at a blue symbol; not connected"
+   },
+   {
+    "points": [
+     [
+      27.24,
+      53.88
+     ],
+     [
+      27.03,
+      53.82
+     ]
+    ],
+    "style": "dashed",
+    "unit": "12.Pz.",
+    "label": "",
+    "conf": "unsure",
+    "note": "thin dashed blue line with a small tip pointing SW just west of Minsk; tail near the 12.Pz. arc; may be part of a boundary line"
+   }
+  ],
+  "notes": "Not read: dashed blue boundary lines (e.g. the dashed line from Grodno going SE with a chevron-shaped bend near (24.9, 53.2) and then south: judged a boundary corner, not an arrow tip; the dashed vertical line west of Minsk); long solid boundary lines; small hooks under the 14.Pz. arc at about (26.9, 50.6) and the dashed lines above the 25.m. circle at (26.4, 50.7) without tips; red arrows. Blue hatched ellipses (Sich.) are symbols."
+ }
+}

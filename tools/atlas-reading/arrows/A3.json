@@ -1,0 +1,1104 @@
+{
+ "0704": {
+  "arrows": [
+   {
+    "points": [
+     [
+      22.15,
+      53.95
+     ],
+     [
+      22.5,
+      54.0
+     ]
+    ],
+    "style": "solid",
+    "unit": "Rest.96",
+    "label": "6.7.",
+    "conf": "rough",
+    "note": "thin line with solid head pointing at the Rest.96 symbol, tail at a small flag symbol; could be a liaison/reference line"
+   },
+   {
+    "points": [
+     [
+      25.95,
+      54.65
+     ],
+     [
+      26.05,
+      54.7
+     ],
+     [
+      26.1,
+      54.75
+     ]
+    ],
+    "style": "dashed",
+    "unit": "26.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      26.2,
+      54.55
+     ],
+     [
+      26.25,
+      54.55
+     ],
+     [
+      26.35,
+      54.6
+     ]
+    ],
+    "style": "dashed",
+    "unit": "6.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      26.2,
+      54.15
+     ],
+     [
+      26.25,
+      54.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "35.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow down from 35. symbol"
+   },
+   {
+    "points": [
+     [
+      25.9,
+      54.1
+     ],
+     [
+      26.0,
+      54.05
+     ],
+     [
+      26.15,
+      54.0
+     ]
+    ],
+    "style": "dashed",
+    "unit": "5.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      25.8,
+      53.8
+     ],
+     [
+      25.95,
+      53.8
+     ],
+     [
+      26.15,
+      53.85
+     ]
+    ],
+    "style": "dashed",
+    "unit": "28.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      25.9,
+      53.6
+     ],
+     [
+      26.1,
+      53.6
+     ]
+    ],
+    "style": "dashed",
+    "unit": "8.",
+    "label": "",
+    "conf": "rough",
+    "note": "one of a cluster of dashed arrows from the 8. symbol"
+   },
+   {
+    "points": [
+     [
+      26.0,
+      53.65
+     ],
+     [
+      26.1,
+      53.65
+     ],
+     [
+      26.3,
+      53.65
+     ]
+    ],
+    "style": "dashed",
+    "unit": "8.",
+    "label": "",
+    "conf": "unsure",
+    "note": "broken dashes, may be 2 short arrows; the tip near Schtscherzyn"
+   },
+   {
+    "points": [
+     [
+      22.9,
+      52.0
+     ],
+     [
+      23.05,
+      52.0
+     ],
+     [
+      23.25,
+      52.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "260.",
+    "label": "6.7.",
+    "conf": "rough",
+    "note": "double-line arrow from a flag symbol east toward the 260. symbol; tail not clearly joined to a unit"
+   },
+   {
+    "points": [
+     [
+      23.3,
+      52.75
+     ],
+     [
+      23.65,
+      52.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "112.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      24.2,
+      52.4
+     ],
+     [
+      24.3,
+      52.35
+     ],
+     [
+      24.35,
+      52.3
+     ]
+    ],
+    "style": "dashed",
+    "unit": "293.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      24.95,
+      52.2
+     ],
+     [
+      25.1,
+      52.2
+     ],
+     [
+      25.35,
+      52.2
+     ],
+     [
+      25.5,
+      52.15
+     ]
+    ],
+    "style": "dashed",
+    "unit": "45.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   }
+  ],
+  "notes": "Only rows ~50.5-56N checked for 0704. Unit symbols that are dashed/ovals without a head (260. oval, 15., V.A., Sich. divisions) not read. Dashed long lines (Army boundaries, Polish border) ignored. Thick arc with arrowhead-like tick at right end of 260. oval treated as symbol."
+ },
+ "0705": {
+  "arrows": [
+   {
+    "points": [
+     [
+      22.95,
+      52.0
+     ],
+     [
+      23.3,
+      52.0
+     ]
+    ],
+    "style": "solid",
+    "unit": "260.",
+    "label": "bis 6.7.",
+    "conf": "clear",
+    "note": "short thick arrow from a small train/vehicle symbol at its tail, head touches the 260. symbol; same kind as 0704"
+   },
+   {
+    "points": [
+     [
+      22.45,
+      54.0
+     ],
+     [
+      22.65,
+      54.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "96",
+    "label": "bis 6.",
+    "conf": "rough",
+    "note": "short arrow from small vehicle symbol toward the 96 symbol; label small and partly illegible"
+   },
+   {
+    "points": [
+     [
+      22.75,
+      50.7
+     ],
+     [
+      23.05,
+      50.7
+     ]
+    ],
+    "style": "solid",
+    "unit": "98.",
+    "label": "-8.7.",
+    "conf": "clear",
+    "note": "short arrow from small vehicle symbol to the 98. symbol; label reads bis 8.7. or -8.7."
+   }
+  ],
+  "notes": "No long blue offensive arrows seen in range on 0705. Only three short arrows tied to small vehicle/train symbols (labels with dates). 3.Pz./4.Pz./SS arcs have no heads. Red arrows ignored."
+ },
+ "0706": {
+  "arrows": [
+   {
+    "points": [
+     [
+      26.7,
+      55.0
+     ],
+     [
+      26.8,
+      55.0
+     ],
+     [
+      26.9,
+      55.0
+     ]
+    ],
+    "style": "dashed",
+    "unit": "26.",
+    "label": "",
+    "conf": "clear",
+    "note": "short dashed arrow east from the 26. symbol"
+   },
+   {
+    "points": [
+     [
+      26.85,
+      54.8
+     ],
+     [
+      26.95,
+      54.85
+     ],
+     [
+      27.0,
+      54.85
+     ]
+    ],
+    "style": "dashed",
+    "unit": "6.",
+    "label": "",
+    "conf": "clear",
+    "note": "short dashed arrow NE from top of the 6. symbol"
+   },
+   {
+    "points": [
+     [
+      27.55,
+      54.9
+     ],
+     [
+      27.55,
+      54.95
+     ],
+     [
+      27.6,
+      55.0
+     ]
+    ],
+    "style": "dashed",
+    "unit": "14.m.",
+    "label": "?",
+    "conf": "clear",
+    "note": "dashed arrow north from the 14.m. symbol, with a ? beside it"
+   },
+   {
+    "points": [
+     [
+      29.3,
+      55.2
+     ],
+     [
+      29.4,
+      55.2
+     ],
+     [
+      29.5,
+      55.2
+     ]
+    ],
+    "style": "dashed",
+    "unit": "20.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short dashed arrow east from the 20.Pz. symbol"
+   },
+   {
+    "points": [
+     [
+      28.7,
+      54.9
+     ],
+     [
+      28.85,
+      54.95
+     ],
+     [
+      29.05,
+      55.0
+     ]
+    ],
+    "style": "dashed",
+    "unit": "20.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "dash-dot arrow NE from the 20.m. symbol, tip near Potscheikowo"
+   },
+   {
+    "points": [
+     [
+      29.75,
+      54.75
+     ],
+     [
+      29.85,
+      54.7
+     ],
+     [
+      29.95,
+      54.7
+     ]
+    ],
+    "style": "dashed",
+    "unit": "17.Pz.",
+    "label": "?",
+    "conf": "clear",
+    "note": "one of two arrows from the 17.Pz. symbol; a ? sits near the symbol"
+   },
+   {
+    "points": [
+     [
+      29.75,
+      54.75
+     ],
+     [
+      29.75,
+      54.65
+     ],
+     [
+      29.8,
+      54.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "17.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "second arrow from the 17.Pz. symbol, going south"
+   },
+   {
+    "points": [
+     [
+      28.5,
+      55.65
+     ],
+     [
+      28.6,
+      55.6
+     ],
+     [
+      28.65,
+      55.55
+     ]
+    ],
+    "style": "dashed",
+    "unit": "19.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed arrow SE; tail not clearly joined to the 19.Pz. symbol, starts just east of it"
+   },
+   {
+    "points": [
+     [
+      25.8,
+      54.15
+     ],
+     [
+      25.9,
+      54.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "129.",
+    "label": "",
+    "conf": "clear",
+    "note": "solid arrow NE starting below the dashed 129. symbol, not joined to it"
+   },
+   {
+    "points": [
+     [
+      27.4,
+      53.7
+     ],
+     [
+      27.5,
+      53.7
+     ],
+     [
+      27.65,
+      53.7
+     ]
+    ],
+    "style": "solid",
+    "unit": "J.R.Gr.D.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow east from the J.R.Gr.D. / Br.900 labels near Minsk; tail attached to the label not a symbol arc"
+   },
+   {
+    "points": [
+     [
+      26.35,
+      51.05
+     ],
+     [
+      26.45,
+      51.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "62.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow east of the 62. symbol"
+   },
+   {
+    "points": [
+     [
+      26.7,
+      50.85
+     ],
+     [
+      26.8,
+      50.85
+     ]
+    ],
+    "style": "solid",
+    "unit": "298.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      26.85,
+      50.8
+     ],
+     [
+      26.95,
+      50.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "44.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      27.05,
+      50.7
+     ],
+     [
+      27.15,
+      50.7
+     ]
+    ],
+    "style": "solid",
+    "unit": "299.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      27.5,
+      50.6
+     ],
+     [
+      27.55,
+      50.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "very short arrow"
+   },
+   {
+    "points": [
+     [
+      27.6,
+      50.5
+     ],
+     [
+      27.7,
+      50.5
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "unsure",
+    "note": "head partly covered by red text 'Starke Bewegung'; may be blue"
+   },
+   {
+    "points": [
+     [
+      22.9,
+      50.65
+     ],
+     [
+      23.15,
+      50.7
+     ]
+    ],
+    "style": "solid",
+    "unit": "98.",
+    "label": "5.-8.7.",
+    "conf": "clear",
+    "note": "short arrow from vehicle symbol to the 98. symbol"
+   }
+  ],
+  "notes": "Lower arrows at 16.Pz./11.Pz. (about 50.0-50.2N) are south of the 50.5N limit and not read. 260. has no arrow on 0706. Dashed oval symbols (206., 258., 23., 7.) and dashed long lines (206. to Konstantinow Wil, boundaries) have no heads and are not read. A thin line from 263 east to the HQ '2.' has no head."
+ },
+ "0707": {
+  "arrows": [
+   {
+    "points": [
+     [
+      27.8,
+      55.2
+     ],
+     [
+      27.85,
+      55.2
+     ],
+     [
+      27.9,
+      55.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "V.A. VI.",
+    "label": "",
+    "conf": "rough",
+    "note": "small arrow NE from the V.A. VI. symbol; thin and short"
+   },
+   {
+    "points": [
+     [
+      29.65,
+      54.75
+     ],
+     [
+      29.7,
+      54.7
+     ],
+     [
+      29.75,
+      54.6
+     ]
+    ],
+    "style": "dashed",
+    "unit": "17.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed arrow south from the 17.Pz. symbol"
+   },
+   {
+    "points": [
+     [
+      22.35,
+      50.55
+     ],
+     [
+      22.55,
+      50.6
+     ],
+     [
+      22.7,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "294.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from a small vehicle symbol toward the east; label 294. below the tail; near the 50.5N edge"
+   }
+  ],
+  "notes": "Arrows from 1.Rgt. (east of Jaroslaw) and 94. are south of 50.5N and not read. Dashed oval symbols (12.Pz., 7., 23., 258.) have no heads."
+ },
+ "0708": {
+  "arrows": [
+   {
+    "points": [
+     [
+      26.6,
+      53.5
+     ],
+     [
+      26.75,
+      53.5
+     ],
+     [
+      26.9,
+      53.5
+     ]
+    ],
+    "style": "solid",
+    "unit": "7.",
+    "label": "9.7. früh",
+    "conf": "clear",
+    "note": "arrow east from the 7. symbol; label 9.7. früh at the tip"
+   },
+   {
+    "points": [
+     [
+      27.2,
+      53.05
+     ],
+     [
+      27.3,
+      53.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "LIII.",
+    "label": "6./5.9.7. früh",
+    "conf": "clear",
+    "note": "short arrow east from the LIII. corps label toward the 255. symbol"
+   },
+   {
+    "points": [
+     [
+      27.3,
+      53.9
+     ],
+     [
+      27.5,
+      53.95
+     ],
+     [
+      27.7,
+      53.95
+     ]
+    ],
+    "style": "solid",
+    "unit": "137.",
+    "label": "",
+    "conf": "rough",
+    "note": "thin line from the 137. symbol east to the Br.900 symbol with a small head at Minsk; may be a link line rather than an advance"
+   },
+   {
+    "points": [
+     [
+      26.3,
+      51.25
+     ],
+     [
+      26.4,
+      51.25
+     ],
+     [
+      26.5,
+      51.3
+     ]
+    ],
+    "style": "solid",
+    "unit": "56.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow NE toward the 56. symbol (tail is west of it)"
+   },
+   {
+    "points": [
+     [
+      26.4,
+      50.9
+     ],
+     [
+      26.5,
+      50.95
+     ],
+     [
+      26.6,
+      50.95
+     ]
+    ],
+    "style": "solid",
+    "unit": "62.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow NE from XVII. label toward the 62. symbol"
+   },
+   {
+    "points": [
+     [
+      27.15,
+      50.7
+     ],
+     [
+      27.2,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "298.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow between the 298. and 44. symbols"
+   },
+   {
+    "points": [
+     [
+      27.3,
+      50.65
+     ],
+     [
+      27.4,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "44.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow between the 44. and 299. symbols"
+   },
+   {
+    "points": [
+     [
+      25.65,
+      50.45
+     ],
+     [
+      25.75,
+      50.5
+     ],
+     [
+      25.8,
+      50.5
+     ]
+    ],
+    "style": "solid",
+    "unit": "60.",
+    "label": "",
+    "conf": "rough",
+    "note": "arrow NE from the 60. symbol; near the southern edge of range"
+   },
+   {
+    "points": [
+     [
+      29.75,
+      53.3
+     ],
+     [
+      29.8,
+      53.4
+     ],
+     [
+      29.85,
+      53.5
+     ],
+     [
+      29.95,
+      53.55
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "long curved arrow north-east; tail not joined to any symbol; nearest symbol is 4.Pz. (or XXIV.m. label)"
+   },
+   {
+    "points": [
+     [
+      23.35,
+      50.7
+     ],
+     [
+      23.5,
+      50.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle.98",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow east from the left Tle. 98 symbol toward the right Tle. 98 symbol"
+   },
+   {
+    "points": [
+     [
+      22.65,
+      50.55
+     ],
+     [
+      22.85,
+      50.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "294.",
+    "label": "l.Antransp.",
+    "conf": "clear",
+    "note": "arrow from a locomotive symbol; label 294. and l. Antransp."
+   }
+  ],
+  "notes": "A.A. plane symbols (reconnaissance/Luftwaffe) with small heads at about 27.9E 53.2N and 27.55E 53.3N not read. Dashed X-X lines north of Sapadnaja are boundaries without heads. 3.Pz. arcs have no heads. No blue arrows in the Baltic/North sheet (NW, NE top) this day."
+ },
+ "0709": {
+  "arrows": [
+   {
+    "points": [
+     [
+      28.55,
+      55.35
+     ],
+     [
+      28.65,
+      55.3
+     ],
+     [
+      28.75,
+      55.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "2/3 18.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "thick arrow SE from small 2/3 18.m. / 1/3 14.m. marks near Sapadnaja"
+   },
+   {
+    "points": [
+     [
+      27.85,
+      53.1
+     ],
+     [
+      28.0,
+      53.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "255.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow east from the 255. symbol (a dashed 255. symbol sits at the tip)"
+   },
+   {
+    "points": [
+     [
+      26.9,
+      51.05
+     ],
+     [
+      27.1,
+      51.05
+     ]
+    ],
+    "style": "solid",
+    "unit": "62.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow east, tail separate from the 62. symbol and east of it"
+   },
+   {
+    "points": [
+     [
+      27.25,
+      50.75
+     ],
+     [
+      27.45,
+      50.75
+     ]
+    ],
+    "style": "solid",
+    "unit": "V.A.298.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow east from the V.A. 298. air symbol"
+   },
+   {
+    "points": [
+     [
+      27.35,
+      50.65
+     ],
+     [
+      27.4,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "44.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow east from 44. toward the 299. symbol"
+   },
+   {
+    "points": [
+     [
+      27.6,
+      50.6
+     ],
+     [
+      27.8,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "299.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow east from the 299. symbol to a small red/blue marker"
+   },
+   {
+    "points": [
+     [
+      27.9,
+      50.45
+     ],
+     [
+      28.0,
+      50.4
+     ],
+     [
+      28.1,
+      50.4
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "arrow ESE from the 14.Pz./25.m. group; head partly over red text"
+   },
+   {
+    "points": [
+     [
+      29.95,
+      53.3
+     ],
+     [
+      30.1,
+      53.35
+     ]
+    ],
+    "style": "dashed",
+    "unit": "3.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short dashed arrow NE, tail left of the 3.Pz. label, not joined to a symbol"
+   },
+   {
+    "points": [
+     [
+      23.55,
+      50.75
+     ],
+     [
+      23.75,
+      50.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "98.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow NE just west of the 98. symbol"
+   },
+   {
+    "points": [
+     [
+      22.4,
+      50.55
+     ],
+     [
+      22.8,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "294.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow east from a locomotive symbol; label 294."
+   }
+  ],
+  "notes": "South of 50.5N (2.Pz. locomotive arrow, 44.A.H., 256., A.A. 75) not read. A.A. 20.Pz. and V.A. symbols are air symbols with no arrows. Small line to the right of 79. looks like a tail without a head, not read. Red arrows ignored."
+ }
+}

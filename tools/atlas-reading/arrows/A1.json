@@ -1,0 +1,2254 @@
+{
+ "0622": {
+  "arrows": [
+   {
+    "points": [
+     [
+      24.22,
+      54.47
+     ],
+     [
+      24.61,
+      54.52
+     ],
+     [
+      25.04,
+      54.59
+     ]
+    ],
+    "style": "dashed",
+    "unit": "20.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "tip stops just short of the red 28.Pz.Br. ring, near Wilna; upper of two dashed arrows toward Wilna"
+   },
+   {
+    "points": [
+     [
+      24.23,
+      54.37
+     ],
+     [
+      24.8,
+      54.4
+     ],
+     [
+      25.05,
+      54.5
+     ],
+     [
+      25.19,
+      54.59
+     ],
+     [
+      25.25,
+      54.62
+     ]
+    ],
+    "style": "dashed",
+    "unit": "7.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "passes through red 22. Pz.Br. ring; tip at Wilna"
+   },
+   {
+    "points": [
+     [
+      24.57,
+      54.21
+     ],
+     [
+      24.94,
+      54.18
+     ],
+     [
+      25.25,
+      54.17
+     ]
+    ],
+    "style": "dashed",
+    "unit": "18.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "tip at Woronowo"
+   },
+   {
+    "points": [
+     [
+      24.11,
+      54.15
+     ],
+     [
+      24.31,
+      54.18
+     ]
+    ],
+    "style": "solid",
+    "unit": "12.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short solid arrow with small dots at tail, pointing at 18.m. symbol"
+   },
+   {
+    "points": [
+     [
+      24.37,
+      52.47
+     ],
+     [
+      24.49,
+      52.55
+     ]
+    ],
+    "style": "dashed",
+    "unit": "18.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short, tip near Brzezany"
+   },
+   {
+    "points": [
+     [
+      24.14,
+      52.13
+     ],
+     [
+      24.22,
+      52.16
+     ],
+     [
+      24.32,
+      52.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "34.",
+    "label": "",
+    "conf": "rough",
+    "note": "tail is a short dash-dot stub crossing the 31./34. symbol area; unit identification uncertain"
+   },
+   {
+    "points": [
+     [
+      24.28,
+      50.46
+     ],
+     [
+      24.51,
+      50.42
+     ]
+    ],
+    "style": "solid",
+    "unit": "75.",
+    "label": "",
+    "conf": "rough",
+    "note": "bold solid arrow starting at the 75./57. cluster, tail attachment unclear (could be 11.Pz. or 57.)"
+   },
+   {
+    "points": [
+     [
+      24.63,
+      50.37
+     ],
+     [
+      24.67,
+      50.31
+     ],
+     [
+      24.8,
+      50.28
+     ],
+     [
+      24.98,
+      50.3
+     ]
+    ],
+    "style": "dashed",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      23.48,
+      50.47
+     ],
+     [
+      23.59,
+      50.47
+     ],
+     [
+      23.64,
+      50.41
+     ],
+     [
+      23.64,
+      50.35
+     ],
+     [
+      23.59,
+      50.26
+     ],
+     [
+      23.57,
+      50.23
+     ]
+    ],
+    "style": "dashed",
+    "unit": "296.",
+    "label": "",
+    "conf": "rough",
+    "note": "loops over 296. then down; middle part hidden behind 267. text; tip points down-left toward 2.m. red ring"
+   },
+   {
+    "points": [
+     [
+      22.15,
+      50.65
+     ],
+     [
+      22.26,
+      50.64
+     ],
+     [
+      22.38,
+      50.63
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short solid arrow with dots at tail"
+   },
+   {
+    "points": [
+     [
+      22.65,
+      50.58
+     ],
+     [
+      22.72,
+      50.62
+     ],
+     [
+      22.79,
+      50.66
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "thin arrow with open-circle tail, not touching any symbol"
+   },
+   {
+    "points": [
+     [
+      22.8,
+      49.74
+     ],
+     [
+      22.9,
+      49.74
+     ],
+     [
+      22.98,
+      49.77
+     ]
+    ],
+    "style": "solid",
+    "unit": "101.Lei.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      22.91,
+      49.9
+     ],
+     [
+      23.06,
+      49.92
+     ]
+    ],
+    "style": "solid",
+    "unit": "257.",
+    "label": "",
+    "conf": "unsure",
+    "note": "small dark tip beside red 99./XVII. line; could be navy arrow or part of red arrowhead"
+   },
+   {
+    "points": [
+     [
+      19.39,
+      51.87
+     ],
+     [
+      19.42,
+      51.91
+     ]
+    ],
+    "style": "solid",
+    "unit": "1 Rgt. SS-Verb.",
+    "label": "",
+    "conf": "rough",
+    "note": "very short arrow tip on top of the semicircle symbol"
+   },
+   {
+    "points": [
+     [
+      20.87,
+      51.9
+     ],
+     [
+      20.87,
+      51.93
+     ]
+    ],
+    "style": "solid",
+    "unit": "1 Rgt. SS-Verb.",
+    "label": "",
+    "conf": "rough",
+    "note": "very short arrow tip on top of the semicircle symbol"
+   },
+   {
+    "points": [
+     [
+      21.74,
+      55.81
+     ],
+     [
+      21.81,
+      55.84
+     ]
+    ],
+    "style": "solid",
+    "unit": "217.",
+    "label": "V.A.",
+    "conf": "rough",
+    "note": "tail is small dots; next to V.A. label; could be reconnaissance-detachment marker"
+   },
+   {
+    "points": [
+     [
+      21.77,
+      55.76
+     ],
+     [
+      21.89,
+      55.77
+     ]
+    ],
+    "style": "solid",
+    "unit": "217.",
+    "label": "V.A.",
+    "conf": "rough",
+    "note": "tail is small dots; next to V.A. label; could be reconnaissance-detachment marker"
+   }
+  ],
+  "notes": "Many symbols carry V.A. labels without arrows (not read). Long thin lines are army boundaries (not read)."
+ },
+ "0623": {
+  "arrows": [
+   {
+    "points": [
+     [
+      23.72,
+      55.23
+     ],
+     [
+      23.91,
+      55.31
+     ]
+    ],
+    "style": "solid",
+    "unit": "8.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "bold arrow, tail has small dots"
+   },
+   {
+    "points": [
+     [
+      23.42,
+      55.14
+     ],
+     [
+      23.51,
+      55.18
+     ],
+     [
+      23.61,
+      55.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "3.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "tail has small dots"
+   },
+   {
+    "points": [
+     [
+      23.63,
+      54.77
+     ],
+     [
+      23.74,
+      54.82
+     ]
+    ],
+    "style": "solid",
+    "unit": "33.m.",
+    "label": "V.A.",
+    "conf": "rough",
+    "note": "short arrow beside V.A. label and 16.Ar.. text near 33.m.; unit text cramped"
+   },
+   {
+    "points": [
+     [
+      21.85,
+      55.1
+     ],
+     [
+      21.87,
+      55.15
+     ],
+     [
+      22.0,
+      55.19
+     ]
+    ],
+    "style": "solid",
+    "unit": "36.m.",
+    "label": "",
+    "conf": "rough",
+    "note": "curved arrow starting at the 4. symbol area"
+   },
+   {
+    "points": [
+     [
+      22.02,
+      53.62
+     ],
+     [
+      22.14,
+      53.68
+     ],
+     [
+      22.26,
+      53.71
+     ]
+    ],
+    "style": "dashed",
+    "unit": "102.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      22.77,
+      53.81
+     ],
+     [
+      22.97,
+      53.82
+     ]
+    ],
+    "style": "solid",
+    "unit": "1/3.129",
+    "label": "",
+    "conf": "rough",
+    "note": "short solid arrow starting at the underlined 1/3 129 label"
+   },
+   {
+    "points": [
+     [
+      22.16,
+      53.37
+     ],
+     [
+      22.32,
+      53.4
+     ]
+    ],
+    "style": "dashed",
+    "unit": "Tle.87.",
+    "label": "",
+    "conf": "clear",
+    "note": "short dash-style arrow"
+   },
+   {
+    "points": [
+     [
+      20.6,
+      52.89
+     ],
+     [
+      20.7,
+      52.95
+     ],
+     [
+      20.81,
+      53.01
+     ]
+    ],
+    "style": "dashed",
+    "unit": "K.R.1",
+    "label": "",
+    "conf": "clear",
+    "note": "SS symbol K.R.1; dashed arrow crosses the long army boundary line"
+   },
+   {
+    "points": [
+     [
+      22.25,
+      52.59
+     ],
+     [
+      22.4,
+      52.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "17.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow pointing at dashed 17. circle"
+   },
+   {
+    "points": [
+     [
+      22.35,
+      52.43
+     ],
+     [
+      22.53,
+      52.46
+     ]
+    ],
+    "style": "solid",
+    "unit": "78.",
+    "label": "",
+    "conf": "clear",
+    "note": "pointing at dashed 78. circle"
+   },
+   {
+    "points": [
+     [
+      22.68,
+      52.69
+     ],
+     [
+      22.59,
+      52.68
+     ]
+    ],
+    "style": "solid",
+    "unit": "268.",
+    "label": "",
+    "conf": "rough",
+    "note": "small arrow pointing left (west) below 268."
+   },
+   {
+    "points": [
+     [
+      22.03,
+      50.66
+     ],
+     [
+      22.14,
+      50.66
+     ],
+     [
+      22.26,
+      50.66
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "tail has small dots"
+   },
+   {
+    "points": [
+     [
+      22.26,
+      50.05
+     ],
+     [
+      22.37,
+      50.04
+     ],
+     [
+      22.49,
+      50.01
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Geb.",
+    "label": "",
+    "conf": "clear",
+    "note": "bold arrow"
+   },
+   {
+    "points": [
+     [
+      23.94,
+      51.64
+     ],
+     [
+      24.01,
+      51.73
+     ],
+     [
+      24.06,
+      51.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "255.",
+    "label": "",
+    "conf": "unsure",
+    "note": "two strokes from 255. toward Malorita with a small tip; could be only a symbol outline"
+   }
+  ],
+  "notes": "Wilna-area dashed arrows of 0622 are not present. 18.Pz and 17.Pz carry bracket/arc strokes near 1A.K. with no clear tip (not read). 110. symbol has sawtooth marks (not arrows). Red arrows ignored. V.A. arcs without arrows ignored."
+ },
+ "0624": {
+  "arrows": [
+   {
+    "points": [
+     [
+      21.42,
+      54.94
+     ],
+     [
+      21.61,
+      55.03
+     ],
+     [
+      21.81,
+      55.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "44. T.",
+    "label": "",
+    "conf": "rough",
+    "note": "bold arrow near the 207.Sich/Nord HQ; tail has a small circle; unit text beside it is cramped (reads like SS 44 T.)"
+   },
+   {
+    "points": [
+     [
+      21.35,
+      53.57
+     ],
+     [
+      21.45,
+      53.6
+     ],
+     [
+      21.58,
+      53.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "m.Br.900",
+    "label": "",
+    "conf": "clear",
+    "note": "leaves the upper right of the sawtooth ellipse"
+   },
+   {
+    "points": [
+     [
+      21.93,
+      53.11
+     ],
+     [
+      21.99,
+      53.08
+     ],
+     [
+      22.12,
+      53.11
+     ]
+    ],
+    "style": "solid",
+    "unit": "221.Sich.",
+    "label": "?",
+    "conf": "rough",
+    "note": "hooked small arrow with a ? beside the tip; also a V.A. arc just above"
+   },
+   {
+    "points": [
+     [
+      23.19,
+      54.23
+     ],
+     [
+      23.35,
+      54.24
+     ]
+    ],
+    "style": "solid",
+    "unit": "403.Sich.",
+    "label": "",
+    "conf": "clear",
+    "note": ""
+   },
+   {
+    "points": [
+     [
+      22.8,
+      53.85
+     ],
+     [
+      22.99,
+      53.82
+     ],
+     [
+      23.15,
+      53.77
+     ]
+    ],
+    "style": "solid",
+    "unit": "129.",
+    "label": "",
+    "conf": "clear",
+    "note": "from the 129. label at the lower end of the 110. sawtooth ellipse, pointing toward Augustow"
+   },
+   {
+    "points": [
+     [
+      23.83,
+      55.23
+     ],
+     [
+      23.89,
+      55.29
+     ],
+     [
+      23.91,
+      55.32
+     ]
+    ],
+    "style": "solid",
+    "unit": "30.",
+    "label": "V.A.",
+    "conf": "rough",
+    "note": "bold short arrow above 30. and a V.A. arc, just under LVI.m."
+   },
+   {
+    "points": [
+     [
+      24.89,
+      55.35
+     ],
+     [
+      25.12,
+      55.44
+     ]
+    ],
+    "style": "solid",
+    "unit": "8.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "tail has small dots"
+   },
+   {
+    "points": [
+     [
+      20.69,
+      50.89
+     ],
+     [
+      20.91,
+      50.99
+     ]
+    ],
+    "style": "solid",
+    "unit": "Rad. Tle",
+    "label": "ab 25.6.",
+    "conf": "clear",
+    "note": "bold arrow pointing at the Glsk. Tle. SS A.H. symbol; text reads Rad. Tle with ab 25.6."
+   },
+   {
+    "points": [
+     [
+      23.32,
+      50.96
+     ],
+     [
+      23.48,
+      50.96
+     ],
+     [
+      23.67,
+      50.94
+     ],
+     [
+      23.81,
+      50.89
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "bold curved arrow with two small dots along the tail"
+   },
+   {
+    "points": [
+     [
+      22.75,
+      50.84
+     ],
+     [
+      22.89,
+      50.78
+     ],
+     [
+      22.95,
+      50.6
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "bold curved arrow pointing down toward Szczebrzeszyn"
+   },
+   {
+    "points": [
+     [
+      22.99,
+      50.72
+     ],
+     [
+      23.18,
+      50.76
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "label": "Ausl.",
+    "conf": "rough",
+    "note": "short arrow beside the 79. label and the small word Ausl.; tail overlaps the 16.m. arrow"
+   },
+   {
+    "points": [
+     [
+      22.28,
+      50.1
+     ],
+     [
+      22.45,
+      50.06
+     ],
+     [
+      22.63,
+      49.99
+     ]
+    ],
+    "style": "solid",
+    "unit": "113.",
+    "label": "i. Ausl.",
+    "conf": "rough",
+    "note": "bold stroke from 113. toward the XXXIV. HQ and 4.Geb. cluster; tip hard to separate from symbols"
+   },
+   {
+    "points": [
+     [
+      24.61,
+      50.26
+     ],
+     [
+      24.69,
+      50.23
+     ],
+     [
+      24.81,
+      50.21
+     ],
+     [
+      24.92,
+      50.28
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "tail has small dots"
+   },
+   {
+    "points": [
+     [
+      24.63,
+      50.74
+     ],
+     [
+      24.83,
+      50.77
+     ]
+    ],
+    "style": "solid",
+    "unit": "299.",
+    "label": "",
+    "conf": "rough",
+    "note": "thin arrow from 299. toward 14.Pz./13.Pz. symbols, overlapped by them"
+   }
+  ],
+  "notes": "Long elongated loops of 17.Pz., 18.Pz., 4.Pz., 3.Pz., 10.m., 29.m., 12.Pz., 20.Pz., 19.Pz., 18.m. have no triangular tips (not read as arrows). 1.K.D. loop near Malorita has a ? but no clear tip. Tle.87 lower hook may end in a tip on the army boundary line near 22.1E 53.3N; not clear (not read). Red arrows ignored."
+ },
+ "0625": {
+  "arrows": [
+   {
+    "points": [
+     [
+      25.06,
+      55.35
+     ],
+     [
+      25.25,
+      55.39
+     ],
+     [
+      25.38,
+      55.42
+     ],
+     [
+      25.54,
+      55.48
+     ]
+    ],
+    "style": "dashed",
+    "unit": "3.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed line from the right end of the 3.m. loop; open head; 8.Pz. loop printed beside the tip"
+   },
+   {
+    "points": [
+     [
+      24.25,
+      54.43
+     ],
+     [
+      24.42,
+      54.38
+     ],
+     [
+      24.62,
+      54.34
+     ],
+     [
+      24.68,
+      54.37
+     ],
+     [
+      24.75,
+      54.42
+     ]
+    ],
+    "style": "dashed",
+    "unit": "74.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed from the tail of the 74.m. loop at Olita, dips then turns up NE; tip at about 24.75,54.42"
+   },
+   {
+    "points": [
+     [
+      24.7,
+      54.27
+     ],
+     [
+      24.86,
+      54.19
+     ],
+     [
+      25.01,
+      54.05
+     ],
+     [
+      25.14,
+      53.96
+     ],
+     [
+      25.27,
+      53.91
+     ]
+    ],
+    "style": "dashed",
+    "unit": "5./35.",
+    "label": "",
+    "conf": "clear",
+    "note": "long dashed arrow from V./5.35 oval toward Lida, tip meets a red ? mark near Lida"
+   },
+   {
+    "points": [
+     [
+      24.78,
+      53.79
+     ],
+     [
+      24.82,
+      53.7
+     ],
+     [
+      24.85,
+      53.61
+     ]
+    ],
+    "style": "dashed",
+    "unit": "161.",
+    "label": "",
+    "conf": "rough",
+    "note": "short dashed arrow down from the 161. loop; tip is small"
+   },
+   {
+    "points": [
+     [
+      24.52,
+      53.66
+     ],
+     [
+      24.57,
+      53.59
+     ],
+     [
+      24.61,
+      53.49
+     ]
+    ],
+    "style": "dashed",
+    "unit": "28.",
+    "label": "",
+    "conf": "rough",
+    "note": "short dashed arrow down from the 28. loop, ends near the red 3. HQ"
+   },
+   {
+    "points": [
+     [
+      22.57,
+      53.33
+     ],
+     [
+      22.66,
+      53.33
+     ]
+    ],
+    "style": "solid",
+    "unit": "87.",
+    "label": "",
+    "conf": "clear",
+    "note": "small arrow with hooked tail beside 87."
+   },
+   {
+    "points": [
+     [
+      22.56,
+      53.22
+     ],
+     [
+      22.66,
+      53.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "221.Sich.",
+    "label": "",
+    "conf": "clear",
+    "note": "small arrow with hooked tail right of 221.Sich."
+   },
+   {
+    "points": [
+     [
+      22.68,
+      53.48
+     ],
+     [
+      22.72,
+      53.45
+     ],
+     [
+      22.74,
+      53.43
+     ]
+    ],
+    "style": "solid",
+    "unit": "Tle.87",
+    "label": "",
+    "conf": "rough",
+    "note": "small hooked arrow near XXXXII, pointing down-right; unit attribution uncertain"
+   },
+   {
+    "points": [
+     [
+      23.38,
+      52.72
+     ],
+     [
+      23.48,
+      52.75
+     ],
+     [
+      23.57,
+      52.77
+     ]
+    ],
+    "style": "solid",
+    "unit": "137.",
+    "label": "?",
+    "conf": "clear",
+    "note": "small arrow with a ? beside the tip"
+   },
+   {
+    "points": [
+     [
+      23.42,
+      52.59
+     ],
+     [
+      23.48,
+      52.62
+     ],
+     [
+      23.51,
+      52.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "292.",
+    "label": "?",
+    "conf": "clear",
+    "note": "small arrow with a ? beside the tip"
+   },
+   {
+    "points": [
+     [
+      22.44,
+      51.98
+     ],
+     [
+      22.58,
+      52.06
+     ],
+     [
+      22.73,
+      52.12
+     ],
+     [
+      22.97,
+      52.18
+     ],
+     [
+      23.2,
+      52.19
+     ],
+     [
+      23.47,
+      52.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "label": "J.R.Gr.D.",
+    "conf": "clear",
+    "note": "long bold arrow with two small circles in the tail; text J.R.Gr.D. and 10.Pz. along it; tip near LIII."
+   },
+   {
+    "points": [
+     [
+      22.65,
+      51.86
+     ],
+     [
+      22.79,
+      51.96
+     ],
+     [
+      22.99,
+      52.02
+     ],
+     [
+      23.28,
+      52.06
+     ],
+     [
+      23.48,
+      52.08
+     ],
+     [
+      23.68,
+      52.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "label": "",
+    "conf": "clear",
+    "note": "long bold arrow from the SS R. label passing through the 52. oval, tip at the 45. oval at Brest"
+   },
+   {
+    "points": [
+     [
+      23.98,
+      50.89
+     ],
+     [
+      24.14,
+      50.89
+     ],
+     [
+      24.27,
+      50.87
+     ]
+    ],
+    "style": "solid",
+    "unit": "99.l.",
+    "label": "",
+    "conf": "clear",
+    "note": "short bold arrow beside 99.l."
+   },
+   {
+    "points": [
+     [
+      25.38,
+      50.16
+     ],
+     [
+      25.49,
+      50.12
+     ],
+     [
+      25.62,
+      50.1
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "two small circles in tail, no touching symbol; nearest unit guess only"
+   },
+   {
+    "points": [
+     [
+      26.17,
+      50.36
+     ],
+     [
+      26.29,
+      50.34
+     ],
+     [
+      26.41,
+      50.35
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "two small circles in tail, no touching symbol; not connected"
+   },
+   {
+    "points": [
+     [
+      23.25,
+      49.94
+     ],
+     [
+      23.31,
+      49.92
+     ],
+     [
+      23.36,
+      49.9
+     ]
+    ],
+    "style": "solid",
+    "unit": "68.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow from the 68. oval toward red 159/97 text"
+   },
+   {
+    "points": [
+     [
+      23.72,
+      50.02
+     ],
+     [
+      23.79,
+      49.98
+     ],
+     [
+      23.85,
+      49.93
+     ]
+    ],
+    "style": "solid",
+    "unit": "257.",
+    "label": "",
+    "conf": "rough",
+    "note": "thin arrow beginning beside the red 34.Pz. text; tail not touching a symbol"
+   },
+   {
+    "points": [
+     [
+      23.4,
+      49.85
+     ],
+     [
+      23.51,
+      49.82
+     ],
+     [
+      23.61,
+      49.8
+     ]
+    ],
+    "style": "solid",
+    "unit": "257.",
+    "label": "",
+    "conf": "unsure",
+    "note": "heavy dark stroke by XVII.; may be a corps label underline rather than an arrow"
+   },
+   {
+    "points": [
+     [
+      23.71,
+      50.14
+     ],
+     [
+      23.89,
+      50.14
+     ],
+     [
+      24.07,
+      50.12
+     ]
+    ],
+    "style": "solid",
+    "unit": "97.l.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from 97.l. pointing east across the red 2.m./41 text and army boundary"
+   },
+   {
+    "points": [
+     [
+      23.97,
+      50.34
+     ],
+     [
+      24.06,
+      50.29
+     ],
+     [
+      24.11,
+      50.25
+     ]
+    ],
+    "style": "dashed",
+    "unit": "262.",
+    "label": "",
+    "conf": "rough",
+    "note": "short dashed arrow beginning at the 262. loop heading down-right toward the army boundary; another dashed stroke beside it (9. Sich. XXXXIV) is hatched, not read"
+   },
+   {
+    "points": [
+     [
+      23.17,
+      55.62
+     ],
+     [
+      23.33,
+      55.63
+     ],
+     [
+      23.44,
+      55.66
+     ]
+    ],
+    "style": "solid",
+    "unit": "36.m.",
+    "label": "",
+    "conf": "rough",
+    "note": "tail with small dots; tip sits at the army boundary where a red Kav. arrow also ends"
+   },
+   {
+    "points": [
+     [
+      23.42,
+      55.61
+     ],
+     [
+      23.52,
+      55.57
+     ],
+     [
+      23.56,
+      55.53
+     ]
+    ],
+    "style": "solid",
+    "unit": "1.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "hooked end curling down below the 1.Pz. label"
+   },
+   {
+    "points": [
+     [
+      23.19,
+      55.45
+     ],
+     [
+      23.3,
+      55.45
+     ]
+    ],
+    "style": "solid",
+    "unit": "6.Pz.",
+    "label": "",
+    "conf": "unsure",
+    "note": "small dark tip right of the 6.Pz. cross mark near 269."
+   }
+  ],
+  "notes": "110./Br.900 oval edges carry sawtooth marks (not arrows). Many loops without tips (14.m., 18.m., 19.Pz., 255, 267, 25.m., 16.m. etc.) not read. 8. wavy dashed line without tip not read."
+ },
+ "0626": {
+  "arrows": [
+   {
+    "points": [
+     [
+      23.64,
+      55.79
+     ],
+     [
+      23.83,
+      55.81
+     ],
+     [
+      23.94,
+      55.84
+     ]
+    ],
+    "style": "solid",
+    "unit": "36.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "tail with small dots, near 30.K.D. red text"
+   },
+   {
+    "points": [
+     [
+      24.46,
+      55.22
+     ],
+     [
+      24.6,
+      55.27
+     ],
+     [
+      24.71,
+      55.29
+     ]
+    ],
+    "style": "solid",
+    "unit": "44.T.",
+    "label": "",
+    "conf": "clear",
+    "note": "bold arrow from the SS T. symbol near Gejshaly (label reads 44 T. with SS runes)"
+   },
+   {
+    "points": [
+     [
+      26.53,
+      55.75
+     ],
+     [
+      26.63,
+      55.79
+     ],
+     [
+      26.75,
+      55.82
+     ]
+    ],
+    "style": "solid",
+    "unit": "3.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "tail dots; sits right under 8.Pz. hook near Dünaburg"
+   },
+   {
+    "points": [
+     [
+      22.76,
+      53.45
+     ],
+     [
+      22.9,
+      53.48
+     ],
+     [
+      23.15,
+      53.51
+     ]
+    ],
+    "style": "dashed",
+    "unit": "87.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed arrow from the 87. bracket toward Kuznica; tail attachment unclear"
+   },
+   {
+    "points": [
+     [
+      23.95,
+      52.93
+     ],
+     [
+      24.11,
+      52.96
+     ]
+    ],
+    "style": "solid",
+    "unit": "137.",
+    "label": "",
+    "conf": "clear",
+    "note": "small arrow right of the 137. loop"
+   },
+   {
+    "points": [
+     [
+      22.92,
+      52.22
+     ],
+     [
+      23.12,
+      52.21
+     ],
+     [
+      23.38,
+      52.21
+     ],
+     [
+      23.6,
+      52.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "label": "J.R.Gr.D.",
+    "conf": "clear",
+    "note": "long bold arrow with two small circles; text 10.Pz. and J.R.Gr.D."
+   },
+   {
+    "points": [
+     [
+      22.87,
+      52.01
+     ],
+     [
+      23.11,
+      52.03
+     ],
+     [
+      23.36,
+      52.03
+     ],
+     [
+      23.56,
+      52.05
+     ],
+     [
+      23.7,
+      52.09
+     ],
+     [
+      23.93,
+      52.13
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "label": "",
+    "conf": "clear",
+    "note": "long arrow with two circles; passes under 52. oval and the 45. oval, tip east of Brest"
+   },
+   {
+    "points": [
+     [
+      22.47,
+      52.25
+     ],
+     [
+      22.65,
+      52.31
+     ]
+    ],
+    "style": "dashed",
+    "unit": "293.",
+    "label": "",
+    "conf": "clear",
+    "note": "short dashed arrow from the 293. oval"
+   },
+   {
+    "points": [
+     [
+      25.53,
+      53.13
+     ],
+     [
+      25.66,
+      53.16
+     ],
+     [
+      25.76,
+      53.18
+     ],
+     [
+      25.88,
+      53.19
+     ]
+    ],
+    "style": "solid",
+    "unit": "17.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "long solid arrow hooking over the 17.Pz. loop toward Baranowicze; tip near 25.9,53.2"
+   },
+   {
+    "points": [
+     [
+      23.22,
+      50.71
+     ],
+     [
+      23.32,
+      50.69
+     ],
+     [
+      23.42,
+      50.68
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "label": "",
+    "conf": "clear",
+    "note": "bold arrow from the 79. oval toward Miaczyn"
+   },
+   {
+    "points": [
+     [
+      25.35,
+      50.74
+     ],
+     [
+      25.44,
+      50.78
+     ],
+     [
+      25.57,
+      50.81
+     ]
+    ],
+    "style": "solid",
+    "unit": "14.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 14.Pz. loop; red 17.m. text at tip"
+   },
+   {
+    "points": [
+     [
+      25.53,
+      50.56
+     ],
+     [
+      25.67,
+      50.58
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow from the 13.Pz./299 loops, partly overlapped"
+   },
+   {
+    "points": [
+     [
+      25.74,
+      50.61
+     ],
+     [
+      25.89,
+      50.63
+     ],
+     [
+      26.05,
+      50.65
+     ]
+    ],
+    "style": "dashed",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed arrow toward Rowne, beside red 124. 23.(m.) text; tail attachment unclear"
+   },
+   {
+    "points": [
+     [
+      25.64,
+      50.36
+     ],
+     [
+      25.83,
+      50.47
+     ],
+     [
+      26.01,
+      50.53
+     ]
+    ],
+    "style": "solid",
+    "unit": "11.Pz.",
+    "label": "",
+    "conf": "rough",
+    "note": "bold arrow from the 11.Pz. loop toward Rowne; path crosses the loop"
+   },
+   {
+    "points": [
+     [
+      25.05,
+      50.3
+     ],
+     [
+      25.21,
+      50.23
+     ],
+     [
+      25.31,
+      50.19
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.Pz.",
+    "label": "?",
+    "conf": "clear",
+    "note": "arrow with a ? at the tip"
+   },
+   {
+    "points": [
+     [
+      23.0,
+      50.21
+     ],
+     [
+      23.12,
+      50.18
+     ],
+     [
+      23.26,
+      50.14
+     ]
+    ],
+    "style": "dashed",
+    "unit": "125.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed arrow towards the 24./295/97.l./71. group; two parallel dashed strokes (see next)"
+   },
+   {
+    "points": [
+     [
+      23.03,
+      50.15
+     ],
+     [
+      23.17,
+      50.13
+     ],
+     [
+      23.25,
+      50.12
+     ]
+    ],
+    "style": "dashed",
+    "unit": "125.",
+    "label": "",
+    "conf": "unsure",
+    "note": "second dashed stroke right under the previous one; may be the same arrow doubled"
+   },
+   {
+    "points": [
+     [
+      23.1,
+      49.94
+     ],
+     [
+      23.16,
+      49.9
+     ]
+    ],
+    "style": "solid",
+    "unit": "68.",
+    "label": "",
+    "conf": "rough",
+    "note": "short arrow tip below the 68. oval"
+   },
+   {
+    "points": [
+     [
+      22.24,
+      49.59
+     ],
+     [
+      22.39,
+      49.47
+     ]
+    ],
+    "style": "dashed",
+    "unit": "Slow.m.Br.",
+    "label": "",
+    "conf": "rough",
+    "note": "dashed arrow at lower left, tail wavy; tip near Dynow/Ustrzyki; partly outside a clear view"
+   },
+   {
+    "points": [
+     [
+      27.64,
+      53.05
+     ],
+     [
+      27.88,
+      53.07
+     ]
+    ],
+    "style": "solid",
+    "unit": "3.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short arrow leaving the right end of the 3.Pz. loop"
+   }
+  ],
+  "notes": "Loops without tips (7.Pz., 20.Pz., 19.Pz., 12.Pz., 18.m., 14.m., 4.Pz., 3.Pz., 18.Pz., 10.m., 29.m., 25.m., 16.m. etc.) not read. 8.Pz. at Dunaburg is a hook without tip. Red arrows ignored."
+ },
+ "0627": {
+  "arrows": [
+   {
+    "points": [
+     [
+      26.18,
+      53.16
+     ],
+     [
+      26.34,
+      53.16
+     ],
+     [
+      26.45,
+      53.16
+     ]
+    ],
+    "style": "solid",
+    "unit": "18.Pz.",
+    "label": "?",
+    "conf": "clear",
+    "note": "arrow leaving the right side of the 18.Pz. loop, ? beside tip"
+   },
+   {
+    "points": [
+     [
+      26.74,
+      53.07
+     ],
+     [
+      26.82,
+      53.11
+     ],
+     [
+      26.91,
+      53.15
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "label": "?",
+    "conf": "rough",
+    "note": "short diagonal arrow up-right from the right end of the 4.Pz. loop, ? beside it; tip near the Tle.121 text"
+   },
+   {
+    "points": [
+     [
+      26.8,
+      53.03
+     ],
+     [
+      26.89,
+      53.04
+     ],
+     [
+      26.98,
+      53.04
+     ]
+    ],
+    "style": "solid",
+    "unit": "4.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "short horizontal arrow from the right end of the 4.Pz. loop"
+   },
+   {
+    "points": [
+     [
+      23.1,
+      52.24
+     ],
+     [
+      23.27,
+      52.21
+     ],
+     [
+      23.44,
+      52.19
+     ],
+     [
+      23.64,
+      52.21
+     ],
+     [
+      23.81,
+      52.25
+     ]
+    ],
+    "style": "solid",
+    "unit": "J.R.Gr.D.",
+    "label": "?",
+    "conf": "clear",
+    "note": "bold arrow with two small circles, from Janow east; ? above tip"
+   },
+   {
+    "points": [
+     [
+      24.09,
+      52.41
+     ],
+     [
+      24.22,
+      52.45
+     ],
+     [
+      24.33,
+      52.49
+     ],
+     [
+      24.36,
+      52.51
+     ]
+    ],
+    "style": "solid",
+    "unit": "10.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow toward the 4. HQ (Czachec)"
+   },
+   {
+    "points": [
+     [
+      24.15,
+      52.28
+     ],
+     [
+      24.22,
+      52.32
+     ],
+     [
+      24.27,
+      52.34
+     ]
+    ],
+    "style": "solid",
+    "unit": "52.",
+    "label": "",
+    "conf": "rough",
+    "note": "thin short arrow from the 52. oval toward 167."
+   },
+   {
+    "points": [
+     [
+      23.94,
+      52.11
+     ],
+     [
+      24.11,
+      52.14
+     ],
+     [
+      24.25,
+      52.18
+     ],
+     [
+      24.35,
+      52.21
+     ]
+    ],
+    "style": "solid",
+    "unit": "SS R.",
+    "label": "",
+    "conf": "clear",
+    "note": "bold arrow, two circles in tail, label SS R. below"
+   },
+   {
+    "points": [
+     [
+      23.96,
+      52.66
+     ],
+     [
+      24.04,
+      52.67
+     ],
+     [
+      24.15,
+      52.7
+     ],
+     [
+      24.23,
+      52.71
+     ]
+    ],
+    "style": "dashed",
+    "unit": "2/3 78.",
+    "label": "",
+    "conf": "unsure",
+    "note": "dashed arc between the 1/3 oval and the 2/3 78. oval; tip direction and which end is the tip are unclear"
+   },
+   {
+    "points": [
+     [
+      23.26,
+      50.7
+     ],
+     [
+      23.37,
+      50.68
+     ],
+     [
+      23.49,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "79.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow from the 79. oval toward Miaczyn"
+   },
+   {
+    "points": [
+     [
+      24.63,
+      50.82
+     ],
+     [
+      24.79,
+      50.82
+     ],
+     [
+      24.93,
+      50.8
+     ],
+     [
+      25.0,
+      50.78
+     ]
+    ],
+    "style": "solid",
+    "unit": "25.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow with two circles in tail, tip at III.m."
+   },
+   {
+    "points": [
+     [
+      25.65,
+      50.57
+     ],
+     [
+      25.77,
+      50.61
+     ],
+     [
+      25.91,
+      50.63
+     ],
+     [
+      26.07,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "13.Pz.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow with two circles in tail; tip near Rowne"
+   },
+   {
+    "points": [
+     [
+      26.42,
+      50.65
+     ],
+     [
+      26.56,
+      50.65
+     ]
+    ],
+    "style": "solid",
+    "unit": "",
+    "label": "",
+    "conf": "rough",
+    "note": "double-headed small blue tip at the left edge of the red 124./23.m. text, no tail attached to any blue symbol"
+   },
+   {
+    "points": [
+     [
+      24.74,
+      50.31
+     ],
+     [
+      24.86,
+      50.31
+     ],
+     [
+      24.99,
+      50.28
+     ]
+    ],
+    "style": "solid",
+    "unit": "16.m.",
+    "label": "",
+    "conf": "clear",
+    "note": "arrow with two circles in tail, from the 16.m. label"
+   },
+   {
+    "points": [
+     [
+      24.53,
+      49.85
+     ],
+     [
+      24.67,
+      49.81
+     ],
+     [
+      24.8,
+      49.79
+     ]
+    ],
+    "style": "dashed",
+    "unit": "",
+    "label": "",
+    "conf": "clear",
+    "note": "dashed blue arrow at lower left of the SE view, near Zloczow; not connected to any symbol (nearest 297.)"
+   },
+   {
+    "points": [
+     [
+      22.81,
+      53.45
+     ],
+     [
+      22.97,
+      53.44
+     ],
+     [
+      23.11,
+      53.43
+     ]
+    ],
+    "style": "dashed",
+    "unit": "87.",
+    "label": "",
+    "conf": "clear",
+    "note": "upper dashed arrow from the 87. bracket toward Kuznica"
+   },
+   {
+    "points": [
+     [
+      22.79,
+      53.33
+     ],
+     [
+      22.9,
+      53.33
+     ],
+     [
+      22.97,
+      53.32
+     ]
+    ],
+    "style": "dashed",
+    "unit": "87.",
+    "label": "",
+    "conf": "clear",
+    "note": "lower dashed arrow from the 87. bracket"
+   },
+   {
+    "points": [
+     [
+      23.45,
+      53.19
+     ],
+     [
+      23.51,
+      53.2
+     ]
+    ],
+    "style": "solid",
+    "unit": "23.",
+    "label": "",
+    "conf": "rough",
+    "note": "small arrow tip right of the 23. text below the red outline"
+   },
+   {
+    "points": [
+     [
+      23.49,
+      53.14
+     ],
+     [
+      23.62,
+      53.15
+     ]
+    ],
+    "style": "solid",
+    "unit": "23.",
+    "label": "",
+    "conf": "rough",
+    "note": "second small arrow right of 23."
+   }
+  ],
+  "notes": "Dotted line with end ticks from Minsk to Borissow is a boundary line (not read). Red arrows ignored. Many loops without tips not read. 3.Pz. loop (53.0N 27.5E) has no arrow on 0627."
+ }
+}
