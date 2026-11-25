@@ -66,6 +66,7 @@ const SCENARIO: Scenario = {
   situations: [],
   story: [],
   borders: [],
+  railways: [],
   events: [CLOSING_EVENT],
   sources: [{ id: 'source', citation: 'Test source', kind: 'primary' }],
 };

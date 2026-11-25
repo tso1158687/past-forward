@@ -2,10 +2,13 @@
 //   - public/map/terrain.bin / terrain.json : elevation grid (AWS Terrain Tiles, "terrarium" encoding)
 //   - public/map/rivers.json                : river centre lines (Natural Earth 1:10m, public domain)
 //   - public/map/borders.json               : historical borders (OpenHistoricalMap, CC0)
+//   - public/map/railways.json              : railways open in 1941, today's track (OpenStreetMap, ODbL)
 //
-// Run with `pnpm bake:map`. Downloads are cached in tools/.cache so re-runs are offline.
+// Run with `pnpm bake:map`, or `pnpm bake:map railways` (or terrain, rivers, borders) for one
+// asset. Downloads are cached in tools/.cache so re-runs are offline.
 
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { spawnSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -372,7 +375,286 @@ async function bakeBorders() {
   );
 }
 
+// ---------- Railways ----------
+
+const OSM_OVERPASS_URLS = [
+  'https://overpass-api.de/api/interpreter',
+  'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
+];
+/**
+ * Main railways open in June 1941, each as the OpenStreetMap station nodes it runs through in
+ * order. Which lines these are and when each opened is recorded in docs/research/minsk-railways.md;
+ * the line between two stations is today's shortest track, so the course is today's alignment.
+ */
+const RAILWAYS = [
+  {
+    id: 'st-petersburg-warsaw',
+    // Warszawa Wschodnia, Małkinia, Białystok, Гродна, Lentvaris, Vilnius, Daugavpils
+    stations: [33210583, 3275141671, 3298971170, 11005642028, 31451531, 6624987344, 7800844381],
+    // Between Grodno and Lentvaris the old line crosses today's Belarus–Lithuania border on
+    // track that is now disused or lifted; OpenStreetMap still maps its bed.
+    formerTrackAfter: [11005642028],
+  },
+  {
+    id: 'lentvaris-kybartai',
+    // Lentvaris, Kaunas, Kybartai
+    stations: [31451531, 6629286841, 3161707936],
+  },
+  {
+    id: 'warsaw-brest-smolensk',
+    // Warszawa Wschodnia, Siedlce, Terespol, Брэст-Цэнтральны, Баранавічы Цэнтральныя,
+    // Мінск-Пасажырскі, Барысаў, Орша-Цэнтральная, Смоленск-Центральный
+    stations: [
+      33210583, 359467337, 3456263616, 1034170744, 5844409159, 27184541, 11030311018, 11438875116,
+      2011389433,
+    ],
+  },
+  {
+    id: 'libau-romny',
+    // Naujoji Vilnia, Маладзечна, Мінск-Пасажырскі, Асіповічы 1, Бабруйск, Гомель Пасажырскі
+    stations: [4568215628, 9825809815, 27184541, 306066747, 11027468523, 452534425],
+  },
+  {
+    id: 'riga-oryol',
+    // Daugavpils, Полацк, Віцебск, Смоленск-Центральный
+    stations: [7800844381, 10702924390, 10637312516, 2011389433],
+  },
+  {
+    id: 'vitebsk-zhlobin',
+    // Віцебск, Орша-Цэнтральная, Магілёў 1, Жлобін Паўночны
+    stations: [10637312516, 11438875116, 11453777381, 8917662541],
+  },
+  {
+    id: 'brest-gomel',
+    // Брэст-Цэнтральны, Жабінка, Кобрын, Пінск, Лунінец, Гомель Пасажырскі
+    stations: [1034170744, 5843905344, 476416018, 460411021, 12484334093, 452534425],
+  },
+  {
+    id: 'vilnius-rivne',
+    // Vilnius, Ліда, Баранавічы Палескія, Лунінец, Сарни, Рівне
+    stations: [6624987344, 306067705, 2737375271, 12484334093, 1459071429, 1216887890],
+    // Between Luninets and Sarny the line crosses today's Belarus–Ukraine border on track that
+    // OpenStreetMap maps as disused.
+    formerTrackAfter: [12484334093],
+  },
+  {
+    id: 'bialystok-baranovichi',
+    // Białystok, Ваўкавыск-Цэнтральны, Баранавічы Палескія
+    stations: [3298971170, 12922627532, 2737375271],
+    // Between Białystok and Vawkavysk the line crosses today's Poland–Belarus border on track that
+    // is now disused or lifted.
+    formerTrackAfter: [3298971170],
+  },
+  {
+    id: 'grodno-mosty',
+    // Гродна, Масты
+    stations: [11005642028, 12920637565],
+  },
+];
+/** Track between two stations is looked for within their bounding box widened by this much. */
+const RAIL_CORRIDOR_DEGREES = 0.3;
+/** A route this much longer than the straight line has probably strayed onto another line. */
+const RAIL_MAX_DETOUR = 1.5;
+const RAILWAY_TOLERANCE_KM = 0.3;
+/**
+ * Way ends this close are taken to be joined: in today's network a few pieces meet without a shared
+ * node (2 m apart at Zhabinka); pieces of a lifted line's bed often lie farther apart.
+ */
+const TRACK_GAP_KM = 0.02;
+const FORMER_TRACK_GAP_KM = 0.3;
+
+/** Runs an Overpass query on the OpenStreetMap servers in turn, waiting between attempts. */
+async function queryOsm(query, cacheName) {
+  const cachePath = join(CACHE_DIR, cacheName);
+  if (existsSync(cachePath)) return JSON.parse(await readFile(cachePath, 'utf8'));
+  // The public servers are often busy; wait longer after each failure.
+  for (let attempt = 0; attempt < 10; attempt++) {
+    if (attempt > 0) {
+      await new Promise((resolve) => setTimeout(resolve, Math.min(attempt * 30_000, 120_000)));
+    }
+    const url = OSM_OVERPASS_URLS[attempt % OSM_OVERPASS_URLS.length];
+    const text = (await postWithFetch(url, query)) ?? postWithCurl(url, query);
+    // A query that runs out of time or memory still answers 200, with partial data and a remark.
+    if (!text || JSON.parse(text).remark) continue;
+    await mkdir(dirname(cachePath), { recursive: true });
+    await writeFile(cachePath, text);
+    return JSON.parse(text);
+  }
+  throw new Error(`Overpass kept failing for ${cacheName}`);
+}
+
+/** Set once Node cannot connect at all, so that later queries go straight to curl. */
+let fetchUnreachable = false;
+
+async function postWithFetch(url, query) {
+  if (fetchUnreachable) return undefined;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: { 'User-Agent': 'map-research/1.0' },
+    body: new URLSearchParams({ data: query }),
+    signal: AbortSignal.timeout(300_000),
+  }).catch((error) => {
+    if (error?.cause?.code === 'ETIMEDOUT' || error?.cause?.code === 'ECONNREFUSED') {
+      fetchUnreachable = true;
+    }
+    return undefined;
+  });
+  return response?.ok ? response.text() : undefined;
+}
+
+/**
+ * On some machines a firewall lets curl reach the Overpass servers but not Node; curl then
+ * fetches the same response.
+ */
+function postWithCurl(url, query) {
+  const result = spawnSync(
+    'curl',
+    [
+      '-sf',
+      '-A',
+      'map-research/1.0',
+      '--max-time',
+      '300',
+      '--data-urlencode',
+      `data=${query}`,
+      url,
+    ],
+    { encoding: 'utf8', maxBuffer: 512 * 1024 * 1024 },
+  );
+  return result.status === 0 ? result.stdout : undefined;
+}
+
+const kmBetween = ([lonA, latA], [lonB, latB]) => {
+  const kmPerDegLon = 111.32 * Math.cos(degToRad((latA + latB) / 2));
+  return Math.hypot((lonA - lonB) * kmPerDegLon, (latA - latB) * 110.57);
+};
+
+/** Shortest path along the track network from `from` to `to`, as node ids; undefined if none. */
+function shortestPath(neighbours, from, to) {
+  const distance = new Map([[from, 0]]);
+  const previous = new Map();
+  const done = new Set();
+  // A plain array is fast enough for corridors of a few thousand nodes.
+  const queue = [[0, from]];
+  while (queue.length > 0) {
+    let best = 0;
+    for (let i = 1; i < queue.length; i++) if (queue[i][0] < queue[best][0]) best = i;
+    const [d, node] = queue.splice(best, 1)[0];
+    if (done.has(node)) continue;
+    done.add(node);
+    if (node === to) break;
+    for (const [next, length] of neighbours.get(node) ?? []) {
+      if (d + length < (distance.get(next) ?? Infinity)) {
+        distance.set(next, d + length);
+        previous.set(next, node);
+        queue.push([d + length, next]);
+      }
+    }
+  }
+  if (!done.has(to)) return undefined;
+  const path = [to];
+  while (path[0] !== from) path.unshift(previous.get(path[0]));
+  return path;
+}
+
+/**
+ * Today's track from one station to the next; with `formerTrack`, also disused and lifted track
+ * as OpenStreetMap maps it.
+ */
+async function routeBetween(from, to, formerTrack) {
+  const west = Math.min(from.lon, to.lon) - RAIL_CORRIDOR_DEGREES;
+  const east = Math.max(from.lon, to.lon) + RAIL_CORRIDOR_DEGREES;
+  const south = Math.min(from.lat, to.lat) - RAIL_CORRIDOR_DEGREES;
+  const north = Math.max(from.lat, to.lat) + RAIL_CORRIDOR_DEGREES;
+  const bbox = `${south},${west},${north},${east}`;
+  // Sidings are left out of today's network; a former line's bed is taken whatever its tags (the
+  // disused crossing into Belarus east of Białystok is mapped as a spur).
+  const former = formerTrack ? `way["railway"~"^(disused|abandoned)$"](${bbox});` : '';
+  const query = `[out:json][timeout:180];(way["railway"="rail"][!"service"](${bbox});${former});out geom;`;
+  const suffix = formerTrack ? '-former' : '';
+  const { elements } = await queryOsm(query, `osm/rail-${from.id}-${to.id}${suffix}.json`);
+
+  const position = new Map();
+  const neighbours = new Map();
+  const link = (a, b, length) => neighbours.set(a, [...(neighbours.get(a) ?? []), [b, length]]);
+  for (const way of elements) {
+    way.nodes.forEach((node, i) => position.set(node, [way.geometry[i].lon, way.geometry[i].lat]));
+    for (let i = 1; i < way.nodes.length; i++) {
+      const length = kmBetween(position.get(way.nodes[i - 1]), position.get(way.nodes[i]));
+      link(way.nodes[i - 1], way.nodes[i], length);
+      link(way.nodes[i], way.nodes[i - 1], length);
+    }
+  }
+  const gap = formerTrack ? FORMER_TRACK_GAP_KM : TRACK_GAP_KM;
+  const ends = [...new Set(elements.flatMap((way) => [way.nodes[0], way.nodes.at(-1)]))];
+  for (const a of ends) {
+    for (const b of ends) {
+      const length = kmBetween(position.get(a), position.get(b));
+      if (a < b && length <= gap) {
+        link(a, b, length);
+        link(b, a, length);
+      }
+    }
+  }
+  // A station node usually sits beside the track rather than on it.
+  const nearest = ({ lon, lat }) =>
+    [...position.keys()].reduce((best, node) =>
+      kmBetween(position.get(node), [lon, lat]) < kmBetween(position.get(best), [lon, lat])
+        ? node
+        : best,
+    );
+  const path = shortestPath(neighbours, nearest(from), nearest(to));
+  const label = `${from.name} → ${to.name}`;
+  if (!path) throw new Error(`No track found ${label}`);
+  const points = path.map((node) => position.get(node));
+  const length = points.slice(1).reduce((sum, point, i) => sum + kmBetween(points[i], point), 0);
+  const straight = kmBetween([from.lon, from.lat], [to.lon, to.lat]);
+  if (length > straight * RAIL_MAX_DETOUR) {
+    throw new Error(`Track ${label} is ${Math.round(length)} km for ${Math.round(straight)} km`);
+  }
+  return { points, label: `${label} ${Math.round(length)} km` };
+}
+
+async function bakeRailways() {
+  const stationIds = [...new Set(RAILWAYS.flatMap((railway) => railway.stations))];
+  const stationsResponse = await queryOsm(
+    `[out:json][timeout:60];node(id:${stationIds.join(',')});out;`,
+    `osm/stations-${stationIds.length}.json`,
+  );
+  const stations = new Map(
+    stationsResponse.elements.map((node) => [
+      node.id,
+      { id: node.id, lon: node.lon, lat: node.lat, name: node.tags?.name ?? String(node.id) },
+    ]),
+  );
+  const railways = [];
+  const legs = [];
+  for (const { id, stations: stops, formerTrackAfter = [] } of RAILWAYS) {
+    let line = [];
+    for (let i = 1; i < stops.length; i++) {
+      const [from, to] = [stations.get(stops[i - 1]), stations.get(stops[i])];
+      if (!from || !to)
+        throw new Error(`Railway ${id}: station ${stops[i - 1]} or ${stops[i]} not found`);
+      const leg = await routeBetween(from, to, formerTrackAfter.includes(from.id));
+      legs.push(leg.label);
+      line = [...line, ...(line.length > 0 ? leg.points.slice(1) : leg.points)];
+    }
+    const lines = clipLineToBounds(line).map((part) => simplifyLine(part, RAILWAY_TOLERANCE_KM));
+    railways.push({ id, stations: stops.map((stop) => stations.get(stop).name), lines });
+  }
+  const output = {
+    source:
+      'OpenStreetMap contributors (ODbL), today’s track; which lines existed in 1941 is in docs/research/minsk-railways.md',
+    dataTimestamp: stationsResponse.osm3s?.timestamp_osm_base,
+    railways,
+  };
+  await writeFile(join(OUTPUT_DIR, 'railways.json'), JSON.stringify(output) + '\n');
+  console.log(`railways: ${railways.length} lines; legs: ${legs.join('; ')}`);
+}
+
 await mkdir(OUTPUT_DIR, { recursive: true });
-await bakeTerrain();
-await bakeRivers();
-await bakeBorders();
+const only = process.argv[2];
+if (!only || only === 'terrain') await bakeTerrain();
+if (!only || only === 'rivers') await bakeRivers();
+if (!only || only === 'borders') await bakeBorders();
+if (!only || only === 'railways') await bakeRailways();

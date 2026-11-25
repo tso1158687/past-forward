@@ -13,7 +13,7 @@ import {
   viewChild,
 } from '@angular/core';
 import { GeographicLocation } from '../../core/geo/geo-types';
-import { HistoricalBorder } from '../../core/history/scenario';
+import { HistoricalBorder, HistoricalRailway } from '../../core/history/scenario';
 import { City } from '../../data/map/cities';
 import { loadMapAssets, MapAssets } from '../../data/map/map-assets';
 import { RIVER_NAMES } from '../../data/map/river-names';
@@ -39,6 +39,8 @@ export class MapView {
   readonly cities = input.required<readonly City[]>();
   /** Borders to draw; the course of each comes from the map assets. */
   readonly borders = input<readonly HistoricalBorder[]>([]);
+  /** Railways to draw; the course of each comes from the map assets. */
+  readonly railways = input<readonly HistoricalRailway[]>([]);
   /** Units to show right now. */
   readonly units = input<readonly UnitMarker[]>([]);
   /** Where the units have been so far. */
@@ -127,6 +129,11 @@ export class MapView {
         const course = assets.borders.find((line) => line.id === border.id);
         if (!course) throw new Error(`The map assets have no border "${border.id}"`);
         return { kind: border.kind, lines: course.lines, label: this.i18n.text(border.name) };
+      }),
+      railways: this.railways().map((railway) => {
+        const course = assets.railways.find((line) => line.id === railway.id);
+        if (!course) throw new Error(`The map assets have no railway "${railway.id}"`);
+        return { lines: course.lines };
       }),
       cities: this.cities().map((city) => ({
         id: city.id,

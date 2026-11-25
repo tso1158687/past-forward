@@ -16,8 +16,10 @@ import { createLabel } from './label';
 
 /** What to shade on the map for one evening. Everything in it is an estimate. */
 export interface SituationView {
-  /** A line through the foremost German units; the land west of it is shaded. */
+  /** A line through the foremost German units that evening, drawn dashed. */
   readonly front: readonly GeographicLocation[];
+  /** Everything the foremost units had reached by that evening lies west of this; it is shaded. */
+  readonly reach: readonly GeographicLocation[];
   /** The German arrows of the evening, as drawn on the source: tail to tip. */
   readonly arrows: readonly SituationArrowView[];
   readonly frontLabel: string;
@@ -172,7 +174,7 @@ export class SituationLayer {
         if (close) context.closePath();
       };
 
-      trace(advanceArea(view.front, this.surface.grid.bounds), true);
+      trace(advanceArea(view.reach, this.surface.grid.bounds), true);
       context.fillStyle = ADVANCE_FILL;
       context.fill();
 

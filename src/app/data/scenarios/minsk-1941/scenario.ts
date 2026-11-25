@@ -1,6 +1,7 @@
 import { Scenario } from '../../../core/history/scenario';
 import { MINSK_BORDERS } from './borders';
 import { MINSK_EVENTS } from './events';
+import { MINSK_RAILWAYS } from './railways';
 import { MINSK_SITUATIONS } from './situations';
 import { MINSK_STORY } from './story';
 import { MINSK_SOURCES } from './sources';
@@ -21,6 +22,7 @@ export const MINSK_SCENARIO: Scenario = {
   situations: MINSK_SITUATIONS,
   story: MINSK_STORY,
   borders: MINSK_BORDERS,
+  railways: MINSK_RAILWAYS,
   events: MINSK_EVENTS,
   sources: MINSK_SOURCES,
 };

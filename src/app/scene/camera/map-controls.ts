@@ -56,19 +56,28 @@ export function createMapControls(
     ),
   );
 
-  moveToInitialView(controls, camera, mapSize, false);
+  moveToInitialView(controls, camera, mapSize, domElement.clientWidth, false);
   return controls;
 }
 
-/** Looks north across the whole map from the south, at a distance that fits the viewport. */
+/**
+ * Looks north across the whole map from the south, at a distance that fits the viewport. A
+ * portrait tablet shows the whole width of the map, its near edge included, and may pull back
+ * beyond the usual limit to do so; a phone keeps a closer view that crops the sides.
+ */
 export function moveToInitialView(
   controls: CameraControls,
   camera: PerspectiveCamera,
   mapSize: MapSize,
+  viewportWidthPixels: number,
   animate: boolean,
 ): void {
   const polar = MathUtils.degToRad(CAMERA.initialPolarDegrees);
-  const distance = Math.min(fitDistance(camera, mapSize, polar), CAMERA.maxDistance);
+  const wholeWidth = camera.aspect < 1 && viewportWidthPixels >= CAMERA.wholeWidthMinPixels;
+  const distance = wholeWidth
+    ? wholeWidthDistance(camera, mapSize, polar)
+    : Math.min(fitDistance(camera, mapSize, polar), CAMERA.maxDistance);
+  controls.maxDistance = Math.max(CAMERA.maxDistance, distance);
   controls.normalizeRotations();
   void controls.setLookAt(
     0,
@@ -87,4 +96,15 @@ function fitDistance(camera: PerspectiveCamera, mapSize: MapSize, polar: number)
   const widthFit = mapSize.width / 2 / (verticalHalfTan * camera.aspect);
   const depthFit = (mapSize.depth * Math.cos(polar)) / 2 / verticalHalfTan;
   return Math.max(widthFit, depthFit) * CAMERA.initialFitMargin;
+}
+
+/**
+ * Camera distance at which even the near (southern) edge of the tilted map, which is closer to
+ * the camera than the centre and so looks wider, fits across the viewport.
+ */
+function wholeWidthDistance(camera: PerspectiveCamera, mapSize: MapSize, polar: number): number {
+  const verticalHalfTan = Math.tan(MathUtils.degToRad(camera.fov) / 2);
+  const nearEdgeFit =
+    mapSize.width / 2 / (verticalHalfTan * camera.aspect) + (mapSize.depth / 2) * Math.sin(polar);
+  return Math.max(nearEdgeFit * CAMERA.initialFitMargin, fitDistance(camera, mapSize, polar));
 }

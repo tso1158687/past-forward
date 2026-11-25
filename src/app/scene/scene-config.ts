@@ -24,6 +24,8 @@ export const SCENE_CONFIG = {
     minDistance: 120,
     maxDistance: 1800,
     maxPolarDegrees: 72,
+    /** Portrait screens at least this wide (tablets) fit the whole width of the map at first. */
+    wholeWidthMinPixels: 600,
     /** Camera distance used when flying to a selected place. */
     focusDistance: 260,
   },

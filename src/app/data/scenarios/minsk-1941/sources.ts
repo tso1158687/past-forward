@@ -87,4 +87,55 @@ export const MINSK_SOURCES: readonly HistoricalSource[] = [
       'А. В. Исаев, Неизвестный 1941. Остановленный блицкриг, 2010, гл. «Контрудар группы Болдина».',
     kind: 'scholarly',
   },
+  // Railways: when each line opened. Checked in docs/research/minsk-railways.md.
+  {
+    id: 'nes-moscow-brest',
+    citation:
+      '«Московско-Брестская железная дорога», Новый энциклопедический словарь (Брокгауз — Ефрон), 1911–1916.',
+    kind: 'reference',
+    url: 'https://ru.wikisource.org/wiki/НЭС/Московско-Брестская_железная_дорога',
+  },
+  {
+    id: 'wiki-warsaw-terespol',
+    citation: 'Wikipedia (en), «Warsaw–Terespol railway».',
+    kind: 'reference',
+    url: 'https://en.wikipedia.org/wiki/Warsaw%E2%80%93Terespol_railway',
+  },
+  {
+    id: 'wiki-st-petersburg-warsaw',
+    citation: 'Wikipedia (en), «Saint Petersburg–Warsaw railway».',
+    kind: 'reference',
+    url: 'https://en.wikipedia.org/wiki/Saint_Petersburg%E2%80%93Warsaw_railway',
+  },
+  {
+    id: 'wiki-kaunas-kybartai',
+    citation:
+      'Wikipedia (en), «Kaunas railway station» 與 «Kybartai railway station»（引立陶宛鐵路博物館與立陶宛鐵路公司）。',
+    kind: 'reference',
+    url: 'https://en.wikipedia.org/wiki/Kybartai_railway_station',
+  },
+  {
+    id: 'wiki-libau-romny',
+    citation: 'Википедия (ru), «Либаво-Роменская железная дорога»（引 РГИА, ф. 446, оп. 27）.',
+    kind: 'reference',
+    url: 'https://ru.wikipedia.org/wiki/Либаво-Роменская_железная_дорога',
+  },
+  {
+    id: 'wiki-riga-oryol',
+    citation: 'Википедия (ru), «Риго-Орловская железная дорога»（引 РГИА, ф. 446, оп. 26 и 31）.',
+    kind: 'reference',
+    url: 'https://ru.wikipedia.org/wiki/Риго-Орловская_железная_дорога',
+  },
+  {
+    id: 'wiki-polesie',
+    citation: 'Википедия (ru), «Полесские железные дороги».',
+    kind: 'reference',
+    url: 'https://ru.wikipedia.org/wiki/Полесские_железные_дороги',
+  },
+  {
+    id: 'wiki-pl-line-37',
+    citation: 'Wikipedia (pl), „Linia kolejowa nr 37”.',
+    kind: 'reference',
+    url: 'https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_37',
+  },
 ];

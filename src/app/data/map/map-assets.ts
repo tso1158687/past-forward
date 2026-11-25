@@ -16,10 +16,17 @@ export interface BorderLine {
   readonly lines: readonly (readonly GeographicLocation[])[];
 }
 
+/** Today's course of a railway, as baked by tools/bake-map-data.mjs from OpenStreetMap. */
+export interface RailwayLine {
+  readonly id: string;
+  readonly lines: readonly (readonly GeographicLocation[])[];
+}
+
 export interface MapAssets {
   readonly elevation: ElevationGrid;
   readonly rivers: readonly River[];
   readonly borders: readonly BorderLine[];
+  readonly railways: readonly RailwayLine[];
 }
 
 interface TerrainMetadata {
@@ -46,15 +53,23 @@ interface BordersFile {
   }[];
 }
 
+interface RailwaysFile {
+  readonly railways: readonly {
+    readonly id: string;
+    readonly lines: readonly LineCoordinates[];
+  }[];
+}
+
 const ASSET_BASE = 'map/';
 
 /** Loads the static map assets produced by `pnpm bake:map`. */
 export async function loadMapAssets(): Promise<MapAssets> {
-  const [metadata, samples, riversFile, bordersFile] = await Promise.all([
+  const [metadata, samples, riversFile, bordersFile, railwaysFile] = await Promise.all([
     fetchAsset('terrain.json').then((response) => response.json() as Promise<TerrainMetadata>),
     fetchAsset('terrain.bin').then((response) => response.arrayBuffer()),
     fetchAsset('rivers.json').then((response) => response.json() as Promise<RiversFile>),
     fetchAsset('borders.json').then((response) => response.json() as Promise<BordersFile>),
+    fetchAsset('railways.json').then((response) => response.json() as Promise<RailwaysFile>),
   ]);
 
   if (samples.byteLength !== metadata.width * metadata.height * Int16Array.BYTES_PER_ELEMENT) {
@@ -71,6 +86,10 @@ export async function loadMapAssets(): Promise<MapAssets> {
     borders: bordersFile.borders.map((border) => ({
       id: border.id,
       lines: border.lines.map(toLocations),
+    })),
+    railways: railwaysFile.railways.map((railway) => ({
+      id: railway.id,
+      lines: railway.lines.map(toLocations),
     })),
   };
 }

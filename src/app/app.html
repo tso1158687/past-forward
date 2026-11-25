@@ -3,6 +3,7 @@
 <app-map-view
   [cities]="cities"
   [borders]="timeline.scenario.borders"
+  [railways]="timeline.scenario.railways"
   [units]="unitMarkers()"
   [unitTrails]="unitTrails()"
   [unitTransition]="unitTransition()"
@@ -107,7 +108,9 @@
   </div>
 
   <div class="dock map-actions">
-    <p class="panel controls-hint">{{ messages.controlsHint }}</p>
+    <p class="panel controls-hint">
+      {{ touchOnly ? messages.controlsHintTouch : messages.controlsHint }}
+    </p>
     <button type="button" class="panel reset-view" (click)="resetView()">
       {{ messages.resetView }}
     </button>

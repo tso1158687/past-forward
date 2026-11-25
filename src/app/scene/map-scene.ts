@@ -18,6 +18,7 @@ import { createMapControls, moveToInitialView } from './camera/map-controls';
 import { createBorderLayer, SceneBorder } from './layers/border-layer';
 import { CityMarker, createCityLayer } from './layers/city-layer';
 import { createRiverLayer, SceneRiver } from './layers/river-layer';
+import { createRailwayLayer, SceneRailway } from './layers/railway-layer';
 import { KeyedLabelLayer } from './layers/keyed-label-layer';
 import { createPlaceLayer, placeLabels, PlaceMarker } from './layers/place-layer';
 import { SituationLayer, SituationView } from './layers/situation-layer';
@@ -33,6 +34,7 @@ export interface MapSceneContent {
   readonly elevation: ElevationGrid;
   readonly rivers: readonly SceneRiver[];
   readonly borders: readonly SceneBorder[];
+  readonly railways: readonly SceneRailway[];
   readonly cities: readonly CityMarker[];
 }
 
@@ -86,6 +88,7 @@ export class MapScene {
       this.createTerrain(surfaceGeometry),
       this.situationLayer.object,
       createRiverLayer(content.rivers, this.surface),
+      createRailwayLayer(content.railways, this.surface),
       createBorderLayer(content.borders, this.surface),
       createCityLayer(content.cities, this.surface, (id) => events.onCitySelected(id)),
       this.unitLayer.object,
@@ -146,7 +149,13 @@ export class MapScene {
   }
 
   resetView(): void {
-    moveToInitialView(this.controls, this.camera, this.surface.projection.sizeKm, true);
+    moveToInitialView(
+      this.controls,
+      this.camera,
+      this.surface.projection.sizeKm,
+      this.host.clientWidth,
+      true,
+    );
   }
 
   dispose(): void {

@@ -14,6 +14,8 @@ export interface Messages {
   readonly dataNoticeTitle: string;
   readonly dataNotice: readonly string[];
   readonly controlsHint: string;
+  /** The same for a touch screen without a mouse. */
+  readonly controlsHintTouch: string;
   readonly resetView: string;
   readonly mapLoading: string;
   readonly mapLoadFailed: string;

@@ -77,6 +77,20 @@ export interface HistoricalBorder {
 }
 
 /**
+ * A railway line that was open in June 1941. Its course is a map asset with the same `id`: today's
+ * alignment, since no open source traces the 1941 one; that the line existed then is what the
+ * sources support.
+ */
+export interface HistoricalRailway {
+  readonly id: string;
+  readonly name: LocalizedText;
+  /** The year the whole line was open, as far as the sources say. */
+  readonly openedBy: number;
+  /** Ids of the sources for `openedBy`; at least one. */
+  readonly sourceIds: readonly string[];
+}
+
+/**
  * Everything the timeline plays: a time span, the events in it and the units moving through it. The history and a
  * future alternative history are both just scenarios, so swapping one for another needs no change
  * to the timeline or the map.
@@ -97,8 +111,13 @@ export interface Scenario {
   readonly story: readonly StoryStop[];
   /** Borders that hold for the whole of `timeRange`. */
   readonly borders: readonly HistoricalBorder[];
+  /** Railways open throughout `timeRange`. */
+  readonly railways: readonly HistoricalRailway[];
   /** In chronological order of `startDay`. */
   readonly events: readonly HistoricalEvent[];
-  /** Every source referred to by the events, the unit positions, the situations and the story. */
+  /**
+   * Every source referred to by the events, the unit positions, the situations, the story and the
+   * railways.
+   */
   readonly sources: readonly HistoricalSource[];
 }

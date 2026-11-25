@@ -10,7 +10,14 @@ import { LocalizedText } from '../i18n/localized-text';
  */
 export type Certainty = 'confirmed' | 'reported' | 'disputed';
 
-export type SourceKind = 'primary' | 'official-history' | 'scholarly' | 'memoir' | 'statistical';
+export type SourceKind =
+  | 'primary'
+  | 'official-history'
+  | 'scholarly'
+  | 'memoir'
+  | 'statistical'
+  /** An encyclopedia, including Wikipedia; cited only for plain dates such as a railway's opening. */
+  | 'reference';
 
 export interface HistoricalSource {
   readonly id: string;

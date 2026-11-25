@@ -35,12 +35,17 @@ const SITUATION: FrontSituation = {
 
 describe('toSituationView', () => {
   it('shades nothing on a day without a stated situation', () => {
-    expect(toSituationView(undefined, LABELS, text)).toBeUndefined();
+    expect(toSituationView(undefined, [], LABELS, text)).toBeUndefined();
   });
 
-  it('hands the map the front line, every pocket and every arrow, the named ones as estimates', () => {
-    expect(toSituationView(SITUATION, LABELS, text)).toEqual({
+  it('hands the map the front line, the reach, every pocket and every arrow, the named ones as estimates', () => {
+    const reach = [
+      { lon: 27, lat: 56 },
+      { lon: 28, lat: 50 },
+    ];
+    expect(toSituationView(SITUATION, reach, LABELS, text)).toEqual({
       front: SITUATION.germanFront,
+      reach,
       arrows: SITUATION.arrows,
       frontLabel: 'front (estimate)',
       pockets: [

@@ -1,3 +1,4 @@
+import { reachedLine } from '../../../core/history/front-situation';
 import { eventLastDay } from '../../../core/history/historical-event';
 import { totalDays } from '../../../core/timeline/timeline-state';
 import { MINSK_SCENARIO } from './scenario';
@@ -10,6 +11,26 @@ const isOnMap = ({ lon, lat }: { lon: number; lat: number }) =>
   lon <= MAP_BOUNDS.east &&
   lat >= MAP_BOUNDS.south &&
   lat <= MAP_BOUNDS.north;
+
+interface Point {
+  readonly lon: number;
+  readonly lat: number;
+}
+
+/**
+ * How far east of a north-to-south front line a place lies, in kilometres; negative when it is
+ * behind the line. Where the line crosses the place's latitude more than once, its easternmost
+ * crossing counts, as the shading west of the line covers everything up to it.
+ */
+function kmAheadOf(front: readonly Point[], place: Point): number {
+  let lineLon = -Infinity;
+  for (let i = 1; i < front.length; i++) {
+    const [a, b] = [front[i - 1], front[i]];
+    if (a.lat === b.lat || (a.lat - place.lat) * (b.lat - place.lat) > 0) continue;
+    lineLon = Math.max(lineLon, a.lon + ((place.lat - a.lat) / (b.lat - a.lat)) * (b.lon - a.lon));
+  }
+  return (place.lon - lineLon) * 111.32 * Math.cos((place.lat * Math.PI) / 180);
+}
 
 describe('Minsk 1941 scenario', () => {
   const { events, sources, timeRange } = MINSK_SCENARIO;
@@ -54,6 +75,7 @@ describe('Minsk 1941 scenario', () => {
       ...MINSK_SCENARIO.units.flatMap((unit) => unit.positions.flatMap((p) => p.sourceIds)),
       ...MINSK_SCENARIO.situations.flatMap((situation) => situation.sourceIds),
       ...MINSK_SCENARIO.story.flatMap((stop) => stop.sourceIds),
+      ...MINSK_SCENARIO.railways.flatMap((railway) => railway.sourceIds),
     ]);
     expect(sources.filter((source) => !used.has(source.id)).map((source) => source.id)).toEqual([]);
   });
@@ -78,6 +100,19 @@ describe('Minsk 1941 scenario', () => {
     ]);
     for (const border of MINSK_SCENARIO.borders) {
       expect(border.name['zh-TW'], border.id).toBeTruthy();
+    }
+  });
+
+  it('draws only railways a known source shows open before June 1941', () => {
+    const { railways } = MINSK_SCENARIO;
+    const sourceIds = new Set(sources.map((source) => source.id));
+    expect(new Set(railways.map((railway) => railway.id)).size).toBe(railways.length);
+    expect(railways.length).toBe(10);
+    for (const railway of railways) {
+      expect(railway.name['zh-TW'], railway.id).toBeTruthy();
+      expect(railway.openedBy, railway.id).toBeLessThan(1941);
+      expect(railway.sourceIds.length, railway.id).toBeGreaterThan(0);
+      for (const id of railway.sourceIds) expect(sourceIds.has(id), id).toBe(true);
     }
   });
 
@@ -181,6 +216,71 @@ describe('Minsk 1941 scenario', () => {
         expect(situation.sourceIds.length, `day ${situation.day}`).toBeGreaterThan(0);
         for (const id of situation.sourceIds) expect(sourceIds.has(id), id).toBe(true);
       }
+    });
+
+    it('runs every front from north to south without turning back', () => {
+      for (const { day, germanFront } of situations) {
+        for (let i = 1; i < germanFront.length; i++) {
+          expect(germanFront[i].lat, `day ${day}, point ${i}`).toBeLessThan(germanFront[i - 1].lat);
+        }
+      }
+    });
+
+    it('shades a reach that never moves back west, and is never behind the evening front', () => {
+      const latitudes = Array.from({ length: 56 }, (_, i) => MAP_BOUNDS.south + i * 0.1);
+      let previous: readonly Point[] = [];
+      for (const { day, germanFront } of situations) {
+        const reach = reachedLine(situations, day);
+        for (const lat of latitudes) {
+          const place = { lon: MAP_BOUNDS.west, lat };
+          // The reach lies at or east of every point a line passes through at that latitude.
+          expect(kmAheadOf(reach, place), `day ${day}, ${lat}°N`).toBeLessThanOrEqual(
+            kmAheadOf(germanFront, place) + 1e-6,
+          );
+          if (previous.length > 0) {
+            expect(kmAheadOf(reach, place), `day ${day}, ${lat}°N`).toBeLessThanOrEqual(
+              kmAheadOf(previous, place) + 1e-6,
+            );
+          }
+        }
+        previous = reach;
+      }
+    });
+
+    /*
+     * Milestone 5: an event and the shading of the same evening must not contradict each other.
+     * Each place an event says the Germans had reached lies behind that evening's front, or ahead
+     * of it by no more than the front's stated precision (docs/research/minsk-front-situation.md).
+     */
+    it('puts every place the Germans reached, by the events, behind the front of that evening', () => {
+      const PRECISION_KM = 20;
+      const reached: readonly { event: string; day: number; places: readonly string[] }[] = [
+        { event: 'neman-bridges', day: 0, places: ['Alytus', 'Merkinė'] },
+        { event: 'vilnius', day: 2, places: ['Vilnius'] },
+        { event: 'slonim-withdrawal', day: 2, places: ['Slonim'] },
+        { event: 'minsk-falls', day: 6, places: ['Minsk'] },
+        { event: 'berezina-crossings', day: 7, places: ['Bobruisk'] },
+        { event: 'berezina-crossings', day: 9, places: ['Bobruisk', 'Borisov'] },
+        { event: 'lepel-counterstroke', day: 14, places: ['Senno'] },
+      ];
+      for (const { event: id, day, places } of reached) {
+        const event = events.find((candidate) => candidate.id === id);
+        const front = situations.find((situation) => situation.day === day)?.germanFront ?? [];
+        for (const name of places) {
+          const place = event?.places.find((candidate) => candidate.name.en === name);
+          if (!place) throw new Error(`${id} has no place "${name}"`);
+          expect(kmAheadOf(front, place.location), `${name}, day ${day}`).toBeLessThanOrEqual(
+            PRECISION_KM,
+          );
+        }
+      }
+      // Where the Dvina was first crossed on 4 July is disputed; one of the two places will do.
+      const crossing = events.find((event) => event.id === 'advance-resumes');
+      const front = situations.find((situation) => situation.day === 12)?.germanFront ?? [];
+      const nearest = Math.min(
+        ...(crossing?.places ?? []).map((place) => kmAheadOf(front, place.location)),
+      );
+      expect(nearest).toBeLessThanOrEqual(PRECISION_KM);
     });
   });
 

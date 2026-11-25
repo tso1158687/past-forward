@@ -7,6 +7,7 @@ import {
   signal,
   viewChild,
 } from '@angular/core';
+import { reachedLine } from './core/history/front-situation';
 import { HistoricalEvent } from './core/history/historical-event';
 import { CITIES, City } from './data/map/cities';
 import { EventPanel } from './ui/events/event-panel';
@@ -26,7 +27,10 @@ import { TimelineBar } from './ui/timeline/timeline-bar';
 import { TimelineStore } from './ui/timeline/timeline-store';
 import { UnitPanel } from './ui/units/unit-panel';
 
-const WIDE_SCREEN_QUERY = '(min-width: 721px)';
+/** Wide enough that the open data notice leaves most of the map in view. */
+const WIDE_SCREEN_QUERY = '(min-width: 1200px)';
+/** A touch screen with no mouse or trackpad. */
+const TOUCH_ONLY_QUERY = '(hover: none) and (pointer: coarse)';
 
 @Component({
   imports: [EventPanel, MapView, StoryPanel, TimelineBar, UnitPanel],
@@ -41,9 +45,12 @@ export class App {
   protected readonly story = inject(StoryStore);
 
   protected readonly cities = CITIES;
-  /** On narrow screens the data notice starts collapsed so that it does not cover the map. */
+  /** Below desktop width the data notice starts collapsed so that it does not cover the map. */
   protected readonly noticeInitiallyOpen =
     typeof matchMedia !== 'function' || matchMedia(WIDE_SCREEN_QUERY).matches;
+  /** Touch screens are told about fingers, not the mouse buttons and wheel. */
+  protected readonly touchOnly =
+    typeof matchMedia === 'function' && matchMedia(TOUCH_ONLY_QUERY).matches;
 
   /** The units on the map at the timeline's current time. */
   protected readonly unitMarkers = computed(
@@ -73,8 +80,12 @@ export class App {
    * changes, and the map repaints its shading, only when the date does.
    */
   private readonly situation = computed(() => this.timeline.worldState().situation);
+  /** Everything reached by the evening of the current day; also changes only with the date. */
+  private readonly reach = computed(() =>
+    reachedLine(this.timeline.scenario.situations, this.timeline.calendarDay()),
+  );
   protected readonly situationView = computed(() =>
-    toSituationView(this.situation(), this.i18n.messages().situation, (text) =>
+    toSituationView(this.situation(), this.reach(), this.i18n.messages().situation, (text) =>
       this.i18n.text(text),
     ),
   );

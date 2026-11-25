@@ -4,8 +4,24 @@
     {
       "name": "past-forward",
       "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["start", "--port", "4200"],
+      "runtimeArgs": [
+        "start",
+        "--port",
+        "4200"
+      ],
       "port": 4200
+    },
+    {
+      "name": "past-forward-dist",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4300",
+        "--directory",
+        "dist/past-forward/browser"
+      ],
+      "port": 4300
     }
   ]
 }
