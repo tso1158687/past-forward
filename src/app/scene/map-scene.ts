@@ -5,15 +5,18 @@ import {
   Material,
   Object3D,
   PerspectiveCamera,
+  Plane,
   Raycaster,
   Scene,
   Texture,
   Vector2,
+  Vector3,
   WebGLRenderer,
 } from 'three';
 import { CSS2DRenderer } from 'three/addons/renderers/CSS2DRenderer.js';
 import { ElevationGrid } from '../core/geo/elevation-grid';
 import { GeographicLocation } from '../core/geo/geo-types';
+import { clearScreenPoint, ScreenRect } from './camera/clear-point';
 import { createMapControls, moveToInitialView } from './camera/map-controls';
 import { createBorderLayer, SceneBorder } from './layers/border-layer';
 import { CityMarker, createCityLayer } from './layers/city-layer';
@@ -118,6 +121,43 @@ export class MapScene {
     const target = this.surface.positionAt(location);
     void this.controls.moveTo(target.x, 0, target.z, true);
     void this.controls.dollyTo(distanceKm, true);
+  }
+
+  /**
+   * Pans the map just enough that a place no longer sits under one of `obstacles` (the panels
+   * over the map, in pixels from its top left). It works from where the camera is heading, so it
+   * can follow a `focusOn` that is still under way; a place already clear stays where it is.
+   */
+  revealLocation(location: GeographicLocation, obstacles: readonly ScreenRect[]): void {
+    const width = this.host.clientWidth;
+    const height = this.host.clientHeight;
+    if (width === 0 || height === 0) return;
+
+    const camera = this.camera.clone();
+    const target = this.controls.getTarget(new Vector3(), true);
+    this.controls.getPosition(camera.position, true);
+    camera.lookAt(target);
+    camera.updateMatrixWorld();
+
+    const place = this.surface.positionAt(location);
+    const projected = place.clone().project(camera);
+    const goal = clearScreenPoint(
+      { x: ((projected.x + 1) / 2) * width, y: ((1 - projected.y) / 2) * height },
+      obstacles,
+      { width, height },
+    );
+    if (!goal) return;
+
+    // Moving the view by `shift` brings `place` to where the ray through `goal` meets its level.
+    const ray = new Raycaster();
+    ray.setFromCamera(new Vector2((goal.x / width) * 2 - 1, 1 - (goal.y / height) * 2), camera);
+    const meeting = ray.ray.intersectPlane(
+      new Plane(new Vector3(0, 1, 0), -place.y),
+      new Vector3(),
+    );
+    if (!meeting) return;
+    const shift = place.sub(meeting);
+    void this.controls.moveTo(target.x + shift.x, target.y, target.z + shift.z, true);
   }
 
   /**

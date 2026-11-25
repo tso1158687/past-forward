@@ -10,7 +10,7 @@
   [situation]="situationView()"
   [places]="placeMarkers()"
   (citySelected)="selectCity($event)"
-  (unitSelected)="timeline.selectUnit($event)"
+  (unitSelected)="selectUnit($event)"
 />
 
 <div class="dock top-dock">
@@ -36,7 +36,12 @@
     }
   </header>
 
-  <details class="panel data-notice" [open]="noticeInitiallyOpen">
+  <details
+    #notice
+    class="panel data-notice"
+    [open]="noticeOpen()"
+    (toggle)="noticeOpen.set(notice.open)"
+  >
     <summary>
       <span class="badge">{{ messages.prototypeBadge }}</span>
       {{ messages.dataNoticeTitle }}
@@ -111,6 +116,7 @@
     <p class="panel controls-hint">
       {{ touchOnly ? messages.controlsHintTouch : messages.controlsHint }}
     </p>
+    <app-layer-menu class="panel" [(layers)]="layers" />
     <button type="button" class="panel reset-view" (click)="resetView()">
       {{ messages.resetView }}
     </button>

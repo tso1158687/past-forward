@@ -1,5 +1,6 @@
 import { ElevationGrid } from '../../core/geo/elevation-grid';
 import { GeoBounds, GeographicLocation } from '../../core/geo/geo-types';
+import { decodeTerrain, TERRAIN_ENCODING } from './terrain-encoding';
 
 /** A river as baked by tools/bake-map-data.mjs from Natural Earth. */
 export interface River {
@@ -34,6 +35,7 @@ interface TerrainMetadata {
   readonly width: number;
   readonly height: number;
   readonly metersPerUnit: number;
+  readonly encoding: string;
 }
 
 type LineCoordinates = readonly (readonly [lon: number, lat: number])[];
@@ -64,7 +66,7 @@ const ASSET_BASE = 'map/';
 
 /** Loads the static map assets produced by `pnpm bake:map`. */
 export async function loadMapAssets(): Promise<MapAssets> {
-  const [metadata, samples, riversFile, bordersFile, railwaysFile] = await Promise.all([
+  const [metadata, terrainFile, riversFile, bordersFile, railwaysFile] = await Promise.all([
     fetchAsset('terrain.json').then((response) => response.json() as Promise<TerrainMetadata>),
     fetchAsset('terrain.bin').then((response) => response.arrayBuffer()),
     fetchAsset('rivers.json').then((response) => response.json() as Promise<RiversFile>),
@@ -72,12 +74,19 @@ export async function loadMapAssets(): Promise<MapAssets> {
     fetchAsset('railways.json').then((response) => response.json() as Promise<RailwaysFile>),
   ]);
 
-  if (samples.byteLength !== metadata.width * metadata.height * Int16Array.BYTES_PER_ELEMENT) {
-    throw new Error('terrain.bin does not match the size declared in terrain.json');
+  if (metadata.encoding !== TERRAIN_ENCODING) {
+    throw new Error(`terrain.bin is encoded as "${metadata.encoding}", not "${TERRAIN_ENCODING}"`);
   }
+  const samples = await decodeTerrain(terrainFile, metadata.width, metadata.height);
 
   return {
-    elevation: { ...metadata, samples: new Int16Array(samples) },
+    elevation: {
+      bounds: metadata.bounds,
+      width: metadata.width,
+      height: metadata.height,
+      metersPerUnit: metadata.metersPerUnit,
+      samples,
+    },
     rivers: riversFile.rivers.map((river) => ({
       name: river.name,
       scaleRank: river.scaleRank,

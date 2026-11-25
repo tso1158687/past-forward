@@ -1,5 +1,6 @@
 // Bakes the static map assets used by the 3D scene from open data:
-//   - public/map/terrain.bin / terrain.json : elevation grid (AWS Terrain Tiles, "terrarium" encoding)
+//   - public/map/terrain.bin / terrain.json : elevation grid (AWS Terrain Tiles, "terrarium" encoding),
+//     whole metres, stored as gzipped planar residuals (see `TERRAIN_ENCODING`)
 //   - public/map/rivers.json                : river centre lines (Natural Earth 1:10m, public domain)
 //   - public/map/borders.json               : historical borders (OpenHistoricalMap, CC0)
 //   - public/map/railways.json              : railways open in 1941, today's track (OpenStreetMap, ODbL)
@@ -11,6 +12,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
+import { gzipSync } from 'node:zlib';
 import { fileURLToPath } from 'node:url';
 import { PNG } from 'pngjs';
 
@@ -23,8 +25,12 @@ const BOUNDS = { west: 19.5, east: 31.5, south: 50.5, north: 56.0 };
 const GRID_WIDTH = 2048;
 const TILE_ZOOM = 8;
 const TILE_SIZE = 256;
-/** Elevation is stored as Int16 in units of 0.1 m, which keeps flat lowlands free of banding. */
-const METERS_PER_UNIT = 0.1;
+/**
+ * Elevation is stored as Int16 in whole metres. Finer steps showed no difference on the map, even
+ * close up over the flat Pripyat marshes, but made the file nearly four times as large
+ * (decisions D63).
+ */
+const METERS_PER_UNIT = 1;
 const SPIKE_THRESHOLD_METERS = 150;
 
 const TERRAIN_TILE_URL = (z, x, y) =>
@@ -162,6 +168,28 @@ function removeSpikes(elevations, width, height) {
   return replaced;
 }
 
+/**
+ * terrain.bin holds, for each sample, how far it is from what its west, north and north-west
+ * neighbours predict (west + north - north-west), gzipped. Neighbouring heights are close, so the
+ * residuals are small and compress well; src/app/data/map/terrain-encoding.ts undoes this.
+ */
+const TERRAIN_ENCODING = 'planar-residual-int16-gzip';
+
+/** Int16 arithmetic wraps on both sides, so even a residual out of range decodes exactly. */
+function planarResiduals(samples, width, height) {
+  const residuals = new Int16Array(samples.length);
+  for (let row = 0; row < height; row++) {
+    for (let col = 0; col < width; col++) {
+      const i = row * width + col;
+      const west = col > 0 ? samples[i - 1] : 0;
+      const north = row > 0 ? samples[i - width] : 0;
+      const northWest = col > 0 && row > 0 ? samples[i - width - 1] : 0;
+      residuals[i] = samples[i] - (west + north - northWest);
+    }
+  }
+  return residuals;
+}
+
 async function bakeTerrain() {
   const tiles = await loadElevationTiles();
   const width = GRID_WIDTH;
@@ -192,11 +220,15 @@ async function bakeTerrain() {
     width,
     height,
     metersPerUnit: METERS_PER_UNIT,
+    encoding: TERRAIN_ENCODING,
     minElevationMeters: Math.round(min),
     maxElevationMeters: Math.round(max),
     source: `Terrain Tiles on AWS Open Data (Mapzen terrarium), zoom ${TILE_ZOOM}`,
   };
-  await writeFile(join(OUTPUT_DIR, 'terrain.bin'), Buffer.from(samples.buffer));
+  const encoded = gzipSync(Buffer.from(planarResiduals(samples, width, height).buffer), {
+    level: 9,
+  });
+  await writeFile(join(OUTPUT_DIR, 'terrain.bin'), encoded);
   await writeFile(join(OUTPUT_DIR, 'terrain.json'), JSON.stringify(meta, null, 2) + '\n');
   console.log(
     `terrain: ${width}x${height}, ${meta.minElevationMeters}..${meta.maxElevationMeters} m, ${spikes} spikes removed`,

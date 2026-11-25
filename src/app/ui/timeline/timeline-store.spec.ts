@@ -181,6 +181,32 @@ describe('TimelineStore', () => {
       expect(store.userActions()).toBe(0);
     });
 
+    it('plays backwards from where it is, and keeps the chosen speed', () => {
+      const { store } = setUp();
+      store.seek(5);
+      store.setSpeed(2);
+      store.togglePlayback('backward');
+      expect(store.playingDirection()).toBe('backward');
+      expect(store.chosenSpeed()).toBe(2);
+      runFrame(1000);
+      runFrame(1250);
+      expect(store.timeline().currentDay).toBeCloseTo(4.5);
+
+      store.setSpeed(4);
+      expect(store.timeline().daysPerSecond).toBe(-4);
+      store.togglePlayback('forward');
+      expect(store.playingDirection()).toBe('forward');
+      expect(store.timeline().daysPerSecond).toBe(4);
+      store.togglePlayback('forward');
+      expect(store.playingDirection()).toBeNull();
+    });
+
+    it('starts a backward run from the last day when it is at the first', () => {
+      const { store } = setUp();
+      store.togglePlayback('backward');
+      expect(store.timeline().currentDay).toBe(store.timeline().range.endDay);
+    });
+
     it('counts the user moving the timeline, and stops a journey where it is', () => {
       const { store } = setUp();
       store.travelTo(5, 2);

@@ -1,0 +1,70 @@
+/* The layer switches open upwards over the map, so the bottom dock keeps its height. */
+:host {
+  position: relative;
+  flex: none;
+  margin-left: auto;
+  font-size: 13px;
+}
+
+details {
+  height: 100%;
+}
+
+summary {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: '▴';
+  margin-left: 8px;
+  color: var(--text-muted);
+}
+
+details[open] summary::after {
+  content: '▾';
+}
+
+:host:hover,
+:host:has(details[open]) {
+  border-color: var(--accent);
+}
+
+.choices {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  width: max-content;
+  max-width: min(300px, calc(100vw - 32px));
+  padding: 10px 14px;
+  background: var(--panel-background);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+}
+
+.choices label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.choices input {
+  accent-color: var(--accent);
+}
+
+.choices .note {
+  padding-left: 24px;
+  color: var(--text-muted);
+  font-size: 12px;
+}

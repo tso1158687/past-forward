@@ -1,13 +1,29 @@
 @let messages = i18n.messages().timeline;
 @let timeline = store.timeline();
 
+@let direction = store.playingDirection();
+
+<button
+  type="button"
+  class="play-backward"
+  [attr.aria-label]="direction === 'backward' ? messages.pause : messages.playBackward"
+  [title]="direction === 'backward' ? messages.pause : messages.playBackward"
+  (click)="store.togglePlayback('backward')"
+>
+  @if (direction === 'backward') {
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" /></svg>
+  } @else {
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5v14L5 12z" /></svg>
+  }
+</button>
+
 <button
   type="button"
   class="play"
-  [attr.aria-label]="timeline.playing ? messages.pause : messages.play"
-  (click)="store.togglePlayback()"
+  [attr.aria-label]="direction === 'forward' ? messages.pause : messages.play"
+  (click)="store.togglePlayback('forward')"
 >
-  @if (timeline.playing) {
+  @if (direction === 'forward') {
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" /></svg>
   } @else {
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>

@@ -95,6 +95,21 @@ export class MapView {
     this.scene?.resetView();
   }
 
+  /** Pans the map just enough that `location` is not hidden under any of `panels`. */
+  revealLocation(location: GeographicLocation, panels: readonly Element[]): void {
+    const map = this.host().nativeElement.getBoundingClientRect();
+    const obstacles = panels
+      .map((panel) => panel.getBoundingClientRect())
+      .filter((rect) => rect.width > 0 && rect.height > 0)
+      .map((rect) => ({
+        left: rect.left - map.left,
+        top: rect.top - map.top,
+        right: rect.right - map.left,
+        bottom: rect.bottom - map.top,
+      }));
+    this.scene?.revealLocation(location, obstacles);
+  }
+
   private async createScene(): Promise<void> {
     try {
       // three.js is loaded on demand so it stays out of the initial bundle.

@@ -17,10 +17,20 @@ export interface Messages {
   /** The same for a touch screen without a mouse. */
   readonly controlsHintTouch: string;
   readonly resetView: string;
+  /** The menu that switches map overlays on and off. */
+  readonly layers: {
+    readonly title: string;
+    readonly front: string;
+    readonly arrows: string;
+    readonly trails: string;
+    /** Under the trails switch: what still shows when it is off. */
+    readonly trailsNote: string;
+  };
   readonly mapLoading: string;
   readonly mapLoadFailed: string;
   readonly timeline: {
     readonly play: string;
+    readonly playBackward: string;
     readonly pause: string;
     /** Accessible name of the date scrubber. */
     readonly scrubber: string;

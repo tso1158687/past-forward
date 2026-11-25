@@ -7,7 +7,8 @@
   },
   "width": 2048,
   "height": 1569,
-  "metersPerUnit": 0.1,
+  "metersPerUnit": 1,
+  "encoding": "planar-residual-int16-gzip",
   "minElevationMeters": -180,
   "maxElevationMeters": 575,
   "source": "Terrain Tiles on AWS Open Data (Mapzen terrarium), zoom 8"

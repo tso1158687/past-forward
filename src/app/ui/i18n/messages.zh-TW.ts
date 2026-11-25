@@ -24,10 +24,18 @@ export const MESSAGES_ZH_TW: Messages = {
   controlsHint: '拖曳：平移　右鍵拖曳：旋轉與傾斜　滾輪：縮放　點選城市：聚焦　點選部隊：看來源',
   controlsHintTouch: '單指拖曳：平移　雙指：縮放與旋轉　點選城市：聚焦　點選部隊：看來源',
   resetView: '回到全圖',
+  layers: {
+    title: '圖層',
+    front: '德軍前緣、推進範圍與包圍圈',
+    arrows: '德軍箭頭',
+    trails: '部隊軌跡',
+    trailsNote: '關掉時仍顯示選取部隊的軌跡',
+  },
   mapLoading: '地圖載入中…',
   mapLoadFailed: '地圖無法載入。請確認瀏覽器支援 WebGL，並重新整理頁面。',
   timeline: {
     play: '播放',
+    playBackward: '倒轉播放',
     pause: '暫停',
     scrubber: '日期',
     dayCounter: (day, totalDays) => `第 ${day} 天／共 ${totalDays} 天`,

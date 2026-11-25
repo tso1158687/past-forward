@@ -1,0 +1,21 @@
+@let messages = i18n.messages().layers;
+
+<details>
+  <summary>{{ messages.title }}</summary>
+  <div role="group" class="choices" [attr.aria-label]="messages.title">
+    @for (layer of choices; track layer) {
+      <label>
+        <input
+          #checkbox
+          type="checkbox"
+          [checked]="layers()[layer]"
+          (change)="set(layer, checkbox.checked)"
+        />
+        {{ messages[layer] }}
+      </label>
+      @if (layer === 'trails') {
+        <p class="note">{{ messages.trailsNote }}</p>
+      }
+    }
+  </div>
+</details>

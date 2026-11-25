@@ -7,6 +7,7 @@ import { GeographicLocation } from '../../core/geo/geo-types';
 import { Faction } from '../../core/history/scenario';
 import { TerrainSurface } from '../terrain/terrain-surface';
 import { createLabel, setLabelText } from './label';
+import { spreadApart } from './spread-apart';
 import {
   createUnitToken,
   drawTokenFace,
@@ -72,6 +73,15 @@ const TRAIL_STEP_KM = 12;
 const TRAIL_RENDER_ORDER = 3;
 /** How far above the piece, in label heights, the name sits. */
 const LABEL_ANCHOR: readonly [number, number] = [0.5, 2.4];
+/** Pieces closer than this many diameters are moved apart on screen. */
+const PIECE_SPACING = 1.1;
+/**
+ * A piece moved further than this many radii, so that the unit's real location is no longer under
+ * it, gets a line back to that location.
+ */
+const LEADER_MIN_RADII = 1;
+const LEADER_COLOR = '#2a2622';
+const LEADER_WIDTH_PIXELS = 1.5;
 
 interface Piece {
   readonly unitId: string;
@@ -102,6 +112,18 @@ export class UnitLayer {
   private readonly trailLines = new Map<string, LineSegments2>();
   private readonly trailMaterials: Record<Faction, LineMaterial>;
   private trails: readonly UnitTrail[] = [];
+  /** Lines from pieces moved apart back to the units' real locations. */
+  private readonly leaders = new LineSegments2(
+    new LineSegmentsGeometry(),
+    new LineMaterial({
+      color: LEADER_COLOR,
+      linewidth: LEADER_WIDTH_PIXELS,
+      transparent: true,
+      opacity: 0.85,
+      depthTest: false,
+      depthWrite: false,
+    }),
+  );
   private view: UnitLayerView = { cameraDistance: 1000, azimuthRadians: 0 };
   private hoveredUnitId: string | undefined;
 
@@ -110,6 +132,9 @@ export class UnitLayer {
       german: trailMaterial('german'),
       soviet: trailMaterial('soviet'),
     };
+    this.leaders.renderOrder = TRAIL_RENDER_ORDER;
+    this.leaders.visible = false;
+    this.object.add(this.leaders);
   }
 
   /**
@@ -138,7 +163,7 @@ export class UnitLayer {
 
   setView(view: UnitLayerView): void {
     this.view = view;
-    for (const piece of this.pieces.values()) this.place(piece);
+    this.placeAll();
   }
 
   /** Advances slides and fades. Returns true while something still has to change on screen. */
@@ -158,12 +183,9 @@ export class UnitLayer {
         piece.token.setOpacity(piece.opacity);
         animating = true;
       }
-      if (piece.leaving && piece.opacity === 0) {
-        this.removePiece(key, piece);
-        continue;
-      }
-      this.place(piece);
+      if (piece.leaving && piece.opacity === 0) this.removePiece(key, piece);
     }
+    this.placeAll();
     if (slid) this.rebuildTrails();
     return animating;
   }
@@ -187,6 +209,8 @@ export class UnitLayer {
     for (const [key, piece] of this.pieces) this.removePiece(key, piece);
     for (const texture of this.faces.values()) texture.dispose();
     for (const line of this.trailLines.values()) line.geometry.dispose();
+    this.leaders.geometry.dispose();
+    this.leaders.material.dispose();
     this.trailMaterials.german.dispose();
     this.trailMaterials.soviet.dispose();
   }
@@ -272,16 +296,45 @@ export class UnitLayer {
     };
   }
 
-  /** Puts the piece on the terrain, sized for the camera distance and turned to face the viewer. */
-  private place(piece: Piece): void {
+  /**
+   * Puts every piece on the terrain, sized for the camera distance and turned to face the viewer.
+   * Pieces that would overlap on screen are moved apart, each with a thin line back to where its
+   * unit really is; the data keeps the real location. They are spread in a fixed order so that the
+   * same moment always looks the same.
+   */
+  private placeAll(): void {
     const radius = this.view.cameraDistance * RADIUS_PER_CAMERA_DISTANCE;
     const lift = (TOKEN_THICKNESS / 2) * radius;
-    const { object } = piece.token;
-    object.position.copy(this.surface.positionAt(this.currentLocation(piece), lift));
-    object.scale.setScalar(radius);
-    // The top face is drawn with its "up" towards +x; a quarter turn points it north, and the
-    // camera's azimuth keeps it upright for the viewer.
-    object.rotation.y = Math.PI / 2 + this.view.azimuthRadians;
+    const { projection } = this.surface;
+    const pieces = [...this.pieces.entries()]
+      .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
+      .map(([, piece]) => piece);
+    const real = pieces.map((piece) => projection.project(this.currentLocation(piece)));
+    const shown = spreadApart(real, 2 * radius * PIECE_SPACING);
+
+    const leaders: number[] = [];
+    pieces.forEach((piece, i) => {
+      const location = projection.unproject(shown[i]);
+      const { object } = piece.token;
+      object.position.copy(this.surface.positionAt(location, lift));
+      object.scale.setScalar(radius);
+      // The top face is drawn with its "up" towards +x; a quarter turn points it north, and the
+      // camera's azimuth keeps it upright for the viewer.
+      object.rotation.y = Math.PI / 2 + this.view.azimuthRadians;
+
+      const moved = Math.hypot(shown[i].x - real[i].x, shown[i].z - real[i].z);
+      if (!piece.leaving && moved > LEADER_MIN_RADII * radius) {
+        leaders.push(
+          ...this.surface.positionAt(projection.unproject(real[i]), TRAIL_LIFT).toArray(),
+          ...this.surface.positionAt(location, TRAIL_LIFT).toArray(),
+        );
+      }
+    });
+    this.leaders.visible = leaders.length > 0;
+    if (leaders.length > 0) {
+      this.leaders.geometry.dispose();
+      this.leaders.geometry = new LineSegmentsGeometry().setPositions(leaders);
+    }
   }
 
   private refreshHighlights(): void {

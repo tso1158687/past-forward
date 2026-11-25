@@ -29,6 +29,33 @@
   fill: currentColor;
 }
 
+/* Playing backwards is the less common choice, so its button is smaller and quieter. */
+.play-backward {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: -4px;
+  border: 1px solid var(--panel-border);
+  border-radius: 50%;
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.play-backward:hover,
+.play-backward:focus-visible {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.play-backward svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 .date {
   flex: none;
   display: flex;

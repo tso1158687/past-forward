@@ -26,6 +26,8 @@ export interface SelectedUnit {
   readonly state: UnitState | undefined;
 }
 
+export type PlaybackDirection = 'forward' | 'backward';
+
 /**
  * Holds the timeline and drives playback. All rules live in the pure functions of
  * `core/timeline` and `core/history`; this class only stores the current state in signals and
@@ -82,7 +84,15 @@ export class TimelineStore {
    * The playback speed the user chose. While the story plays through to a stop the timeline runs
    * at the story's own speed, but the speed control keeps showing the user's choice.
    */
-  readonly chosenSpeed = computed(() => this.journey()?.userSpeed ?? this.state().daysPerSecond);
+  readonly chosenSpeed = computed(() =>
+    Math.abs(this.journey()?.userSpeed ?? this.state().daysPerSecond),
+  );
+  /** Which way the timeline is playing, or `null` while it is paused. */
+  readonly playingDirection = computed<PlaybackDirection | null>(() => {
+    const { playing, daysPerSecond } = this.state();
+    if (!playing) return null;
+    return daysPerSecond < 0 ? 'backward' : 'forward';
+  });
 
   private frameRequest = 0;
   private lastFrameTime: number | undefined;
@@ -91,10 +101,16 @@ export class TimelineStore {
     return calendarDateOfDay(this.scenario.epoch, campaignDay);
   }
 
-  togglePlayback(): void {
+  /** Plays in `direction`, or pauses when the timeline is already playing that way. */
+  togglePlayback(direction: PlaybackDirection = 'forward'): void {
     this.byUser();
-    if (this.state().playing) this.pause();
-    else this.play();
+    if (this.playingDirection() === direction) {
+      this.pause();
+      return;
+    }
+    const speed = Math.abs(this.state().daysPerSecond);
+    this.state.update((state) => setSpeed(state, direction === 'backward' ? -speed : speed));
+    this.play();
   }
 
   play(): void {
@@ -111,9 +127,12 @@ export class TimelineStore {
     this.state.update((state) => seek(state, day));
   }
 
+  /** Sets how many days pass per second, keeping the direction of play. */
   setSpeed(daysPerSecond: number): void {
     this.byUser();
-    this.state.update((state) => setSpeed(state, daysPerSecond));
+    this.state.update((state) =>
+      setSpeed(state, state.daysPerSecond < 0 ? -daysPerSecond : daysPerSecond),
+    );
   }
 
   /** Pauses on the first day of the event and makes it the selected one. */
