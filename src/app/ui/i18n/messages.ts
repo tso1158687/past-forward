@@ -17,6 +17,11 @@ export interface Messages {
   /** The same for a touch screen without a mouse. */
   readonly controlsHintTouch: string;
   readonly resetView: string;
+  /**
+   * Credits that stay on screen in a corner of the map, as the data licences ask. Pieces with a
+   * `url` are links; they are shown in order on one line.
+   */
+  readonly attribution: readonly { readonly text: string; readonly url?: string }[];
   /** The menu that switches map overlays on and off. */
   readonly layers: {
     readonly title: string;

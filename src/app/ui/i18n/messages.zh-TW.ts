@@ -7,7 +7,7 @@ export const MESSAGES_ZH_TW: Messages = {
   prototypeBadge: '開發中',
   dataNoticeTitle: '這張地圖目前的內容',
   dataNotice: [
-    '地形：真實高程資料（低解析度），高度經大幅誇張以便閱讀。',
+    '地形：AWS 上的 Terrain Tiles 真實高程資料（低解析度），高度經大幅誇張以便閱讀。歐洲地形資料以歐盟資助的 Copernicus 資料製作（EU-DEM）；SRTM 與 GMTED2010 由美國地質調查局（USGS）提供；ETOPO1 來自美國國家海洋暨大氣總署（NOAA）。',
     '河流：Natural Earth 公開資料。',
     '城市：地圖上是今日常見的中文譯名與現代座標。點開城市可以看 1941 年 6 月 22 日它屬於哪一方、當時的正式名稱與 1942 年德軍圖集上的寫法；查不到的照實寫明。',
     '國界：深色虛線是 1941 年 6 月 22 日開戰時的德蘇邊界。走向取自志工編輯的 OpenHistoricalMap 公開資料，只對照過 1939 年 10 月德蘇劃界議定書點名的地點，不是逐公里核對。這條線在 1939 年的條約裡稱為兩國「利益的分界」。邊界兩側各自的行政區界沒有畫。',
@@ -24,6 +24,16 @@ export const MESSAGES_ZH_TW: Messages = {
   controlsHint: '拖曳：平移　右鍵拖曳：旋轉與傾斜　滾輪：縮放　點選城市：聚焦　點選部隊：看來源',
   controlsHintTouch: '單指拖曳：平移　雙指：縮放與旋轉　點選城市：聚焦　點選部隊：看來源',
   resetView: '回到全圖',
+  attribution: [
+    { text: '地圖資料 © ' },
+    { text: 'OpenStreetMap', url: 'https://www.openstreetmap.org/copyright' },
+    { text: ' 貢獻者、OpenHistoricalMap、Natural Earth · 地形 ' },
+    {
+      text: 'Terrain Tiles',
+      url: 'https://github.com/tilezen/joerd/blob/master/docs/attribution.md',
+    },
+    { text: '（Copernicus EU-DEM、USGS、NOAA）' },
+  ],
   layers: {
     title: '圖層',
     front: '德軍前緣、推進範圍與包圍圈',

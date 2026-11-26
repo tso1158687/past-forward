@@ -123,4 +123,14 @@
   </div>
 
   <app-timeline-bar class="panel" (eventChosen)="chooseEvent($event)" />
+
+  <p class="attribution">
+    @for (piece of messages.attribution; track $index) {
+      @if (piece.url; as url) {
+        <a [href]="url" target="_blank" rel="noopener">{{ piece.text }}</a>
+      } @else {
+        {{ piece.text }}
+      }
+    }
+  </p>
 </div>

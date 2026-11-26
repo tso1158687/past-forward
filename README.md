@@ -33,6 +33,12 @@ pnpm start        # 開發伺服器，http://localhost:4200
 | `pnpm format` / `pnpm format:check` | Prettier |
 | `pnpm bake:map` | 從開放資料重新產生 `public/map/` 的地形、河流與國界 |
 
+### 線上版
+
+網址：https://tso1158687.github.io/past-forward/
+
+推送到 `main` 就會自動部署（`.github/workflows/deploy.yml`）：GitHub Actions 先跑 `format:check`、`lint`、`test`，全部通過才以 `/past-forward/` 為根路徑建置，再發布到 GitHub Pages。任何一項沒過，線上版就維持上一版。
+
 ## 操作
 
 - 拖曳：平移
@@ -98,6 +104,17 @@ pnpm start        # 開發伺服器，http://localhost:4200
 線形是今日的鐵路（© OpenStreetMap 貢獻者，ODbL 授權），和當年可能有些出入；沒有畫的鐵路不代表當年不存在。
 
 時間軸的起訖是 1941 年 6 月 22 日至 7 月 9 日，共 18 天，依蘇方官方對這場戰役的分期。
+
+### 資料授權與署名
+
+地圖右下角常駐一行署名，依各資料的授權要求：
+
+- 鐵路與部分城市座標：© OpenStreetMap 貢獻者，[ODbL](https://www.openstreetmap.org/copyright)。
+- 地形：[Terrain Tiles](https://github.com/tilezen/joerd/blob/master/docs/attribution.md)。適用於這張地圖範圍的署名原文：
+  - Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers
+  - Global ETOPO1 terrain data U.S. National Oceanic and Atmospheric Administration
+  - United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey
+- 國界：OpenHistoricalMap（CC0）；河流：Natural Earth（公有領域）；部隊位置與態勢讀自 1942 年德軍圖集，掃描檔在維基共享資源標為公有領域。
 
 ## 專案結構
 

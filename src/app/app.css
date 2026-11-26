@@ -273,6 +273,20 @@ app-unit-panel {
   color: var(--text-muted);
 }
 
+/* The data licences ask for credits that stay in view; one quiet line under the timeline. */
+.attribution {
+  align-self: flex-end;
+  margin-top: -4px;
+  font-size: 10.5px;
+  color: var(--text-muted);
+  text-align: right;
+  text-shadow: 0 0 3px rgb(0 0 0 / 80%);
+}
+
+.attribution a {
+  color: inherit;
+}
+
 .reset-view {
   flex: none;
   padding: 8px 16px;
